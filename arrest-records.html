@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Arrest Records Ledger - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .record-box { background: var(--bg-medium); border: 1px solid var(--text-muted); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; font-family: 'Courier New', monospace; font-size: 0.95em; }
+        .record-box .field { margin-bottom: 0.5rem; }
+        .record-box .field-label { color: var(--gold); display: inline-block; width: 140px; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📜 Arrest Records Ledger</h1>
+        <p>Institutional Memory and Accountability Through Documentation</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Purpose of the Arrest Records Ledger</h2>
+        
+        <div class="quote">
+            An arrest is a fact, not a verdict. The ledger records what occurred, not what was true.
+        </div>
+        
+        <p>The Arrest Records Ledger exists to enforce accountability, preserve institutional memory, and provide evidence for legal and political review. Every arrest conducted by guards creates a permanent record regardless of whether charges are later sustained, dismissed, or rendered moot by pardon or death.</p>
+        
+        <p>The ledger serves three primary functions:</p>
+        <ul>
+            <li><strong>Legal foundation</strong> — Records serve as evidence in trials, establishing who was arrested, when, and under what authority</li>
+            <li><strong>Institutional accountability</strong> — Patterns of arrest reveal guard conduct, selective enforcement, and abuse of authority</li>
+            <li><strong>Historical documentation</strong> — Arrest records become evidence of regime character, enforcement priorities, and political pressures</li>
+        </ul>
+        
+        <p>The ledger protects the system, not individuals. Guards cannot escape responsibility by claiming an arrest was later ruled unlawful. Magistrates cannot dismiss evidence of arrests simply because they disapprove of the charges. The Crown cannot erase arrests that become politically inconvenient.</p>
+        
+        <h2>What Constitutes an Arrest Record</h2>
+        
+        <p>An arrest record is created when a guard reduces a target to a downed state with subdual intent and binds them, or when a target surrenders to guard authority. The record documents the guard's actions and stated justification at the moment of arrest.</p>
+        
+        <p>The following events produce arrest records:</p>
+        <ul>
+            <li>Guard subdues target through combat and binds them</li>
+            <li>Target surrenders voluntarily to guard authority</li>
+            <li>Guard accepts custody of prisoner from another guard or official</li>
+            <li>Guard delivers prisoner to Warden custody in jail</li>
+        </ul>
+        
+        <p>The following events do <em>not</em> produce arrest records:</p>
+        <ul>
+            <li>Verbal warnings without physical custody</li>
+            <li>Pursuit that does not result in capture</li>
+            <li>Combat that ends in target's death (documented separately by Coroner)</li>
+            <li>Escort of willing participants to hearings or court</li>
+        </ul>
+        
+        <div class="info-box">
+            <h3>Distinction From Trial Records</h3>
+            <p>Arrest records document what guards did. Trial records document what courts decided. These are maintained separately. A prisoner may have an arrest record stating "treason" but a trial record stating "acquitted." Both records remain permanent and neither negates the other.</p>
+        </div>
+        
+        <h2>Required Record Fields</h2>
+        
+        <p>Each arrest record contains the following mandatory information:</p>
+        
+        <div class="record-box">
+            <div class="field"><span class="field-label">Record Number:</span> Sequential identifier</div>
+            <div class="field"><span class="field-label">Guard Name:</span> Arresting guard's full name</div>
+            <div class="field"><span class="field-label">Guard Rank:</span> City Guard, Captain, or Marshal</div>
+            <div class="field"><span class="field-label">Prisoner Name:</span> Name of arrested individual</div>
+            <div class="field"><span class="field-label">Charges/Cause:</span> Guard's stated justification for arrest</div>
+            <div class="field"><span class="field-label">Date and Time:</span> When arrest occurred</div>
+            <div class="field"><span class="field-label">Location:</span> Where arrest occurred</div>
+            <div class="field"><span class="field-label">Witnesses:</span> Names of witnesses present, if any</div>
+            <div class="field"><span class="field-label">Delivered To:</span> Warden or other custodial authority</div>
+            <div class="field"><span class="field-label">Annotations:</span> Later legal rulings, pardons, or outcomes</div>
+        </div>
+        
+        <h3>Charges and Stated Cause</h3>
+        <p>The "Charges/Cause" field records what the guard stated at the time of arrest. This may be a formal charge ("murder of Lord Ashcroft"), a decree violation ("broke curfew"), or a direct order ("Marshal ordered immediate arrest"). The guard's statement becomes part of the permanent record regardless of its accuracy or later verification.</p>
+        
+        <h3>Annotations</h3>
+        <p>The ledger cannot be altered, but it can be annotated. Magistrates may add rulings such as "arrest ruled unlawful" or "acquitted at trial." The Crown may add "pardoned" or "released by royal decree." Guards may add "prisoner escaped custody" or "transferred to military authority." Annotations supplement records but do not replace them.</p>
+        
+        <h2>Custody and Maintenance</h2>
+        
+        <p>The Arrest Records Ledger is maintained by the Warden as part of the jail system's administrative function. When guards deliver prisoners to jail, the Warden records the arrest details provided by the guard. The Warden is responsible for ledger accuracy, completeness, and preservation.</p>
+        
+        <h3>Warden Obligations</h3>
+        <ul>
+            <li>Record every arrest delivered to jail custody</li>
+            <li>Verify guard identity and rank at time of recording</li>
+            <li>Maintain ledger integrity and prevent alteration of existing records</li>
+            <li>Add annotations as directed by legal or royal authority</li>
+            <li>Provide access to authorized parties reviewing records</li>
+        </ul>
+        
+        <h3>Ledger Integrity</h3>
+        <p>Once written, arrest records are permanent. The Warden may not alter, erase, or selectively omit records at the request of guards, officials, or the Crown. Destruction of arrest records or falsification of ledger entries is grounds for dismissal and possible criminal charges.</p>
+        
+        <div class="warning">
+            <strong>Institutional Protection:</strong> The ledger's permanence protects future regimes from inheriting undocumented enforcement practices. A new King reviewing arrest patterns from the previous reign gains insight into how power was exercised, whom it protected, and whom it targeted.
+        </div>
+        
+        <h2>Access and Review Authority</h2>
+        
+        <p>The Arrest Records Ledger is not public, but it is accessible to designated authorities who require it for legal, administrative, or historical purposes.</p>
+        
+        <table>
+            <tr>
+                <th>Authority</th>
+                <th>Access Level</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><strong>Warden</strong></td>
+                <td>Full (maintenance)</td>
+                <td>Custody management, record creation, annotation</td>
+            </tr>
+            <tr>
+                <td><strong>Magistrate</strong></td>
+                <td>Full (review and annotation)</td>
+                <td>Trial evidence, legality review, pattern analysis</td>
+            </tr>
+            <tr>
+                <td><strong>Crown (King/Regent)</strong></td>
+                <td>Full (review)</td>
+                <td>Policy oversight, guard accountability, pardon decisions</td>
+            </tr>
+            <tr>
+                <td><strong>Chronicler</strong></td>
+                <td>Full (documentation)</td>
+                <td>Historical record, regime analysis, public reporting</td>
+            </tr>
+            <tr>
+                <td><strong>Marshal</strong></td>
+                <td>Review (with justification)</td>
+                <td>Guard conduct review, enforcement audit</td>
+            </tr>
+            <tr>
+                <td><strong>Accused/Prisoner</strong></td>
+                <td>Limited (own record)</td>
+                <td>Verify charges, prepare defense</td>
+            </tr>
+        </table>
+        
+        <h3>Magistrate Authority</h3>
+        <p>The Magistrate may review arrest records to investigate complaints of unlawful arrest, identify patterns of selective enforcement, or prepare cases for trial. The Magistrate may annotate records with legal rulings but cannot seal or suppress them.</p>
+        
+        <h3>Crown Authority</h3>
+        <p>The King or Regent may review the ledger to assess guard conduct, evaluate enforcement priorities, or determine whether pardons are warranted. The Crown may order annotations added but cannot order records removed.</p>
+        
+        <h3>Chronicler Authority</h3>
+        <p>The Chronicler accesses arrest records to document regime enforcement patterns, report significant arrests publicly, and preserve historical context for future scholars. The Chronicler may publish summaries or specific records when doing so serves the public interest or historical accuracy.</p>
+        
+        <h3>Prisoner Access</h3>
+        <p>Prisoners may request to review their own arrest records to verify charges and prepare a defense. This access is supervised by the Warden or Magistrate and does not extend to viewing other prisoners' records.</p>
+        
+        <h2>Use in Law, Politics, and History</h2>
+        
+        <p>Arrest records serve as evidence in multiple contexts, each with different weight and consequence.</p>
+        
+        <h3>Legal Proceedings</h3>
+        <p>In trials, arrest records establish the foundation of charges. The Magistrate reviews the guard's stated cause, the circumstances of arrest, and whether the arrest complied with law and decree. A lawful arrest does not prove guilt, but an unlawful arrest may result in dismissal of charges and consequences for the arresting guard.</p>
+        
+        <h3>Guard Accountability</h3>
+        <p>The ledger creates patterns visible over time. A guard who arrests only political enemies, repeatedly uses excessive force, or arrests without cause accumulates a record subject to Magistrate review and Crown discipline. The ledger makes arbitrary enforcement visible and attributable.</p>
+        
+        <h3>Political Analysis</h3>
+        <p>Arrest patterns reveal regime priorities. A regime that arrests nobles at the same rate as commoners looks different from one that arrests commoners disproportionately. A regime that arrests dissidents for "treason" while ignoring noble violence reveals its nature through the ledger, regardless of rhetoric.</p>
+        
+        <h3>Succession Crises</h3>
+        <p>During contested succession, arrest records become evidence of legitimacy. If guards loyal to one claimant arrest supporters of another, the ledger documents which guards chose which side. If a Regent arrests the rightful Heir, the record persists even if the Regent later claims the arrest never occurred.</p>
+        
+        <h3>Historical Record</h3>
+        <p>Long after regimes fall, arrest records document how power was exercised. Chroniclers and scholars reviewing the ledger decades later can reconstruct enforcement patterns, guard behavior, and the gap between proclaimed law and actual practice.</p>
+        
+        <div class="quote-simple">
+            A regime may claim to rule justly, but the arrest ledger shows whom it actually feared, whom it protected, and whom it crushed.
+        </div>
+        
+        <h2>Limits and Constraints</h2>
+        
+        <p>The ledger documents arrests as factual events but cannot resolve disputes about their justification.</p>
+        
+        <h3>Records Are Not Verdicts</h3>
+        <p>An arrest record stating "murder" does not mean the prisoner committed murder. It means a guard arrested them for murder. Guilt is determined by trial, not arrest. A record of arrest for treason followed by an annotation of "acquitted" tells the complete story: the guard believed treason occurred, but the court disagreed.</p>
+        
+        <h3>Lawful Arrests Can Be Politically Catastrophic</h3>
+        <p>A guard may arrest someone in perfect compliance with law and decree yet create a political disaster. Arresting a popular noble for violating curfew may be lawful but destabilizing. The ledger will record the arrest as procedurally correct while the regime collapses from public outrage. Legality and survivability are not synonymous.</p>
+        
+        <h3>Unlawful Arrests Still Occurred</h3>
+        <p>If the Magistrate rules an arrest unlawful, the annotation reflects this, but the record remains. The guard still made the arrest. The prisoner still experienced detention. The political consequences still unfolded. An annotation of "unlawful" changes legal liability but does not erase the event.</p>
+        
+        <h3>Selective Recording Is Not Permitted</h3>
+        <p>The Warden cannot refuse to record arrests that are politically inconvenient, legally questionable, or personally distasteful. Every arrest delivered to jail custody produces a record. Selective omission is falsification and grounds for removal.</p>
+        
+        <h3>The Ledger Cannot Prevent Injustice</h3>
+        <p>Recording an unjust arrest does not prevent it from occurring. The ledger creates accountability and evidence, not immediate remedy. A guard who arrests someone unlawfully creates a record that may later result in consequences, but the prisoner was still arrested. The ledger makes abuse visible, not impossible.</p>
+        
+        <h2>Summary</h2>
+        
+        <ul>
+            <li>The Arrest Records Ledger documents all arrests conducted by guards, creating permanent institutional memory and accountability</li>
+            <li>Each record contains guard name, prisoner name, stated charges, location, time, witnesses, and subsequent annotations</li>
+            <li>Records are maintained by the Warden and cannot be altered or erased, only supplemented with annotations</li>
+            <li>Access is granted to Magistrate, Crown, Chronicler, and Marshal for legal, administrative, and historical purposes</li>
+            <li>Records serve as evidence in trials, audits of guard conduct, succession disputes, and historical analysis</li>
+            <li>An arrest record is a factual statement, not a verdict; it documents what the guard did, not whether it was justified</li>
+            <li>Lawful arrests can be politically disastrous; unlawful arrests remain recorded even when later ruled improper</li>
+            <li>The ledger protects institutions by making enforcement patterns visible across regimes and revealing the gap between law and practice</li>
+        </ul>
+        
+        <h2>See Also</h2>
+        <ul>
+            <li><a href="guards.html" style="color: var(--accent);">Guards</a> — Authority, enforcement, and arrest procedures</li>
+            <li><a href="roles.html" style="color: var(--accent);">Magistrates & Courts</a> — Legal review and trial proceedings where arrest records serve as evidence</li>
+            <li><a href="jail.html" style="color: var(--accent);">Jail System</a> — Warden custody, prisoner management, and administrative records</li>
+            <li><a href="permadeath-downed.html" style="color: var(--accent);">Permadeath & Downed States</a> — Subdual mechanics that enable arrest rather than execution</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="guards.html" style="color: var(--gold);">Guards</a> | <a href="jail.html" style="color: var(--gold);">Jail System</a></p>
+    </footer>
+</body>
+</html>

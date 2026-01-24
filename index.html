@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdoms of Britannia - Wiki</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root {
+            --bg-dark: #1a1a2e;
+            --bg-medium: #16213e;
+            --bg-light: #0f3460;
+            --accent: #e94560;
+            --text: #eaeaea;
+            --text-muted: #a0a0a0;
+            --gold: #d4af37;
+            --border: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--gold);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .intro {
+            background: var(--bg-medium);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--gold);
+        }
+        
+        .intro h2 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .card {
+            background: var(--bg-medium);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-color: var(--accent);
+        }
+        
+        .card h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .card h3 .icon {
+            font-size: 1.5rem;
+        }
+        
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        
+        .card a {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .card a:hover {
+            color: var(--gold);
+        }
+        
+        .quote {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-style: italic;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+        
+        .quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--gold);
+            display: block;
+            line-height: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚔️ Kingdoms of Britannia</h1>
+        <p>A Permadeath Political Intrigue Shard for Ultima Online</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <section class="intro">
+            <h2>Welcome to Britannia</h2>
+            <p>This wiki documents the design systems for a revolutionary Ultima Online private shard where <strong>death is permanent</strong>, <strong>power is political</strong>, and <strong>legitimacy is everything</strong>.</p>
+            <p style="margin-top: 1rem;">Inspired by Game of Thrones, this shard transforms Britannia into a feudal tragedy simulator where every decision has weight, every alliance matters, and every death reshapes the world.</p>
+        </section>
+        
+        <div class="quote">
+            The map never changes — but the world does.
+        </div>
+        
+        <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Core Systems</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3><span class="icon">📜</span> Server Philosophy</h3>
+                <p>The foundational principles that make this shard unique: permadeath, political intrigue, and the meaning of consequence.</p>
+                <a href="philosophy.html">Read More →</a>
+            </div>
+            
+            <div class="card">
+                <h3><span class="icon">🩸</span> Bloodlines</h3>
+                <p>Competing theories of legitimacy embodied in mortal form. Not families — rival answers to who deserves to rule.</p>
+                <a href="bloodlines.html">Read More →</a>
+            </div>
+            
+            <div class="card">
+                <h3><span class="icon">👑</span> Roles & Offices</h3>
+                <p>The positions that apply pressure to power: from the King's finality to the Guard's enforcement to the Chronicler's memory.</p>
+                <a href="roles.html">Read More →</a>
+            </div>
+            
+            <div class="card">
+                <h3><span class="icon">⚔️</span> Combat & Death</h3>
+                <p>The knockout system, execution mechanics, and why death is a choice—not an accident.</p>
+                <a href="combat.html">Read More →</a>
+            </div>
+            
+            <div class="card">
+                <h3><span class="icon">🏰</span> Housing & Land</h3>
+                <p>Role-held property, the Land Custodian system, and how buildings become political consequences.</p>
+                <a href="housing.html">Read More →</a>
+            </div>
+            
+            <div class="card">
+                <h3><span class="icon">👑</span> Becoming King</h3>
+                <p>How kings are made, the six paths to the throne, succession crises, and why the coronation ceremony is the only mechanical gate.</p>
+                <a href="becoming-king.html">Read More →</a>
+            </div>
+            
+            <div class="card">
+                <h3><span class="icon">📋</span> Land Steward</h3>
+                <p>The neutral executor of land policy: sealing, transferring, and evicting without choosing winners.</p>
+                <a href="steward.html">Read More →</a>
+            </div>
+            
+            <div class="card">
+                <h3><span class="icon">🏛️</span> Property & Auctions</h3>
+                <p>Land as scarce political resource. Assignment methods, ownership limits, and how auctions create non-violent competition.</p>
+                <a href="property.html">Read More →</a>
+            </div>
+        </div>
+        
+        <div class="quote">
+            Bloodlines exist so that power has a past — and death has consequences beyond the character.
+        </div>
+        
+        <section class="intro" style="margin-top: 2rem;">
+            <h2>Season 1: Britain Only</h2>
+            <p>The shard launches with <strong>Britain as the entire playable world</strong>. This is intentional:</p>
+            <ul style="margin-top: 1rem; margin-left: 1.5rem;">
+                <li>Density creates drama — everyone shares the same spaces</li>
+                <li>Deaths are witnessed — rumors spread fast</li>
+                <li>Political stakes feel immediate</li>
+                <li>Small population feels intense, not empty</li>
+            </ul>
+            <p style="margin-top: 1rem;">Other cities exist in lore but are distant, abstract, and politically reactive rather than active. Britain is where power is decided.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Kingdoms of Britannia Wiki — A Design Document for Revolutionary RP</p>
+    </footer>
+</body>
+</html>

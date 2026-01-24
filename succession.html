@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Succession & Crown Transfer - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .step-card { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid var(--gold); }
+        .step-card h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>👑 Succession & Crown Transfer</h1>
+        <p>What Happens When the King Dies</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <div class="quote">
+            The Crown transfers only at coronation.<br>
+            Until then, the realm is governed by a Regent, and the Heir holds only a claim.
+        </div>
+        
+        <h2>Main Idea</h2>
+        
+        <p>Upon the King's death, the Crown is vacant. The Regent governs in trust. Named Heirs hold official claims in order of precedence. Claimants may assert contested claims through force or alliance. The Crown transfers only at coronation, where any eligible contender—Heir, Regent, or Claimant—may be crowned. Legitimacy is determined not by mechanics, but by who recognizes the outcome.</p>
+        
+        <h2>Core Principle: Vacant Crown, Delegated Authority</h2>
+        
+        <div class="quote-simple">
+            <strong>Crisis-first, story-forward model</strong>
+        </div>
+        
+        <p><strong>At the moment the King dies:</strong></p>
+        
+        <div class="info-box">
+            <h3>The Succession Crisis Begins</h3>
+            <ul>
+                <li><strong>The Crown is vacant</strong> — No one is King</li>
+                <li><strong>The Heir holds a claim, not authority</strong> — Symbol and blood right, but no powers</li>
+                <li><strong>The Regent holds King powers temporarily</strong> — Full governance "in trust"</li>
+                <li><strong>Claimants may contest the succession</strong> — Alternative claims through bloodline, force, or alliance</li>
+                <li><strong>Coronation = actual transfer of Crown authority</strong> — The moment everything changes</li>
+            </ul>
+        </div>
+        
+        <h2>Authority Layer (Who holds power before coronation)</h2>
+        
+        <div class="info-box">
+            <h3>Power Structure During Vacancy</h3>
+            <ul>
+                <li><strong>Regent holds all governing authority</strong> — Full King powers, temporarily delegated</li>
+                <li><strong>Heirs hold symbolic legitimacy only</strong> — Official claim, but no executive power</li>
+                <li><strong>Claimants hold nothing unless they seize it</strong> — Contested legitimacy, no authority</li>
+            </ul>
+        </div>
+        
+        <p>This preserves the clean triangle:</p>
+        
+        <div class="quote-simple">
+            <strong>Heir</strong> = legitimacy without power<br>
+            <strong>Regent</strong> = power without claim<br>
+            <strong>Claimant</strong> = claim without power
+        </div>
+        
+        <p><strong>That triangle is the engine of drama.</strong></p>
+        
+        <h2>Eligibility Layer (Who is allowed to be crowned)</h2>
+        
+        <p>At the King's death, the following are eligible for coronation:</p>
+        
+        <div class="info-box">
+            <h3>Eligibility for Coronation</h3>
+            <ul>
+                <li><strong>Named Heirs (Primary / Secondary / Tertiary)</strong><br>
+                → Official, ordered eligibility</li>
+                <li><strong>Claimants</strong><br>
+                → Unofficial, contested eligibility</li>
+                <li><strong>The Regent</strong><br>
+                → Procedural eligibility through custody of the state</li>
+            </ul>
+        </div>
+        
+        <p><strong>So the coronation is not about transfer — it is about selection.</strong></p>
+        
+        <h2>The Key Distinction</h2>
+        
+        <p><strong>No one has King powers until coronation.</strong></p>
+        <p>The Regent holds sovereign authority, but not the Crown.</p>
+        
+        <div class="warning">
+            <strong>Critical Rule:</strong><br>
+            The Crown is not inherited automatically. It is claimed, contested, and finally transferred at coronation.
+        </div>
+        
+        <h2>Step-by-Step: What Happens When a King Dies</h2>
+        
+        <p>When a King dies and both an Heir and Regent exist:</p>
+        
+        <div class="step-card">
+            <h4>Step 1: The Crown Becomes Vacant Immediately</h4>
+            <p><strong>No one is King yet.</strong></p>
+            <p>The throne is empty. All King-specific powers are suspended. The realm enters a state of uncertainty.</p>
+        </div>
+        
+        <div class="step-card">
+            <h4>Step 2: The Heir Becomes Heir Presumptive, Not King</h4>
+            <p>They hold:</p>
+            <ul>
+                <li><strong>Claim</strong> — Legitimacy based on appointment or bloodline</li>
+                <li><strong>Symbol</strong> — They represent the future</li>
+                <li><strong>Blood right</strong> — Social and legal standing</li>
+            </ul>
+            <p><strong>But no King powers.</strong></p>
+            <p>The Heir cannot command guards, issue decrees, or wield royal authority. They are vulnerable, watched, and often hunted.</p>
+            <p><strong>→ See <a href="heir.html" style="color: var(--accent);">Heir Presumptive</a> for complete details on the Heir role</strong></p>
+        </div>
+        
+        <div class="step-card">
+            <h4>Step 3: The Regent Assumes Full King Authority Temporarily</h4>
+            <p>They may:</p>
+            <ul>
+                <li><strong>Command guards</strong></li>
+                <li><strong>Issue decrees</strong></li>
+                <li><strong>Govern the realm</strong></li>
+            </ul>
+            <p><strong>All stamped "REGENT AUTHORITY".</strong></p>
+            <p>The Regent is not King, but they hold all the power. This creates the central tension of succession.</p>
+            <p><strong>→ See <a href="regent.html" style="color: var(--accent);">The Regent</a> for complete details on Regent powers and limitations</strong></p>
+        </div>
+        
+        <div class="step-card">
+            <h4>Step 4: The Coronation Is the Transfer Point</h4>
+            <p>At coronation:</p>
+            <ul>
+                <li><strong>Whoever is crowned becomes King</strong> — Not before</li>
+                <li><strong>King powers transfer at that moment</strong> — Full sovereignty begins</li>
+                <li><strong>Regent authority dissolves instantly</strong> — Their temporary power ends</li>
+            </ul>
+            <p><strong>This makes the coronation the single most important event in the realm.</strong></p>
+            <p><strong>→ See <a href="coronation.html" style="color: var(--accent);">The Coronation Ceremony</a> for complete coronation mechanics</strong></p>
+        </div>
+        
+        <h2>Succession is not a rule — it's a test.</h2>
+        
+        <div class="quote-simple">
+            <strong>Heirs test legitimacy</strong><br>
+            <strong>Regents test restraint</strong><br>
+            <strong>Claimants test strength</strong>
+        </div>
+        
+        <h2>The Three-Way Dynamic: Heir vs Regent vs Claimant</h2>
+        
+        <h3>The Heir Presumptive</h3>
+        <div class="info-box">
+            <h3>Legitimacy Without Power</h3>
+            <p><strong>What they have:</strong></p>
+            <ul>
+                <li>Official claim to the throne</li>
+                <li>Appointed by previous King OR bloodline succession</li>
+                <li>Public recognition</li>
+                <li>Legal standing</li>
+            </ul>
+            <p><strong>What they lack:</strong></p>
+            <ul>
+                <li>King powers (cannot command guards, issue decrees)</li>
+                <li>Protection (vulnerable to assassination)</li>
+                <li>Certainty (coronation is not guaranteed)</li>
+            </ul>
+            <p><strong>Their goal:</strong> Survive until coronation</p>
+            <p><strong>→ Full details: <a href="heir.html" style="color: var(--accent);">Heir Presumptive</a></strong></p>
+        </div>
+        
+        <h3>The Regent</h3>
+        <div class="info-box">
+            <h3>Power Without Legitimacy</h3>
+            <p><strong>What they have:</strong></p>
+            <ul>
+                <li>All King powers (temporarily)</li>
+                <li>Command of guards</li>
+                <li>Ability to issue decrees</li>
+                <li>Control over the coronation process</li>
+            </ul>
+            <p><strong>What they lack:</strong></p>
+            <ul>
+                <li>The Crown itself</li>
+                <li>Permanent legitimacy</li>
+                <li>Long-term stability</li>
+            </ul>
+            <p><strong>Their temptation:</strong> Crown themselves instead of the Heir</p>
+            <p><strong>→ Full details: <a href="regent.html" style="color: var(--accent);">The Regent</a></strong></p>
+        </div>
+        
+        <h3>Claimants</h3>
+        <div class="info-box">
+            <h3>Competing Claims</h3>
+            <p><strong>What they have:</strong></p>
+            <ul>
+                <li>Alternative claim to the throne (bloodline, conquest, right)</li>
+                <li>Potential supporters</li>
+                <li>Ability to contest the succession</li>
+            </ul>
+            <p><strong>What they lack:</strong></p>
+            <ul>
+                <li>Official recognition (unlike the Heir)</li>
+                <li>Legal standing (their claim is disputed)</li>
+                <li>Power (unless they seize it)</li>
+            </ul>
+            <p><strong>Their goal:</strong> Disrupt the coronation and press their own claim</p>
+            <p><strong>→ Full details: <a href="claimant.html" style="color: var(--accent);">Claimants</a></strong></p>
+        </div>
+        
+        <h2>The Coronation Timer: Pressure Cooker</h2>
+        
+        <p>The moment the King dies and a Regent exists, a <strong>coronation window</strong> begins (typically 3-7 real days).</p>
+        
+        <div class="warning">
+            <strong>Everyone knows:</strong>
+            <ul>
+                <li>There will be a coronation</li>
+                <li>Someone will be crowned</li>
+                <li>Or blood will be spilled</li>
+            </ul>
+        </div>
+        
+        <h3>What Can Happen During the Window</h3>
+        
+        <table>
+            <tr>
+                <th>Actor</th>
+                <th>Possible Actions</th>
+            </tr>
+            <tr>
+                <td><strong>Heir</strong></td>
+                <td>Secure protection, build alliances, survive assassination attempts</td>
+            </tr>
+            <tr>
+                <td><strong>Regent</strong></td>
+                <td>Govern, delay coronation (once), advance it (risky), or crown themselves</td>
+            </tr>
+            <tr>
+                <td><strong>Claimants</strong></td>
+                <td>Press claims, gather support, challenge legitimacy, plot coups</td>
+            </tr>
+            <tr>
+                <td><strong>Marshal</strong></td>
+                <td>Choose sides, protect Heir or back Regent, remain neutral</td>
+            </tr>
+            <tr>
+                <td><strong>Nobles</strong></td>
+                <td>Support various factions, negotiate deals, position for power</td>
+            </tr>
+        </table>
+        
+        <h2>Why This Design Works</h2>
+        
+        <h3>It Preserves:</h3>
+        <ul>
+            <li><strong>Succession tension</strong> — Nothing is automatic</li>
+            <li><strong>Regent temptation</strong> — They hold all the cards</li>
+            <li><strong>Heir vulnerability</strong> — Claim without power is dangerous</li>
+            <li><strong>Public legitimacy gameplay</strong> — How people react matters</li>
+        </ul>
+        
+        <h3>It Creates Clean Drama:</h3>
+        <ul>
+            <li><strong>Until coronation, everything is provisional</strong> — No certainty</li>
+            <li><strong>Every delay is suspicious</strong> — What is the Regent waiting for?</li>
+            <li><strong>Every protection detail matters</strong> — The Heir can die</li>
+            <li><strong>Every decree can be challenged later</strong> — "REGENT AUTHORITY" is temporary</li>
+        </ul>
+        
+        <h3>It Avoids Edge-Case Confusion:</h3>
+        <ul>
+            <li><strong>No "King but not really King"</strong> — Clear states</li>
+            <li><strong>No dual authority paradox</strong> — One sovereign at a time</li>
+            <li><strong>No diluted stakes</strong> — Coronation is make-or-break</li>
+        </ul>
+        
+        <h2>Possible Outcomes</h2>
+        
+        <h3>Scenario 1: Peaceful Succession</h3>
+        <ol>
+            <li>King dies, Regent assumes power</li>
+            <li>Heir is protected during coronation window</li>
+            <li>Regent officiates coronation for Heir</li>
+            <li>Heir crowned, becomes King</li>
+            <li>Regent authority dissolves</li>
+            <li><strong>Stable transition</strong></li>
+        </ol>
+        
+        <h3>Scenario 2: Regent Usurpation</h3>
+        <ol>
+            <li>King dies, Regent assumes power</li>
+            <li>Regent delays coronation, builds support</li>
+            <li>Heir becomes vulnerable</li>
+            <li>Regent crowns themselves at coronation</li>
+            <li>Heir's claim invalidated (or Heir eliminated)</li>
+            <li><strong>Contested reign begins</strong></li>
+        </ol>
+        
+        <h3>Scenario 3: Claimant Uprising</h3>
+        <ol>
+            <li>King dies, Regent assumes power</li>
+            <li>Claimant gathers supporters</li>
+            <li>Challenges legitimacy of Heir</li>
+            <li>Forces way into coronation or disrupts it</li>
+            <li>Crowns themselves or backs different candidate</li>
+            <li><strong>Civil war potential</strong></li>
+        </ol>
+        
+        <h3>Scenario 4: Heir Assassination</h3>
+        <ol>
+            <li>King dies, Regent assumes power</li>
+            <li>Heir is assassinated during window</li>
+            <li>Succession crisis deepens</li>
+            <li>Regent must choose new heir or crown themselves</li>
+            <li>Claimants emerge</li>
+            <li><strong>Maximum chaos</strong></li>
+        </ol>
+        
+        <h2>Interregnum: No Regent Exists</h2>
+        
+        <div class="warning">
+            <strong>What if the King dies without appointing a Regent?</strong>
+            <p>The realm enters <strong>Interregnum</strong> — a true power vacuum.</p>
+        </div>
+        
+        <h3>During Interregnum:</h3>
+        <ul>
+            <li>No one has delegated King authority</li>
+            <li>Marshal or Magistrate may declare emergency Regent through court process</li>
+            <li>Coronation must happen immediately (no delay option)</li>
+            <li>Maximum chaos and opportunity for coups</li>
+            <li>Heir is most vulnerable</li>
+        </ul>
+        
+        <p><strong>This is why appointing a Regent is crucial for succession planning.</strong></p>
+        
+        <h2>Summary Table: Who Has What</h2>
+        
+        <table>
+            <tr>
+                <th>Role</th>
+                <th>King Powers</th>
+                <th>Claim/Legitimacy</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td><strong>King (alive)</strong></td>
+                <td>✅ Full</td>
+                <td>✅ The Crown</td>
+                <td>Until death/abdication</td>
+            </tr>
+            <tr>
+                <td><strong>Heir Presumptive</strong></td>
+                <td>❌ None</td>
+                <td>✅ Official claim</td>
+                <td>Until coronation or death</td>
+            </tr>
+            <tr>
+                <td><strong>Regent</strong></td>
+                <td>✅ Temporary full</td>
+                <td>⚠️ Borrowed only</td>
+                <td>Until coronation</td>
+            </tr>
+            <tr>
+                <td><strong>Claimant</strong></td>
+                <td>❌ None</td>
+                <td>⚠️ Contested</td>
+                <td>Until claim resolved</td>
+            </tr>
+            <tr>
+                <td><strong>King (crowned)</strong></td>
+                <td>✅ Full</td>
+                <td>✅ The Crown</td>
+                <td>Until death/abdication</td>
+            </tr>
+        </table>
+        
+        <h2>Related Pages</h2>
+        
+        <ul>
+            <li><strong><a href="coronation.html" style="color: var(--accent);">The Coronation Ceremony</a></strong> — Detailed mechanics of how kings are crowned</li>
+            <li><strong><a href="heir.html" style="color: var(--accent);">Heir Presumptive</a></strong> — Complete Heir role mechanics</li>
+            <li><strong><a href="regent.html" style="color: var(--accent);">The Regent</a></strong> — Complete Regent role mechanics</li>
+            <li><strong><a href="claimant.html" style="color: var(--accent);">Claimants</a></strong> — Competing claims and how they work</li>
+            <li><strong><a href="becoming-king.html" style="color: var(--accent);">Becoming King</a></strong> — All paths to the throne</li>
+            <li><strong><a href="bloodlines.html" style="color: var(--accent);">Bloodlines</a></strong> — Hereditary succession and bloodline claims</li>
+        </ul>
+        
+        <div class="quote-simple" style="margin-top: 2rem;">
+            <strong>Remember:</strong> The Crown is not inherited. It is claimed, contested, and won.
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="roles.html" style="color: var(--gold);">← Back to Roles</a> | <a href="becoming-king.html" style="color: var(--gold);">Becoming King →</a></p>
+    </footer>
+</body>
+</html>

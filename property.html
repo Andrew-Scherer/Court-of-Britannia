@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Property & Auctions - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        .method-card { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--gold); }
+        .method-card h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-light); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .info-box h5 { color: var(--gold); margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .success { background: rgba(72, 187, 120, 0.1); border: 1px solid #48bb78; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .success strong { color: #48bb78; }
+        .limits-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border: 2px solid var(--accent); }
+        .limits-box h4 { color: var(--accent); margin-bottom: 1rem; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+        .auction-flow { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        .auction-flow ol { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🏛️ Property & Auctions</h1>
+        <p>Land as Scarce Political Resource</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Core Philosophy</h2>
+        
+        <div class="quote">
+            Land is not a reward for logging in. It is a political asset with weight, risk, and consequence.
+        </div>
+        
+        <p><strong>The Fundamental Rule:</strong></p>
+        <p>More property = more exposure. No one accumulates land without accumulating risk.</p>
+        
+        <h2>Why Stewards Cannot Assign at Whim</h2>
+        
+        <p>If Stewards could freely assign properties:</p>
+        <ul>
+            <li>🔴 Favoritism accusations explode</li>
+            <li>🔴 Politics collapses into "who knows the Steward"</li>
+            <li>🔴 Land stops feeling earned or risky</li>
+            <li>🔴 The system loses legitimacy instantly</li>
+        </ul>
+        
+        <div class="success">
+            <strong>Design Victory:</strong> Stewards never choose winners. They only execute predefined allocation methods.
+        </div>
+        
+        <p>This keeps Stewards:</p>
+        <ul>
+            <li>✅ Socially important (everyone needs them)</li>
+            <li>✅ Politically pressured (everyone wants influence)</li>
+            <li>✅ Mechanically constrained (cannot play favorites)</li>
+        </ul>
+        
+        <h2>Property Assignment Methods</h2>
+        
+        <p><strong>Every property has exactly one assignment method.</strong> This is metadata on the building. Stewards execute the method; they do not choose it.</p>
+        
+        <div class="method-card">
+            <h4>Method 1: Royal Grant</h4>
+            <p><strong>Used for:</strong></p>
+            <ul>
+                <li>Bloodline manors</li>
+                <li>Strategic buildings</li>
+                <li>Political rewards</li>
+                <li>Punishments (revocation)</li>
+            </ul>
+            <p><strong>Who decides:</strong> King or Regent</p>
+            <p><strong>Steward does:</strong></p>
+            <ol>
+                <li>Records the grant in Land Ledger</li>
+                <li>Assigns property role to designated recipient</li>
+                <li>Announces publicly</li>
+            </ol>
+            <p><strong>Why this exists:</strong> This is how land becomes leverage. Kings need rewards besides gold and offices beyond Marshal.</p>
+            
+            <div class="info-box">
+                <h5>💡 Political Impact</h5>
+                <p>Royal grants create:</p>
+                <ul>
+                    <li>Patronage networks</li>
+                    <li>Visible favoritism (intentional pressure)</li>
+                    <li>Revocation leverage (take it back to humiliate)</li>
+                    <li>Bloodline anchors (land = legitimacy)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="method-card">
+            <h4>Method 2: Auction (Public Competition) ✅</h4>
+            <p><strong>Used for:</strong></p>
+            <ul>
+                <li>Small cottages</li>
+                <li>Shops</li>
+                <li>Farms</li>
+                <li>"Upward mobility" properties</li>
+            </ul>
+            <p><strong>Who decides:</strong> Rules decide (highest bid)</p>
+            <p><strong>Steward does:</strong></p>
+            <ol>
+                <li>Announces auction publicly</li>
+                <li>Collects bids (or system collects)</li>
+                <li>Declares winner per rules (no discretion)</li>
+                <li>Assigns property role</li>
+            </ol>
+            <p><strong>Why this exists:</strong> Gives commoners a path to land that isn't royal favor. Creates non-violent competition. Drains accumulated wealth/influence.</p>
+            
+            <div class="warning">
+                <strong>Important:</strong> The Steward does NOT pick the winner, negotiate bids, or interpret offers. They are a clerk, not a patron.
+            </div>
+        </div>
+        
+        <div class="method-card">
+            <h4>Method 3: Internal Allocation</h4>
+            <p><strong>Used for:</strong></p>
+            <ul>
+                <li>Bloodline properties</li>
+                <li>Guild halls</li>
+                <li>House residences</li>
+                <li>Office buildings (guard barracks, court, etc.)</li>
+            </ul>
+            <p><strong>Who decides:</strong> The unit itself</p>
+            <p><strong>Steward does:</strong></p>
+            <ol>
+                <li>Assigns the property role to the unit</li>
+                <li>Does not care who the Primary is</li>
+                <li>Records the allocation</li>
+            </ol>
+            <p><strong>Why this exists:</strong> Units must manage themselves. The city does not meddle in bloodline succession or guild leadership unless eviction/exile occurs.</p>
+            
+            <div class="success">
+                <strong>No interference. No favoritism.</strong> Internal politics stay internal until they become crimes or scandals.
+            </div>
+        </div>
+        
+        <div class="method-card">
+            <h4>Method 4: Automatic Reversion</h4>
+            <p><strong>Used for:</strong></p>
+            <ul>
+                <li>Abandoned properties (X days vacant)</li>
+                <li>Dead individual role-holders (with no heir/successor)</li>
+                <li>Failed auctions</li>
+            </ul>
+            <p><strong>Who decides:</strong> Time and system rules</p>
+            <p><strong>Steward does:</strong></p>
+            <ol>
+                <li>Nothing until the property reverts to OPEN</li>
+                <li>Then announces availability for auction or grant</li>
+            </ol>
+            <p><strong>Why this exists:</strong> Keeps the map clean. Prevents dead storage. Forces land back into circulation.</p>
+        </div>
+        
+        <h2>Multiple Property Ownership</h2>
+        
+        <p>The critical design question: <strong>Should players and units be allowed to hold more than one property?</strong></p>
+        
+        <p><strong>Answer: Yes — but with hard constraints.</strong></p>
+        
+        <div class="limits-box">
+            <h4>⚠️ Individual Player Limits (Recommended)</h4>
+            <table>
+                <tr>
+                    <th>Property Type</th>
+                    <th>Max Holdings</th>
+                </tr>
+                <tr>
+                    <td><strong>Primary Residence</strong> (cottage, townhouse)</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><strong>Secondary Property</strong> (shop, farm, workspace)</td>
+                    <td>0–1</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Maximum</strong></td>
+                    <td>2</td>
+                </tr>
+            </table>
+            
+            <p><strong>Why these limits:</strong></p>
+            <ul>
+                <li>Prevents hoarding</li>
+                <li>Preserves upward mobility for others</li>
+                <li>Keeps cottages circulating</li>
+                <li>Still allows personal ambition</li>
+            </ul>
+            
+            <p><strong>Enforcement:</strong> Simple. Auction UI refuses bids if player already holds max. Steward assignment checks the same rule. No judgment calls required.</p>
+        </div>
+        
+        <div class="limits-box">
+            <h4>🏰 Unit Limits (Bloodlines, Guilds, Houses)</h4>
+            <p>Units are political entities; they <em>should</em> sprawl — but visibly.</p>
+            
+            <table>
+                <tr>
+                    <th>Unit Type</th>
+                    <th>Primary</th>
+                    <th>Auxiliary</th>
+                </tr>
+                <tr>
+                    <td><strong>Bloodline</strong></td>
+                    <td>1 Manor</td>
+                    <td>0–2 (shop, warehouse, safehouse)</td>
+                </tr>
+                <tr>
+                    <td><strong>Guild</strong></td>
+                    <td>1 Hall</td>
+                    <td>0–1 (worksite, storage)</td>
+                </tr>
+                <tr>
+                    <td><strong>House (political faction)</strong></td>
+                    <td>1 Residence</td>
+                    <td>0–2 (meeting hall, safehouse)</td>
+                </tr>
+                <tr>
+                    <td><strong>Office</strong></td>
+                    <td>As defined by role</td>
+                    <td>Barracks, court, archive, jail</td>
+                </tr>
+            </table>
+            
+            <p><strong>Why asymmetric limits:</strong></p>
+            <ul>
+                <li>Power becomes visible (everyone knows who holds what)</li>
+                <li>Loss becomes painful (evict a bloodline = lose multiple sites)</li>
+                <li>Eviction becomes meaningful (strips influence, not just one door)</li>
+                <li>Ambition has room (but not infinite sprawl)</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <strong>Critical Rule:</strong> Each additional property increases exposure to eviction and loss. More land = more targets. This is intentional.
+        </div>
+        
+        <h2>How Auctions Work (Keep Them Simple)</h2>
+        
+        <p>You do <strong>not</strong> want a deep economy sim. Auctions must be straightforward or they'll consume admin time and create endless disputes.</p>
+        
+        <div class="auction-flow">
+            <h3>Simple Auction Model (Recommended)</h3>
+            <ol>
+                <li><strong>Auction Duration:</strong> Fixed window (e.g., 48 hours real time)</li>
+                <li><strong>Bids Accepted:</strong>
+                    <ul>
+                        <li>Gold (simple)</li>
+                        <li>OR Prestige tokens (abstract currency)</li>
+                        <li>OR Favor markers (political capital)</li>
+                    </ul>
+                </li>
+                <li><strong>Winner:</strong> Highest bid wins</li>
+                <li><strong>Tiebreaker:</strong> Earliest bid wins</li>
+                <li><strong>No Negotiation:</strong> No extensions. No counter-offers. No drama inside the system.</li>
+            </ol>
+            
+            <p><strong>All drama happens outside the auction.</strong></p>
+            <ul>
+                <li>Players form coalitions to pool bids</li>
+                <li>Bloodlines pressure rivals to withdraw</li>
+                <li>Kings quietly fund favorites</li>
+                <li>Minax sabotages bidders</li>
+            </ul>
+        </div>
+        
+        <h3>Auction Announcement Example</h3>
+        <div class="info-box">
+            <p><strong>AUCTION NOTICE</strong></p>
+            <p>Property: <strong>East Market Shop #3</strong><br>
+            Duration: <strong>48 hours</strong> (ends Saturday 8pm)<br>
+            Starting Bid: <strong>500 gold</strong><br>
+            Current High Bid: <strong>—</strong><br>
+            Bidder Restrictions: <strong>Max 2 properties per individual</strong></p>
+            <p><em>Contact Land Steward to submit bids. All bids are public and logged.</em></p>
+        </div>
+        
+        <h3>Why Public Bids Matter</h3>
+        <p>All bids are announced publicly (or at minimum, visible to other bidders). This creates:</p>
+        <ul>
+            <li>Pressure to outbid</li>
+            <li>Social consequence (everyone knows who wants what)</li>
+            <li>Legitimacy (no secret deals)</li>
+            <li>RP fuel (rivalries emerge naturally)</li>
+        </ul>
+        
+        <h2>Eviction + Auctions = Political Engine</h2>
+        
+        <p>This is where property ownership, auctions, and eviction combine into a coherent political system.</p>
+        
+        <h3>Scenario: Bloodline Eviction → Auction</h3>
+        <div class="auction-flow">
+            <ol>
+                <li>House Hawkwright is evicted for harboring an exile</li>
+                <li>Their manor returns to the Crown</li>
+                <li>King decides:
+                    <ul>
+                        <li><strong>Option A:</strong> Re-grant it politically to House Rowan (rewards loyalty)</li>
+                        <li><strong>Option B:</strong> Auction it publicly (humiliates Hawkwright, enriches treasury, creates opportunity for commoners)</li>
+                    </ul>
+                </li>
+                <li>If auctioned:
+                    <ul>
+                        <li>Hawkwright cannot bid (exiled/disgraced)</li>
+                        <li>Rivals scramble to claim their ancestral seat</li>
+                        <li>Commoner guilds pool resources</li>
+                        <li>Auction becomes public theater</li>
+                    </ul>
+                </li>
+                <li>Winner takes the manor — and all the symbolic weight</li>
+            </ol>
+        </div>
+        
+        <p><strong>This is devastating without killing anyone.</strong></p>
+        
+        <p>It creates:</p>
+        <ul>
+            <li>Non-violent punishment (eviction)</li>
+            <li>Social mobility (auction)</li>
+            <li>Wealth drain (bids remove currency)</li>
+            <li>Narrative consequence (who lives where matters)</li>
+        </ul>
+        
+        <h2>Integration with Other Systems</h2>
+        
+        <h3>Permadeath Integration</h3>
+        <ul>
+            <li>Individual dies → property SEALED → grace period (72h) → reverts to OPEN if no successor</li>
+            <li>If property method = Auction → goes back to auction pool</li>
+            <li>If property method = Royal Grant → King decides fate</li>
+        </ul>
+        
+        <h3>Bloodline Integration</h3>
+        <ul>
+            <li>Bloodline properties use Internal Allocation method</li>
+            <li>Primary holder changes internally; Steward only cares that the bloodline still exists</li>
+            <li>If bloodline goes extinct → property reverts to Crown → King chooses Royal Grant or Auction</li>
+        </ul>
+        
+        <h3>Exile Integration</h3>
+        <ul>
+            <li>Exiled individuals cannot bid in auctions</li>
+            <li>Exiled individuals cannot receive Royal Grants (unless King explicitly pardons)</li>
+            <li>Units harboring exiles risk eviction (which strips all properties)</li>
+        </ul>
+        
+        <h3>Role System Integration</h3>
+        <ul>
+            <li>Property ownership is always role-bound</li>
+            <li>Individuals enter roles ("Farmer #3", "Shopkeeper - South Market")</li>
+            <li>Units hold collective roles ("Rowan Manor", "Guard Barracks")</li>
+            <li>Access auto-updates when roles change</li>
+        </ul>
+        
+        <h2>What This System Produces in Play</h2>
+        
+        <table>
+            <tr>
+                <th>Design Goal</th>
+                <th>How Property System Achieves It</th>
+            </tr>
+            <tr>
+                <td>Stewards stay neutral</td>
+                <td>They execute methods, not choose winners</td>
+            </tr>
+            <tr>
+                <td>Land circulates</td>
+                <td>Limits prevent hoarding; death reverts to OPEN</td>
+            </tr>
+            <tr>
+                <td>Commoners can rise</td>
+                <td>Auctions provide merit-based path</td>
+            </tr>
+            <tr>
+                <td>Kings have leverage</td>
+                <td>Royal grants = rewards; eviction = punishment</td>
+            </tr>
+            <tr>
+                <td>Bloodlines can fall</td>
+                <td>Eviction strips land; extinction orphans manors</td>
+            </tr>
+            <tr>
+                <td>Conflict stays political</td>
+                <td>Auctions compete non-violently</td>
+            </tr>
+            <tr>
+                <td>Wealth drains</td>
+                <td>Auction bids remove currency from system</td>
+            </tr>
+        </table>
+        
+        <h2>Common Questions</h2>
+        
+        <h3>Q: Can a commoner outbid a bloodline?</h3>
+        <p><strong>A:</strong> Yes. Auctions are merit-based (highest bid wins). If a wealthy merchant outbids a bloodline, the bloodline loses. This creates excellent drama.</p>
+        
+        <h3>Q: Can the King rig an auction?</h3>
+        <p><strong>A:</strong> Indirectly. The King can fund a preferred bidder secretly, but cannot override the auction result directly. If discovered, this creates scandal. Rigging is possible but risky.</p>
+        
+        <h3>Q: What if no one bids in an auction?</h3>
+        <p><strong>A:</strong> Failed auction → property reverts to OPEN → King may convert to Royal Grant or re-auction later. No one is forced to take unwanted property.</p>
+        
+        <h3>Q: Can bloodlines lose their manor permanently?</h3>
+        <p><strong>A:</strong> Yes. If evicted and the King auctions it, and the bloodline cannot/does not bid, they become homeless. A bloodline without land is weakened but still exists. Homelessness is a valid state.</p>
+        
+        <h3>Q: How do I know what properties are available?</h3>
+        <p><strong>A:</strong> Ask a Steward. They maintain public knowledge of OPEN properties, pending auctions, and upcoming grants. Alternatively, a Public Property Board could list this (bulletin board or gump).</p>
+        
+        <h3>Q: Can units share a single property?</h3>
+        <p><strong>A:</strong> No. Each property is assigned to exactly one unit or individual role. However, units can have multiple residents/members who share access. Sharing happens inside the unit, not across units.</p>
+        
+        <h3>Q: What happens to items in an auctioned property?</h3>
+        <p><strong>A:</strong> Per Model 1 (if it's in the house, it's at risk), eviction gives 72 hours to remove belongings. After that, items left behind transfer with the property or are considered abandoned. Auction winners inherit an empty building unless the previous occupant left things behind.</p>
+        
+        <h2>Final Simplified Rules</h2>
+        
+        <div class="success">
+            <p><strong>Use this verbatim:</strong></p>
+            <p><em>Properties are assigned by method, not discretion.<br>
+            Royal grants are decided by the Crown.<br>
+            Bloodline and guild properties are allocated internally.<br>
+            Private properties are won by auction.<br>
+            Individuals and units may hold limited multiple properties, but each additional holding increases exposure to eviction and loss.</em></p>
+        </div>
+        
+        <h2>Technical: Property Metadata</h2>
+        
+        <p>Each property in the system needs these fields:</p>
+        
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><code>PropertyId</code></td>
+                <td>string</td>
+                <td>Unique identifier (e.g., "BRI-017")</td>
+            </tr>
+            <tr>
+                <td><code>AssignmentMethod</code></td>
+                <td>enum</td>
+                <td>RoyalGrant, Auction, InternalAllocation, AutoReversion</td>
+            </tr>
+            <tr>
+                <td><code>PropertyType</code></td>
+                <td>enum</td>
+                <td>Manor, Cottage, Shop, Farm, Hall, Office</td>
+            </tr>
+            <tr>
+                <td><code>State</code></td>
+                <td>enum</td>
+                <td>OPEN, HELD, SEALED, EVICTING</td>
+            </tr>
+            <tr>
+                <td><code>RoleHolder</code></td>
+                <td>Mobile/Unit</td>
+                <td>Current occupant (individual or unit)</td>
+            </tr>
+            <tr>
+                <td><code>MaxOccupancy</code></td>
+                <td>int</td>
+                <td>How many residents (if unit property)</td>
+            </tr>
+            <tr>
+                <td><code>AuctionData</code></td>
+                <td>object</td>
+                <td>If method=Auction: start time, end time, current high bid, bidder</td>
+            </tr>
+        </table>
+        
+        <p>This metadata drives all assignment logic without requiring Steward judgment calls.</p>
+        
+        <h2>Succession Mechanics & Role Transfer</h2>
+        
+        <p>When a role changes hands (death, abdication, election), property ownership must transfer cleanly without manual intervention.</p>
+        
+        <h3>The Transfer Process</h3>
+        
+        <div class="method-card">
+            <h4>Automatic Succession Flow</h4>
+            <ol>
+                <li><strong>Trigger Event:</strong> Role assignment changes (death, succession, election)</li>
+                <li><strong>System Action:</strong> <code>TransferEstateToRoleHolder(roleId, newCharacter)</code></li>
+                <li><strong>House Update:</strong>
+                    <ul>
+                        <li>Set house.Owner = newCharacter</li>
+                        <li>Clear personal co-owners (clean slate)</li>
+                        <li>Restore role-based staff from template</li>
+                        <li>Preserve institutional bans</li>
+                        <li>Update house sign to show role name</li>
+                    </ul>
+                </li>
+                <li><strong>Logging:</strong> Record transfer in Land Ledger</li>
+                <li><strong>Announcement:</strong> Public notification (optional)</li>
+            </ol>
+        </div>
+        
+        <h3>What Transfers vs. What Persists</h3>
+        
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>On Succession</th>
+                <th>Reasoning</th>
+            </tr>
+            <tr>
+                <td><strong>House Ownership</strong></td>
+                <td>Transfers to new role holder</td>
+                <td>Keys follow the role, not the person</td>
+            </tr>
+            <tr>
+                <td><strong>Personal Co-owners</strong></td>
+                <td>Cleared/wiped</td>
+                <td>Clean succession, no inherited personal friends</td>
+            </tr>
+            <tr>
+                <td><strong>Role-based Staff</strong></td>
+                <td>Persists (re-added from template)</td>
+                <td>Guards, stewards are institutional, not personal</td>
+            </tr>
+            <tr>
+                <td><strong>Institutional Bans</strong></td>
+                <td>Persist</td>
+                <td>Exiles remain exiled regardless of who holds role</td>
+            </tr>
+            <tr>
+                <td><strong>Personal Items</strong></td>
+                <td>Depends on design choice</td>
+                <td>See edge cases below</td>
+            </tr>
+            <tr>
+                <td><strong>Vendors</strong></td>
+                <td>Persist if institutional</td>
+                <td>Court vendors remain; personal shops may pack up</td>
+            </tr>
+            <tr>
+                <td><strong>Sign Name</strong></td>
+                <td>Shows role, not person</td>
+                <td>"King of Britain's Palace" not "Bob's House"</td>
+            </tr>
+        </table>
+        
+        <h2>Critical Edge Cases</h2>
+        
+        <h3>Case 1: Role-Holder Dies Inside Estate</h3>
+        <div class="warning">
+            <strong>Problem:</strong> If the King dies in the throne room, and ownership immediately transfers, there's a brief lockout window.
+        </div>
+        <p><strong>Solution: Interregnum State</strong></p>
+        <ul>
+            <li>On death of role-holder: Estate enters INTERREGNUM state</li>
+            <li>During interregnum:
+                <ul>
+                    <li>Doors remain unlocked OR designated steward NPC can open</li>
+                    <li>No lockdowns can be added</li>
+                    <li>No evictions can occur</li>
+                </ul>
+            </li>
+            <li>On new role assignment: Ownership locks back down</li>
+            <li>Duration: Until successor is assigned (max 72 hours)</li>
+        </ul>
+        
+        <h3>Case 2: Personal Items Left Behind</h3>
+        <p><strong>Design Options:</strong></p>
+        
+        <div class="info-box">
+            <h5>Option A: Role Inventory Persists (Recommended)</h5>
+            <p>All items in role-held estates are institutional property. When King dies, successor inherits everything. Simple, clear, RP-friendly.</p>
+            <p><strong>Pros:</strong> Clean, no edge cases, encourages use of personal storage elsewhere</p>
+            <p><strong>Cons:</strong> Players may feel item loss is harsh</p>
+        </div>
+        
+        <div class="info-box">
+            <h5>Option B: Personal Container Auto-Pack</h5>
+            <p>System identifies "personal" containers (marked somehow) and auto-packs them to a neutral vault or executor.</p>
+            <p><strong>Pros:</strong> Players keep personal items</p>
+            <p><strong>Cons:</strong> Complex, requires container tagging system</p>
+        </div>
+        
+        <div class="info-box">
+            <h5>Option C: Grace Period Retrieval</h5>
+            <p>72-hour window where old character can enter to remove items before lockdown.</p>
+            <p><strong>Pros:</strong> Fair warning system</p>
+            <p><strong>Cons:</strong> Requires ghost/spirit access, creates awkward RP</p>
+        </div>
+        
+        <h3>Case 3: Role-Swap Exploitation</h3>
+        <div class="warning">
+            <strong>Exploit Risk:</strong> Player rapidly swaps into role → gains house access → steals items → swaps out
+        </div>
+        <p><strong>Mitigations:</strong></p>
+        <ul>
+            <li><strong>Witness Requirement:</strong> Role assumption requires another player in official capacity to witness</li>
+            <li><strong>Location Requirement:</strong> Must occur at designated Seat Hall (throne room, court)</li>
+            <li><strong>Cooldown Timer:</strong> 10-30 minute cooldown before swapping roles again</li>
+            <li><strong>Log Everything:</strong> All role assumptions logged with timestamp and witness</li>
+        </ul>
+        
+        <h3>Case 4: Multi-Property Collapse</h3>
+        <p>When a bloodline holding 3 properties (manor + 2 auxiliaries) is evicted:</p>
+        <ul>
+            <li><strong>Eviction applies to ALL properties simultaneously</strong></li>
+            <li>72-hour notice applies to all</li>
+            <li>At expiry, all 3 revert to OPEN status</li>
+            <li>Can be re-granted or auctioned separately</li>
+        </ul>
+        <p><strong>Impact:</strong> Total collapse is intentionally devastating. Makes eviction a serious political weapon.</p>
+        
+        <h3>Case 5: Auction Winner Already at Max</h3>
+        <div class="warning">
+            <strong>Scenario:</strong> Player bids in auction but already holds max properties
+        </div>
+        <p><strong>Solution:</strong></p>
+        <ul>
+            <li>Auction UI checks property count BEFORE accepting bid</li>
+            <li>If at max: "You must relinquish a property before bidding"</li>
+            <li>Alternative: Allow "conditional bid" — player designates which property to forfeit if they win</li>
+        </ul>
+        
+        <h2>ServUO Implementation Pseudocode</h2>
+        
+        <div class="method-card">
+            <h4>TransferEstateToRoleHolder() Function</h4>
+            <pre style="background: var(--bg-dark); padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>public static void TransferEstateToRoleHolder(Role role, Mobile newHolder)
+{
+    BaseHouse house = FindHouseByRole(role.RoleId);
+    
+    if (house == null || newHolder == null)
+        return;
+    
+    // 1) Transfer ownership
+    house.Owner = newHolder;
+    
+    // 2) Clean personal access
+    house.CoOwners.Clear();
+    house.Friends.Clear();
+    
+    // 3) Restore institutional staff
+    foreach (var staffRole in role.GetStaffRoles())
+    {
+        Mobile staffMember = staffRole.CurrentHolder;
+        if (staffMember != null)
+            house.Friends.Add(staffMember);
+    }
+    
+    // 4) Preserve institutional bans (do nothing - they persist)
+    
+    // 5) Update sign
+    if (house.Sign != null)
+        house.Sign.SetName($"{role.DisplayName}");
+    
+    // 6) Log the transfer
+    LandLedger.LogTransfer(house, newHolder, role, "Succession");
+    
+    // 7) Optional: Public announcement
+    Announce($"{role.DisplayName} now held by {newHolder.Name}");
+}</code></pre>
+        </div>
+        
+        <h2>Integration: Succession + Auctions + Eviction</h2>
+        
+        <h3>Complete Lifecycle Example</h3>
+        
+        <div class="auction-flow">
+            <h4>Scenario: Bloodline Rise & Fall</h4>
+            <ol>
+                <li><strong>Initial Grant:</strong> King grants House Rowan a manor via Royal Grant
+                    <ul>
+                        <li>Steward assigns Manor → Rowan Bloodline role</li>
+                        <li>Rowan Primary gains house ownership</li>
+                    </ul>
+                </li>
+                <li><strong>Growth:</strong> Rowan wins auction for warehouse (auxiliary property #1)
+                    <ul>
+                        <li>System checks: Rowan has 1 manor, can hold 2 more</li>
+                        <li>Auction succeeds, warehouse assigned</li>
+                    </ul>
+                </li>
+                <li><strong>Internal Succession:</strong> Rowan Primary dies (permadeath)
+                    <ul>
+                        <li>Bloodline selects new Primary internally</li>
+                        <li>Both properties transfer to new Primary automatically</li>
+                        <li>Steward is NOT involved</li>
+                    </ul>
+                </li>
+                <li><strong>Crime & Eviction:</strong> Rowan harbors exile, King orders eviction
+                    <ul>
+                        <li>72-hour notice posted on BOTH properties</li>
+                        <li>Rowan has time to remove items</li>
+                        <li>At expiry: both properties revert to OPEN</li>
+                    </ul>
+                </li>
+                <li><strong>Redistribution:</strong> King decides:
+                    <ul>
+                        <li>Manor → Royal Grant to House Hawkwright (reward loyalty)</li>
+                        <li>Warehouse → Public auction (commoner opportunity)</li>
+                    </ul>
+                </li>
+                <li><strong>Auction Drama:</strong> Rowan attempts to bid from exile
+                    <ul>
+                        <li>System blocks: "Exiled individuals cannot bid"</li>
+                        <li>Rival merchant wins warehouse instead</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <p><strong>Result:</strong> Complete property lifecycle without staff intervention. System enforces rules; politics provides drama.</p>
+        
+        <h2>Castle-Specific Succession</h2>
+        
+        <p>For complex buildings like Britain Castle with multiple zones and apartments:</p>
+        
+        <h3>What Changes When King Dies</h3>
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Behavior</th>
+            </tr>
+            <tr>
+                <td>Royal Suite access</td>
+                <td>Transfers to new King</td>
+            </tr>
+            <tr>
+                <td>Crown administrative rights</td>
+                <td>Transfers to new King</td>
+            </tr>
+            <tr>
+                <td>Chancellor's room</td>
+                <td>NO CHANGE (separate role)</td>
+            </tr>
+            <tr>
+                <td>Guard barracks</td>
+                <td>NO CHANGE (group-owned)</td>
+            </tr>
+            <tr>
+                <td>Noble apartments</td>
+                <td>NO CHANGE (separate roles)</td>
+            </tr>
+            <tr>
+                <td>Public zones</td>
+                <td>NO CHANGE (always accessible)</td>
+            </tr>
+        </table>
+        
+        <div class="success">
+            <strong>Design Win:</strong> When the King dies, only King-specific access changes. The castle doesn't collapse into chaos.
+        </div>
+        
+        <h2>Staff Access Groups (Prevents Re-Adding Everyone)</h2>
+        
+        <p>Define access by role groups, not individual names:</p>
+        
+        <table>
+            <tr>
+                <th>Access Group</th>
+                <th>Members</th>
+                <th>Access Granted</th>
+            </tr>
+            <tr>
+                <td><strong>RoyalFamily</strong></td>
+                <td>King, Queen, Heirs</td>
+                <td>Private royal zones, administrative</td>
+            </tr>
+            <tr>
+                <td><strong>RoyalGuard</strong></td>
+                <td>Marshal, Guard Captain, Guards</td>
+                <td>Military zones, patrol routes</td>
+            </tr>
+            <tr>
+                <td><strong>CastleStaff</strong></td>
+                <td>Stewards, servants, cooks</td>
+                <td>Service areas, kitchens, storage</td>
+            </tr>
+            <tr>
+                <td><strong>Council</strong></td>
+                <td>Chancellor, Magistrates, advisors</td>
+                <td>Council chamber, archives</td>
+            </tr>
+            <tr>
+                <td><strong>Envoy</strong></td>
+                <td>Temporary diplomatic guests</td>
+                <td>Guest quarters (time-limited)</td>
+            </tr>
+        </table>
+        
+        <p><strong>When staff hired/fired:</strong></p>
+        <ul>
+            <li>Add/remove from group membership</li>
+            <li>No manual door edits needed</li>
+            <li>Access automatically updates based on group</li>
+        </ul>
+        
+        <h2>Final Mental Model</h2>
+        
+        <div class="quote">
+            Properties are not owned by people. They are held by roles. When someone dies, the role remains; only the occupant changes.
+        </div>
+        
+        <p><strong>This means:</strong></p>
+        <ul>
+            <li>Death doesn't break the housing system</li>
+            <li>Succession is automatic and logged</li>
+            <li>Access follows institutional logic, not personal favor</li>
+            <li>Eviction is devastating but clean</li>
+            <li>Auctions create legitimate upward mobility</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="housing.html" style="color: var(--gold);">← Housing & Land</a> | <a href="steward.html" style="color: var(--gold);">Land Steward →</a></p>
+    </footer>
+</body>
+</html>

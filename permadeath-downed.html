@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permadeath & Downed States - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .state-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid var(--accent); }
+        .state-box h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>☠️ Permadeath & Downed States</h1>
+        <p>When health reaches zero, you are not yet dead — but death is permanent when it comes</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Core Principles</h2>
+        
+        <p>This system rests on three non-negotiable foundations:</p>
+        
+        <ol>
+            <li><strong>Zero health means downed, not dead.</strong> When a character's health reaches zero, they collapse unconscious. They remain alive and vulnerable. Death does not happen automatically.</li>
+            <li><strong>Death requires a deliberate act.</strong> Killing a downed character is an explicit choice that takes time, is visible to others, and can be interrupted.</li>
+            <li><strong>Death is permanent and final.</strong> When a character dies, they are gone forever. No resurrection. No respawns. Roles vacate, property enters transition, and the character is chronicled as deceased.</li>
+        </ol>
+        
+        <p>These three rules create the critical distinction between subduing an enemy and executing them. Guards exist to delay death. Death exists to end stories that refuse to resolve.</p>
+        
+        <div class="quote">
+            Combat knocks you down. Execution is a separate choice.
+        </div>
+        
+        <h2>Permadeath (What Death Means Here)</h2>
+        
+        <p>When a character dies, they are gone forever. This single rule transforms every other system in the shard.</p>
+        
+        <h3>Immediate Effects</h3>
+        
+        <p>Upon death, the following occurs automatically:</p>
+        <ul>
+            <li>Character becomes permanently unplayable</li>
+            <li>All roles and offices are immediately vacated</li>
+            <li>Death is logged with timestamp, location, and circumstances</li>
+            <li>Corpse and possessions follow standard decay unless claimed</li>
+            <li>Character serial is archived and name is reserved</li>
+        </ul>
+        
+        <h3>Political and Social Ripple Effects</h3>
+        
+        <p>Death creates cascading consequences:</p>
+        
+        <div class="info-box">
+            <h3>If the deceased held an office:</h3>
+            <p>Succession crisis begins. Power vacuum opens. Rivals advance claims. Allies must renegotiate with successor or replacement.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>If the deceased was a bloodline seat:</h3>
+            <p>Mourning period activates. Seat locks for 48 hours. Claims depending on that bloodline weaken or vanish. Bloodline inherits grudges and alliances.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>If the deceased owned property:</h3>
+            <p>Grace period begins. Items inside remain at risk. Property becomes subject to reassignment after grace period expires.</p>
+        </div>
+        
+        <p>Chroniclers record deaths. Rumors explain or distort what happened. Reputation becomes history. Buildings remember occupancy. The world shifts when long-lived characters finally fall.</p>
+        
+        <h3>Why Permadeath Matters</h3>
+        
+        <p>Permadeath is not a difficulty setting. It is the mechanism that makes bloodlines matter, roles dangerous, and time valuable. Without permadeath, succession law would be cosmetic. With permadeath, each death alters the map of legitimate futures permanently.</p>
+        
+        <h2>The Downed State (0 HP)</h2>
+        
+        <p>When a character's health reaches zero, they enter the <strong>downed state</strong>. This is not death. It is unconsciousness and vulnerability.</p>
+        
+        <div class="state-box">
+            <h4>While Downed</h4>
+            <p>A downed character:</p>
+            <ul>
+                <li>Collapses unconscious and cannot move or act</li>
+                <li>Remains alive</li>
+                <li>Can see limited surroundings and hear nearby speech</li>
+                <li>Cannot speak, use items, or defend themselves</li>
+                <li>Is subject to the choices of those around them</li>
+            </ul>
+        </div>
+        
+        <h3>Natural Wake Timer</h3>
+        
+        <p>If not executed, captured, or stabilized, a downed character will eventually wake naturally:</p>
+        <ul>
+            <li>Default timer: 5-10 minutes of real time</li>
+            <li>Wake occurs with reduced health and injuries</li>
+            <li>Timer can be extended by wounds or shortened by medical attention</li>
+            <li>If restrained, character may wake while still bound</li>
+        </ul>
+        
+        <p>This creates a window for action without forcing instant decisions.</p>
+        
+        <h2>What Others Can Do to a Downed Character</h2>
+        
+        <p>Those who encounter a downed character face a choice. The available actions determine whether the downed character lives, dies, or is taken into custody.</p>
+        
+        <h3>Execute</h3>
+        <p>Killing a downed character triggers permadeath. This action is deliberate, visible, and final. It is not instant.</p>
+        
+        <h3>Stabilize</h3>
+        <p>Prevents the downed character from bleeding out. Keeps them unconscious but alive. Used to preserve life while determining next steps.</p>
+        
+        <h3>Capture</h3>
+        <p>Applies restraints to the downed character. Once restrained, they can be moved to a jail or holding location. Guards use this as the default action.</p>
+        
+        <h3>Revive</h3>
+        <p>Returns the downed character to consciousness with reduced health. Typically used by healers or allies to prevent capture or death.</p>
+        
+        <h3>Leave</h3>
+        <p>Walk away. The downed character's natural wake timer continues. They may wake injured and vulnerable, or be found by others.</p>
+        
+        <p>These options create standoffs, rescues, negotiations, and moral choices rather than instant outcomes.</p>
+        
+        <h2>Execution (How Permadeath Happens)</h2>
+        
+        <p>Execution is the act that transforms the downed state into permanent death. It is never instant or silent.</p>
+        
+        <h3>Characteristics of Execution</h3>
+        
+        <ul>
+            <li><strong>Takes time:</strong> 2-5 seconds to complete</li>
+            <li><strong>Visible:</strong> Nearby characters can observe the act</li>
+            <li><strong>Interruptible:</strong> Damage or intervention can halt execution mid-action</li>
+            <li><strong>Deliberate:</strong> Cannot happen accidentally or through system automation</li>
+        </ul>
+        
+        <p>This window of time allows for counterplay. Guards can interrupt. Allies can body-block. Healers can stabilize. Even assassinations have counterplay built into their structure.</p>
+        
+        <div class="warning">
+            <strong>Fundamental Rule:</strong> If death is instant or silent, the system is broken. Permadeath must always follow from a visible, deliberate choice.
+        </div>
+        
+        <h2>Capture, Restraint, and Transport (Non-Lethal Enforcement)</h2>
+        
+        <p>Most enforcement on this shard is non-lethal. Guards exist to preserve order, not to erase characters. Capture is the mechanism that allows this.</p>
+        
+        <h3>How Capture Works</h3>
+        
+        <ol>
+            <li>Restraints are applied to a downed character</li>
+            <li>The restrained character becomes attached to the captor</li>
+            <li>The captor can move the restrained character to a jail or holding area</li>
+            <li>Movement is slowed while transporting a prisoner</li>
+            <li>The action is visible to witnesses</li>
+        </ol>
+        
+        <h3>Consciousness During Capture</h3>
+        
+        <p>A captured character typically remains unconscious during initial transport. After approximately 30 minutes of being restrained without delivery to jail, the prisoner regains consciousness but remains bound. This prevents indefinite holding without accountability.</p>
+        
+        <h3>Why Capture Matters</h3>
+        
+        <p>Capture allows for:</p>
+        <ul>
+            <li>Interrogation and information gathering</li>
+            <li>Public trials and accountability</li>
+            <li>Ransom negotiations and prisoner exchanges</li>
+            <li>Political leverage without permanent loss</li>
+            <li>Stories that continue beyond combat</li>
+        </ul>
+        
+        <p>Guards default to capture. This keeps stories alive and forces public processes rather than silent erasure.</p>
+        
+        <h2>Escalation Ladder (Why Death Is Last, Not First)</h2>
+        
+        <p>Violence on this shard follows predictable stages. Death is the final rung, reached only when all other resolutions have failed.</p>
+        
+        <ol>
+            <li><strong>Social conflict:</strong> Accusations, rumors, public demands</li>
+            <li><strong>Guard intervention:</strong> Arrest, restraint, detention</li>
+            <li><strong>Public process:</strong> Trial, decree, formal judgment</li>
+            <li><strong>Resolution attempt:</strong> Release, exile, penance, fines</li>
+            <li><strong>Continued defiance:</strong> Refusal to comply, repeated offenses</li>
+            <li><strong>Permadeath:</strong> Execution by authority or assassination by enemies</li>
+        </ol>
+        
+        <p>This ladder exists to ensure that players have multiple opportunities to alter course before death becomes inevitable. Death should feel avoidable in retrospect, even when it was chosen deliberately in the moment.</p>
+        
+        <h3>When Guards Should Kill</h3>
+        
+        <p>Guards should default to arrest and capture. Lethal force is reserved for extreme circumstances:</p>
+        <ul>
+            <li>Open violence with refusal to submit to arrest</li>
+            <li>Threats of mass harm or terrorism</li>
+            <li>Disruption of coronation ceremonies</li>
+            <li>Armed rebellion or insurrection</li>
+            <li>Assassination attempts on protected figures</li>
+        </ul>
+        
+        <p>In these cases, the character has chosen finality through their actions. Even then, execution should follow the same visible, interruptible process.</p>
+        
+        <h2>Logout, Disconnects, and Persistence Rules</h2>
+        
+        <p>Logging out while downed does not remove consequences. The body persists in the world for a fixed window, during which all normal actions remain possible.</p>
+        
+        <h3>If Downed and Not Restrained</h3>
+        <p>Body remains in-world for 5 minutes. During this window:</p>
+        <ul>
+            <li>Can still be executed (permadeath applies upon next login)</li>
+            <li>Can still be captured (character spawns in jail upon next login)</li>
+            <li>Can still be stabilized (natural wake continues)</li>
+        </ul>
+        <p>If the window expires without action, character wakes at a clinic or safe location with injuries.</p>
+        
+        <h3>If Downed and Restrained</h3>
+        <p>Character is immediately processed into custody. Upon next login, they spawn in jail, still restrained. The captor retains custody even if offline.</p>
+        
+        <h3>If Downed and Being Carried</h3>
+        <p>Character is dropped at the carrier's location. Body remains downed for the standard persistence window. Carrier loses custody but can re-apply restraints if still present.</p>
+        
+        <div class="warning">
+            <strong>Anti-Abuse Rule:</strong> Logout cannot be used to escape consequences. Combat logging while downed does not prevent execution or capture. Executions that occur during the persistence window are final.
+        </div>
+        
+        <h3>Verified Disconnects</h3>
+        
+        <p>If a player disconnects involuntarily during combat and dies as a result, staff may investigate. If verified as a genuine disconnect (not rage-quit or tactical logout), the character may be restored <strong>once per account</strong>. Abuse of this mercy results in permanent ban, not further restoration.</p>
+        
+        <h2>Common Scenarios & Edge Cases</h2>
+        
+        <div class="warning">
+            <h4>Scenario: Guard Subdues a Criminal</h4>
+            <p><strong>Situation:</strong> A guard reduces a criminal to zero health and wants to arrest, not kill.</p>
+            <p><strong>Resolution:</strong> Guard captures the downed character, applies restraints, and transports them to jail. No permadeath occurs. Criminal wakes in custody and faces trial or detention.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Scenario: Assassin Kills a King</h4>
+            <p><strong>Situation:</strong> An assassin reduces a king to zero health and intends permanent death.</p>
+            <p><strong>Resolution:</strong> King enters downed state. Assassin begins execution. If guards or allies arrive within the execution window (2-5 seconds), they can interrupt and stabilize the king while capturing the assassin. If no intervention occurs, execution completes and the king dies permanently. This creates tension between speed and counterplay.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Scenario: Multiple Parties Contest a Downed Body</h4>
+            <p><strong>Situation:</strong> A character is downed. A guard wants to capture, an assassin wants to execute, and a healer wants to revive.</p>
+            <p><strong>Resolution:</strong> First action to complete wins. If the guard captures first, the character becomes restrained and execution requires freeing them. If the assassin executes first, permadeath occurs. If the healer revives first, the character returns to consciousness and the situation resets to active combat. This creates tense standoffs and heroic rescues.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Scenario: Prisoner Held Indefinitely</h4>
+            <p><strong>Situation:</strong> A guard captures someone but never delivers them to jail.</p>
+            <p><strong>Resolution:</strong> After 30 minutes of being restrained, the prisoner regains consciousness but remains bound. They can speak, negotiate, or attempt escape. This prevents indefinite unconscious holding and incentivizes prompt delivery to proper custody.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Scenario: Downed Player Logs Out Mid-Combat</h4>
+            <p><strong>Situation:</strong> A player is reduced to zero health and immediately disconnects.</p>
+            <p><strong>Resolution:</strong> Body persists for 5 minutes. Can still be executed, captured, or stabilized during this time. If killed during the window, permadeath applies when they reconnect. If captured, they wake in jail. If left alone, natural wake occurs. Combat logging provides no protection.</p>
+        </div>
+        
+        <h2>Fairness Tests & Design Intent</h2>
+        
+        <p>Players accept permadeath when it feels fair. Fairness does not mean easy or forgiving. It means the death was avoidable, followed clear escalation, and resulted from choices rather than systems.</p>
+        
+        <h3>What Makes Death Feel Fair</h3>
+        
+        <ul>
+            <li>It was avoidable with different choices</li>
+            <li>It followed escalation rather than appearing instantly</li>
+            <li>Warnings were clear and consistent</li>
+            <li>Alternatives existed and were accessible</li>
+            <li>The player had agency throughout</li>
+        </ul>
+        
+        <h3>What Makes Death Feel Unfair</h3>
+        
+        <ul>
+            <li>It was instant with no counterplay window</li>
+            <li>It occurred silently without witnesses</li>
+            <li>It felt procedural or automated</li>
+            <li>Guards behaved like turrets rather than agents of law</li>
+            <li>No opportunity for rescue, negotiation, or surrender existed</li>
+        </ul>
+        
+        <h3>The Balance Test</h3>
+        
+        <p>A properly balanced system allows a player to survive 2-3 serious mistakes before dying:</p>
+        <ul>
+            <li>If players can survive infinite mistakes → system is too forgiving</li>
+            <li>If players die from a single mistake → system is too lethal</li>
+            <li>If players survive 2-3 mistakes before consequences become final → balanced</li>
+        </ul>
+        
+        <h3>Guards vs. Assassins</h3>
+        
+        <p>The system creates distinct roles:</p>
+        
+        <p><strong>Guards</strong> default to capture. They excel at restraint, transport, and holding space. Lethal force is reserved for explicit authority or extreme threat scenarios. This preserves stories and creates accountability.</p>
+        
+        <p><strong>Assassins</strong> default to execution. They must commit to a visible kill and risk exposure, guard response, and witness testimony. Even successful assassinations have counterplay windows built in.</p>
+        
+        <p>This asymmetry ensures that order-preserving and order-disrupting forces both have viable paths without making one strictly superior.</p>
+        
+        <h2>Summary</h2>
+        
+        <ul>
+            <li><strong>Zero health equals downed, not dead.</strong> Characters collapse unconscious and remain alive until someone chooses otherwise.</li>
+            <li><strong>Execution is deliberate and takes time.</strong> Death is never instant, silent, or accidental. Counterplay windows always exist.</li>
+            <li><strong>Permadeath is permanent and final.</strong> When death occurs, characters are gone forever. Roles vacate, property transitions, and history records the loss.</li>
+            <li><strong>Capture is the default enforcement action.</strong> Guards arrest rather than kill. This preserves stories and creates accountability through public processes.</li>
+            <li><strong>Death is the last rung of escalation.</strong> Players pass through social conflict, arrest, trial, and resolution attempts before facing permadeath.</li>
+            <li><strong>Logout does not remove consequences.</strong> Bodies persist in-world during a fixed window. Execution and capture remain possible during disconnects.</li>
+            <li><strong>Multiple parties create standoffs and rescues.</strong> When guards, assassins, and healers contest a downed body, first action wins and tactical tension emerges.</li>
+            <li><strong>Fairness comes from avoidability and escalation.</strong> Deaths feel earned when they follow warnings, choices, and clear patterns rather than system automation.</li>
+        </ul>
+        
+        <h2>See Also</h2>
+        
+        <p><strong><a href="jail.html" style="color: var(--accent);">Jail System</a></strong> — What happens after capture, detention mechanics, and release conditions</p>
+        
+        <p><strong><a href="guards.html" style="color: var(--accent);">Guards / Law Enforcement</a></strong> — Guard authority, arrest procedures, and use of force guidelines</p>
+        
+        <p><strong><a href="property.html" style="color: var(--accent);">Property & Land</a></strong> — Grace periods, property transitions, and inheritance after death</p>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a></p>
+    </footer>
+</body>

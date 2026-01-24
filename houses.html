@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houses - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .comparison-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--accent); }
+        .comparison-box h4 { color: var(--gold); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        .stage-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid var(--accent); }
+        .stage-box h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🏛️ Houses</h1>
+        <p>You Are Born Into a Bloodline — You Choose a House — History Judges Both</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>What Are Houses?</h2>
+        
+        <p>A house is a <strong>chosen political entity</strong> — an institution, a banner people rally under, a political body with legal standing and assets.</p>
+        
+        <div class="quote">
+            A house is what you build.
+        </div>
+        
+        <div class="comparison-box">
+            <h4>What Houses Are</h4>
+            <p>A house is:</p>
+            <ul>
+                <li><strong>An institution</strong> — A formal organization</li>
+                <li><strong>A banner</strong> — Something people rally under</li>
+                <li><strong>A political body</strong> — Has legal standing</li>
+                <li><strong>Assets</strong> — Owns property, storage, resources</li>
+                <li><strong>Earned recognition</strong> — Must be legitimized</li>
+            </ul>
+            
+            <p><strong>You choose a house. You build a house. You defend a house.</strong></p>
+        </div>
+        
+        <h3>What Houses Do Mechanically</h3>
+        
+        <p>Houses are where you give players meaningful persistence:</p>
+        <ul>
+            <li><strong>Shared property</strong> — Hall, estate, buildings</li>
+            <li><strong>Shared storage</strong> — Chests, containers</li>
+            <li><strong>Banners/colors</strong> — Visual identity</li>
+            <li><strong>Legal recognition</strong> — Can petition court as a unit</li>
+            <li><strong>Group action</strong> — Ability to act collectively</li>
+        </ul>
+        
+        <p>Houses answer: <em>"Who do you stand with now?"</em></p>
+        
+        <h3>Examples of Houses</h3>
+        <ul>
+            <li><strong>House of the Crown</strong> — Royal household</li>
+            <li><strong>House Ashenvale</strong> — Merchant collective</li>
+            <li><strong>House Black Tide</strong> — Criminal syndicate</li>
+            <li><strong>House of the Flame</strong> — Virtue zealots</li>
+            <li><strong>House Ironcrown</strong> — Military order</li>
+        </ul>
+        
+        <h2>House Stark Example: Bloodline AND House (Both Layers)</h2>
+        
+        <p>To understand the distinction, consider <strong>House Stark</strong> from Game of Thrones. It functions as both — but those are two different layers that overlap:</p>
+        
+        <div class="info-box">
+            <h3>🩸 Stark Bloodline (Legitimacy Layer)</h3>
+            <p><strong>What it is:</strong></p>
+            <ul>
+                <li>The descendants of the Kings of Winter</li>
+                <li>A claim to the North by blood</li>
+                <li>A theory of legitimacy ("rule by lineage")</li>
+            </ul>
+            
+            <p><strong>What it does:</strong></p>
+            <ul>
+                <li>Produces claimants</li>
+                <li>Shapes succession</li>
+                <li>Gives political weight to deaths and births</li>
+                <li>Cannot be appointed or revoked</li>
+            </ul>
+            
+            <p><strong>What it owns:</strong> Nothing automatically. Bloodlines do not own land by default — they justify why someone should hold it.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>🏰 House Stark (Organization Layer)</h3>
+            <p><strong>What it is:</strong></p>
+            <ul>
+                <li>A political/military organization</li>
+                <li>Includes: Stark blood members, Bannermen, Guards, Advisors, Bastards, Non-kin loyalists</li>
+            </ul>
+            
+            <p><strong>What it does:</strong></p>
+            <ul>
+                <li>Holds land (Winterfell)</li>
+                <li>Commands soldiers</li>
+                <li>Manages alliances</li>
+                <li>Can be evicted, shattered, or exiled</li>
+            </ul>
+            
+            <p><strong>What it owns:</strong> Winterfell, keeps, lands (by grant, conquest, or recognition)</p>
+        </div>
+        
+        <h3>Why This Separation Matters</h3>
+        
+        <p><strong>If House Stark is defeated:</strong></p>
+        <ul>
+            <li>They can lose Winterfell</li>
+            <li>Their banners can be broken</li>
+            <li>Their people can scatter</li>
+        </ul>
+        
+        <p><strong>But the Stark bloodline still exists:</strong></p>
+        <ul>
+            <li>Claimants remain</li>
+            <li>Rebellions can happen</li>
+            <li>"The North remembers"</li>
+        </ul>
+        
+        <p><strong>That's good drama.</strong> Killing a Stark does not end House Stark. Evicting House Stark does not end the Stark bloodline. Destroying both requires sustained effort — exactly the pacing you want in permadeath.</p>
+        
+        <div class="quote-simple">
+            <strong>One Sentence to Remember:</strong> A bloodline explains why someone should rule; a house is how they actually exercise power.
+        </div>
+        
+        <h2>Bloodline vs House: Side by Side</h2>
+        
+        <table>
+            <tr>
+                <th>Bloodline</th>
+                <th>House</th>
+            </tr>
+            <tr>
+                <td><strong>Inherited identity</strong></td>
+                <td><strong>Chosen political entity</strong></td>
+            </tr>
+            <tr>
+                <td>Ancestry, name, reputation you're born into</td>
+                <td>An institution, a banner people rally under</td>
+            </tr>
+            <tr>
+                <td>Static, finite</td>
+                <td>Dynamic, earned</td>
+            </tr>
+            <tr>
+                <td>You don't choose it</td>
+                <td>You choose it, build it, defend it</td>
+            </tr>
+            <tr>
+                <td>Cannot easily escape</td>
+                <td>Can be joined, left, or destroyed</td>
+            </tr>
+            <tr>
+                <td>Exists before players log in</td>
+                <td>Must be created, maintained</td>
+            </tr>
+            <tr>
+                <td>Fixed lore and surnames</td>
+                <td>Player-driven identity</td>
+            </tr>
+        </table>
+        
+        <h2>Bloodlines: Inherited Identity</h2>
+        
+        <div class="comparison-box">
+            <h4>What Bloodlines Are</h4>
+            <p>A bloodline is:</p>
+            <ul>
+                <li><strong>Ancestry</strong> — Who your family was</li>
+                <li><strong>Name</strong> — Fixed surnames like Hawkwright, Rowan, Greymark</li>
+                <li><strong>Reputation</strong> — Social assumptions you inherit</li>
+                <li><strong>Constraints</strong> — Expectations and obligations</li>
+                <li><strong>Memory</strong> — History that predates you</li>
+            </ul>
+            
+            <p><strong>You don't "join" a bloodline. You are born into it — or not.</strong></p>
+        </div>
+        
+        <h3>What Bloodlines Do Mechanically</h3>
+        
+        <p>Very little — and that's intentional. Bloodlines should mostly provide:</p>
+        <ul>
+            <li>Name + title formatting</li>
+            <li>Starting reputation</li>
+            <li>Initial relationships</li>
+            <li>Roleplay expectations</li>
+        </ul>
+        
+        <p><strong>Bloodlines are constraints, not power.</strong> They answer: <em>"Who were you before this story started?"</em></p>
+        
+        <h3>Why Bloodlines Matter on a Permadeath Shard</h3>
+        <ul>
+            <li>When someone dies, the bloodline loses a branch</li>
+            <li>Long-lived bloodlines feel legendary</li>
+            <li>Dying as "the last of your line" hurts (in a good way)</li>
+            <li>Rivalries persist even when individuals don't</li>
+            <li><strong>Bloodlines give the world memory</strong></li>
+        </ul>
+        
+        <p><strong>→ See <a href="bloodlines.html" style="color: var(--accent);">Bloodlines Page</a> for specific Britain bloodlines</strong></p>
+        
+        <h2>Houses: Chosen Political Entities</h2>
+        
+        <div class="comparison-box">
+            <h4>What Houses Are</h4>
+            <p>A house is:</p>
+            <ul>
+                <li><strong>An institution</strong> — A formal organization</li>
+                <li><strong>A banner</strong> — Something people rally under</li>
+                <li><strong>A political body</strong> — Has legal standing</li>
+                <li><strong>Assets</strong> — Owns property, storage, resources</li>
+                <li><strong>Earned recognition</strong> — Must be legitimized</li>
+            </ul>
+            
+            <p><strong>You choose a house. You build a house. You defend a house.</strong></p>
+        </div>
+        
+        <h3>What Houses Do Mechanically</h3>
+        
+        <p>Houses are where you give players meaningful persistence:</p>
+        <ul>
+            <li><strong>Shared property</strong> — Hall, estate, buildings</li>
+            <li><strong>Shared storage</strong> — Chests, containers</li>
+            <li><strong>Banners/colors</strong> — Visual identity</li>
+            <li><strong>Legal recognition</strong> — Can petition court as a unit</li>
+            <li><strong>Group action</strong> — Ability to act collectively</li>
+        </ul>
+        
+        <p>Houses answer: <em>"Who do you stand with now?"</em></p>
+        
+        <h3>Examples of Houses</h3>
+        <ul>
+            <li><strong>House of the Crown</strong> — Royal household</li>
+            <li><strong>House Ashenvale</strong> — Merchant collective</li>
+            <li><strong>House Black Tide</strong> — Criminal syndicate</li>
+            <li><strong>House of the Flame</strong> — Virtue zealots</li>
+            <li><strong>House Ironcrown</strong> — Military order</li>
+        </ul>
+        
+        <h2>Why You Need BOTH (Not Just One)</h2>
+        
+        <div class="info-box">
+            <h3>If You Only Have Bloodlines:</h3>
+            <ul>
+                <li>Politics is static</li>
+                <li>Power calcifies</li>
+                <li>New players feel irrelevant</li>
+                <li>No room for social mobility</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>If You Only Have Houses:</h3>
+            <ul>
+                <li>Lineage feels meaningless</li>
+                <li>Deaths feel cheap</li>
+                <li>The world resets emotionally</li>
+                <li>No historical weight</li>
+            </ul>
+        </div>
+        
+        <div class="quote-simple">
+            <strong>Together:</strong> Bloodlines give history. Houses give movement. This is exactly how medieval politics worked.
+        </div>
+        
+        <h2>How Bloodlines and Houses Interact</h2>
+        
+        <p>The relationship model that works best:</p>
+        
+        <h3>A Bloodline Member Can:</h3>
+        <ul>
+            <li>Join a house</li>
+            <li>Found a house</li>
+            <li>Betray their bloodline by joining a rival house</li>
+            <li>Elevate their bloodline through house success</li>
+        </ul>
+        
+        <h3>A House Can:</h3>
+        <ul>
+            <li>Contain multiple bloodlines</li>
+            <li>Become dominated by one bloodline</li>
+            <li>Splinter along bloodline lines</li>
+            <li>Outlive any single bloodline</li>
+        </ul>
+        
+        <p><strong>This creates organic drama without mechanics.</strong></p>
+        
+        <h2>Common Examples (To Make It Click)</h2>
+        
+        <div class="stage-box">
+            <h4>Example 1: Born Noble, Builds Power</h4>
+            <ul>
+                <li>Cedric Hawkwright (bloodline)</li>
+                <li>Founds House Ironcrown (house)</li>
+                <li>Becomes Marshal</li>
+                <li>Dies</li>
+                <li><strong>House Ironcrown continues under new leadership</strong></li>
+            </ul>
+            <p>The bloodline provided legitimacy. The house provided structure.</p>
+        </div>
+        
+        <div class="stage-box">
+            <h4>Example 2: Lowborn Ascension</h4>
+            <ul>
+                <li>Tomas the Dockhand (no bloodline)</li>
+                <li>Joins House Ashenvale</li>
+                <li>Becomes its public face</li>
+                <li>Later crowned King</li>
+                <li><strong>Bloodline irrelevant; house mattered</strong></li>
+            </ul>
+            <p>Houses allow social mobility that bloodlines prevent.</p>
+        </div>
+        
+        <div class="stage-box">
+            <h4>Example 3: Betrayal</h4>
+            <ul>
+                <li>Elara Rowan joins a merchant house</li>
+                <li>Family disowns her</li>
+                <li>Her bloodline reputation suffers</li>
+                <li>House gains prestige</li>
+                <li><strong>Personal choice vs family obligation</strong></li>
+            </ul>
+            <p>This creates the tension that drives great RP.</p>
+        </div>
+        
+        <h2>Creating Player Houses</h2>
+        
+        <p>Players can create their own houses through a two-stage process:</p>
+        
+        <div class="stage-box">
+            <h4>Stage A: Unrecognized House (Low/No Mechanics)</h4>
+            <p>Players can start a "house" socially any time:</p>
+            <ul>
+                <li>"We are House Ashenvale now."</li>
+                <li>They wear matching colors</li>
+                <li>They claim a tavern table</li>
+                <li>They write a charter</li>
+            </ul>
+            <p><strong>Mechanically, it's just roleplay + maybe a cosmetic tag.</strong></p>
+        </div>
+        
+        <div class="stage-box">
+            <h4>Stage B: Recognized House (Gets Real Perks)</h4>
+            <p>To become official, they must be recognized by Britain (or later, any city).</p>
+            
+            <h5>How Recognition Works</h5>
+            <p>Choose one of these methods:</p>
+            <ul>
+                <li><strong>Crown Charter</strong> — The King issues a "Charter of House ___"</li>
+                <li><strong>Great Council Recognition</strong> — 3–5 high offices sign off</li>
+                <li><strong>De Facto Recognition</strong> — House proves itself over time</li>
+            </ul>
+            
+            <p><strong>This is where mechanics engage.</strong></p>
+        </div>
+        
+        <h3>What Recognized Houses Get</h3>
+        
+        <table>
+            <tr>
+                <th>Reward</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>House Identity</strong></td>
+                <td>House name tag / title line, heraldry colors, registry entry</td>
+            </tr>
+            <tr>
+                <td><strong>Legal Standing</strong></td>
+                <td>Can petition court as a house, demand trials/duels under house banner</td>
+            </tr>
+            <tr>
+                <td><strong>Assets That Persist</strong></td>
+                <td>House Hall ownership survives member permadeath, leadership changes don't delete assets</td>
+            </tr>
+            <tr>
+                <td><strong>Controlled Recruitment</strong></td>
+                <td>Can "adopt" new members via ceremony</td>
+            </tr>
+        </table>
+        
+        <div class="warning">
+            <strong>Avoid giving:</strong> raw combat buffs, free gold, or item advantages. Houses should provide social and organizational power, not mechanical advantages.
+        </div>
+        
+        <h2>How Players Create a House (Player-Facing Flow)</h2>
+        
+        <ol>
+            <li><strong>Start a house socially</strong>
+                <ul>
+                    <li>Pick name, colors, founder(s)</li>
+                </ul>
+            </li>
+            <li><strong>Write a charter</strong>
+                <ul>
+                    <li>3–10 sentences: purpose, values, enemies, who can join</li>
+                </ul>
+            </li>
+            <li><strong>Get recognized</strong>
+                <ul>
+                    <li>Petition King, Regent, Magistrate, or Council of high offices</li>
+                    <li>Must convince them through RP — service, alliance, mutual benefit</li>
+                    <li>Recognition is political, not automatic</li>
+                </ul>
+            </li>
+            <li><strong>Hold a founding ceremony</strong>
+                <ul>
+                    <li>Oaths + witnesses</li>
+                </ul>
+            </li>
+            <li><strong>Now the house exists mechanically</strong>
+                <ul>
+                    <li>Registry + tag + house hall claim</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h2>Preventing Common Problems</h2>
+        
+        <div class="warning">
+            <h4>Risk 1: House Spam (20 houses in week 1)</h4>
+            <p><strong>Fix:</strong></p>
+            <ul>
+                <li>Recognition requirement + limit: each account can found 1 recognized house per season</li>
+                <li>Minimum active members (ex: 3–5)</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <h4>Risk 2: Griefer Houses</h4>
+            <p><strong>Fix:</strong></p>
+            <ul>
+                <li>A house can be outlawed, stripped of recognition, or lose its hall claim</li>
+                <li>Not by "moderator punishment," but through legal / political process</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <h4>Risk 3: Burnout from Leadership Duties</h4>
+            <p><strong>Fix:</strong></p>
+            <ul>
+                <li>Make leadership mostly symbolic</li>
+                <li>Give a "council" structure: House Head + 2 Deputies</li>
+                <li>Any of them can manage membership / hall permissions</li>
+            </ul>
+        </div>
+        
+        <h2>What You Should NOT Do</h2>
+        
+        <ul>
+            <li>❌ Don't let bloodlines grant combat bonuses</li>
+            <li>❌ Don't let houses grant raw stats</li>
+            <li>❌ Don't force houses to map 1:1 with bloodlines</li>
+            <li>❌ Don't let players create infinite bloodlines</li>
+        </ul>
+        
+        <p><strong>Bloodlines should be curated. Houses should be earned.</strong></p>
+        
+        <h2>Implementation Strategy for Season 1</h2>
+        
+        <p>If you're worried about complexity early:</p>
+        
+        <ol>
+            <li><strong>Launch with canon bloodlines only</strong></li>
+            <li><strong>Allow unrecognized houses from day 1</strong> (pure RP, no mechanics)</li>
+            <li><strong>After 2–3 weeks, enable recognized houses</strong> as a major "new era" moment</li>
+        </ol>
+        
+        <p>That gives Britain time to get spicy first, then player institutions emerge naturally.</p>
+        
+        <h2>Summary: The Design Health Check</h2>
+        
+        <div class="quote-simple">
+            Your system is healthy if:
+            <ul>
+                <li>Bloodlines feel heavy</li>
+                <li>Houses feel fragile</li>
+                <li>Offices feel dangerous</li>
+                <li>Death feels final</li>
+                <li>Memory outlives characters</li>
+            </ul>
+        </div>
+        
+        <p>You're designing a world where:</p>
+        <ul>
+            <li><strong>Identity is inherited</strong> (bloodlines)</li>
+            <li><strong>Power is constructed</strong> (houses)</li>
+            <li><strong>Legitimacy is contested</strong> (roles)</li>
+        </ul>
+        
+        <div class="quote">
+            You are born into a bloodline.<br>
+            You choose a house.<br>
+            History judges both.
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="bloodlines.html" style="color: var(--gold);">Bloodlines</a> | <a href="housing.html" style="color: var(--gold);">Property & Land</a></p>
+    </footer>
+</body>
+</html>

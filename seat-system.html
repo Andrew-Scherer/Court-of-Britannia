@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Seat System - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .role-card { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--accent); }
+        .role-card h4 { color: var(--gold); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .role-card .type { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: bold; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+        pre { background: var(--bg-medium); padding: 1rem; border-radius: 4px; overflow-x: auto; color: #88cc88; font-family: 'Courier New', monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚙️ The Seat System</h1>
+        <p>Roles as Registry — Authority Without the Job Description</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>What Is the Seat System?</h2>
+        
+        <p>Roles are modeled as <strong>Seats</strong> — a lightweight role registry that supports different filling modes, automatically vacates on permadeath, and drives permissions (castle rooms, guard access, etc.).</p>
+        
+        <div class="info-box">
+            <h3>💡 Key Insight: A Seat is Not the Player — It's the Job</h3>
+            <p>When the holder dies, the Seat auto-vacates. Any permissions tied to that seat update automatically. The role registry (RoleManager) is the single source of truth.</p>
+        </div>
+        
+        <h2>Each Seat Has:</h2>
+        <ul>
+            <li><strong>SeatId:</strong> Unique identifier (e.g., "Britain.King", "Britain.Marshal")</li>
+            <li><strong>Title:</strong> Display name (e.g., "King of Britain", "Marshal of the Guard")</li>
+            <li><strong>FillMode:</strong> How the seat is filled (Appointed, Elected, Self-Claim, Inherited, GM/Story)</li>
+            <li><strong>Holder:</strong> Current player occupying the seat (or null if vacant)</li>
+            <li><strong>VacancyState:</strong> Vacant / Occupied / Suspended</li>
+            <li><strong>AppointerSeatId:</strong> For appointed roles, which seat can appoint/dismiss</li>
+            <li><strong>Permissions:</strong> What access or authority this seat grants</li>
+        </ul>
+        
+        <h2>Fill Modes: How Seats Are Filled</h2>
+        
+        <div class="grid-2">
+            <div class="role-card">
+                <h4>Appointed</h4>
+                <p class="type">Top-Down Authority</p>
+                <p><strong>Examples:</strong> Marshal of the Guard, Chancellor, Royal Healer</p>
+                <p><strong>Filled by:</strong> The King/Regent (or whoever holds the Appointer seat)</p>
+                <p><strong>Key tension:</strong> Can be fired, creating constant insecurity</p>
+            </div>
+            
+            <div class="role-card">
+                <h4>Elected</h4>
+                <p class="type">Collective Authority</p>
+                <p><strong>Examples:</strong> Speaker of the Commons (later seasons)</p>
+                <p><strong>Filled by:</strong> Defined electorate (Nobles, Citizens, Council)</p>
+                <p><strong>Key tension:</strong> Populism vs elite control</p>
+            </div>
+            
+            <div class="role-card">
+                <h4>Self-Claim</h4>
+                <p class="type">Declarative Identity</p>
+                <p><strong>Examples:</strong> Exiled Knight, Disgraced Noble, Hedge Wizard</p>
+                <p><strong>Filled by:</strong> Player opting in (with constraints)</p>
+                <p><strong>Key tension:</strong> Social legitimacy without formal authority</p>
+            </div>
+            
+            <div class="role-card">
+                <h4>Inherited</h4>
+                <p class="type">Bloodline Authority</p>
+                <p><strong>Examples:</strong> Heir, House Scion</p>
+                <p><strong>Filled by:</strong> Succession rules (designated heir, bloodline, will)</p>
+                <p><strong>Key tension:</strong> Contested claims, succession crises</p>
+            </div>
+        </div>
+        
+        <div class="role-card">
+            <h4>GM/Story</h4>
+            <p class="type">Event-Driven Authority</p>
+            <p><strong>Examples:</strong> Minax Vessel, Hidden Heretic, Prophet of Virtue</p>
+            <p><strong>Filled by:</strong> Staff or special events</p>
+            <p><strong>Key tension:</strong> Wild card that destabilizes patterns</p>
+        </div>
+        
+        <h2>Offices vs Statuses</h2>
+        
+        <p>There are two categories of seats:</p>
+        
+        <table>
+            <tr>
+                <th>Offices (Exclusive Power-Bearing)</th>
+                <th>Statuses (Non-Exclusive Identity Tags)</th>
+            </tr>
+            <tr>
+                <td>King, Marshal, Chancellor, Magistrate, etc.</td>
+                <td>Disgraced Noble, Exiled Knight, Widower, Refugee, etc.</td>
+            </tr>
+            <tr>
+                <td>Usually one per player max</td>
+                <td>Multiple allowed per player</td>
+            </tr>
+            <tr>
+                <td>Appointment/election required</td>
+                <td>Self-claim or story-triggered</td>
+            </tr>
+            <tr>
+                <td>Grants access + authority</td>
+                <td>Mostly social, minor permissions</td>
+            </tr>
+        </table>
+        
+        <p>This prevents treating "Disgraced Noble" like a job, while ensuring "Marshal" has real authority.</p>
+        
+        <h2>🔧 Technical Implementation</h2>
+        
+        <h3>Role Manager System (Pseudocode)</h3>
+        <pre>
+public class RoleManager
+{
+    private static Dictionary&lt;string, RoleSeat&gt; _seats = new();
+    
+    public static void AssignSeat(string roleId, Mobile holder, string reason)
+    {
+        if (!_seats.ContainsKey(roleId)) return;
+        var seat = _seats[roleId];
+        var previousHolder = seat.Holder;
+        
+        if (previousHolder != null)
+            VacateSeat(roleId, "Replaced");
+        
+        seat.Holder = holder;
+        seat.VacancyState = VacancyState.Occupied;
+        seat.AssignedAt = DateTime.UtcNow;
+        
+        PermissionSystem.GrantRolePermissions(holder, roleId);
+        LandLedger.Record(roleId, holder, "RoleAssigned", reason);
+        Chronicle.Record($"{holder.Name} appointed as {seat.Title}");
+        Herald.Announce($"{holder.Name} has been appointed {seat.Title}");
+    }
+    
+    public static void VacateSeat(string roleId, string reason)
+    {
+        if (!_seats.ContainsKey(roleId)) return;
+        var seat = _seats[roleId];
+        var holder = seat.Holder;
+        if (holder == null) return;
+        
+        PermissionSystem.RevokeRolePermissions(holder, roleId);
+        seat.Holder = null;
+        seat.VacancyState = VacancyState.Vacant;
+        
+        LandLedger.Record(roleId, holder, "RoleVacated", reason);
+        Chronicle.Record($"{seat.Title} is now vacant ({reason})");
+    }
+    
+    public static void OnPlayerDeath(Mobile deceased)
+    {
+        foreach (var seat in _seats.Values)
+        {
+            if (seat.Holder == deceased)
+                VacateSeat(seat.RoleId, "Death");
+        }
+    }
+}
+
+public class RoleSeat
+{
+    public string RoleId { get; set; }
+    public string Title { get; set; }
+    public Mobile Holder { get; set; }
+    public VacancyState VacancyState { get; set; }
+    public FillMode FillMode { get; set; }
+    public string AppointerRole { get; set; }
+    public DateTime AssignedAt { get; set; }
+    public List&lt;string&gt; Permissions { get; set; }
+}
+
+public enum VacancyState { Vacant, Occupied, Disputed }
+public enum FillMode { Appointed, Elected, SelfClaim, Inherited, GMStory }
+        </pre>
+        
+        <h3>Role-Based Door Access</h3>
+        <pre>
+public class RoleBoundDoor : BaseDoor
+{
+    public string RequiredRole { get; set; }
+    
+    public override void Use(Mobile from)
+    {
+        if (string.IsNullOrEmpty(RequiredRole))
+        {
+            base.Use(from);
+            return;
+        }
+        
+        if (RoleManager.HasRole(from, RequiredRole))
+        {
+            base.Use(from);
+            return;
+        }
+        
+        from.SendMessage("You do not have authority to enter here.");
+        LandLedger.Record(RequiredRole, from, "AccessDenied", Location.ToString());
+    }
+}
+        </pre>
+        
+        <h2>⚠️ Common Problems & Solutions</h2>
+        
+        <div class="warning">
+            <h4>Problem: Role Hoarding</h4>
+            <p><strong>Symptom:</strong> One player accumulates multiple critical roles</p>
+            <p><strong>Solution:</strong> Hard limit: 1 major role per player (King, Marshal, Magistrate are mutually exclusive). Players can hold 1 major + auxiliary roles (guard, scribe). Enforced in AssignSeat() logic.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Problem: Offline Role-Holders Blocking Action</h4>
+            <p><strong>Symptom:</strong> Marshal offline for 3 days, guards are paralyzed</p>
+            <p><strong>Solution:</strong> Deputies can act when primary is offline. After 7 days of inactivity, King can appoint replacement. Track LastSignificantAction timestamp on each RoleSeat.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Problem: Appointment Spam</h4>
+            <p><strong>Symptom:</strong> King appoints/fires Marshal 10 times in one hour</p>
+            <p><strong>Solution:</strong> Cooldown timer: once a role is vacated, 1 hour must pass before reassignment (configurable). Exception: death-based vacancy has no cooldown.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Problem: "I Never Got Appointed" Disputes</h4>
+            <p><strong>Symptom:</strong> Player claims they were promised Marshal but King denies it</p>
+            <p><strong>Solution:</strong> All appointments are logged publicly and irreversibly. Chronicler records are authoritative. Promises that aren't formalized don't count.</p>
+        </div>
+        
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <h3>Q: Can I hold multiple roles at once?</h3>
+        <p><strong>A:</strong> Yes, but with restrictions. You can hold 1 major role (King, Marshal, Magistrate, Land Commissioner) + multiple auxiliary roles (Guard, Chronicler, Herald). You cannot be King and Marshal simultaneously. Bloodline seats count separately.</p>
+        
+        <h3>Q: What happens if the King dies and there's no Regent?</h3>
+        <p><strong>A:</strong> Britain enters Interregnum. The Marshal or senior Magistrate may declare a temporary regency, or a coronation is called immediately. NPC systems keep the city functioning, but legitimacy fractures. This is a crisis, not a game-over.</p>
+        
+        <h3>Q: Can I refuse an appointment?</h3>
+        <p><strong>A:</strong> Yes. The appointment gump requires your consent ("Accept" or "Decline"). Declining a royal appointment has social consequences but is mechanically allowed. Refusal is logged.</p>
+        
+        <h3>Q: How do I get appointed to a role?</h3>
+        <p><strong>A:</strong> Position yourself politically. Build relationships with the King or Regent. Demonstrate competence. Survive long enough to be trusted. There is no application system — appointments are political acts, not job postings.</p>
+        
+        <h3>Q: Can the King be impeached or removed?</h3>
+        <p><strong>A:</strong> Not mechanically, but socially yes. The King can be pressured to abdicate, assassinated, or overthrown in a coup. Magistrates can declare a regime illegitimate (no mechanical effect, but huge social impact). Removal is always violent or voluntary.</p>
+        
+        <h2>📋 Summary</h2>
+        
+        <div class="quote-simple">
+            <strong>The Seat System in One Sentence:</strong> A seat is the job, not the person — when the holder changes or dies, the role automatically updates without breaking the world.
+        </div>
+        
+        <p><strong>Key Principles:</strong></p>
+        <ul>
+            <li>A Seat is not the player — it's the job</li>
+            <li>Seats auto-vacate on death</li>
+            <li>Permissions are tied to seats, not players</li>
+            <li>Fill modes determine how roles are assigned (appointment, election, self-claim, inheritance, GM/story)</li>
+            <li>Offices (exclusive) vs Statuses (non-exclusive)</li>
+            <li>Role registry (RoleManager) is the single source of truth</li>
+        </ul>
+        
+        <div class="role-card" style="margin-top: 2rem; border-left: 4px solid var(--gold);">
+            <h4>💡 Implementation Priority</h4>
+            <p><strong>Phase 1 (Essential):</strong></p>
+            <ul>
+                <li>RoleSeat data structure + serialization</li>
+                <li>King appointment/dismissal commands</li>
+                <li>Auto-vacancy on death</li>
+                <li>Basic Chronicle logging</li>
+            </ul>
+            <p><strong>Phase 2 (Polish):</strong></p>
+            <ul>
+                <li>Role-bound door access</li>
+                <li>Public role board</li>
+                <li>Appointment gumps</li>
+                <li>Inactivity tracking</li>
+            </ul>
+            <p><strong>Phase 3 (Nice to Have):</strong></p>
+            <ul>
+                <li>Web integration (show roles on website)</li>
+                <li>Complex permission trees</li>
+                <li>Role reputation tracking</li>
+            </ul>
+        </div>
+        
+        <p><strong>→ See <a href="roles.html" style="color: var(--accent);">Roles & Offices</a></strong> for specific role descriptions</p>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="roles.html" style="color: var(--gold);">Roles & Offices</a></p>
+    </footer>
+</body>
+</html>

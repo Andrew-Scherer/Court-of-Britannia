@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloodlines - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .bloodline-card { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--gold); }
+        .bloodline-card h4 { color: var(--gold); margin-bottom: 0.5rem; font-size: 1.3rem; }
+        .bloodline-card .theory { color: var(--accent); font-style: italic; margin-bottom: 1rem; }
+        .theory-box { background: var(--bg-light); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .theory-box h5 { color: var(--gold); margin-bottom: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🩸 Bloodlines</h1>
+        <p>Competing Theories of Legitimacy</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>What Are Bloodlines?</h2>
+        
+        <p><strong>Bloodlines are not roles — they are competing answers to why anyone should rule at all.</strong></p>
+        
+        <p>Each bloodline embodies a different <em>theory of legitimacy</em>. They all want the same thing — influence over the crown, succession, law, violence, and the future of Britain. They just believe they deserve it for different reasons.</p>
+        
+        <p><strong>This creates permanent rivalry.</strong> Bloodlines don't operate in parallel lanes with different jobs. They collide constantly because they're fighting for the same prize.</p>
+        
+        <div class="quote">
+            Bloodlines exist to embody rival answers to why anyone should rule at all.
+        </div>
+        
+        <h3>A Theory of Legitimacy Answers One Question:</h3>
+        <p style="text-align: center; font-size: 1.2em; font-style: italic; margin: 1.5rem 0;">"Why should anyone accept your rule even when they don't like you?"</p>
+        
+        <p><strong>Power</strong> explains who can rule today.<br>
+        <strong>Legitimacy</strong> explains why rule survives tomorrow.</p>
+        
+        <p>Bloodlines don't give you power. They let you <em>justify</em> having it. And in a permadeath world where every death asks "who's next, and why them?" — legitimacy is the only thing that prevents politics from collapsing into pure violence.</p>
+        
+        <h2>The Core Purpose</h2>
+        
+        <p>Bloodlines solve three hard problems simultaneously:</p>
+        <ol>
+            <li><strong>Who is allowed to claim ultimate authority?</strong></li>
+            <li><strong>Why does killing this person matter more than killing anyone else?</strong></li>
+            <li><strong>How does the world remember history after characters die?</strong></li>
+        </ol>
+        
+        <p>No other system answers all three cleanly.</p>
+        
+        <h2>Why Bloodlines Exist in a Permadeath World</h2>
+        
+        <p>Permadeath does something brutal to politics: key players die, alliances vanish overnight, conflicts resolve too fast, history resets, and new characters have no context. Without a stabilizing structure, you get short spikes of drama followed by total reset on repeat.</p>
+        
+        <p><strong>Bloodlines are the glue that keeps political intrigue from collapsing every time someone dies.</strong></p>
+        
+        <div class="theory-box">
+            <h5>What Bloodlines Actually Glue Together</h5>
+            <p>Bloodlines provide continuity without immortality. They connect:</p>
+            <ul>
+                <li><strong>Past decisions → future consequences:</strong> A bloodline's choices create enemies and allies that outlast individual characters</li>
+                <li><strong>Dead characters → living claims:</strong> When someone dies, their goals don't vanish — the next seat inherits suspicion, allies, enemies, and expectations</li>
+                <li><strong>Old grudges → new players:</strong> "The Hawkwrights always betray allies" becomes institutional memory</li>
+                <li><strong>Unresolved conflicts → new flashpoints:</strong> Disputes don't disappear with death; they transform and escalate</li>
+            </ul>
+        </div>
+        
+        <p>Bloodlines ensure that <strong>death ends characters, not stories</strong>. They turn permadeath from a reset button into a story accelerant.</p>
+        
+        <h3>How Bloodlines Prevent Power From Becoming Trivial</h3>
+        
+        <p>Without bloodlines in a permadeath world:</p>
+        <ul>
+            <li>The strongest group always wins</li>
+            <li>Politics becomes just PvP</li>
+            <li>Intrigue gives way to dominance</li>
+            <li>Players stop investing emotionally because nothing lasts</li>
+        </ul>
+        
+        <p>With bloodlines:</p>
+        <ul>
+            <li>Victory must be <em>justified</em>, not just achieved</li>
+            <li>Coups remain unstable even after winning</li>
+            <li>Authority is always contested</li>
+            <li>Political tension outlives the people who created it</li>
+        </ul>
+        
+        <p>Bloodlines slow the system down just enough to let intrigue breathe, while still preserving the weight of permadeath.</p>
+        
+        <h2>The Five Theories of Legitimacy</h2>
+        
+        <p><strong>All bloodlines want the same thing: influence over Britain.</strong> They differ only in how they justify deserving it.</p>
+        
+        <p>Every major event becomes a theory conflict, not a mechanics check. Same event — five incompatible answers. That's endless intrigue.</p>
+        
+        <div class="theory-box">
+            <h5>⚖️ Legitimacy by Law (Hawkwright)</h5>
+            <p><strong>Core belief:</strong> Rule must be documented. Succession must be continuous. Ceremony matters. Precedent binds the present.</p>
+            <p><strong>What it fears:</strong> Chaos, exceptionalism, "just this once" decisions</p>
+            <p><strong>During crisis:</strong> "We don't need a strong ruler. We need a recognized one."</p>
+            <p><strong>Why it survives deaths:</strong> Because law outlives people.</p>
+            <p><strong>Weakness:</strong> Slow, vulnerable to force, can be bypassed in emergencies.</p>
+            <p><strong>Rivals:</strong> Rowan (force vs process), Blackthorn (documents vs blood)</p>
+            
+            <p><strong>Alternative Surname Ideas:</strong> Hawkwright, Sealby, Writford, Charteris, Ledgerham, Markham, Bellcourt, Verwick, Notley, Cleremont</p>
+            
+            <p><strong>Fictional Parallels:</strong></p>
+            <ul>
+                <li><strong>Game of Thrones:</strong> House Arryn (obsessed with oaths and legal succession), The Citadel Maesters (continuity through knowledge), The Small Council at its best (procedure over personality)</li>
+                <li><strong>Tolkien:</strong> The Stewards of Gondor pre-Denethor (authority via stewardship and record), The White Tree as symbol (legitimacy acknowledged through institution)</li>
+                <li><strong>Other Fantasy:</strong> Imperial bureaucratic families (Elder Scrolls), The Chantry's clerical dynasties (Dragon Age), Noble jurist families (Discworld)</li>
+            </ul>
+            <p><em>Instinctive player read:</em> "If the records don't recognize you, you don't exist."</p>
+        </div>
+        
+        <div class="theory-box">
+            <h5>🛡️ Legitimacy by Force (Rowan)</h5>
+            <p><strong>Core belief:</strong> Order is more important than consent. Stability justifies harshness. Weak rulers invite bloodshed.</p>
+            <p><strong>What it fears:</strong> Hesitation, fragmentation, mob rule</p>
+            <p><strong>During crisis:</strong> "Talk later. Secure the streets now."</p>
+            <p><strong>Why it survives deaths:</strong> Because force reorganizes quickly.</p>
+            <p><strong>Weakness:</strong> Breeds resentment, needs constant enforcement, creates martyrs.</p>
+            <p><strong>Rivals:</strong> Ashcroft (military control vs popular will), Hawkwright (force vs law)</p>
+            
+            <p><strong>Alternative Surname Ideas:</strong> Rowan, Stoneward, Ironholt, Blackridge, Wardell, Redwyne, Hardwick, Thorne, Grimshaw, Marrowick</p>
+            
+            <p><strong>Fictional Parallels:</strong></p>
+            <ul>
+                <li><strong>Game of Thrones:</strong> House Lannister military power ("A Lannister always pays his debts" = enforcement), The Gold Cloaks under strong commanders (law by presence), The Unsullied (order without consent)</li>
+                <li><strong>Tolkien:</strong> Saruman's captains (stability through domination), The Mouth of Sauron (authority backed by terror)</li>
+                <li><strong>Other Fantasy:</strong> The Empire (Star Wars - peace through overwhelming force), Templar dynasties (Dragon Age), Redguard warlords (Elder Scrolls)</li>
+            </ul>
+            <p><em>Instinctive player read:</em> "When the city burns, people stop asking who should rule and start asking who can stop this."</p>
+        </div>
+        
+        <div class="theory-box">
+            <h5>🌊 Legitimacy by Popular Will (Ashcroft)</h5>
+            <p><strong>Core belief:</strong> Crowds matter. Outrage is power. A ruler without support is illegitimate.</p>
+            <p><strong>What it fears:</strong> Elitism, closed courts, secret deals</p>
+            <p><strong>During crisis:</strong> "If the city won't accept them, they cannot rule."</p>
+            <p><strong>Why it survives deaths:</strong> Because people keep existing.</p>
+            <p><strong>Weakness:</strong> Unstable, easily manipulated, turns volatile fast.</p>
+            <p><strong>Rivals:</strong> Rowan (mob vs order), Blackthorn (people vs lineage), Hawkwright (public vs law)</p>
+            
+            <p><strong>Alternative Surname Ideas:</strong> Ashcroft, Crowhurst, Fairborne, Merrick, Lowell, Tanner, Brookstone, Kendall, Fenwick, Hollis</p>
+            
+            <p><strong>Fictional Parallels:</strong></p>
+            <ul>
+                <li><strong>Game of Thrones:</strong> The Faith Militant / Sparrows (popular outrage → real power, legitimacy through mass belief), King's Landing mob leaders</li>
+                <li><strong>Tolkien:</strong> Men rallying to Aragorn (destiny requires acceptance), The Scouring of the Shire (popular resistance reshapes power)</li>
+                <li><strong>Other Fantasy:</strong> Free City demagogues, Guild revolutions (Discworld), Commons-driven councils (Witcher lore)</li>
+            </ul>
+            <p><em>Instinctive player read:</em> "If the streets turn against you, nothing else matters."</p>
+        </div>
+        
+        <div class="theory-box">
+            <h5>👑 Legitimacy by Blood & Destiny (Blackthorn)</h5>
+            <p><strong>Core belief:</strong> Lineage matters. Blood remembers. Destiny outweighs process.</p>
+            <p><strong>What it fears:</strong> Usurpers, "new men," precedent-breaking</p>
+            <p><strong>During crisis:</strong> "It was never yours to take."</p>
+            <p><strong>Why it survives deaths:</strong> Because heirs replace the fallen.</p>
+            <p><strong>Weakness:</strong> Brittle, provokes rebellion, invites assassination.</p>
+            <p><strong>Rivals:</strong> Hawkwright (blood vs documents), Ashcroft (lineage vs public), anyone without the bloodline</p>
+            
+            <p><strong>Alternative Surname Ideas:</strong> Blackthorn, Ravenwood, Redroot, Ashenfell, Gravesend, Wintermere, Elderwyn, Crownfield, Bloodmere, Thornwall</p>
+            
+            <p><strong>Fictional Parallels:</strong></p>
+            <ul>
+                <li><strong>Game of Thrones:</strong> House Targaryen (blood = destiny), House Stark early (ancient right to rule the North), Baratheon claimants (even usurpers rely on blood arguments)</li>
+                <li><strong>Tolkien:</strong> Aragorn / Isildur's line (kingship as fate), The Númenórean bloodline (diminished but still special)</li>
+                <li><strong>Other Fantasy:</strong> Dragonlord families (various settings), Chosen bloodlines (Wheel of Time), Elder bloodlines (The Witcher)</li>
+            </ul>
+            <p><em>Instinctive player read:</em> "You can take the throne — but it will never be yours."</p>
+        </div>
+        
+        <div class="theory-box">
+            <h5>👁️ Legitimacy by Truth & Exposure (Greymark)</h5>
+            <p><strong>Core belief:</strong> Hypocrisy destroys power. Secrets invalidate rule. No one deserves authority unexamined.</p>
+            <p><strong>What it fears:</strong> Silence, forgetting, narrative control</p>
+            <p><strong>During crisis:</strong> "Before you choose a ruler — know what they've done."</p>
+            <p><strong>Why it survives deaths:</strong> Because truth persists once revealed.</p>
+            <p><strong>Weakness:</strong> Paralysis, cynicism, endless scandal.</p>
+            <p><strong>Rivals:</strong> Everyone — they don't rule, they decide who can't.</p>
+            
+            <p><strong>Alternative Surname Ideas:</strong> Greymark, Halloway, Ashwell, Candlewick, Whitlock, Graves, Morland, Pryce, Vale, Crowley</p>
+            
+            <p><strong>Fictional Parallels:</strong></p>
+            <ul>
+                <li><strong>Game of Thrones:</strong> Varys (power through secrets), Littlefinger partially (exposure as leverage), Samwell Tarly late (truth destabilizes rule)</li>
+                <li><strong>Tolkien:</strong> Gandalf (authority via truth), The Palantíri misused (dangerous revelation)</li>
+                <li><strong>Other Fantasy:</strong> Chronicler families (Discworld), Inquisitorial historians, Watchful scribes (Elder Scrolls)</li>
+            </ul>
+            <p><em>Instinctive player read:</em> "Everyone knows secrets kill power faster than swords."</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Critical Design Rule: No Theory Can Permanently Eliminate the Others</h4>
+            <p>If Force wipes out Law forever → tyranny<br>
+            If Law freezes Force → paralysis<br>
+            If Popular Will dominates → chaos<br>
+            If Blood dominates → stagnation<br>
+            If Truth dominates → nihilism</p>
+            <p><strong>Balance comes from coexistence through conflict, not equilibrium.</strong></p>
+        </div>
+        
+        <h3>How Theories Clash: Example Crisis</h3>
+        
+        <div class="theory-box">
+            <h5>Event: King Assassinated</h5>
+            <ul>
+                <li><strong>Hawkwright:</strong> "Who is the lawful successor?"</li>
+                <li><strong>Rowan:</strong> "Who can secure Britain <em>tonight</em>?"</li>
+                <li><strong>Ashcroft:</strong> "Who will the city accept?"</li>
+                <li><strong>Blackthorn:</strong> "Who has the blood claim?"</li>
+                <li><strong>Greymark:</strong> "Who ordered the murder?"</li>
+            </ul>
+            <p><strong>Same event. Five incompatible answers. That's the game.</strong></p>
+        </div>
+        
+        
+        <h2>Bloodline Seats (Not Family Trees)</h2>
+        
+        <p>Bloodlines are not modeled as family trees. They are a <strong>finite set of playable seats</strong> that represent generations.</p>
+        
+        <p>Each bloodline has:</p>
+        <ul>
+            <li>A surname and reputation</li>
+            <li>A lore blurb</li>
+            <li>A set of character seats (playable identities)</li>
+        </ul>
+        
+        <p>Players "jump into" a seat, not a tree. At character selection, players see available vacant seats and claim one.</p>
+        
+        <h3>What Happens When a Seat Dies?</h3>
+        <p>When a bloodline character dies:</p>
+        <ol>
+            <li>The seat becomes vacant</li>
+            <li>A mourning period occurs (e.g., 48 hours)</li>
+            <li>The seat may reopen as a successor: "Alden Hawkwright, Heir of Cedric"</li>
+        </ol>
+        
+        <div class="warning">
+            <strong>Important:</strong> The person does not return. The seat transforms. Same bloodline, same seat index, but a new identity with different hooks.
+        </div>
+        
+        <h3>Bloodline Growth</h3>
+        <p>Bloodlines start small (1-2 seats) and only grow when the world justifies it:</p>
+        <ul>
+            <li><strong>Royal Recognition:</strong> Crown legitimizes an heir or cadet branch</li>
+            <li><strong>Legal Recognition:</strong> Court establishes lineage or adoption</li>
+            <li><strong>Land Grant:</strong> Bloodline gains permanent land</li>
+            <li><strong>Survival Under Fire:</strong> Bloodline survives a major purge</li>
+        </ul>
+        
+        <h3>Bloodline Extinction & Replacement</h3>
+        <p>Bloodlines can die out. When a bloodline goes extinct:</p>
+        <ul>
+            <li>The <em>name</em> disappears permanently</li>
+            <li>Politics shift tone</li>
+            <li>The city feels the loss</li>
+        </ul>
+        
+        <div class="warning">
+            <h4>Important: Theories Don't Die</h4>
+            <p><strong>The theory of legitimacy does not disappear when the bloodline does.</strong></p>
+            <p>If House Hawkwright (Legitimacy by Law) goes extinct, the <em>need</em> for legal legitimacy doesn't vanish. Eventually, a new bloodline embodying that theory will emerge — under a different name, perhaps through different origins, but representing the same fundamental answer to "who deserves to rule."</p>
+            <p><strong>How replacement occurs:</strong> Through world-shaping events. A new bloodline might be recognized after:</p>
+            <ul>
+                <li>A commoner rises to king and is ennobled, founding a new legitimist house</li>
+                <li>A foreign power backs a claimant who embodies law-based rule</li>
+                <li>A reformation movement creates a "Second Hawkwright" lineage</li>
+                <li>The Crown deliberately recreates the vacuum by elevating someone</li>
+            </ul>
+            <p>The exact mechanism is emergent and story-driven, not mechanical. Staff recognizes when the world has produced a natural successor to an extinct theory.</p>
+        </div>
+        
+        <h2>Concrete Example: The Hawkwright Bloodline</h2>
+        
+        <p>To understand how bloodlines actually work in play, here's House Hawkwright with all seats defined:</p>
+        
+        <div class="bloodline-card">
+            <h4>🪑 Seat 1: Cedric Hawkwright (Patriarch)</h4>
+            <p><strong>Status:</strong> Alive at shard start</p>
+            <p><strong>Visual Identity:</strong> Older coded (gray hair), wears court attire not armor</p>
+            <p><strong>Starting Items:</strong> House Signet Ring, Copy of the Charter of Britain (book item)</p>
+            
+            <p><strong>What Cedric believes:</strong> "Britain survives only if power submits to process."</p>
+            
+            <p><strong>Goals:</strong></p>
+            <ul>
+                <li>Ensure any coronation follows tradition</li>
+                <li>Prevent military seizure of the throne</li>
+                <li>Preserve Hawkwright legitimacy long enough to pass it on</li>
+            </ul>
+            
+            <p><strong>Why he's dangerous:</strong> He can legitimize or delegitimize a ruler. His public support matters more than his sword.</p>
+            
+            <p><strong>If Cedric dies:</strong> Immediate legitimacy crisis, Regents gain freedom, seat enters mourning lock for 48 hours</p>
+        </div>
+        
+        <div class="bloodline-card">
+            <h4>🪑 Seat 2: Elara Hawkwright (Court Operator)</h4>
+            <p><strong>Status:</strong> Vacant at shard start (player-claimable)</p>
+            <p><strong>Visual Identity:</strong> Younger, social, intelligent, widely known</p>
+            <p><strong>Starting Items:</strong> Letters of correspondence (RP hooks), Access to court spaces</p>
+            
+            <p><strong>What Elara believes:</strong> "Law is only useful if it can be bent without breaking."</p>
+            
+            <p><strong>Goals:</strong></p>
+            <ul>
+                <li>Build alliances quietly</li>
+                <li>Secure Hawkwright relevance regardless of who rules</li>
+                <li>Avoid open confrontation until unavoidable</li>
+            </ul>
+            
+            <p><strong>Why she's dangerous:</strong> She can align the bloodline with any side. Her survival keeps options open.</p>
+            
+            <p><strong>If Elara dies:</strong> Hawkwright influence narrows drastically, bloodline becomes brittle, houses may stop courting them</p>
+        </div>
+        
+        <div class="bloodline-card">
+            <h4>🪑 Seat 3: The Hawkwright Scion (The Continuation)</h4>
+            <p><strong>Status:</strong> Locked (unavailable at shard start)</p>
+            
+            <p><strong>This seat does not exist yet. It must be earned.</strong></p>
+            
+            <p><strong>How it appears:</strong></p>
+            <ul>
+                <li>Crown recognizes an heir</li>
+                <li>Or land is granted to the family</li>
+                <li>Or bloodline survives a major purge</li>
+            </ul>
+            
+            <p>When created, this seat represents the future of the bloodline and signals that Hawkwrights are no longer fragile. If the Scion exists, rivals take them very seriously.</p>
+        </div>
+        
+        <h2>How Players Recognize Bloodlines In-Game</h2>
+        
+        <p>Bloodline importance must be <strong>visible, procedural, and risky to ignore</strong>. A guard shouldn't need to "know" lore — they should see it immediately.</p>
+        
+        <h3>Visual Signaling (Instant Recognition)</h3>
+        
+        <div class="theory-box">
+            <h5>Overhead Title</h5>
+            <p>Example display:</p>
+            <p style="text-align: center; color: var(--gold); font-size: 1.1em;">Alric Rowan<br>[Rowan Bloodline]<br>(Veteran Commander)</p>
+            <p>This is not cosmetic — it's informational. Players see it and immediately know "this person carries recognized legitimacy."</p>
+        </div>
+        
+        <div class="theory-box">
+            <h5>Recognizable Insignia (Item-Based)</h5>
+            <p>Each bloodline has one unmistakable visual token:</p>
+            <ul>
+                <li>Rowan War Medallion</li>
+                <li>Hawkwright Signet Ring</li>
+                <li>Ashcroft Merchant Seal</li>
+            </ul>
+            <p>Guards are trained (IC) to recognize these. If a player sees the item: "This person carries recognized legitimacy."</p>
+        </div>
+        
+        <div class="theory-box">
+            <h5>Speech/Name Hue (Subtle)</h5>
+            <p>Not bright neon — restrained, official:</p>
+            <ul>
+                <li>Rowan: iron/steel gray</li>
+                <li>Hawkwright: parchment gold</li>
+            </ul>
+            <p>This trains pattern recognition subconsciously.</p>
+        </div>
+        
+        <h3>Procedural Authority (Why Guards Obey)</h3>
+        
+        <p>Bloodline characters do NOT issue direct commands like "Arrest him." They invoke process triggers.</p>
+        
+        <div class="warning">
+            <h4>Example: Rowan Invoking Authority</h4>
+            <p>Alric Rowan says: <em>"By my authority as Rowan, this situation is unstable. Guards — contain and hold."</em></p>
+            <p>That's not a command. That's a procedural escalation.</p>
+            <p><strong>What the guard player understands instantly:</strong></p>
+            <ul>
+                <li>This is someone whose judgment will be reviewed</li>
+                <li>Ignoring them could get me blamed later, charged with dereliction, or on the wrong side of future power</li>
+                <li>So the guard thinks: "I can disagree later. But ignoring this now is dangerous."</li>
+            </ul>
+            <p><strong>That's realism.</strong> Guards obey because it's safer, not because it's forced.</p>
+        </div>
+        
+        <h3>Social Consequence (The Real Enforcement)</h3>
+        
+        <p>If a guard ignores a bloodline member, nothing explodes immediately. Instead:</p>
+        <ul>
+            <li>Chroniclers write it down</li>
+            <li>Commanders ask questions</li>
+            <li>The guard gets labeled "unreliable"</li>
+            <li>Later: promotions stall, excluded from sensitive operations, quietly blamed when things go wrong</li>
+        </ul>
+        
+        <p><strong>No mechanics needed. Just memory and reputation.</strong></p>
+        
+        <div class="quote">
+            When a bloodline speaks, you listen — not because they command you,<br>
+            but because history will ask why you didn't.
+        </div>
+        
+        <h2>What Bloodlines Are NOT</h2>
+        
+        <ul>
+            <li>❌ Factions or guilds</li>
+            <li>❌ Skill trees or progression paths</li>
+            <li>❌ Sources of combat bonuses</li>
+            <li>❌ Exclusive clubs requiring invitations</li>
+        </ul>
+        
+        <p>Bloodlines don't give you things. They give you <strong>problems</strong>.</p>
+        
+        <p>A bloodline character is not more <em>powerful</em> — they are more <em>consequential</em>. When they act or die, the world is forced to react.</p>
+        
+        <h2>🔧 Hard Mechanics</h2>
+        
+        <h3>Bloodline Seat Registry</h3>
+        <ul>
+            <li><strong>Data structure:</strong> Each bloodline stored with BloodlineId, Name, TheoryType enum, ActiveSeats list</li>
+            <li><strong>Seat limits:</strong> Soft cap 3 seats, hard cap 5 seats per bloodline</li>
+            <li><strong>Seat states:</strong> VACANT | OCCUPIED | MOURNING | EXTINCT</li>
+            <li><strong>Visual markers:</strong> Bloodline members have overhead title "[Bloodline Name]" with unique hue</li>
+        </ul>
+        
+        <h3>Character Selection Integration</h3>
+        <ul>
+            <li><strong>Role selection gump:</strong> Shows bloodline seats with status (VACANT/TAKEN)</li>
+            <li><strong>Claim validation:</strong> Check account doesn't already hold another bloodline seat</li>
+            <li><strong>Template application:</strong> On claim, apply fixed name, body hue, starting items, spawn location</li>
+            <li><strong>Bloodline tag:</strong> Mobile.BloodlineId set, tracked server-wide</li>
+        </ul>
+        
+        <h3>Death & Succession</h3>
+        <ul>
+            <li><strong>On permadeath:</strong> Seat enters MOURNING state for 48 hours (configurable)</li>
+            <li><strong>During mourning:</strong> Seat is locked, cannot be claimed</li>
+            <li><strong>After mourning:</strong> Seat reopens with modified template (new name, "Heir of X")</li>
+            <li><strong>Renewal limits:</strong> Each seat can renew 2-3 times before extinction risk</li>
+        </ul>
+        
+        <h3>Visibility & Recognition</h3>
+        <ul>
+            <li><strong>Name display:</strong> "[Bloodline] Name" format with colored bloodline tag</li>
+            <li><strong>Insignia items:</strong> Each bloodline has unique wearable signet/medallion (blessed, non-transferable)</li>
+            <li><strong>Chronicle integration:</strong> Bloodline deaths auto-logged with special formatting</li>
+            <li><strong>Guard behavior:</strong> Guards recognize bloodline members via tag check, adjust responses</li>
+        </ul>
+        
+        <h2>💻 Pseudocode & Implementation</h2>
+        
+        <h3>Bloodline Data Structure</h3>
+        <pre style="background: var(--bg-medium); padding: 1rem; border-radius: 4px; overflow-x: auto; color: #88cc88; font-family: 'Courier New', monospace; font-size: 0.9em;">
+public class Bloodline
+{
+    public string BloodlineId { get; set; }  // "Hawkwright"
+    public string DisplayName { get; set; }  // "House Hawkwright"
+    public TheoryType Theory { get; set; }   // Law, Force, PopularWill, etc.
+    public int SoftCap { get; set; } = 3;
+    public int HardCap { get; set; } = 5;
+    
+    public List&lt;BloodlineSeat&gt; Seats { get; set; }
+    
+    public BloodlineSeat GetVacantSeat()
+    {
+        return Seats.FirstOrDefault(s => s.State == SeatState.VACANT);
+    }
+    
+    public bool IsExtinct()
+    {
+        return Seats.All(s => s.State == SeatState.EXTINCT);
+    }
+}
+
+public class BloodlineSeat
+{
+    public string SeatId { get; set; }         // "Hawkwright_Patriarch"
+    public string TemplateName { get; set; }   // "Cedric Hawkwright"
+    public SeatState State { get; set; }
+    public Mobile CurrentHolder { get; set; }
+    public DateTime MourningUntil { get; set; }
+    public int RenewalCount { get; set; }
+    public int MaxRenewals { get; set; } = 2;
+    
+    public void OnDeath()
+    {
+        State = SeatState.MOURNING;
+        MourningUntil = DateTime.UtcNow.AddHours(48);
+        CurrentHolder = null;
+        RenewalCount++;
+    }
+    
+    public bool CanRenew()
+    {
+        return RenewalCount < MaxRenewals;
+    }
+}
+        </pre>
+        
+        <h3>Character Selection Integration</h3>
+        <pre style="background: var(--bg-medium); padding: 1rem; border-radius: 4px; overflow-x: auto; color: #88cc88; font-family: 'Courier New', monospace; font-size: 0.9em;">
+public class BloodlineSelectionGump : Gump
+{
+    public override void OnResponse(Mobile from, GumpInfo info)
+    {
+        int buttonId = info.ButtonID;
+        
+        // Map button to bloodline seat
+        var seat = BloodlineRegistry.GetSeatByButtonId(buttonId);
+        
+        if (seat == null || seat.State != SeatState.VACANT)
+        {
+            from.SendMessage("That seat is not available.");
+            return;
+        }
+        
+        // Validate: one bloodline per account
+        if (BloodlineRegistry.AccountHasBloodline(from.Account))
+        {
+            from.SendMessage("Your account already holds a bloodline seat.");
+            return;
+        }
+        
+        // Apply template
+        BloodlineTemplate template = seat.GetTemplate();
+        template.ApplyTo(from); // Sets name, body, hue, skills, items
+        
+        // Assign seat
+        seat.CurrentHolder = from;
+        seat.State = SeatState.OCCUPIED;
+        from.BloodlineId = seat.Bloodline.BloodlineId;
+        
+        // Visual marker
+        from.AddItem(new BloodlineInsignia(seat.Bloodline));
+        
+        // Log to Chronicle
+        Chronicle.RecordBloodlineClaim(from, seat);
+    }
+}
+        </pre>
+        
+        <h3>Death & Mourning System</h3>
+        <pre style="background: var(--bg-medium); padding: 1rem; border-radius: 4px; overflow-x: auto; color: #88cc88; font-family: 'Courier New', monospace; font-size: 0.9em;">
+public static void OnBloodlineDeath(Mobile victim)
+{
+    var seat = BloodlineRegistry.GetSeatByMobile(victim);
+    if (seat == null) return;
+    
+    // Record to Chronicle with special formatting
+    Chronicle.RecordBloodlineDeath(victim, seat.Bloodline);
+    
+    // Enter mourning
+    seat.OnDeath();
+    
+    // Check for extinction
+    if (!seat.CanRenew())
+    {
+        seat.State = SeatState.EXTINCT;
+        
+        if (seat.Bloodline.IsExtinct())
+        {
+            // Bloodline-wide extinction event
+            OnBloodlineExtinction(seat.Bloodline);
+        }
+    }
+    
+    // Schedule mourning end
+    Timer.DelayCall(TimeSpan.FromHours(48), () => 
+    {
+        if (seat.State == SeatState.MOURNING && seat.CanRenew())
+        {
+            seat.State = SeatState.VACANT;
+            // Modify template for successor
+            seat.TemplateName = $"Heir of {victim.Name}";
+            Chronicle.AddEntry($"{seat.Bloodline.DisplayName} mourning ends");
+        }
+    });
+}
+        </pre>
+        
+        <h2>⚠️ Possible Problems & Conflicts</h2>
+        
+        <div class="warning">
+            <h4>Problem: Bloodline Hoarding</h4>
+            <p><strong>Symptom:</strong> One group controls all seats in a bloodline via coordination</p>
+            <p><strong>Solution:</strong> Hard limit: one bloodline seat per account. No exceptions. Use IP checks for multi-account abuse detection. Make bloodline members natural rivals through competing interests even within same house.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Problem: Meaningless Bloodlines</h4>
+            <p><strong>Symptom:</strong> Players claim bloodlines but don't embody the theory; bloodlines become cosmetic</p>
+            <p><strong>Solution:</strong> Staff quietly note inactive/off-theory bloodline play. Chronicler can publicly question legitimacy. Other bloodlines can challenge "are they really upholding Law/Force/etc?" Make consequences social, not mechanical punishments.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Problem: Bloodline Extinction Too Easy/Hard</h4>
+            <p><strong>Symptom:</strong> Either bloodlines die out week 1, or they're immortal despite bad play</p>
+            <p><strong>Solution:</strong> Tunable renewal limits (start at 2-3 renewals per seat). Monitor extinction rates. If too fast, increase limits slightly. If never happens, decrease. Goldilocks zone: 1 extinction every 2-3 months feels momentous.</p>
+        </div>
+        
+        <div class="warning">
+            <h4>Problem: New Players Can't Get Bloodline Seats</h4>
+            <p><strong>Symptom:</strong> All seats perpetually occupied by veterans</p>
+            <p><strong>Solution:</strong> Permadeath naturally creates openings. If this still becomes an issue, add "dormancy" rule: if a bloodline seat holder doesn't log in for 5+ days, seat can be challenged/vacated by staff. Prevents seat-parking.</p>
+        </div>
+        
+        <h2>❓ Questions & Answers</h2>
+        
+        <h3>Q: Can I switch bloodlines?</h3>
+        <p><strong>A:</strong> No. Bloodline is identity, not a guild. If you claim Hawkwright, you are Hawkwright until death. Want a different bloodline? Your character must die.</p>
+        
+        <h3>Q: What if I'm the last member of my bloodline and I die?</h3>
+        <p><strong>A:</strong> If your seat was the last active seat and can't renew, the bloodline goes extinct. This is permanent and shifts the political landscape. Your death becomes legendary — "the one who ended House Hawkwright."</p>
+        
+        <p>When a bloodline goes extinct:</p>
+        <ul>
+            <li>The <em>name</em> disappears permanently from Britain</li>
+            <li>The <em>theory</em> that bloodline represented (Law, Force, Popular Will, Blood, or Truth) does not disappear</li>
+            <li>Politics shift tone — guards may fracture, legal continuity breaks, or mob rule emerges depending on which bloodline fell</li>
+            <li>Eventually, a new bloodline embodying that theory may be recognized through world-shaping events</li>
+        </ul>
+        
+        <p><strong>How replacement occurs:</strong> A new bloodline might emerge after a commoner rises to king and is ennobled, a foreign power backs a new claimant, or a reformation movement creates a successor lineage. This is emergent and story-driven — staff recognizes when the world has produced a natural successor to an extinct theory. See <a href="#extinction" style="color: var(--accent);">Bloodline Extinction & Replacement</a> section above for details.</p>
+        
+        <h3>Q: Can bloodlines be created by players?</h3>
+        <p><strong>A:</strong> Not initially. Season 1 starts with 3-5 fixed bloodlines (Hawkwright, Rowan, Ashcroft recommended). New bloodlines can emerge later through major events: a king ennobling a hero, a rebellion creating a new house, etc. This is staff-approved, not player-initiated.</p>
+        
+        <h3>Q: Do bloodline members get stat bonuses or special abilities?</h3>
+        <p><strong>A:</strong> Absolutely not. Bloodlines grant zero mechanical advantages. No stat boosts, no special skills, no combat buffs. You get legitimacy and visibility. That's it. If you want power, earn it through play.</p>
+        
+        <h3>Q: What happens if two bloodline members fight each other?</h3>
+        <p><strong>A:</strong> That's internal bloodline conflict — excellent drama. The bloodline doesn't protect you from your own. In fact, succession disputes within bloodlines are some of the best stories. Guards treat it as they would any violence (context-dependent).</p>
+        
+        <h3>Q: Why are bloodlines limited to 3-5 seats?</h3>
+        <p><strong>A:</strong> Scarcity creates value. If bloodlines have unlimited seats, death becomes meaningless and legitimacy dilutes. Small numbers keep each seat precious, each death impactful, and politics concentrated.</p>
+        
+        <h3>Q: Can I be a commoner who later becomes bloodline?</h3>
+        <p><strong>A:</strong> Not by "becoming" bloodline mid-character. However, if you distinguish yourself enough, you can have a bloodline created through RP processes (as long as there is an open spot for a new bloodline). This typically requires world-shaping events like being ennobled by the Crown, winning a civil war, or embodying a needed theory of legitimacy. See <a href="#extinction" style="color: var(--accent);">Bloodline Extinction & Replacement</a> for how new bloodlines emerge.</p>
+        
+        <h2>🔌 Possible Integrations & Existing Scripts</h2>
+        
+        <h3>Core Systems to Leverage</h3>
+        <ul>
+            <li><strong>Guild System:</strong> Don't use actual guilds, but <code>BaseGuild.cs</code> structure is good reference for managing membership, tags, and collective identity</li>
+            <li><strong>Title System:</strong> ServUO <code>PlayerMobile.Title</code> property can be overridden to display "[Bloodline]" automatically</li>
+            <li><strong>Item blessing:</strong> Use <code>LootType.Blessed</code> for bloodline insignias so they don't drop on death (they should vanish/archive)</li>
+            <li><strong>Hue system:</strong> <code>Mobile.Hue</code> can be set per bloodline for subtle visual identity</li>
+        </ul>
+        
+        <h3>Recommended Custom Scripts</h3>
+        <ul>
+            <li><strong>BloodlineRegistry.cs:</strong> Singleton that manages all bloodlines, seats, assignments. Serialized to save on restart.</li>
+            <li><strong>BloodlineTemplate.cs:</strong> Defines starting name, stats, skills, items, spawn point for each seat</li>
+            <li><strong>BloodlineInsignia.cs:</strong> Wearable item (ring/pendant) that marks bloodline membership, non-transferable, blessed</li>
+            <li><strong>BloodlineSelectionGump.cs:</strong> Presents available seats at character creation, handles claim logic</li>
+        </ul>
+        
+        <h3>Chronicle Integration</h3>
+        <ul>
+            <li>When bloodline member dies, write special entry: <code>"[BLOODLINE DEATH] Cedric Hawkwright slain by..."</code></li>
+            <li>When bloodline goes extinct: <code>"[EXTINCTION] House Hawkwright has fallen. Law weakens."</code></li>
+            <li>When seat renews: <code>"[SUCCESSION] Alden Hawkwright, Heir of Cedric, has risen"</code></li>
+            <li>These special tags let Chronicler players easily find major events</li>
+        </ul>
+        
+        <h3>Admin Tools Needed</h3>
+        <ul>
+            <li><strong>[BloodlineInfo]:</strong> Show all bloodlines, seats, states, current holders</li>
+            <li><strong>[VacateBloodline] &lt;mobile&gt;:</strong> Force-vacate a seat (for abuse/inactivity)</li>
+            <li><strong>[AddBloodlineSeat] &lt;bloodline&gt;:</strong> Add new seat to existing bloodline (growth event)</li>
+            <li><strong>[CreateBloodline]:</strong> Create entirely new bloodline (rare, staff-only, Season 2+)</li>
+            <li><strong>[ExtinctBloodline] &lt;bloodline&gt;:</strong> Force extinction (story event or after last seat permanently lost)</li>
+        </ul>
+        
+        <h3>Potential Community Resources</h3>
+        <ul>
+            <li><strong>Knives' Advanced Title System:</strong> Can auto-format titles with bloodline names</li>
+            <li><strong>Factions/Town System scripts:</strong> Good reference for "loyalty to faction" mechanics, adaptable to bloodline allegiance</li>
+            <li><strong>Custom Character Creation scripts:</strong> Many shards have modified char creation; find one that uses templates</li>
+        </ul>
+        
+        <div class="theory-box" style="margin-top: 2rem;">
+            <h5>💡 Implementation Priority</h5>
+            <p><strong>Phase 1 (Launch):</strong></p>
+            <ul>
+                <li>BloodlineRegistry with manual seat assignment (spreadsheet or JSON)</li>
+                <li>Visual markers (title prefix + blessed insignia item)</li>
+                <li>Death logging to Chronicle</li>
+            </ul>
+            <p><strong>Phase 2 (Post-launch):</strong></p>
+            <ul>
+                <li>Automated selection gump at character creation</li>
+                <li>Mourning timers and auto-renewal</li>
+                <li>Extinction detection and events</li>
+            </ul>
+            <p><strong>Phase 3 (Season 2+):</strong></p>
+            <ul>
+                <li>Dynamic bloodline creation</li>
+                <li>Seat growth mechanics</li>
+                <li>Web integration showing bloodline family trees</li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Arrest Ledger - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📜 Arrest Ledger</h1>
+        <p>Public Record of Custody and Force</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Core Principle</h2>
+        
+        <p>The Arrest Ledger is a public accounting of force, not a judgment of guilt.</p>
+        
+        <p>Arrest is an act of authority, not proof of wrongdoing. Therefore, every arrest must be visible by default.</p>
+        
+        <p>The ledger exists to ensure:</p>
+        <ul>
+            <li>Custody cannot be hidden</li>
+            <li>Force cannot disappear quietly</li>
+            <li>Institutional failure leaves a trace</li>
+        </ul>
+        
+        <h2>Automatic Entry Creation</h2>
+        
+        <p>When a player is booked into jail, an Arrest Ledger entry is created automatically.</p>
+        
+        <ul>
+            <li>No approval is required</li>
+            <li>No role is required to be online</li>
+            <li>No human action can prevent creation</li>
+        </ul>
+        
+        <p>This ensures the world continues functioning even when no officials are present.</p>
+        
+        <h2>Physical Location & Access</h2>
+        
+        <p>The Arrest Ledger is physically located at the front of the jail.</p>
+        
+        <p>Access rules:</p>
+        <ul>
+            <li>Publicly readable by anyone</li>
+            <li>No permissions required</li>
+            <li>No role required</li>
+        </ul>
+        
+        <p>The jail is a place of exposure, not disappearance.</p>
+        
+        <h2>System-Generated Entry Contents</h2>
+        
+        <p>Each entry includes the following immutable fields:</p>
+        
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Prisoner Name</td>
+                <td>Character jailed</td>
+            </tr>
+            <tr>
+                <td>Arresting Guard(s)</td>
+                <td>Who delivered custody</td>
+            </tr>
+            <tr>
+                <td>Time of Arrest</td>
+                <td>When arrest occurred</td>
+            </tr>
+            <tr>
+                <td>Location of Arrest</td>
+                <td>Where arrest occurred</td>
+            </tr>
+            <tr>
+                <td>Custody Class</td>
+                <td>Minor / Serious / Capital</td>
+            </tr>
+            <tr>
+                <td>Booking Time</td>
+                <td>When delivered to jail</td>
+            </tr>
+            <tr>
+                <td>Baseline Custody Timer</td>
+                <td>Default hold duration</td>
+            </tr>
+            <tr>
+                <td>Current Custody Status</td>
+                <td>Held / Released / Escalated / Auto-Released</td>
+            </tr>
+        </table>
+        
+        <p>The ledger does not determine guilt or innocence.</p>
+        
+        <h2>What the Arrest Ledger Does NOT Contain</h2>
+        
+        <p>The Arrest Ledger does not include:</p>
+        <ul>
+            <li>Verdicts</li>
+            <li>Legal conclusions</li>
+            <li>Guilt determinations</li>
+            <li>Sentencing outcomes</li>
+            <li>Narrative judgments</li>
+        </ul>
+        
+        <p>It records what happened, not what it means.</p>
+        
+        <h2>Layered Annotations</h2>
+        
+        <p>After creation, limited roles may append information.</p>
+        
+        <h3>Guard Annotations</h3>
+        
+        <p>Guards may append:</p>
+        <ul>
+            <li>Clarifying notes</li>
+            <li>Corrections</li>
+            <li>Error-window releases</li>
+            <li>Statements of cause</li>
+        </ul>
+        
+        <p>Guards cannot edit or remove system data.</p>
+        
+        <h3>Warden Annotations</h3>
+        
+        <p>Wardens may append:</p>
+        <ul>
+            <li>Custody visibility flags</li>
+            <li>Irregular custody notices</li>
+            <li>Pattern observations</li>
+            <li>Condition-of-custody remarks</li>
+        </ul>
+        
+        <p>Wardens do not alter custody duration or outcome.</p>
+        
+        <h3>Prisoner Statements</h3>
+        
+        <p>Prisoners may append statements only to their own arrest record.</p>
+        
+        <p>Examples:</p>
+        <ul>
+            <li>Denial of charges</li>
+            <li>Claim of unlawful arrest</li>
+            <li>Statement of coercion or orders</li>
+        </ul>
+        
+        <p>Prisoners cannot edit system or third-party entries.</p>
+        
+        <h2>Auto-Release Visibility</h2>
+        
+        <p>When custody ends due to timer expiration without human intervention, the Arrest Ledger records: "Released due to unresolved custody."</p>
+        
+        <p>This indicates institutional failure, not mercy.</p>
+        
+        <p>Auto-release does not erase:</p>
+        <ul>
+            <li>Arrest history</li>
+            <li>Eligibility for later action</li>
+            <li>Political consequence</li>
+        </ul>
+        
+        <h2>Relationship to Other Systems</h2>
+        
+        <h3>Jail System</h3>
+        
+        <p>The Arrest Ledger records entry into custody. Custody mechanics are defined in jail.html.</p>
+        
+        <div class="info-box">
+            <p><strong>See:</strong> <a href="jail.html" style="color: var(--accent);">Jail System</a> for custody mechanics, timers, and auto-release rules</p>
+        </div>
+        
+        <h3>Death Ledger</h3>
+        
+        <p>Arrest Ledger = reversible force</p>
+        <p>Death Ledger = irreversible outcome</p>
+        
+        <p>Both are:</p>
+        <ul>
+            <li>Automatic</li>
+            <li>Public</li>
+            <li>Neutral at creation</li>
+            <li>Politically shaped through attention</li>
+        </ul>
+        
+        <h3>Magistrates & Crown</h3>
+        
+        <p>Magistrates and the Crown are not required to review every arrest.</p>
+        
+        <p>They engage only when:</p>
+        <ul>
+            <li>Entries are flagged</li>
+            <li>Custody is contested</li>
+            <li>Escalation occurs</li>
+        </ul>
+        
+        <p>This avoids administrative bottlenecks.</p>
+        
+        <h2>Institutional Function</h2>
+        
+        <p>The Arrest Ledger ensures:</p>
+        <ul>
+            <li>Force leaves a record</li>
+            <li>Silence is visible</li>
+            <li>Patterns accumulate over time</li>
+            <li>Power remains legible</li>
+        </ul>
+        
+        <p>No role controls outcomes by managing the ledger. All outcomes occur independently.</p>
+        
+        <h2>Closing Constraints</h2>
+        
+        <p>The Arrest Ledger:</p>
+        <ul>
+            <li>Cannot be disabled</li>
+            <li>Cannot be hidden</li>
+            <li>Cannot be selectively published</li>
+            <li>Cannot be retroactively erased</li>
+        </ul>
+        
+        <p>If custody occurs, the record exists.</p>
+        
+        <div class="quote">
+            The Arrest Ledger does not determine guilt.<br>It records the use of force.<br>What the realm does with that knowledge is political.
+        </div>
+        
+        <h2>See Also</h2>
+        
+        <ul>
+            <li><a href="jail.html" style="color: var(--accent);">Jail System</a> — Custody mechanics and timers</li>
+            <li><a href="warden.html" style="color: var(--accent);">Warden of the Dungeons</a> — Custody observation authority</li>
+            <li><a href="guards.html" style="color: var(--accent);">Guards</a> — Arrest authority and procedures</li>
+            <li><a href="death-ledger.html" style="color: var(--accent);">Death Ledger</a> — Permanent outcome records</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="jail.html" style="color: var(--gold);">Jail System</a> | <a href="warden.html" style="color: var(--gold);">Warden</a></p>
+    </footer>
+</body>
+</html>

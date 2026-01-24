@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Warden of the Dungeons - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚖️ Warden of the Dungeons</h1>
+        <p>Custody is automatic. Pressure is optional.</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Core Definition</h2>
+        
+        <p>The Warden of the Dungeons is a Crown-appointed observer and amplifier of custody.</p>
+        
+        <p>The Warden is not required for arrests, releases, timers, sentencing, or execution eligibility. The Warden controls visibility, discomfort, and political cost. The Warden does not control outcomes.</p>
+        
+        <p>Jail mechanics function fully without a Warden. The Warden does not keep the system running.</p>
+        
+        <div class="info-box">
+            <p><strong>See:</strong> <a href="jail.html" style="color: var(--accent);">Jail System</a> for custody mechanics, timers, and auto-release rules</p>
+        </div>
+        
+        <h2>What the Warden Is NOT</h2>
+        
+        <p>The Warden cannot:</p>
+        <ul>
+            <li>Block visits entirely</li>
+            <li>Prevent auto-release</li>
+            <li>Decide sentence length</li>
+            <li>Override Magistrates or the Crown</li>
+            <li>Be required for jail RP or custody resolution</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>If any of these were true, the role would become toxic.</strong>
+        </div>
+        
+        <h2>Custody Condition Modifiers</h2>
+        
+        <p>The Warden may apply condition changes without affecting custody duration:</p>
+        
+        <table>
+            <tr>
+                <th>Condition Type</th>
+                <th>Options</th>
+            </tr>
+            <tr>
+                <td>Confinement</td>
+                <td>Group vs individual holding</td>
+            </tr>
+            <tr>
+                <td>Restraint</td>
+                <td>Shackled vs unshackled</td>
+            </tr>
+            <tr>
+                <td>Visibility</td>
+                <td>Public holding vs quiet custody</td>
+            </tr>
+            <tr>
+                <td>Comfort</td>
+                <td>Restricted comfort (flavor only)</td>
+            </tr>
+        </table>
+        
+        <p>These change how custody feels. They do not change how long it lasts.</p>
+        
+        <h2>Visibility & Interest Flags</h2>
+        
+        <p>The Warden may apply flags to arrest records:</p>
+        
+        <ul>
+            <li>High Concern</li>
+            <li>Irregular Custody</li>
+            <li>Politically Sensitive</li>
+            <li>Death-Eligible Under Review</li>
+        </ul>
+        
+        <p>Effects:</p>
+        <ul>
+            <li>Alerts Magistrates</li>
+            <li>Alerts Chroniclers</li>
+            <li>Signals importance to the realm</li>
+        </ul>
+        
+        <p>No approval is required to apply these flags.</p>
+        
+        <h2>Arrest Ledger Interaction</h2>
+        
+        <p>The Arrest Ledger automatically records name, time, custody class, and arresting guard. It is updated by guards and system events.</p>
+        
+        <p>The Warden may:</p>
+        <ul>
+            <li>Append observational annotations</li>
+            <li>Publish notes on conditions, deviations, or irregularities</li>
+        </ul>
+        
+        <p>The Warden cannot:</p>
+        <ul>
+            <li>Edit base records</li>
+            <li>Erase entries</li>
+        </ul>
+        
+        <p>This parallels the Coroner updating the Public Death Ledger.</p>
+        
+        <h2>Pattern Annotation Authority</h2>
+        
+        <p>The Warden may publish pattern statements:</p>
+        
+        <ul>
+            <li>Repeated unresolved capital custody</li>
+            <li>Repeated arrests by the same guard</li>
+            <li>Systemic delays or deviations</li>
+        </ul>
+        
+        <p>These are not accusations. They are institutional memory. They create pressure without blocking play.</p>
+        
+        <h2>Public Statements by Prisoners</h2>
+        
+        <p>Prisoners may attach their own statements to their arrest record. Only the prisoner may add statements to their own record. Statements do not alter custody mechanics.</p>
+        
+        <p>This encourages jailed players to stay engaged. It shifts jail from waiting room to political record.</p>
+        
+        <h2>Relationship to Other Offices</h2>
+        
+        <h3>The Crown</h3>
+        
+        <p>The Warden is appointed and removed solely by the King. The Warden serves at the King's pleasure.</p>
+        
+        <div class="quote-simple">
+            The Warden of the Dungeons is appointed and removed by the Crown. They serve at the King's pleasure — and carry the King's shame.
+        </div>
+        
+        <h3>Magistrate</h3>
+        
+        <p>Peer relationship, not hierarchical. The Magistrate rules on legality. The Warden records how law is experienced.</p>
+        
+        <div class="quote-simple">
+            The Magistrate rules on law. The Warden records how law is experienced.
+        </div>
+        
+        <h3>Guards</h3>
+        
+        <p>Guards control bodies. Wardens control memory. No command authority in either direction.</p>
+        
+        <div class="quote-simple">
+            The Guard controls bodies. The Warden controls memory.
+        </div>
+        
+        <h2>Absence Handling</h2>
+        
+        <p>Jail systems resolve fully without a Warden online. Auto-release occurs as defined in jail.html.</p>
+        
+        <p>When a Warden returns, they may reconstruct events and publish discrepancies.</p>
+        
+        <p>Absence creates silence — not blockage.</p>
+        
+        <h2>Role Count</h2>
+        
+        <p>Recommended maximum: 2 Wardens.</p>
+        
+        <p>Scarcity preserves tension. Too many Wardens bureaucratize custody.</p>
+        
+        <h2>System Summary</h2>
+        
+        <div class="quote">
+            A jailed character is not paused. They are exposed.
+        </div>
+        
+        <h2>See Also</h2>
+        
+        <ul>
+            <li><a href="jail.html" style="color: var(--accent);">Jail System</a> — Custody mechanics and timers</li>
+            <li><a href="arrest-records.html" style="color: var(--accent);">Arrest Records</a> — Ledger system</li>
+            <li><a href="guards.html" style="color: var(--accent);">Guards</a> — Arrest and custody delivery</li>
+            <li><a href="roles.html" style="color: var(--accent);">Roles</a> — Other Crown appointments</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="jail.html" style="color: var(--gold);">Jail System</a> | <a href="roles.html" style="color: var(--gold);">Roles</a></p>
+    </footer>
+</body>
+</html>

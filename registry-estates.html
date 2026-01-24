@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>The Registry of Estates and Holdings - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; text-align: justify; }
+        .document-box { background: var(--bg-medium); border: 2px solid var(--gold); padding: 2rem; border-radius: 8px; margin: 2rem 0; }
+        .document-box h3 { color: var(--gold); margin-top: 0; text-align: center; }
+        .seal { text-align: center; color: var(--gold); font-size: 3rem; margin: 1rem 0; }
+        .info-box { background: var(--bg-light); border-left: 4px solid var(--gold); padding: 1.5rem; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .section { margin: 2rem 0; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📋 The Registry of Estates and Holdings</h1>
+        <p>A Comprehensive Record of Land and Property Across Britain</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <div class="document-box">
+            <div class="seal">⚜</div>
+            <h3>Official Register of the Civic Archives</h3>
+            <p style="text-align: center; font-style: italic; color: var(--text-muted);">Maintained by the Office of Land Records<br>In Service to Commerce, Governance, and the Public Trust</p>
+        </div>
+
+        <div class="section">
+            <h2>Nature and Purpose of the Registry</h2>
+            
+            <p>The Registry of Estates and Holdings is a comprehensive public record maintained within the Civic Archives of Britain. Unlike specialized ledgers kept for royal or military purposes, the Registry catalogues all recognized property activity across the realm—royal grants and market transactions alike, Crown reversions and public auctions, transfers of title and declarations of forfeiture.</p>
+            
+            <p>It is neither a legal instrument nor an arbiter of disputes. It is a chronicle of fact: who held what property, when possession changed hands, and under what circumstance the transfer occurred. The Registry does not determine who <em>should</em> hold property. It records who <em>does</em>.</p>
+            
+            <p>Its purpose is threefold: to serve as reference for commerce, to provide evidence in disputes over ownership, and to preserve the history of land tenure so that the passage of property through time may be traced, verified, and understood.</p>
+        </div>
+
+        <div class="section">
+            <h2>What Is Recorded</h2>
+            
+            <p>The Registry captures all recognized actions affecting property within Britain. Each entry details the following:</p>
+            
+            <ul>
+                <li>The property in question: location, description, and type</li>
+                <li>The nature of the transaction or action</li>
+                <li>The parties involved: grantors, recipients, sellers, buyers</li>
+                <li>The date and hour at which the action occurred</li>
+                <li>The authority or process by which the action was recognized</li>
+            </ul>
+            
+            <p>Actions documented within the Registry include, but are not limited to:</p>
+            
+            <div class="info-box">
+                <h3>Royal and Crown Actions</h3>
+                <ul>
+                    <li>Grants of Crown estates to individuals or noble families</li>
+                    <li>Evictions or seizures ordered by royal authority</li>
+                    <li>Transfers of stewardship over royal properties</li>
+                    <li>Reversions of Crown holdings back to direct royal control</li>
+                    <li>Forfeitures declared by decree due to treason, exile, or death</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Public Market Transactions</h3>
+                <ul>
+                    <li>Opening of properties to public auction</li>
+                    <li>Results of auction proceedings, including winning bids and final holders</li>
+                    <li>Sales conducted outside of auction, where parties are known</li>
+                    <li>Transfers of property between recognized owners</li>
+                    <li>Closures of auctions due to expiration or administrative action</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Abandonment and Reversion</h3>
+                <ul>
+                    <li>Declaration of abandonment for unclaimed or neglected holdings</li>
+                    <li>Reversion of properties to public availability</li>
+                    <li>Forfeiture of holdings due to prolonged absence or failure to maintain</li>
+                    <li>Administrative reclamation of properties left vacant</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Distinction Between Royal and Market Properties</h2>
+            
+            <p>Within the same system of land tenure, two forms of property coexist: those held by royal grant and those acquired through public means. The Registry records both, but notes the distinction.</p>
+            
+            <p>A royal estate is held at the pleasure of the Crown. It cannot be sold. It cannot be transferred without authority. When its holder dies, falls from favor, or is formally evicted, the property reverts to the Crown. These actions are recorded with reference to the authority that issued them: a crowned King, a Regent, or an emergency decree.</p>
+            
+            <p>A property acquired through auction or market transaction is held by recognition of title. It may be transferred by agreement, sold to another party, or abandoned if its holder departs. These actions are recorded with reference to the transaction itself: the price paid, the parties involved, the date of exchange.</p>
+            
+            <p>Both forms of tenure are subject to loss—through royal decree, through auction closure, through abandonment. The Registry does not favor one form over the other. It records both with equal precision, for both are part of the realm's economy of land and power.</p>
+        </div>
+
+        <div class="section">
+            <h2>Property Through Recognition and Record</h2>
+            
+            <p>No property is held by inherent right. It is held through recognition—by the Crown, by the market, by the civic authorities who maintain the Registry. Recognition requires record. A claim to ownership that is not entered into the Registry is a claim without standing.</p>
+            
+            <p>This does not mean the Registry creates ownership. It means it documents the moment ownership was recognized. A merchant who wins an estate at auction does not own it because the Registry says so. The merchant owns it because the auction was completed, payment rendered, and the transaction entered into record. The entry is evidence, not cause.</p>
+            
+            <p>When ownership is disputed, the Registry is consulted. It does not resolve the dispute—that is the work of magistrates, the Crown, or those with authority to adjudicate. But it provides the chronology upon which such resolution depends. Who held the property before the dispute arose? When did possession change hands? Was the transfer recorded? These are questions the Registry answers.</p>
+        </div>
+
+        <div class="section">
+            <h2>Chronology and Provenance</h2>
+            
+            <p>The Registry preserves the history of property, not the justice of it. An estate seized unjustly is recorded with the same care as one granted honorably. A transaction conducted under duress appears in the Registry alongside one freely made. The clerk does not assess motive, fairness, or intent. The clerk records what occurred.</p>
+            
+            <p>This is deliberate. The Registry exists to answer the question "what happened," not "what should have happened." Over time, this distinction matters. Regimes change. Authority shifts. A transaction deemed lawful under one ruler may be voided by the next. But the record of the transaction remains.</p>
+            
+            <p>When a property has passed through multiple hands, the Registry traces the chain of provenance. Each holder is listed. Each transfer is noted. This allows anyone consulting the record to see not merely who holds the property now, but who held it before, and before that, and before that still. Patterns emerge. Families rise and fall. Estates change hands during wars, are claimed during interregnums, revert during periods of order.</p>
+            
+            <p>The Registry does not interpret these patterns. It preserves them, so that those with reason to care may draw their own conclusions.</p>
+        </div>
+
+        <div class="section">
+            <h2>Why Comprehensive Records Are Necessary</h2>
+            
+            <p>Land is the foundation of commerce and governance alike. Merchants require certainty that the properties they acquire will be recognized. Nobles require assurance that estates granted by the Crown will not be stripped away without record. The Crown itself requires knowledge of what properties are held, by whom, and under what terms.</p>
+            
+            <p>Without record, these assurances dissolve. A disputed sale becomes a matter of testimony—he claims he paid, she claims she never sold. A seized estate becomes hearsay—he insists the Crown took it, the Crown denies knowledge. An abandoned property becomes contested ground—three parties claim it was theirs, none can prove when they left.</p>
+            
+            <p>The Registry does not prevent these disputes. It provides the evidence necessary to resolve them. In a realm where authority is sometimes contested and succession is never guaranteed, this function cannot be understated. Records outlast rulers. Ink persists where memory fades.</p>
+            
+            <p>Merchants rely on the Registry to verify that properties offered for auction are legitimately available, not still held by another with claim. Magistrates rely on it to determine the rightful holder of an estate when competing claims are brought before them. Chroniclers rely on it to trace the movement of land through generations, mapping the rise and fall of noble houses.</p>
+            
+            <p>Even those who wish the Registry said something different must acknowledge what it does say. This is its strength: it is not a tool of any one faction, but a record consulted by all.</p>
+        </div>
+
+        <div class="section">
+            <h2>What the Registry Does Not Do</h2>
+            
+            <p>The Registry does not grant title. It does not adjudicate disputes. It does not enforce claims or strip them away. It is not a court, a council, or an authority.</p>
+            
+            <p>A name entered into the Registry does not, by itself, make that person the rightful owner of a property. It records that they were recognized as such at the time of entry. If that recognition was granted in error, obtained through fraud, or issued by an authority later repudiated, the entry remains. It is a record of what was claimed, not what was true.</p>
+            
+            <p>Nor does the Registry prevent properties from changing hands outside of record. Informal agreements, private exchanges, coerced transfers—all of these occur. But if they are not entered into the Registry, they carry no official standing. A merchant who acquires an estate through private sale but fails to record the transaction may find the property later auctioned to another, with no acknowledgment of the prior claim.</p>
+            
+            <p>The Registry records what is submitted to it. It does not seek out unrecorded transactions, validate claims made in secret, or resolve conflicts born of memory rather than documentation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Access and Authority</h2>
+            
+            <p>The Registry is a public record, housed within the Civic Archives. It may be consulted by merchants, landholders, magistrates, noble families, and officers of the Crown. Access is neither restricted nor actively encouraged—it is simply available to those who have reason to consult it.</p>
+            
+            <p>Entries are made by clerks of the Office of Land Records, who receive reports of transactions, decrees, and forfeitures from various sources: royal officers, auction overseers, civic authorities, and the parties involved in transfers. The clerks do not verify the truth of these reports. They verify only that the report was made through recognized channels and that it meets the criteria for entry.</p>
+            
+            <p>Once entered, a record is not erased. It may be superseded by a later entry—an eviction followed by a reversion, a sale followed by another sale—but the original entry remains. This ensures the full chronology is preserved. Even a transaction later voided by decree appears in the record, alongside the decree that voided it.</p>
+            
+            <p>The Registry does not belong to the Crown, nor to the merchants, nor to any particular authority. It belongs to the process of governance and commerce itself—neutral, exhaustive, and indifferent to the fortunes of those whose names it records.</p>
+        </div>
+
+        <div class="warning">
+            <h3 style="color: var(--accent); margin-top: 0;">On the Permanence of Record</h3>
+            <p>Land changes hands through authority, through commerce, and through loss. The Registry records all three.</p>
+            
+            <p>A noble family may hold an estate for generations, entered into the Registry by royal grant. When the family falls from favor, the eviction is recorded. When the estate is auctioned, the auction is recorded. When the merchant who purchased it dies and leaves no heir, the abandonment is recorded. When the property is claimed again, that claim is recorded.</p>
+            
+            <p>Each transition is preserved. Each holder is named. The Registry does not mourn those who lose property, nor celebrate those who gain it. It simply notes the passage. And in doing so, it ensures that the history of land—its movement, its contested ownership, its centrality to the realm's stability—is never forgotten, even when those who held it are.</p>
+        </div>
+
+        <div class="document-box" style="margin-top: 3rem;">
+            <p style="text-align: center; font-style: italic; color: var(--text-muted); margin: 0;">
+                "The land may change hands a hundred times.<br>
+                The record endures, impartial and complete.<br>
+                Let those who hold it now take care—<br>
+                they, too, will one day be entries of the past."
+            </p>
+            <p style="text-align: center; margin-top: 1rem; color: var(--gold);">
+                — Inscription within the Office of Land Records
+            </p>
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="property.html" style="color: var(--gold);">Property System</a></p>
+    </footer>
+</body>
+</html>

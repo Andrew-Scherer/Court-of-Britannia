@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Regent - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .path-card { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--accent); }
+        .path-card h4 { color: var(--gold); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .path-card .type { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: bold; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚖️ The Regent</h1>
+        <p>Borrowed Legitimacy — The Most Dangerous Path to the Throne</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <div class="quote">
+            A Regent does not rule because they should.<br>
+            They rule because someone must.
+        </div>
+        
+        <h2>What Is a Regent? (Philosophically)</h2>
+        
+        <div class="quote-simple">
+            <strong>A Regent is borrowed legitimacy.</strong>
+        </div>
+        
+        <p>They do not rule because they should. They rule because someone must.</p>
+        
+        <p>This is crucial:</p>
+        
+        <p><strong>A Regent governs in trust, not in right.</strong></p>
+        
+        <p>That tension is the entire story.</p>
+        
+        <div class="info-box">
+            <h3>🎯 Why Regency Exists</h3>
+            <p><strong>Regency is delegated sovereignty.</strong></p>
+            <p>Unlike The Crown (King or Queen), which represents inherent legitimacy, a Regent is <strong>temporary</strong> — appointed by the King or declared through process upon the King's death.</p>
+            <p>This is similar to the Hand of the King in Game of Thrones, but with one critical difference: <strong>The Regent path is a path to becoming King.</strong></p>
+        </div>
+        
+        <div class="warning">
+            <strong>Critical Design:</strong> Regency is delegated sovereignty. A Regent (Single, Temporary) exists to create succession pressure and built-in rivalry with heirs. The design includes clear expiration — Regents have a path to becoming kings themselves. This directly conflicts with the motivation of heirs and claimants after a King's death or removal.
+        </div>
+        
+        <div class="info-box" style="background: #1f3a1f; border-color: #228b22;">
+            <h3>📖 Full Succession Mechanics</h3>
+            <p><strong>For complete details on what happens when a King dies and the three-way dynamic between Heir, Regent, and Claimants, see:</strong></p>
+            <p><a href="succession.html" style="color: #87ceeb; font-size: 1.1em; font-weight: bold;">→ What Happens When the King Dies</a></p>
+            <p>This page covers the Regent role in detail. The succession page explains how Regents interact with Heirs, Claimants, coronation timers, and Interregnum.</p>
+        </div>
+        
+        <h2>The Regent Path to the Throne</h2>
+        
+        <p><strong>The Regent path is the most dangerous, most historically accurate, and most dramatic path to the throne.</strong></p>
+        
+        <p>It should feel:</p>
+        <ul>
+            <li><strong>Plausible</strong> — based on legitimate authority</li>
+            <li><strong>Legitimate to some</strong> — defenders will argue necessity</li>
+            <li><strong>Criminal to others</strong> — opponents will call it usurpation</li>
+            <li><strong>Inevitable if mishandled</strong> — poor succession planning creates this outcome</li>
+        </ul>
+        
+        <h2>When Regency Begins</h2>
+        
+        <p><strong>Regency begins when the throne is vacant but the state cannot pause.</strong></p>
+        
+        <h3>Triggers for Regency</h3>
+        <ul>
+            <li>King dies</li>
+            <li>King is assassinated</li>
+            <li>King abdicates</li>
+            <li>King is declared missing/incapacitated</li>
+            <li>King is exiled or imprisoned</li>
+        </ul>
+        
+        <p>At that moment:</p>
+        <ul>
+            <li>The crown is vacant</li>
+            <li>Law must continue</li>
+            <li>The city must function</li>
+        </ul>
+        
+        <p><strong>So:</strong></p>
+        
+        <div class="info-box">
+            <h3>How a Regent Is Recognized</h3>
+            <p>A Regent is recognized automatically (because they were appointed Regent by the previous King) or through the courts through an elected process (if no living Regent exists).</p>
+        </div>
+        
+        <h2>Why a King SHOULD Appoint a Regent</h2>
+        
+        <p>A King may appoint a Regent for strategic, practical, or political reasons:</p>
+        
+        <h3>1. Shared Governance & Succession Insurance</h3>
+        <p>Ensure a capable person is helping him rule. And to also ensure a capable person will rule if in any case the King is gone.</p>
+        <p><strong>Strategic value:</strong> Distributes the burden of rule and creates continuity if the King dies unexpectedly.</p>
+        
+        <h3>2. Preventing Chaos</h3>
+        <p>Make sure chaos doesn't ensue after the King's inevitable or untimely departure.</p>
+        <p><strong>Strategic value:</strong> A pre-appointed Regent prevents power vacuums, rushed elections, and competing claims during crisis.</p>
+        
+        <h3>3. Managing the Heir</h3>
+        <p>Because he doesn't trust the heir OR he does trust the heir and wants to make sure the Regent (a trusted advisor) doesn't get in the way of a peaceful transition of the throne.</p>
+        <p><strong>Two opposite uses:</strong></p>
+        <ul>
+            <li><strong>Distrusts the heir:</strong> Regent acts as a check on an incompetent or dangerous successor</li>
+            <li><strong>Trusts the heir:</strong> Regent acts as mentor and protector, ensuring smooth transition</li>
+        </ul>
+        
+        <h3>4. Political Maneuvering</h3>
+        <p>A King may appoint a Regent to:</p>
+        <ul>
+            <li>Reward a loyal ally with future power</li>
+            <li>Bind a powerful noble to the crown</li>
+            <li>Create a counter-balance to rival factions</li>
+            <li>Test someone's loyalty under pressure</li>
+        </ul>
+        
+        <h3>5. Why a King Might NOT Appoint a Regent</h3>
+        
+        <div class="warning">
+            <strong>The Risk of No Regent</strong>
+            <p>A king may elect to intentionally NOT appoint a Regent because:</p>
+            <ul>
+                <li>There is nobody he trusts enough for the position</li>
+                <li>He doesn't want the mortal pressure put on him and the throne</li>
+                <li>He fears creating a rival power center</li>
+                <li>He believes the heir is strong enough to seize power directly</li>
+                <li>He wants succession to be contested (controlled chaos)</li>
+            </ul>
+            <p><strong>Consequence:</strong> If the King dies without a Regent, the realm enters Interregnum — a crisis state where courts must elect a temporary Regent or crown a successor immediately.</p>
+        </div>
+        
+        <h2>Powers of the Regent</h2>
+        
+        <p><strong>A Regent must feel powerful — but not secure.</strong></p>
+        
+        <h3>Regent Powers (Full Governance)</h3>
+        <ul>
+            <li>Command guards</li>
+            <li>Enforce law</li>
+            <li>Issue decrees</li>
+            <li>Appoint/remove officers (except King-level roles)</li>
+            <li>Execute criminals</li>
+            <li>Manage crises</li>
+        </ul>
+        
+        <h3>Regent Limitations (Critical)</h3>
+        <ul>
+            <li>Cannot grant permanent titles tied to the Crown</li>
+            <li>Cannot create new bloodlines</li>
+            <li>Cannot legitimize heirs permanently</li>
+            <li>Cannot dissolve the coronation requirement</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>All actions are stamped "REGENT AUTHORITY"</strong><br><br>
+            This is how future rulers can attack their decisions.
+        </div>
+        
+        <h3>Regency Appointments and Court Reshaping</h3>
+        
+        <p>A Regent may appoint and dismiss nobles and officers of the realm, including those who hold considerable power — the Marshal of the Guard, the Magistrate, the Land Commissioner, captains, advisors, and titled nobility itself.</p>
+        
+        <p>These actions are lawful. A Regent exercises the full executive authority of the Crown during interregnum. The commands are obeyed. The records are entered into the Appointments Ledger. The dismissed depart their posts. The appointed assume their offices.</p>
+        
+        <p>They are also, without exception, <em>controversial</em>.</p>
+        
+        <p>An appointment made under regency is understood to be temporary. It may be reviewed, revised, or reversed the moment a King is crowned. Those elevated by a Regent serve at the sufferance of the interregnum — their authority derived not from enduring law, but from the crisis that permitted it.</p>
+        
+        <p>This creates a peculiar dynamic. An officer appointed by a Regent owes their position to someone who does not, themselves, possess permanent legitimacy. Should the Regent fall, those they elevated fall with them. Should the Regent crown themselves, those they appointed become the foundation of a contested reign.</p>
+        
+        <p>Dismissals carry their own weight. A Marshal removed during regency is not merely stripped of office — he is <em>exposed</em>. His rivals know he was judged unfit or disloyal by the temporary sovereign. His allies must choose whether to contest the removal or accept it. The Ledger records the act. Future kings may ask why it was done.</p>
+        
+        <p>A Regent who reshapes the court is testing loyalty. Each dismissal asks: <em>who will object?</em> Each appointment asks: <em>who will serve me, knowing I may not last?</em></p>
+        
+        <p>History shows that Regents who purge opposition move closer to kingship. A court filled with one's own appointees is a court less likely to resist coronation. A Marshal who owes his position to the Regent is a Marshal who may not stop the Regent from claiming the throne.</p>
+        
+        <p>This is not unlawful. It is, however, <em>observed</em>.</p>
+        
+        <p>Every such decision becomes part of the record. The Appointments Ledger notes not only <em>who</em> was appointed or dismissed, but <em>under whose authority</em> and <em>during what crisis</em>. Should the regency end in peaceful succession, these actions may be seen as prudent governance. Should it end in usurpation, they may be seen as the foundation of a coup.</p>
+        
+        <p>The Regent does not need permission to act. But neither can they act without consequence.</p>
+        
+        <h2>The Coronation Timer (Pressure Cooker)</h2>
+        
+        <p>The moment Regency begins:</p>
+        
+        <div class="info-box">
+            <h3>⏰ Automatic Coronation Window</h3>
+            <p>A Coronation Window is scheduled automatically (e.g., 3–7 real days later)</p>
+            <p><strong>Everyone knows:</strong></p>
+            <ul>
+                <li>There will be a coronation</li>
+                <li>Someone will be crowned</li>
+                <li>Or blood will be spilled</li>
+            </ul>
+        </div>
+        
+        <p><strong>The Regent cannot cancel this.</strong></p>
+        
+        <p>They can:</p>
+        <ul>
+            <li><strong>Delay once</strong> (with cause)</li>
+            <li><strong>Advance it</strong> (dangerous but legal)</li>
+        </ul>
+        
+        <p>This creates urgency.</p>
+        
+        <h2>How a Regent Crowns Himself King</h2>
+        
+        <div class="quote-simple">
+            <strong>Key Design Insight:</strong> A Regent does not "become" King. He dares the world to stop him.
+        </div>
+        
+        <p>There are <strong>three escalating paths</strong>, all historical.</p>
+        
+        <div class="path-card">
+            <h4>Path 1: "Reluctant Necessity" (Soft Usurpation)</h4>
+            <p class="type">Narrative-Driven</p>
+            
+            <h3>Narrative</h3>
+            <p><em>"No heir is viable. The city needs stability."</em></p>
+            
+            <h3>Mechanics</h3>
+            <ul>
+                <li>Regent arrives at the coronation</li>
+                <li>Performs all rites himself</li>
+                <li>Invokes emergency authority</li>
+                <li>Accepts the crown in public</li>
+            </ul>
+            
+            <h3>What Happens</h3>
+            <p>Guards and nobles must choose whether to stop him.</p>
+            <p><strong>This is the least violent usurpation — but still toxic.</strong></p>
+        </div>
+        
+        <div class="path-card">
+            <h4>Path 2: "Guardian Turned Sovereign" (Force-Backed)</h4>
+            <p class="type">Military-Backed</p>
+            
+            <h3>Narrative</h3>
+            <p><em>"I already keep the peace. Make it official."</em></p>
+            
+            <h3>Mechanics</h3>
+            <ul>
+                <li>Regent secures guard loyalty beforehand</li>
+                <li>Rivals are arrested "for the duration"</li>
+                <li>Coronation proceeds under heavy protection</li>
+            </ul>
+            
+            <h3>What Happens</h3>
+            <p>Anyone who challenges is typically jailed or killed.</p>
+        </div>
+        
+        <div class="warning">
+            <h3>A Regent May Crown Himself King</h3>
+            <p><strong>But doing so creates a permanently contested reign.</strong></p>
+            <p>Legitimacy is not granted by mechanics — it is won or lost through reaction.</p>
+        </div>
+        
+        <h2>Why This Path Must Exist (Design Rationale)</h2>
+        
+        <div class="info-box">
+            <h3>If Regency Cannot Become Kingship:</h3>
+            <ul>
+                <li>Regents are boring caretakers</li>
+                <li>Players avoid the role</li>
+                <li>Crisis resolution becomes predictable</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>If Regency Can Become Kingship:</h3>
+            <ul>
+                <li>Every crisis is dangerous</li>
+                <li>Regents are tempted</li>
+                <li>Heirs are hunted</li>
+                <li>Bloodlines maneuver</li>
+            </ul>
+            <p><strong>This turns succession into gameplay, not ceremony.</strong></p>
+        </div>
+        
+        <h2>Natural Conflicts</h2>
+        
+        <h3>Regent vs Heir Presumptive</h3>
+        <p>The heir is the legitimate successor. The Regent has actual power. This creates immediate tension:</p>
+        <ul>
+            <li>Does the Regent protect the heir or eliminate them?</li>
+            <li>Does the heir challenge the Regent's authority?</li>
+            <li>Do nobles back legitimacy or stability?</li>
+        </ul>
+        
+        <h3>Regent vs Claimants</h3>
+        <p>Other bloodlines may use the vacancy to press their claims. The Regent must decide:</p>
+        <ul>
+            <li>Enforce the succession</li>
+            <li>Back a different claimant</li>
+            <li>Crown themselves</li>
+        </ul>
+        
+        <h3>Regent vs Marshal</h3>
+        <p>The Marshal commands the guards. If they defect from the Regent, the Regent's power collapses. This creates:</p>
+        <ul>
+            <li>Loyalty tests</li>
+            <li>Competing orders</li>
+            <li>Potential coups</li>
+        </ul>
+        
+        <h3>Regent vs Public Opinion</h3>
+        <p>Every decision is scrutinized. The public asks:</p>
+        <ul>
+            <li>"Why is the coronation delayed?"</li>
+            <li>"Why was the heir not crowned?"</li>
+            <li>"Is this a usurpation?"</li>
+        </ul>
+        
+        <h2>Player Fantasy</h2>
+        
+        <div class="quote">
+            You hold all the power, but none of it is yours.<br>
+            Every day you don't crown the heir, you become more of a tyrant.<br>
+            Every day you do your job well, you become more tempting to keep.
+        </div>
+        
+        <p><strong>The best regent-to-king stories are not:</strong></p>
+        <p><em>"I won the crown"</em></p>
+        
+        <p><strong>They're:</strong></p>
+        <p><em>"I held it long enough that no one could take it back."</em></p>
+        
+        <h2>Regent Role Summary</h2>
+        
+        <div class="info-box">
+            <h3>⚖️ Regent</h3>
+            <p class="type"><strong>Office • Single Holder • Appointed by King or Declared by Process</strong></p>
+            
+            <h4>Purpose</h4>
+            <p>To embody temporary sovereignty. To keep the state functioning during a succession crisis.</p>
+            
+            <h4>Motivation</h4>
+            <ul>
+                <li>Preserve stability</li>
+                <li>Protect their own position</li>
+                <li>Navigate succession pressure</li>
+                <li>Potentially become King themselves</li>
+            </ul>
+            
+            <h4>Goals</h4>
+            <ul>
+                <li>Maintain order during crisis</li>
+                <li>Navigate the coronation window</li>
+                <li>Manage rival claimants</li>
+                <li>Build support (or eliminate opposition)</li>
+            </ul>
+            
+            <h4>Responsibilities</h4>
+            <ul>
+                <li>Command guards</li>
+                <li>Enforce law</li>
+                <li>Issue decrees (stamped "REGENT AUTHORITY")</li>
+                <li>Appoint/remove officers (except King-level roles)</li>
+                <li>Execute criminals</li>
+                <li>Manage the coronation process</li>
+            </ul>
+            
+            <h4>Natural Conflicts</h4>
+            <ul>
+                <li>Heir Presumptive (legitimacy vs power)</li>
+                <li>Other claimants (competing succession)</li>
+                <li>Marshal (loyalty of force)</li>
+                <li>Public opinion (usurpation accusations)</li>
+                <li>Time pressure (coronation window)</li>
+            </ul>
+            
+            <h4>Player Fantasy</h4>
+            <p><em>"I hold all the power, but none of it is mine."</em></p>
+        </div>
+        
+        <h2>Implementation Notes</h2>
+        
+        <h3>Mechanical Triggers</h3>
+        <ul>
+            <li>When King seat vacates (death, abdication, etc.), check for active Regent</li>
+            <li>If Regent exists → Auto-activate Regent powers, start coronation timer</li>
+            <li>If no Regent exists → Interregnum state, court process to elect Regent</li>
+        </ul>
+        
+        <h3>Coronation Timer</h3>
+        <ul>
+            <li>Starts automatically on King vacancy</li>
+            <li>Default: 3-7 real days (configurable)</li>
+            <li>Regent can delay once (requires stated cause, logged publicly)</li>
+            <li>Regent can advance (risky, shows urgency or confidence)</li>
+            <li>When timer expires → Coronation event triggers</li>
+        </ul>
+        
+        <h3>Regent Powers (Technical)</h3>
+        <ul>
+            <li>All King commands except: CreateBloodline, GrantHereditary, DissolveCoronation</li>
+            <li>All actions tagged with "REGENT AUTHORITY" in logs</li>
+            <li>Permissions can be challenged post-coronation</li>
+        </ul>
+        
+        <h3>Self-Coronation Path</h3>
+        <ul>
+            <li>Regent can initiate coronation with self as candidate</li>
+            <li>Requires: Coronation window active OR emergency declaration</li>
+            <li>Does NOT require heir consent</li>
+            <li>Automatically creates "Contested Reign" status</li>
+            <li>Triggers faction reaction system</li>
+        </ul>
+        
+        <h2>Historical Parallels</h2>
+        
+        <div class="info-box">
+            <h3>Real-World Examples</h3>
+            
+            <h4>Richard III of England</h4>
+            <p>Appointed Protector (Regent) for his nephew Edward V. Declared the young king illegitimate and crowned himself. Contested reign, killed at Bosworth Field.</p>
+            
+            <h4>Duke of Orléans (France)</h4>
+            <p>Regent for Louis XV (a child). Held power for years but never attempted to crown himself — shows the restraint path.</p>
+            
+            <h4>Medieval Islamic Atabegs</h4>
+            <p>Military regents who often married into royal families or crowned themselves after securing military loyalty.</p>
+        </div>
+        
+        <h2>FAQ</h2>
+        
+        <h3>Q: Can a Regent be removed before the coronation?</h3>
+        <p><strong>A:</strong> Yes, through assassination, imprisonment, or if they voluntarily step down. The Marshal or Magistrate could also arrest them if charges are brought. But mechanically, only death auto-vacates the seat.</p>
+        
+        <h3>Q: What happens if the Regent dies during the coronation window?</h3>
+        <p><strong>A:</strong> The coronation window continues. A new Regent may be declared through court process, or the realm proceeds directly to crowning an heir or claimant.</p>
+        
+        <h3>Q: Can a Regent crown someone else?</h3>
+        <p><strong>A:</strong> Yes. The Regent can officiate a coronation for the heir, a claimant, or anyone else. This is the "honorable" path to resolving regency.</p>
+        
+        <h3>Q: Is a Regent-turned-King considered legitimate?</h3>
+        <p><strong>A:</strong> Only socially. Mechanics create the "Contested Reign" status, but whether they're viewed as legitimate depends on faction reactions, public opinion, and how they govern afterward.</p>
+        
+        <h3>Q: Can the Crown appoint a Regent before they die?</h3>
+        <p><strong>A:</strong> Yes. This is the safest path. The King can formally appoint a Regent who automatically activates upon the King's death. This prevents power vacuums but doesn't prevent usurpation.</p>
+        
+        <div class="quote-simple" style="margin-top: 2rem;">
+            <strong>Remember:</strong> The Regent is not a safe role. It's a test of character. Every player who becomes Regent will be tempted to keep the crown. That's not a bug — it's the entire point.
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="roles.html" style="color: var(--gold);">← Back to Roles</a> | <a href="becoming-king.html" style="color: var(--gold);">Becoming King →</a></p>
+    </footer>
+</body>
+</html>

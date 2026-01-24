@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Guards - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🛡️ Guards</h1>
+        <p>Authority Through Force and Restraint</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>What Guards Are</h2>
+        
+        <div class="quote">
+            Guards are not police — they are the visible expression of who currently has power.
+        </div>
+        
+        <p>Guards exist to enforce decrees, control violence, demonstrate authority, and maintain order on behalf of whoever commands them. They are the physical manifestation of political power: when a King issues a decree, guards make it real. When a regime collapses, guards decide whether to defend it or abandon it.</p>
+        
+        <p>Guards serve authority as it exists in practice, not in theory. They follow orders from those who command them until they choose not to. This makes them simultaneously essential to stability and the greatest threat to any ruler.</p>
+        
+        <h2>Authority and Allegiance</h2>
+        
+        <p>Guard authority derives from appointment, not law or election. A guard acts with legitimacy because the Marshal appointed them, the Marshal was appointed by the King, and the King holds the throne. When any link in this chain breaks, guard authority becomes contested.</p>
+        
+        <p>Guards serve multiple authorities with potentially conflicting interests:</p>
+        <ul>
+            <li><strong>The Crown</strong> — Source of ultimate legitimacy</li>
+            <li><strong>The Marshal</strong> — Direct commander and source of orders</li>
+            <li><strong>The Magistrate</strong> — Legal authority that can declare arrests unlawful</li>
+            <li><strong>The Captains</strong> — Immediate superiors in daily operations</li>
+        </ul>
+        
+        <p>These authorities do not always agree. When the King and Marshal issue contradictory orders, guards must choose. When the Magistrate declares a regime illegitimate, guards must weigh law against force. These conflicts are where guards become political actors rather than mere enforcers.</p>
+        
+        <h2>Hierarchy and Appointments</h2>
+        
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Maximum</th>
+                <th>Appointed By</th>
+                <th>Can Appoint</th>
+            </tr>
+            <tr>
+                <td><strong>🛡️ Marshal of the Guard</strong></td>
+                <td>1</td>
+                <td>King</td>
+                <td>Captains</td>
+            </tr>
+            <tr>
+                <td><strong>⚔️ Captain of the Guard</strong></td>
+                <td>3</td>
+                <td>Marshal</td>
+                <td>Guards</td>
+            </tr>
+            <tr>
+                <td><strong>🗡️ City Guard</strong></td>
+                <td>Unlimited</td>
+                <td>Captain</td>
+                <td>None</td>
+            </tr>
+        </table>
+        
+        <h3>Marshal of the Guard</h3>
+        <p>The Marshal commands all guards, sets enforcement policy, and represents the Crown's capacity for violence. The Marshal appoints Captains, issues standing orders, and decides when force is justified. The position combines operational command with political significance: a competent Marshal makes the King's rule effective, while an incompetent or disloyal Marshal renders the Crown powerless.</p>
+        
+        <p>The Marshal occupies what is often called "the most dangerous office in Britain" — not to the Marshal, but to the King. Throughout history, those who command armed forces often replace those they ostensibly serve.</p>
+        
+        <h3>Captain of the Guard</h3>
+        <p>Captains provide redundancy in leadership so that enforcement does not collapse when one person is unavailable. They lead day-to-day operations, supervise guards, and act with Marshal authority when the Marshal is absent. Captains appoint individual guards and can dismiss them for cause.</p>
+        
+        <p>Multiple Captains ensure coverage but also create potential for divided loyalties. During succession crises, Captains may choose different claimants, splitting the guard into factions.</p>
+        
+        <h3>City Guard</h3>
+        <p>Guards conduct patrols, make arrests, respond to violence, and deliver prisoners to custody. They interpret orders from Captains and the Marshal, making daily decisions about when to intervene, whom to arrest, and how much force to use. These decisions are nominally guided by law and decree, but in practice guards exercise significant discretion.</p>
+        
+        <p>Guard recruitment is political. Captains choose whom to appoint, creating networks of loyalty that may not align with the Crown's interests.</p>
+        
+        <h2>Core Duties</h2>
+        
+        <p>Guards are responsible for:</p>
+        <ul>
+            <li><strong>Enforcing decrees</strong> — Carrying out orders issued by the King, Regent, or Marshal</li>
+            <li><strong>Subduing and arresting</strong> — Detaining those who violate law or decree</li>
+            <li><strong>Maintaining order</strong> — Intervening in public violence, riots, or disturbances</li>
+            <li><strong>Controlling access</strong> — Regulating entry to restricted areas such as the castle, treasury, or jail</li>
+            <li><strong>Protecting officials</strong> — Providing security for the Crown, court proceedings, and executions</li>
+            <li><strong>Transporting prisoners</strong> — Delivering arrested individuals to jail for Warden custody</li>
+            <li><strong>Responding to calls for assistance</strong> — Investigating reports of crime or violence</li>
+        </ul>
+        
+        <p>Guards do not adjudicate, sentence, or pardon. Their role is to arrest and deliver; other authorities decide guilt, punishment, and release.</p>
+        
+        <h2>Use of Force and Restraint</h2>
+        
+        <p>Guards are authorized to use force to subdue resistance, enforce orders, and maintain control. However, the default expectation is restraint: guards subdue rather than kill.</p>
+        
+        <h3>Non-Lethal Force (Standard)</h3>
+        <p>Guards engage combatants with the intent to incapacitate and capture. When a target is reduced to zero health, they enter a downed state rather than dying. The guard may then bind and transport them to jail. This approach serves multiple purposes: it preserves the possibility of trial and sentencing, avoids creating martyrs, and allows the regime to demonstrate mercy or restraint when politically useful.</p>
+        
+        <h3>Lethal Force (Exceptional)</h3>
+        <p>Lethal force is justified under narrow conditions:</p>
+        <ul>
+            <li>Direct threat to the Crown or bloodline member</li>
+            <li>Violent resistance to arrest where subdual has failed</li>
+            <li>Defense of self or other guards during combat</li>
+            <li>Execution of a standing order explicitly authorizing lethal response</li>
+        </ul>
+        
+        <p>Use of lethal force does not make guards immune to review. If a guard kills someone under questionable circumstances, the Coroner investigates and the Magistrate may bring charges. "They resisted arrest" is a defense, not absolution.</p>
+        
+        <h3>Escalation of Force</h3>
+        <p>Guards typically follow an escalation sequence:</p>
+        <ol>
+            <li>Verbal warning or command</li>
+            <li>Physical restraint or pursuit</li>
+            <li>Non-lethal combat (subdual)</li>
+            <li>Lethal force (only when justified)</li>
+        </ol>
+        
+        <p>This sequence is professional norm, not absolute rule. A guard facing immediate lethal threat is not required to issue warnings first.</p>
+        
+        <h2>Arrest and Custody (High-Level Procedure)</h2>
+        
+        <p>An arrest proceeds through the following stages:</p>
+        
+        <ol>
+            <li><strong>Cause</strong> — Guard witnesses a crime or receives an order to arrest</li>
+            <li><strong>Apprehension</strong> — Guard confronts the target, issues warning if practical</li>
+            <li><strong>Subdual</strong> — If target resists or flees, guard uses force to incapacitate</li>
+            <li><strong>Binding</strong> — Target is secured and unable to flee</li>
+            <li><strong>Transport</strong> — Guard delivers prisoner to jail</li>
+            <li><strong>Transfer</strong> — Warden assumes custody and records the arrest</li>
+        </ol>
+        
+        <p>Citizens may summon guards for assistance. Guards may respond immediately, slowly, or not at all depending on who called, where, and why. Response time and priorities create a visible record of whose safety the regime values.</p>
+        
+        <h3>Arrest Without Cause</h3>
+        <p>Guards are not prohibited from arresting without witnessed crime if ordered by the Marshal or Crown. However, such arrests produce political and legal consequences. The Magistrate may declare the arrest unlawful. The Chronicler records it. The public draws conclusions about the regime's nature. "Legal" and "survivable" are not the same thing.</p>
+        
+        <h2>Limits and Prohibitions</h2>
+        
+        <p>Guards possess significant power but are constrained by role boundaries, legal authority, and political oversight.</p>
+        
+        <h3>What Guards Cannot Do</h3>
+        <ul>
+            <li><strong>Execute prisoners</strong> — Only the Executioner role may carry out capital punishment after sentencing</li>
+            <li><strong>Pardon or release prisoners</strong> — Only the King or Magistrate holds this authority</li>
+            <li><strong>Override Magistrate rulings</strong> — If the Magistrate declares an arrest unlawful, guards must comply or face legal consequences</li>
+            <li><strong>Act during sanctuary</strong> — Healers may declare sanctuary; guards cannot arrest or use force in sanctified spaces without violating established limits</li>
+            <li><strong>Torture without authorization</strong> — Interrogation under duress requires Warden or Marshal approval</li>
+        </ul>
+        
+        <h3>Conflicting Orders</h3>
+        <p>When the King, Marshal, and Magistrate issue contradictory orders, guards face a choice that is inherently political:</p>
+        
+        <table>
+            <tr>
+                <th>Conflict</th>
+                <th>Guard Options</th>
+                <th>Consequence</th>
+            </tr>
+            <tr>
+                <td>King orders arrest, Magistrate declares it unlawful</td>
+                <td>Obey King (force over law) or Magistrate (law over force)</td>
+                <td>Regime becomes authoritarian or guard faces contempt charges</td>
+            </tr>
+            <tr>
+                <td>Marshal orders release, King refuses</td>
+                <td>Obey Marshal (direct superior) or King (ultimate authority)</td>
+                <td>Marshal's loyalty questioned or King's control challenged</td>
+            </tr>
+            <tr>
+                <td>Two claimants both issue orders</td>
+                <td>Pick a side or refuse to act</td>
+                <td>Succession crisis deepens; neutrality becomes impossible</td>
+            </tr>
+        </table>
+        
+        <p>There is no mechanical resolution to these conflicts. Guards choose, and their choice reveals where power actually resides.</p>
+        
+        <h2>Accountability and Records</h2>
+        
+        <p>Every arrest produces a record containing:</p>
+        <ul>
+            <li>Guard name and rank</li>
+            <li>Prisoner name</li>
+            <li>Stated charges or cause for arrest</li>
+            <li>Location and time</li>
+            <li>Witnesses present, if any</li>
+        </ul>
+        
+        <p>These records are maintained by the Warden and accessible to the Magistrate, Chronicler, and Crown. They serve as evidence in trials, audits of guard conduct, and historical documentation of a regime's enforcement patterns.</p>
+        
+        <h3>Review of Guard Conduct</h3>
+        <p>Guards may be held accountable through several mechanisms:</p>
+        <ul>
+            <li><strong>Legal review</strong> — Magistrate investigates complaints of unlawful arrest or excessive force</li>
+            <li><strong>Coroner investigation</strong> — Deaths caused by guards are investigated; unjustified killings are treated as murder</li>
+            <li><strong>Dismissal</strong> — Marshal, Captain, or King may dismiss guards for cause; reason is logged</li>
+            <li><strong>Public scrutiny</strong> — Chronicler and Herald report guard actions; reputation affects recruitment and loyalty</li>
+        </ul>
+        
+        <p>Accountability does not guarantee justice, but it creates evidence. A guard who repeatedly kills prisoners "while resisting arrest" creates a pattern. A regime that ignores such patterns loses legitimacy.</p>
+        
+        <h3>Selective Enforcement</h3>
+        <p>Guards do not enforce decrees uniformly. They prioritize nobles over commoners, allies over enemies, and visible order over hidden crimes. This selective enforcement is expected and politically significant. When a noble breaks curfew and receives a warning while a commoner is jailed for the same act, the disparity becomes evidence of the regime's values.</p>
+        
+        <p>The Chronicler records these disparities. The public remembers them.</p>
+        
+        <h2>Defection, Splits, and Succession Crises</h2>
+        
+        <p>Guards follow people, not institutions. When political authority fragments, guards choose sides.</p>
+        
+        <h3>Causes of Guard Defection</h3>
+        <ul>
+            <li>Marshal issues orders contradicting the Crown</li>
+            <li>King dies without clear succession; multiple claimants emerge</li>
+            <li>Regent and Heir both claim authority during minority rule</li>
+            <li>Magistrate declares current regime illegitimate</li>
+            <li>Orders become too brutal or too weak to sustain guard loyalty</li>
+            <li>Guards are not paid (political crisis disrupts treasury function)</li>
+        </ul>
+        
+        <h3>How Guards Split</h3>
+        <p>During succession crises or civil conflict, the guard does not remain unified. Possible fractures include:</p>
+        <ul>
+            <li>Some guards follow the Marshal, others follow the King</li>
+            <li>Different Captains support different claimants</li>
+            <li>Individual guards defect to popular movements or rival houses</li>
+            <li>Some guards attempt neutrality and are forced to choose later</li>
+        </ul>
+        
+        <p>When guards hesitate to follow orders, authority collapses faster than any battlefield defeat. A King whose guards delay arrests or "lose" prisoners has already lost power, even if still seated on the throne.</p>
+        
+        <h3>Historical Precedent: Guards as Kingmakers</h3>
+        <p>Throughout history, those who command armed forces have replaced the rulers they ostensibly serve. Rome's Praetorian Guard assassinated emperors, auctioned the throne to the highest bidder, and installed soldiers as Caesars. In feudal Japan, the Shogun became the true ruler while the Emperor remained a ceremonial figure. Maximinus Thrax rose from common soldier to emperor through military proclamation alone, establishing the precedent that swords matter more than senates.</p>
+        
+        <p>The lesson: proximity to violence, ability to act decisively, and loyalty of armed subordinates often trumps traditional legitimacy. A competent Marshal who retains guard loyalty can become Regent during a crisis, then King when "temporary" rule becomes permanent. This is not a flaw in the system — it is the system operating as designed.</p>
+        
+        <h2>Equipment and Identification (High-Level)</h2>
+        
+        <p>Guards are visually identifiable through standardized markers:</p>
+        <ul>
+            <li><strong>Guard uniform or tabard</strong> — Displays Britain's colors and heraldry</li>
+            <li><strong>Title indicator</strong> — Guards carry visible role designation</li>
+            <li><strong>Badge or seal</strong> — Physical proof of authority for moments when identification is challenged</li>
+        </ul>
+        
+        <p>Standard equipment includes weapons suitable for subdual (staves, blunt instruments), medium armor allowing mobility, and binding implements for prisoner transport. Lethal weapons are carried but used as exception rather than default.</p>
+        
+        <p>Upon dismissal, guards surrender uniform and equipment. Former guards who abuse their knowledge of castle layout, jail procedures, or marshal plans face charges for treason or espionage.</p>
+        
+        <h2>Summary</h2>
+        
+        <ul>
+            <li>Guards are the visible expression of political authority; they serve whoever commands them until they choose otherwise</li>
+            <li>Authority flows from appointment: King → Marshal → Captains → Guards; breaks in this chain create contested legitimacy</li>
+            <li>Guards enforce decrees, maintain order, and control violence but do not adjudicate, sentence, or pardon</li>
+            <li>Default force is non-lethal subdual and arrest; lethal force requires justification and is subject to review</li>
+            <li>Arrests require cause and produce records accessible to Magistrate, Chronicler, and Crown</li>
+            <li>Guards cannot execute prisoners, override Magistrate rulings, or act during sanctuary</li>
+            <li>When Crown, Marshal, and Magistrate issue conflicting orders, guards make political choices with political consequences</li>
+            <li>Accountability operates through legal review, Coroner investigation, dismissal records, and public scrutiny</li>
+            <li>Selective enforcement is expected; disparities in arrest and response create evidence of regime values</li>
+            <li>During succession crises, guards fracture along lines of personal loyalty; guard splits indicate regime collapse</li>
+            <li>The Marshal controls armed force and represents the greatest internal threat to any ruler</li>
+            <li>Historical precedent establishes that those who guard thrones often end up seated on them</li>
+        </ul>
+        
+        <h2>See Also</h2>
+        <ul>
+            <li><a href="permadeath-downed.html" style="color: var(--accent);">Permadeath & Downed States</a> — Mechanics of subdual versus lethal force</li>
+            <li><a href="jail.html" style="color: var(--accent);">Jail System</a> — Prisoner custody, Warden authority, and detention procedures</li>
+            <li><a href="roles.html" style="color: var(--accent);">Magistrates / Courts</a> — Legal authority that constrains and reviews guard action</li>
+            <li><a href="regent.html" style="color: var(--accent);">Regent / Succession</a> — Authority conflicts during minority rule and contested succession</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="roles.html" style="color: var(--gold);">Roles</a> | <a href="permadeath-downed.html" style="color: var(--gold);">Downed States</a></p>
+    </footer>
+</body>
+</html>

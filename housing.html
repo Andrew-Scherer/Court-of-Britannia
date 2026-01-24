@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property & Land - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .state-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid var(--accent); }
+        .state-box h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🏠 Housing & Land Authority</h1>
+        <p>Role-Based Property and the Land Authority System</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>The Core Principle</h2>
+        
+        <p>Property is always held by a <strong>ROLE</strong> — sometimes individual, sometimes collective. Individuals enter and vacate roles; they do not own property outright.</p>
+        
+        <div class="quote">
+            Buildings do not belong to players; they pass through custodianship, succession, and legitimacy.
+        </div>
+        
+        <h2>Property-Holding Roles</h2>
+        
+        <p>All property is tied to a role, which unifies individuals and units under the same system.</p>
+        
+        <h3>Royal Properties vs Free Market Properties</h3>
+        
+        <p>Properties in Britain fall into two categories based on who controls assignment:</p>
+        
+        <div class="state-box">
+            <h4>Royal Properties (King-Controlled)</h4>
+            <p>Certain prestigious or strategic properties are directly controlled by the Crown:</p>
+            <ul>
+                <li>The King can evict occupants</li>
+                <li>The King can assign deeds and occupancy rights</li>
+                <li>Examples: Noble estates, strategic buildings, important civic structures</li>
+            </ul>
+            <p>These assignments are political acts that carry weight and consequence.</p>
+        </div>
+        
+        <div class="state-box">
+            <h4>Free Market Properties (Auction/Claim-Based)</h4>
+            <p>Other properties are available through open systems:</p>
+            <ul>
+                <li>Public auction</li>
+                <li>First-claim basis</li>
+                <li>Managed by Land Commissioner and Stewards without royal approval</li>
+                <li>Examples: Common cottages, shops, farms, trade spaces</li>
+            </ul>
+            <p>The King does not micromanage these properties.</p>
+        </div>
+        
+        <h3>Individual Property Roles</h3>
+        <p>For small cottages, shops, and farms:</p>
+        <ul>
+            <li><strong>Farmer of East Britain</strong></li>
+            <li><strong>Cottage Holder #3</strong></li>
+            <li><strong>Shopkeeper – South Market</strong></li>
+        </ul>
+        <p>These are single-seat roles. When the player dies, the system automatically clears the role and the property enters a grace period before becoming OPEN (available for reassignment). For royal properties, the King may reassign immediately.</p>
+        
+        <h3>Collective Property Roles</h3>
+        <p>For bloodlines, guilds, Houses, and offices:</p>
+        <ul>
+            <li><strong>Rowan Bloodline Seat – Manor</strong></li>
+            <li><strong>Britain Guard Company Barracks</strong></li>
+            <li><strong>Hawkwright Guildhall</strong></li>
+        </ul>
+        <p>These have multiple residents and persist through individual deaths.</p>
+        
+        <h2>Land Authority System</h2>
+        
+        <div class="quote">
+            Land authority is executed by Stewards and the Land Commissioner. Both may deed property, place notices, and execute evictions. The King alone issues binding orders over Royal Property and appoints the Land Commissioner. Stewards may act without authorization, but all actions are public, logged, and punishable. Mechanical power always works; legitimacy determines survival.
+        </div>
+        
+        <p>This is not just a housing system. <strong>It's a political violence system where buildings are the weapon.</strong></p>
+        
+        <h3>Authority Structure</h3>
+        
+        <p><strong>1. The King</strong></p>
+        <ul>
+            <li>Appoints and removes the Land Commissioner</li>
+            <li>Issues orders over <strong>Royal Property only</strong> (castles, manors, estates, major civic buildings)</li>
+            <li>Can retroactively legitimize or condemn land actions</li>
+            <li>❌ Cannot fire individual Stewards (only Commissioner can)</li>
+            <li>❌ Does not touch day-to-day land actions</li>
+            <li>❌ Does not execute evictions himself</li>
+        </ul>
+        <p><em>The King controls policy, not enforcement.</em></p>
+        
+        <p><strong>2. Land Commissioner (Senior Executor)</strong></p>
+        <ul>
+            <li>Execute evictions physically</li>
+            <li>Place notices on properties</li>
+            <li>Deed properties to new owners</li>
+            <li>Act on Royal Orders</li>
+            <li>Act without Royal Orders (at risk)</li>
+            <li><strong>Hire and fire individual Stewards</strong></li>
+            <li><strong>Suspend a Steward immediately</strong></li>
+        </ul>
+        <p><em>A Steward with personnel control and extra social weight. This is a hands-on role, not manager-only.</em></p>
+        
+        <p><strong>3. Stewards (Distributed Executors)</strong></p>
+        <ul>
+            <li>Execute evictions physically</li>
+            <li>Place notices on properties</li>
+            <li>Deed properties to new owners</li>
+            <li>Act with or without authorization</li>
+            <li>Visible, fallible, corruptible, fully accountable</li>
+            <li>❌ Cannot hire or fire other Stewards</li>
+            <li>Can be suspended instantly by Land Commissioner</li>
+        </ul>
+        <p><em>Expendable hands with real power. That makes the role dangerous and desirable.</em></p>
+        
+        <p><strong>→ See <a href="steward.html" style="color: var(--gold);">Land Commissioner & Steward Roles</a></strong> for role requirements and how to join.</p>
+        
+        <h3>The Legitimacy Rule</h3>
+        
+        <div class="state-box">
+            <h4>Core Truth</h4>
+            <p>Stewards and Land Commissioners have mechanical power; legitimacy determines whether they survive using it.</p>
+            <ul>
+                <li><strong>Actions always "work"</strong> — The deed transfers, the eviction executes, the notice appears</li>
+                <li><strong>Judgment happens after</strong> — Did you have authority? Was it legitimate?</li>
+                <li><strong>Punishment is social, legal, or lethal</strong> — Not mechanical rollback</li>
+            </ul>
+            <p><strong>This is exactly how real power works.</strong></p>
+        </div>
+        
+        <h3>Abuse & Grief Safeguards</h3>
+        
+        <p><strong>1. Full Action Logging (Non-Negotiable)</strong></p>
+        <p>Every action records through the <strong>Land Ledger</strong>: Actor (which Steward/Commissioner), Property affected, Action type (deed, eviction, notice), Timestamp. No exceptions. This creates accountability.</p>
+        
+        <p><strong>2. Instant Suspension (Key Safety Valve)</strong></p>
+        <p>The Land Commissioner can immediately suspend a Steward. Suspension <strong>removes land powers</strong> but does NOT undo past actions. This prevents ongoing damage without rewriting history.</p>
+        
+        <p><strong>3. Challenge Window (Time-Limited Cancellation)</strong></p>
+        <p>Evictions, grants, and deeds have a <strong>24-hour challenge window</strong>. During this window, the King or Magistrate can cancel the action and reverse property state. After the window closes, the action stands and punishment targets the Steward, not the land state.</p>
+        
+        <div class="warning">
+            <strong>Critical Rule:</strong> Firing a Steward does NOT protect them, absolve them, or reverse actions automatically. Former Stewards can be prosecuted, exiled, or executed for their actions while in office.
+        </div>
+        
+        <h3>Real Scenario Examples</h3>
+        
+        <p><strong>Scenario 1: Authorized Royal Eviction</strong></p>
+        <ol>
+            <li>King publicly orders: "Evict House Hawkwright from their manor"</li>
+            <li>Steward Smith physically places eviction notice on the manor door</li>
+            <li>72-hour timer starts (automated)</li>
+            <li>Hawkwright has time to remove belongings OR implement some plan to get the eviction cancelled</li>
+            <li>At timer end: manor becomes OPEN, access revoked</li>
+            <li>Land Ledger shows: "EVICTION_EXECUTED by Steward Smith, ordered by King"</li>
+            <li><strong>Steward is safe — acted with authority</strong></li>
+        </ol>
+        
+        <p><strong>Scenario 2: Unauthorized Eviction (Coup Attempt)</strong></p>
+        <ol>
+            <li>Steward Jones places eviction notice on Royal Bloodline manor</li>
+            <li><strong>No King's order exists</strong></li>
+            <li>Timer starts anyway (mechanical power works)</li>
+            <li>Bloodline cries foul, alerts King and Land Commissioner</li>
+            <li>Within 72-hour eviction window: King cancels eviction</li>
+            <li>Land Commissioner suspends Steward Jones immediately</li>
+            <li>Magistrate prosecutes Jones for unauthorized action</li>
+            <li><strong>Jones faces exile, execution, other punishment, or simply runs away avoiding punishment altogether</strong></li>
+        </ol>
+        
+        <p><strong>Scenario 3: Corrupt Deed Transfer</strong></p>
+        <ol>
+            <li>Steward Brown deeds a cottage to their friend</li>
+            <li><strong>Cottage was not OPEN — someone else had claim</strong></li>
+            <li>Original claimant protests</li>
+            <li>Land Commissioner investigates, sees irregularity</li>
+            <li>Within 24 hours: Commissioner cancels deed, suspends Brown. If 24 hours passes, an eviction will be required.</li>
+            <li>Cottage re-deeded to rightful claimant</li>
+            <li>Brown dismissed, fined, or jailed depending on severity</li>
+        </ol>
+        
+        <p><strong>Scenario 4: Commissioner Overreach</strong></p>
+        <ol>
+            <li>Land Commissioner evicts a noble without King's order</li>
+            <li>Eviction executes (Commissioner has mechanical power)</li>
+            <li>King did not authorize this</li>
+            <li>King publicly condemns action</li>
+            <li>King fires Land Commissioner, replaces with someone more honest/loyal to him</li>
+            <li>Property restored to noble</li>
+            <li>Former Commissioner faces trial for unauthorized action</li>
+            <li><strong>No one is above legitimacy</strong></li>
+        </ol>
+        
+        <h2>Building States</h2>
+        
+        <p>Every claimable building exists in one of four states:</p>
+        
+        <div class="state-box">
+            <h4>OPEN</h4>
+            <p>Vacant or available to assign. No one has recognized access. Property is ready for a new occupant.</p>
+        </div>
+        
+        <div class="state-box">
+            <h4>HELD</h4>
+            <p>Assigned to a role/unit. Occupants have access based on their role or membership.</p>
+        </div>
+        
+        <div class="state-box">
+            <h4>FOR SALE</h4>
+            <p>Currently on auction. Property will be assigned to the winning bidder at auction close.</p>
+        </div>
+        
+        <div class="state-box">
+            <h4>EVICTING</h4>
+            <p>Eviction timer active. Current occupants can remove belongings but no new items can be added. At timer expiry, property becomes OPEN automatically.</p>
+        </div>
+        
+        <h2>Collective Housing (Bloodlines, Guilds, Houses)</h2>
+        
+        <h3>Internal Primary Selection</h3>
+        <p>Bloodlines control their own internal hierarchy. No King, Custodian, or Magistrate interferes. Succession inside a bloodline is purely intra-bloodline RP.</p>
+        <p>The city recognizes outcomes but does not adjudicate disputes.</p>
+        
+        <h3>Unit-Wide Eviction</h3>
+        <p>Eviction applies to the <strong>entire unit</strong>, not individuals:</p>
+        <ul>
+            <li>No partial evictions</li>
+            <li>Bloodlines, guilds, Houses are evicted as a whole from Royal Property</li>
+            <li>Individuals are managed internally, not by Stewards</li>
+        </ul>
+        
+        <h3>Death Within a Collective</h3>
+        <p>When a bloodline member dies:</p>
+        <ul>
+            <li>House access remains for other residents</li>
+            <li>If the Primary dies, the bloodline chooses a new one internally</li>
+            <li>Custodian is not involved</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>Key Rule:</strong> The house is attached to the bloodline/unit, not the person. One death does not nuke a whole group's home.
+        </div>
+        
+        <h2>Eviction Process</h2>
+        
+        <p>Eviction is a formal notice, not confiscation.</p>
+        
+        <h3>Phase A: Notice Period (72 hours)</h3>
+        <ul>
+            <li>Building stays usable</li>
+            <li>Evictee can freely remove items</li>
+            <li>No new co-owners can be added</li>
+        </ul>
+        
+        <h3>Phase B: Access Revocation</h3>
+        <ul>
+            <li>At expiry, access is revoked (keys invalidated)</li>
+            <li>Building becomes OPEN to be assigned a new owner if it is Royal Property</li>
+            <li>Anything left behind is abandoned</li>
+        </ul>
+        
+        <h2>Contents & Items</h2>
+        
+        <p><strong>Model: "If it's in the house, it's at risk."</strong></p>
+        <ul>
+            <li>Items are physical</li>
+            <li>No container protection</li>
+            <li>No retroactive ownership claims</li>
+            <li>If you leave it and die, it stays — co-owners can take it (social consequences apply)</li>
+        </ul>
+        
+        <h2>Exile and Unit Risk (Purely RP - No Mechanics)</h2>
+        
+        <p>If a member is exiled from the city:</p>
+        <ul>
+            <li>They must be removed from any unit-held residence</li>
+            <li>If the unit fails to remove them, the unit is harboring an exile</li>
+            <li>This is grounds for investigation, sanction, or eviction</li>
+        </ul>
+        
+        <div class="quote">
+            Failure to self-police invites eviction.
+        </div>
+        
+        <h2>Land Registry (Logging)</h2>
+        
+        <p>All land actions are logged:</p>
+        <ul>
+            <li><strong>Actor:</strong> Name and role</li>
+            <li><strong>Action:</strong> Type (deed, eviction, notice)</li>
+            <li><strong>Location:</strong> Property ID</li>
+        </ul>
+        
+        <p>The Land Ledger is viewable by high ranking nobles such as Magistrate, Land Commissioner, Steward, King, and Regent. The Land Ledger is data-first (server record), with physical Ledger Books as read-only terminals.</p>
+        
+        <h2>Quick Reference</h2>
+        
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>What Happens</th>
+            </tr>
+            <tr>
+                <td>Individual connected to role dies</td>
+                <td>Property returns to OPEN</td>
+            </tr>
+            <tr>
+                <td>Bloodline member dies</td>
+                <td>Bloodline keeps house; internal selection for new Primary</td>
+            </tr>
+            <tr>
+                <td>Entire unit dies/disperses</td>
+                <td>Property becomes OPEN after X days</td>
+            </tr>
+            <tr>
+                <td>Eviction ordered</td>
+                <td>72h notice → reassignment</td>
+            </tr>
+        </table>
+        
+        <h2>Technical Implementation: Estate & Seat System</h2>
+        
+        <p>This section provides the technical architecture for implementing role-based housing in ServUO.</p>
+        
+        <h3>Core Concept: Estate → Seat → Character</h3>
+        
+        <div class="state-box">
+            <h4>Estate (The Building)</h4>
+            <p>Each claimable building is an Estate that stores:</p>
+            <ul>
+                <li><code>EstateId</code> — Unique identifier</li>
+                <li><code>HouseSerial</code> — Reference to BaseHouse or multi instance</li>
+                <li><code>OwningRoleId</code> — e.g., "TrinsicJusticiar", "RowanManor", "BritainKing"</li>
+                <li><code>ZoneDefinitions</code> — For complex buildings (castles)</li>
+            </ul>
+        </div>
+        
+        <div class="state-box">
+            <h4>Seat (The Role)</h4>
+            <p>Each role is a Seat that stores:</p>
+            <ul>
+                <li><code>RoleId</code> — Unique role identifier</li>
+                <li><code>CurrentCharacter</code> — Who currently inhabits the role</li>
+                <li><code>AccessGroups</code> — Staff, guards, etc.</li>
+                <li><code>HeirCharacter</code> — Optional succession rules</li>
+            </ul>
+        </div>
+        
+        <div class="state-box">
+            <h4>Transfer Process</h4>
+            <p>When someone enters a role, the system runs <code>TransferEstateToRoleHolder(roleId)</code>:</p>
+            <ol>
+                <li>Find mapped house for the role</li>
+                <li>Set house.Owner to new role holder</li>
+                <li>Update Co-owners/Friends lists (role-based staff)</li>
+                <li>Update Bans (institutional bans persist)</li>
+                <li>Update sign to show Seat name, not character name</li>
+            </ol>
+        </div>
+        
+        <h3>What Actually Transfers</h3>
+        
+        <p>In UO housing systems, changing ownership affects multiple systems:</p>
+        
+        <table>
+            <tr>
+                <th>System</th>
+                <th>Transfer Behavior</th>
+            </tr>
+            <tr>
+                <td><strong>House Owner</strong></td>
+                <td>Changes to new role holder (primary permission source)</td>
+            </tr>
+            <tr>
+                <td><strong>Co-owners/Friends</strong></td>
+                <td>Wipe individuals, keep role-based staff groups</td>
+            </tr>
+            <tr>
+                <td><strong>Secures & Lockdowns</strong></td>
+                <td>Access rights update based on new ownership</td>
+            </tr>
+            <tr>
+                <td><strong>Bans</strong></td>
+                <td>Persist as institutional bans (recommended)</td>
+            </tr>
+            <tr>
+                <td><strong>Vendors/NPCs</strong></td>
+                <td>Persist (owned by institution) or pack up (personal)</td>
+            </tr>
+            <tr>
+                <td><strong>Sign/Name</strong></td>
+                <td>Display Seat name rather than character name</td>
+            </tr>
+        </table>
+        
+        <h2>Complex Buildings: Zone-Based Access</h2>
+        
+        <p>For large complexes like Britain Castle, managing access via one giant friends list creates chaos when the King dies.</p>
+        
+        <h3>The Solution: Zones + Apartments</h3>
+        
+        <div class="state-box">
+            <h4>Zone Structure (Britain Castle Example)</h4>
+            <ul>
+                <li><strong>Public Zone</strong> — Throne hall, courtyard (anyone can enter)</li>
+                <li><strong>Administrative Zone</strong> — Council chamber, treasury (King, Chancellor, Scribes)</li>
+                <li><strong>Military Zone</strong> — Armory, barracks (Marshal, Royal Guard)</li>
+                <li><strong>Private Zone</strong> — Royal quarters + noble rooms (role-specific)</li>
+            </ul>
+        </div>
+        
+        <h3>Room-Level Apartments</h3>
+        
+        <p>Key individuals get rooms that function as micro-houses:</p>
+        <ul>
+            <li><strong>Chancellor's Quarters</strong> — Owned by Chancellor role</li>
+            <li><strong>Marshal's Quarters</strong> — Owned by Marshal role</li>
+            <li><strong>Royal Suite</strong> — Owned by King role</li>
+            <li><strong>Guard Barracks</strong> — Owned by RoyalGuard group</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>Critical Advantage:</strong> When the King dies, only the King-level access changes. Everyone else keeps their room access. No cascade of permission updates needed.
+        </div>
+        
+        <h3>Staff Access Layer</h3>
+        
+        <p>Define access by role groups, not individuals:</p>
+        
+        <table>
+            <tr>
+                <th>Access Group</th>
+                <th>Zones Granted</th>
+            </tr>
+            <tr>
+                <td><strong>RoyalFamily</strong></td>
+                <td>Public, Administrative, Private (royal suite)</td>
+            </tr>
+            <tr>
+                <td><strong>RoyalGuard</strong></td>
+                <td>Public, Military, Administrative (patrol only)</td>
+            </tr>
+            <tr>
+                <td><strong>CastleStaff</strong></td>
+                <td>Public, servant areas</td>
+            </tr>
+            <tr>
+                <td><strong>Council</strong></td>
+                <td>Public, Administrative</td>
+            </tr>
+            <tr>
+                <td><strong>Envoy</strong></td>
+                <td>Public, guest apartments (time-limited)</td>
+            </tr>
+        </table>
+        
+        <p>When someone is hired/fired, they are added/removed from the group. No manual door list updates.</p>
+        
+        <h2>ServUO Implementation Pattern</h2>
+        
+        <h3>For Unused City Buildings</h3>
+        
+        <p>Instead of converting every static building into a BaseHouse multi, use <strong>Townhouse Regions</strong>:</p>
+        
+        <div class="state-box">
+            <h4>Townhouse Region Approach</h4>
+            <ol>
+                <li>Define a Region around the building footprint</li>
+                <li>Add a Claim Sign at the front door</li>
+                <li>Attach housing behavior to the region:
+                    <ul>
+                        <li>Allow/deny entry (doors)</li>
+                        <li>Lockdown/secure containers inside region</li>
+                        <li>Assign "owner" via role (not BaseHouse Owner)</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <h3>Claim Sign Functionality</h3>
+        
+        <p>Each building has a sign/plaque that holds:</p>
+        <ul>
+            <li><code>BuildingId</code> — Unique identifier</li>
+            <li><code>RegionBounds</code> — Coordinates defining the building</li>
+            <li><code>OwningRoleId</code> — Not PlayerSerial, but the role</li>
+            <li><code>AccessGroups</code> — Guards, Staff, etc.</li>
+        </ul>
+        
+        <p>Double-click opens a gump:</p>
+        <ul>
+            <li>Claim building (if unclaimed)</li>
+            <li>View ownership (Seat/Role name)</li>
+            <li>Grant access to role groups</li>
+            <li>Evict/revoke (admin only)</li>
+        </ul>
+        
+        <h3>Succession Event Hook</h3>
+        
+        <p>When a role is reassigned:</p>
+        <ol>
+            <li>System does NOT rewrite 100 building permissions</li>
+            <li>Simply update <code>RoleSeat.CurrentMobileSerial</code></li>
+            <li>Buildings automatically "transfer" because they reference the role</li>
+        </ol>
+        
+        <h2>Edge Cases & Safeguards</h2>
+        
+        <h3>Permadeath Inside Estate</h3>
+        <div class="warning">
+            <strong>Problem:</strong> Role-holder dies inside their estate. Risk of lockout.
+        </div>
+        <p><strong>Solution:</strong></p>
+        <ul>
+            <li>On death: House enters Interregnum state (doors unlock OR steward NPC can open)</li>
+            <li>On new role holder assigned: Ownership locks back down</li>
+        </ul>
+        
+        <h3>Personal Items Left Behind</h3>
+        <p>Design choices for role-held inventories:</p>
+        <ul>
+            <li><strong>Option A:</strong> Role inventories persist with the role (institutional property)</li>
+            <li><strong>Option B:</strong> Auto-pack "personal" containers into estate chest, move to neutral vault</li>
+            <li><strong>Option C:</strong> Leave all items; successor inherits everything</li>
+        </ul>
+        
+        <h3>Preventing Role-Swap Grief</h3>
+        <p>If swapping into a role grants instant house control, players can exploit it.</p>
+        <p><strong>Mitigations:</strong></p>
+        <ul>
+            <li>Require a witness (another player in official capacity)</li>
+            <li>Require swap at designated "Seat Hall" (throne room, court)</li>
+            <li>Enforce cooldown (10-30 minutes)</li>
+        </ul>
+        
+        <h2>Low-Code Alternative</h2>
+        
+        <p>If minimal scripting is desired, emulate role ownership with Friends/Co-Owners:</p>
+        <ul>
+            <li>Keep house owned by immortal "HouseAccount" character (NPC or staff)</li>
+            <li>When player takes role, add them to co-owner list</li>
+            <li>On death/succession, remove old, add new</li>
+        </ul>
+        <p>Less "pure" architecturally, but very practical and avoids vendor quirks.</p>
+        
+        <h2>Required Scripting Checklist</h2>
+        
+        <p>Minimal systems needed for role-based housing:</p>
+        
+        <table>
+            <tr>
+                <th>System</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td><strong>Role tags on characters</strong></td>
+                <td>IsKing, IsChancellor, IsRoyalGuard flags</td>
+            </tr>
+            <tr>
+                <td><strong>Region-based access checks</strong></td>
+                <td>On region enter: allow/deny based on tags</td>
+            </tr>
+            <tr>
+                <td><strong>Room ownership mapping</strong></td>
+                <td>RoomId → RoleId, door checks role holder(s)</td>
+            </tr>
+            <tr>
+                <td><strong>Succession event hook</strong></td>
+                <td>On role reassignment: update tags and role-owned doors</td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a></p>
+    </footer>
+</body>
+</html>
