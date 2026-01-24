@@ -17,6 +17,7 @@
     // Build navigation HTML
     const navHTML = `
         <a href="index.html" ${currentPage === 'index.html' ? 'class="active"' : ''}>Home</a>
+        <a href="why-play.html" ${currentPage === 'why-play.html' ? 'class="active"' : ''}>Why Play This?</a>
         <a href="philosophy.html" ${currentPage === 'philosophy.html' ? 'class="active"' : ''}>Philosophy</a>
         <a href="bloodlines.html" ${currentPage === 'bloodlines.html' ? 'class="active"' : ''}>Bloodlines</a>
         <a href="houses.html" ${currentPage === 'houses.html' ? 'class="active"' : ''}>Houses</a>
