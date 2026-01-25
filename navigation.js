@@ -7,7 +7,7 @@
     const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
     const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'how-taxes.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
-    const guildsFactionsPages = ['guilds.html', 'factions.html', 'britain-factions.html', 'faction-interactions.html'];
+    const guildsFactionsPages = ['guilds.html', 'factions.html', 'britain-factions.html', 'faction-interactions.html', 'player-controlled-vendors.html'];
     const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html', 'faction-standing-chronicle.html'];
     
     // Check if current page is in a dropdown
@@ -36,6 +36,7 @@
                 <a href="factions.html">Factions</a>
                 <a href="britain-factions.html">Britain's Relationship with Factions</a>
                 <a href="faction-interactions.html">Faction Interactions with Other Factions</a>
+                <a href="player-controlled-vendors.html">Player Controlled Vendors</a>
             </div>
         </div>
         <div class="nav-dropdown">
