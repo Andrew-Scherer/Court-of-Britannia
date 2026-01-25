@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faction & Guild Banking - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .rule-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--gold); }
+        .rule-box h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        .scenario { background: var(--bg-medium); padding: 1rem; margin: 1rem 0; border-left: 3px solid var(--accent); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>💰 Faction & Guild Banking</h1>
+        <p>Two-Account System: Treasury and Upkeep Ledger</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Philosophy: Why Two Accounts?</h2>
+        
+        <p>Factions and guilds maintain two separate financial constructs to prevent ambiguity, exploitation, and political circumvention:</p>
+        
+        <ul>
+            <li><strong>Prevents Ambiguity:</strong> There is no debate about whether deposited gold is "for upkeep" or "for hoarding." Intent is explicit at the moment of deposit.</li>
+            <li><strong>Prevents Hoarding Through Upkeep:</strong> The Upkeep Ledger cannot be used as a vault. Gold converted to upkeep credit is destroyed as wealth—it becomes time, not treasure.</li>
+            <li><strong>Supports Political Pressure via Liens:</strong> Crown liens may intercept Treasury income to starve a faction's growth without killing its survival. This creates economic siege conditions without backdoor eviction.</li>
+        </ul>
+        
+        <p>This separation ensures that economic enforcement remains political pressure, not mechanical deletion.</p>
+        
+        <h2>The Two-Account System</h2>
+        
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Treasury (Bank)</th>
+                <th>Upkeep Ledger</th>
+            </tr>
+            <tr>
+                <td><strong>Purpose</strong></td>
+                <td>General faction/guild wealth</td>
+                <td>Prepaid upkeep credit only</td>
+            </tr>
+            <tr>
+                <td><strong>Withdrawable?</strong></td>
+                <td>✅ Yes (with permissions)</td>
+                <td>❌ No, never</td>
+            </tr>
+            <tr>
+                <td><strong>Used For</strong></td>
+                <td>Commerce, salaries, war funds, purchases, stockpiling</td>
+                <td>Automatic daily upkeep payments only</td>
+            </tr>
+            <tr>
+                <td><strong>Deposit Process</strong></td>
+                <td>Player chooses "Deposit to Treasury"</td>
+                <td>Player drags gold to "Add to Upkeep" (converts to credit)</td>
+            </tr>
+            <tr>
+                <td><strong>Crown Lien Impact</strong></td>
+                <td>✅ Subject to interception</td>
+                <td>❌ Cannot be touched by lien</td>
+            </tr>
+            <tr>
+                <td><strong>Storage Limit</strong></td>
+                <td>No limit</td>
+                <td>Capped at 14 days of upkeep credit</td>
+            </tr>
+            <tr>
+                <td><strong>Repurposable?</strong></td>
+                <td>Yes</td>
+                <td>No—credit is burned</td>
+            </tr>
+        </table>
+        
+        <h2>Treasury (Bank)</h2>
+        
+        <h3>Definition</h3>
+        <p>The Treasury is the faction or guild's general bank account. It functions as withdrawable, repurposable wealth.</p>
+        
+        <h3>Used For</h3>
+        <ul>
+            <li>Paying member salaries or rewards</li>
+            <li>Purchasing goods, weapons, or supplies</li>
+            <li>Funding war efforts or bounties</li>
+            <li>Commerce and trade</li>
+            <li>Hoarding wealth for future use</li>
+        </ul>
+        
+        <h3>Access & Permissions</h3>
+        <p>Treasury access is controlled by the faction or guild leader via the faction stone or guild gump:</p>
+        <ul>
+            <li><strong>Leader:</strong> Full access (deposit, withdraw, view, set permissions)</li>
+            <li><strong>Treasurer (designated officer):</strong> May deposit, withdraw, and view transactions</li>
+            <li><strong>Standard Members:</strong> No access by default (leader may grant deposit-only or view-only permissions)</li>
+        </ul>
+        
+        <h3>Deposits</h3>
+        <p>Players interact with the faction stone or guild gump and select <strong>"Deposit to Treasury."</strong> Gold is transferred from inventory into the Treasury account.</p>
+        
+        <h3>Withdrawals</h3>
+        <p>Only authorized members (leader or designated treasurer) may withdraw gold from the Treasury. Withdrawals are logged in the transaction history.</p>
+        
+        <h2>Upkeep Ledger</h2>
+        
+        <h3>Definition</h3>
+        <p>The Upkeep Ledger is <strong>not a bank</strong>—it is a prepaid meter. Gold deposited into the ledger is converted into <strong>upkeep credit</strong>, which is used exclusively to pay the faction or guild's daily upkeep cost.</p>
+        
+        <h3>Key Characteristics</h3>
+        <ul>
+            <li><strong>Non-Withdrawable:</strong> Once gold is added, it cannot be reclaimed, transferred, or repurposed.</li>
+            <li><strong>Non-Transferable:</strong> Credit cannot be moved to another faction, guild, or player.</li>
+            <li><strong>Automatic Deduction:</strong> Each day, the upkeep cost is automatically deducted from the ledger balance.</li>
+            <li><strong>Capped Storage:</strong> The ledger may hold a maximum of <strong>14 days</strong> of upkeep credit.</li>
+        </ul>
+        
+        <h3>Why 14 Days?</h3>
+        <p>A two-week cap ensures the ledger is used for <strong>survival buffer</strong>, not wealth storage. It prevents factions from bypassing Crown liens by stockpiling months of gold as "upkeep." This cap:</p>
+        <ul>
+            <li>Allows reasonable planning for vacations or downtime</li>
+            <li>Prevents indefinite economic immunity</li>
+            <li>Forces factions under lien to continue generating income or negotiate</li>
+        </ul>
+        
+        <h3>How to Add to the Ledger</h3>
+        <p>Players interact with the faction stone or guild gump and select <strong>"Add to Upkeep."</strong> They drag gold from inventory, and it is immediately:</p>
+        <ul>
+            <li>Removed from the world economy</li>
+            <li>Converted into upkeep credit (measured in days/hours)</li>
+            <li>Recorded in transaction history</li>
+        </ul>
+        
+        <h3>Access & Permissions</h3>
+        <ul>
+            <li><strong>Leader:</strong> May add gold to upkeep and view ledger balance</li>
+            <li><strong>Designated Treasurer:</strong> May add gold to upkeep and view ledger balance</li>
+            <li><strong>Standard Members:</strong> May view ledger balance (cannot add unless granted permission)</li>
+        </ul>
+        
+        <p>Leaders may optionally grant "add to upkeep" permission to trusted members, allowing collective responsibility for survival.</p>
+        
+        <h2>Intentional Deposits</h2>
+        
+        <p>Deposits to Treasury versus Upkeep Ledger are <strong>always intentional</strong>. There is no automatic sorting, no hidden logic, no ambiguity.</p>
+        
+        <div class="rule-box">
+            <h4>Deposit Flow</h4>
+            <p>When a player opens the faction stone or guild gump, they see two distinct options:</p>
+            <ul>
+                <li><strong>"Deposit to Treasury"</strong> → Gold enters the Treasury (withdrawable, subject to liens)</li>
+                <li><strong>"Add to Upkeep"</strong> → Gold converts to upkeep credit (non-withdrawable, protected from liens)</li>
+            </ul>
+            <p>This design forces players to <strong>declare intent</strong> at the moment of deposit. No room for post-hoc arguments.</p>
+        </div>
+        
+        <h2>Records & Transparency</h2>
+        
+        <p>Both the Treasury and Upkeep Ledger maintain full transaction histories, viewable by authorized members:</p>
+        
+        <h3>Treasury Transaction Log</h3>
+        <ul>
+            <li>Date and time of deposit</li>
+            <li>Depositor name</li>
+            <li>Amount deposited</li>
+            <li>Withdrawals (who, when, how much)</li>
+            <li><strong>Lien Intercepts:</strong> Amount intercepted by Crown lien, date, and decree reference</li>
+        </ul>
+        
+        <h3>Upkeep Ledger Log</h3>
+        <ul>
+            <li>Date and time of upkeep payment</li>
+            <li>Who added credit</li>
+            <li>Amount added (in gold and resulting days of credit)</li>
+            <li>Daily upkeep deductions (automatic)</li>
+            <li>Remaining balance (in days/hours of coverage)</li>
+        </ul>
+        
+        <p>These logs provide accountability, prevent embezzlement, and offer political ammunition in disputes.</p>
+        
+        <h2>Crown Liens Interaction</h2>
+        
+        <p>A <strong>Crown Lien</strong> is a legal restriction placed on a faction stone by royal decree. It intercepts surplus revenue but <strong>cannot interfere with upkeep payments</strong>.</p>
+        
+        <h3>What a Lien Can Do</h3>
+        <ul>
+            <li>✅ Intercept gold deposited into the <strong>Treasury</strong></li>
+            <li>✅ Intercept vendor proceeds before they reach the Treasury</li>
+            <li>✅ Intercept donations or income flowing into the Treasury</li>
+            <li>✅ Freeze discretionary spending (if configured by decree)</li>
+        </ul>
+        
+        <h3>What a Lien Cannot Do</h3>
+        <ul>
+            <li>❌ Touch the <strong>Upkeep Ledger</strong></li>
+            <li>❌ Prevent upkeep payments</li>
+            <li>❌ Block players from adding gold directly to the Upkeep Ledger</li>
+            <li>❌ Force upkeep failure</li>
+        </ul>
+        
+        <h3>Why This Distinction Matters</h3>
+        <p>If a lien could block upkeep, it would be <strong>backdoor eviction by decree</strong>—a mechanical deletion disguised as political pressure. Instead, liens create a <strong>siege economy</strong>:</p>
+        <ul>
+            <li>The faction can <strong>survive</strong> (upkeep still payable)</li>
+            <li>The faction cannot <strong>grow</strong> (all surplus income seized)</li>
+            <li>The faction must <strong>choose</strong>: pay the Crown, negotiate, or fight</li>
+        </ul>
+        
+        <div class="warning">
+            <p><strong>Doctrine:</strong> Crown liens restrict surplus revenue but do not prevent payment of mandatory upkeep. Failure of upkeep under lien is treated as sovereign collapse, not eviction.</p>
+        </div>
+        
+        <h2>Common Scenarios</h2>
+        
+        <div class="scenario">
+            <h4>Scenario 1: Member Donates Under Lien</h4>
+            <p><strong>Situation:</strong> A faction is under Crown lien. A member deposits 5,000 gold to the Treasury.</p>
+            <p><strong>Result:</strong> The gold is immediately intercepted by the lien and applied to the faction's Crown debt. The Treasury balance does not increase. The transaction log records: "5,000g intercepted under Crown lien (Decree #47)."</p>
+        </div>
+        
+        <div class="scenario">
+            <h4>Scenario 2: Paying Upkeep During Lien</h4>
+            <p><strong>Situation:</strong> The same faction needs to pay daily upkeep. A member adds 3,000 gold to the Upkeep Ledger.</p>
+            <p><strong>Result:</strong> The gold converts to upkeep credit successfully. The lien does not intercept it. Upkeep is paid automatically the next day. The faction survives.</p>
+        </div>
+        
+        <div class="scenario">
+            <h4>Scenario 3: Treasury is Empty</h4>
+            <p><strong>Situation:</strong> A guild's Treasury has 0 gold. A member wants to fund a war effort.</p>
+            <p><strong>Result:</strong> Members must deposit gold into the Treasury. If the guild is under lien, those deposits will be intercepted. If no lien exists, deposits accumulate normally.</p>
+        </div>
+        
+        <div class="scenario">
+            <h4>Scenario 4: Upkeep Ledger is Empty</h4>
+            <p><strong>Situation:</strong> A faction's Upkeep Ledger hits 0 days of credit.</p>
+            <p><strong>Result:</strong> Upkeep fails. Property begins decay (grace period applies). Members must add gold to the Upkeep Ledger immediately to restore coverage. If property decays fully, the faction collapses—stone resets, vendors disappear, buildings become unclaimed.</p>
+        </div>
+        
+        <div class="scenario">
+            <h4>Scenario 5: Ledger Hits 14-Day Cap</h4>
+            <p><strong>Situation:</strong> A faction has 14 days of upkeep credit. A member tries to add more gold to the ledger.</p>
+            <p><strong>Result:</strong> The gump rejects the deposit: "Upkeep Ledger is at maximum capacity (14 days)." The player must either deposit to Treasury or wait until upkeep consumes some credit.</p>
+        </div>
+        
+        <div class="scenario">
+            <h4>Scenario 6: Vendor Proceeds Under Lien</h4>
+            <p><strong>Situation:</strong> A faction under lien controls a vendor that makes 10,000 gold in sales.</p>
+            <p><strong>Result:</strong> The proceeds are intercepted before they reach the Treasury. The vendor income goes directly to the Crown debt. The faction sees: "10,000g vendor proceeds intercepted under Crown lien."</p>
+        </div>
+        
+        <div class="scenario">
+            <h4>Scenario 7: Leader Inactive, Ledger Empty</h4>
+            <p><strong>Situation:</strong> A faction leader goes inactive. The Upkeep Ledger has 2 days of credit left, but only the leader can add gold.</p>
+            <p><strong>Result:</strong> If the leader did not grant treasurer permissions, the faction will collapse in 2 days. This is intentional: factions must delegate authority properly. Lack of preparation = failure.</p>
+        </div>
+        
+        <h2>Failure & Abuse Prevention</h2>
+        
+        <h3>Anti-Exploit Rules</h3>
+        
+        <div class="rule-box">
+            <h4>1. No Withdrawing from Ledger</h4>
+            <p>Upkeep credit is <strong>never</strong> convertible back to gold. Once deposited, it is permanently committed to upkeep only.</p>
+        </div>
+        
+        <div class="rule-box">
+            <h4>2. No Laundering via Ledger</h4>
+            <p>Gold added to the Upkeep Ledger cannot be transferred to another faction, guild, or player. It is consumed by upkeep or wasted if the faction collapses.</p>
+        </div>
+        
+        <div class="rule-box">
+            <h4>3. Lien Cannot Be Bypassed</h4>
+            <p>Players cannot "trick" a lien by adding gold to the ledger beyond survival needs. The 14-day cap prevents indefinite immunity. If a faction is under lien, it must either pay Crown debt or accept economic strangulation.</p>
+        </div>
+        
+        <div class="rule-box">
+            <h4>4. No Ambiguous Deposits</h4>
+            <p>There is no "default" account. Players must explicitly choose Treasury or Ledger. No automatic sorting, no hidden logic, no post-deposit reclassification.</p>
+        </div>
+        
+        <div class="rule-box">
+            <h4>5. Ledger Cap is Absolute</h4>
+            <p>The 14-day maximum is <strong>non-negotiable</strong>. No faction may store more than 14 days of upkeep credit, regardless of wealth or political status.</p>
+        </div>
+        
+        <h2>Summary</h2>
+        
+        <p>Factions and guilds maintain two financial constructs: the <strong>Treasury</strong> (withdrawable general wealth) and the <strong>Upkeep Ledger</strong> (non-withdrawable prepaid meter). Deposits are always intentional—players explicitly choose which account receives gold.</p>
+        
+        <p>The Treasury is subject to Crown liens, which may intercept income as political pressure. The Upkeep Ledger is protected from liens, ensuring that economic enforcement does not become backdoor eviction. The ledger has a 14-day cap to prevent hoarding disguised as upkeep planning.</p>
+        
+        <p>This two-account system ensures clarity, prevents exploitation, and supports political consequences without destroying player agency or faction survival.</p>
+    </main>
+    
+    <footer>
+        <p><a href="guilds.html" style="color: var(--gold);">← Guilds</a> | <a href="faction-guild-upkeep.html" style="color: var(--gold);">Faction & Guild Upkeep →</a></p>
+    </footer>
+</body>
+</html>

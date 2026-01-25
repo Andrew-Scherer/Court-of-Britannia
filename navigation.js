@@ -5,15 +5,17 @@
     
     // Define which pages belong to which dropdown for active state
     const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
-    const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'how-taxes.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
+    const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
-    const guildsFactionsPages = ['guilds.html', 'factions.html', 'britain-factions.html', 'faction-interactions.html', 'player-controlled-vendors.html'];
+    const taxationPages = ['economic-philosophy.html', 'crown-taxation.html', 'guild-faction-economy.html', 'crown-liens.html', 'seizure-enforcement.html', 'tax-roles.html'];
+    const guildsFactionsPages = ['guilds.html', 'factions.html', 'faction-guild-banking.html', 'faction-guild-upkeep.html', 'britain-factions.html', 'faction-interactions.html', 'player-controlled-vendors.html'];
     const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html', 'faction-standing-chronicle.html'];
     
     // Check if current page is in a dropdown
     const isRolesActive = rolesPages.includes(currentPage);
     const isSystemsActive = systemsPages.includes(currentPage);
     const isPhilosophyActive = philosophyPages.includes(currentPage);
+    const isTaxationActive = taxationPages.includes(currentPage);
     const isGuildsFactionsActive = guildsFactionsPages.includes(currentPage);
     const isSpecialActive = specialPages.includes(currentPage);
     
@@ -34,9 +36,22 @@
             <div class="nav-dropdown-content">
                 <a href="guilds.html">Guilds</a>
                 <a href="factions.html">Factions</a>
+                <a href="faction-guild-banking.html">Faction & Guild Banking</a>
+                <a href="faction-guild-upkeep.html">Faction & Guild Upkeep</a>
                 <a href="britain-factions.html">Britain's Relationship with Factions</a>
                 <a href="faction-interactions.html">Faction Interactions with Other Factions</a>
                 <a href="player-controlled-vendors.html">Player Controlled Vendors</a>
+            </div>
+        </div>
+        <div class="nav-dropdown">
+            <a ${isTaxationActive ? 'class="active"' : ''}>Taxation & Economy ▼</a>
+            <div class="nav-dropdown-content">
+                <a href="economic-philosophy.html">Economic Philosophy</a>
+                <a href="crown-taxation.html">Crown Taxation System</a>
+                <a href="guild-faction-economy.html">Guild & Faction Economy</a>
+                <a href="crown-liens.html">Crown Liens</a>
+                <a href="seizure-enforcement.html">Seizure, Enforcement & Insolvency</a>
+                <a href="tax-roles.html">Tax-Related Roles & Administration</a>
             </div>
         </div>
         <div class="nav-dropdown">
@@ -66,7 +81,6 @@
                 <a href="permadeath-downed.html">Permadeath & Downed States</a>
                 <a href="execution-mechanics.html">Execution Mechanics</a>
                 <a href="jail.html">Jail System</a>
-                <a href="how-taxes.html">How Taxes Work</a>
                 <a href="salary-system.html">City Salary System</a>
                 <a href="housing.html">Housing & Land</a>
                 <a href="royal-tenure.html">Royal Tenure</a>
