@@ -1,4 +1,3 @@
-// Shared Navigation for Kingdoms of Britannia Wiki
 // Automatically detects current page and highlights it
 (function() {
     // Get current page filename
@@ -7,7 +6,6 @@
     // Define which pages belong to which dropdown for active state
     const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'coroner.html', 'executioner.html', 'warden.html'];
     const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'how-taxes.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
-    const cityStatePages = ['capital-recognition.html'];
     const philosophyPages = ['philosophy.html', 'new-player-experience.html'];
     const guildsFactionsPages = ['guilds.html', 'factions.html'];
     const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html'];
@@ -15,7 +13,6 @@
     // Check if current page is in a dropdown
     const isRolesActive = rolesPages.includes(currentPage);
     const isSystemsActive = systemsPages.includes(currentPage);
-    const isCityStateActive = cityStatePages.includes(currentPage);
     const isPhilosophyActive = philosophyPages.includes(currentPage);
     const isGuildsFactionsActive = guildsFactionsPages.includes(currentPage);
     const isSpecialActive = specialPages.includes(currentPage);
@@ -36,12 +33,6 @@
             <div class="nav-dropdown-content">
                 <a href="guilds.html">Guilds</a>
                 <a href="factions.html">Factions</a>
-            </div>
-        </div>
-        <div class="nav-dropdown">
-            <a ${isCityStateActive ? 'class="active"' : ''}>City-State Systems ▼</a>
-            <div class="nav-dropdown-content">
-                <a href="capital-recognition.html">Capital Recognition System</a>
             </div>
         </div>
         <div class="nav-dropdown">
