@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register of Standing & Interfaction Chronicle - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .ledger-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--gold); }
+        .ledger-box h3 { color: var(--gold); margin-top: 0; }
+        .chronicle-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--accent); }
+        .chronicle-box h3 { color: var(--accent); margin-top: 0; }
+        .example-box { background: rgba(15, 52, 96, 0.5); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid var(--text-muted); }
+        .example-box h4 { color: var(--text); margin-top: 0; font-style: italic; }
+        .canon-box { background: rgba(212, 175, 55, 0.1); border: 2px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .canon-box h4 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .highlight { color: var(--accent); font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; background: var(--bg-medium); }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-light); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📜 Register of Standing & Interfaction Chronicle</h1>
+        <p>Who Counts Today — Who Can Be Trusted Tomorrow</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <p><em>Two ledgers. Two purposes. Never merged.</em></p>
+        
+        <h2>Register of Standing</h2>
+        
+        <div class="ledger-box">
+            <h3>What It Is</h3>
+            <p>A live, authoritative snapshot of Britain's current position and stance when it comes to factions.</p>
+            
+            <p>It answers one question only:</p>
+            
+            <p style="font-size: 1.2rem; color: var(--gold); text-align: center; margin: 1rem 0;">
+                <strong>"As of this moment, how does Britain treat you?"</strong>
+            </p>
+        </div>
+        
+        <h3>What It Shows (ONLY Current State)</h3>
+        
+        <ul>
+            <li><strong>Recognized factions</strong></li>
+            <li><strong>Tolerated factions</strong></li>
+            <li><strong>Outlawed factions</strong></li>
+            <li><strong>Current fealty relationships</strong></li>
+            <li><strong>Current protectorate assignments (if any)</strong></li>
+        </ul>
+        
+        <h3>What It Explicitly Does NOT Show</h3>
+        
+        <ul>
+            <li>❌ Past recognition</li>
+            <li>❌ Old fealty</li>
+            <li>❌ Who betrayed whom last year</li>
+            <li>❌ Why something changed</li>
+        </ul>
+        
+        <p><strong>No history. No narrative. No explanation.</strong></p>
+        
+        <p><em>Just status.</em></p>
+        
+        <h3>Why This Must Exist Separately</h3>
+        
+        <ul>
+            <li>Players need instant clarity</li>
+            <li>Guards need to know who's lawful</li>
+            <li>Merchants need to know who's safe</li>
+            <li>Violence needs political framing now</li>
+        </ul>
+        
+        <div class="canon-box">
+            <h4>Design Principle</h4>
+            <p><strong>This ledger is binary, cold, and cruel.</strong></p>
+            
+            <p style="margin-top: 1rem;"><em>Recognition is not force.<br>
+            It is permission for others to treat power as real.</em></p>
+        </div>
+        
+        <h2>Interfaction Chronicle</h2>
+        
+        <div class="chronicle-box">
+            <h3>What It Is</h3>
+            <p>A permanent, append-only historical record.</p>
+            
+            <p>It answers a different question:</p>
+            
+            <p style="font-size: 1.2rem; color: var(--accent); text-align: center; margin: 1rem 0;">
+                <strong>"How did we get here?"</strong>
+            </p>
+        </div>
+        
+        <h3>What It Records</h3>
+        
+        <ul>
+            <li>Faction fealty sworn / broken (with dates)</li>
+            <li>Tribute compliance over time</li>
+            <li>Recognition changes (granted, revoked)</li>
+            <li>Interventions</li>
+            <li>Withdrawals of protection</li>
+            <li>Public justifications</li>
+            <li>Official accusations</li>
+        </ul>
+        
+        <h3>What It Never Does</h3>
+        
+        <ul>
+            <li>❌ Declare current legality</li>
+            <li>❌ Override the Register of Standing</li>
+            <li>❌ Simplify history</li>
+        </ul>
+        
+        <div class="canon-box">
+            <h4>Design Principle</h4>
+            <p><strong>This ledger is slow, contextual, and damning.</strong></p>
+        </div>
+        
+        <h3>Why This Must Remain Separate</h3>
+        
+        <ul>
+            <li>Reputation needs duration</li>
+            <li>Betrayal needs memory</li>
+            <li>Patterns matter</li>
+            <li>"This was a mistake" becomes provable</li>
+        </ul>
+        
+        <p><strong>This is where:</strong></p>
+        <ul>
+            <li>Factions plan long-term</li>
+            <li>Diplomats argue precedent</li>
+            <li>Rebels justify action</li>
+            <li>Loyalists point to receipts</li>
+        </ul>
+        
+        <p style="font-size: 1.1rem; margin: 1.5rem 0;">
+            <em>History is ammunition<br>
+            and this is the armory.</em>
+        </p>
+        
+        <h2>How They Work Together (Critical)</h2>
+        
+        <div class="warning">
+            <strong>They must cross-reference, but never merge.</strong>
+        </div>
+        
+        <div class="example-box">
+            <h4>Example: Faction X</h4>
+            
+            <p><strong>Register of Standing:</strong></p>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><strong>Status</strong></td>
+                    <td><span style="color: var(--accent);">Outlawed</span></td>
+                </tr>
+            </table>
+            
+            <p style="margin-top: 1.5rem;"><strong>Interfaction Chronicle:</strong></p>
+            <ul>
+                <li>1486: Swore fealty</li>
+                <li>1487: Partial tribute (3x)</li>
+                <li>1488: Protection requested, no response</li>
+                <li>1488: Recognition revoked</li>
+                <li>1488: Declared outlaw</li>
+            </ul>
+            
+            <p style="margin-top: 1rem;"><strong>This creates:</strong></p>
+            <ul>
+                <li>Immediate clarity</li>
+                <li>Long-term consequence</li>
+                <li>Political debate</li>
+                <li>And zero enforcement scripts</li>
+            </ul>
+        </div>
+        
+        <h2>Why Merging Them Would Be a Mistake</h2>
+        
+        <p>If you merge them:</p>
+        
+        <ul>
+            <li>The present gets muddy</li>
+            <li>History becomes cluttered</li>
+            <li>New players get lost</li>
+            <li>Legitimacy becomes arguable instead of visible</li>
+        </ul>
+        
+        <div class="canon-box">
+            <h4>What You Want</h4>
+            <ul>
+                <li><strong>One place to check</strong></li>
+                <li><strong>One place to argue</strong></li>
+            </ul>
+            
+            <p style="margin-top: 1rem;"><em>Those are different needs.</em></p>
+        </div>
+        
+        <h2>Final Canon Lock-In</h2>
+        
+        <div class="canon-box">
+            <h4>Design Canon (Use Everywhere)</h4>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: var(--gold);">
+                <strong>The Register of Standing tells you who counts today.<br>
+                The Interfaction Chronicle tells you who can be trusted tomorrow.</strong>
+            </p>
+            
+            <p style="margin-top: 1.5rem;">
+                <em>They are siblings.<br>
+                They are not twins.</em>
+            </p>
+        </div>
+        
+        <h2>Comparison Table</h2>
+        
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Register of Standing</th>
+                <th>Interfaction Chronicle</th>
+            </tr>
+            <tr>
+                <td><strong>Purpose</strong></td>
+                <td>Current snapshot</td>
+                <td>Historical record</td>
+            </tr>
+            <tr>
+                <td><strong>Question</strong></td>
+                <td>"How does Britain treat you now?"</td>
+                <td>"How did we get here?"</td>
+            </tr>
+            <tr>
+                <td><strong>Updates</strong></td>
+                <td>Overwrites previous state</td>
+                <td>Append-only, permanent</td>
+            </tr>
+            <tr>
+                <td><strong>Shows</strong></td>
+                <td>Recognized, Tolerated, Outlawed status</td>
+                <td>Dates, events, changes over time</td>
+            </tr>
+            <tr>
+                <td><strong>Does NOT Show</strong></td>
+                <td>Why, when, or history</td>
+                <td>Current legal status</td>
+            </tr>
+            <tr>
+                <td><strong>Used By</strong></td>
+                <td>Guards, merchants, fighters (immediate)</td>
+                <td>Diplomats, planners, historians (long-term)</td>
+            </tr>
+            <tr>
+                <td><strong>Character</strong></td>
+                <td>Binary, cold, cruel</td>
+                <td>Slow, contextual, damning</td>
+            </tr>
+            <tr>
+                <td><strong>Effect</strong></td>
+                <td>Instant clarity</td>
+                <td>Long-term consequence</td>
+            </tr>
+        </table>
+        
+        <h2>Summary</h2>
+        
+        <p>The <strong>Register of Standing</strong> is Britain's current, authoritative declaration of how factions are treated — recognized, tolerated, or outlawed. It provides no history, no justification, only status. Players, guards, and merchants check it for immediate clarity.</p>
+        
+        <p>The <strong>Interfaction Chronicle</strong> is a permanent historical record of fealty changes, tribute compliance, recognition grants and revocations, and official justifications. It provides context, patterns, and precedent, but never declares current legality.</p>
+        
+        <p>They must cross-reference but never merge. One tells you who counts today. The other tells you who can be trusted tomorrow.</p>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a></p>
+    </footer>
+</body>
+</html>

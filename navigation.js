@@ -8,7 +8,7 @@
     const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'how-taxes.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
     const guildsFactionsPages = ['guilds.html', 'factions.html', 'britain-factions.html', 'faction-interactions.html'];
-    const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html'];
+    const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html', 'faction-standing-chronicle.html'];
     
     // Check if current page is in a dropdown
     const isRolesActive = rolesPages.includes(currentPage);
@@ -81,6 +81,7 @@
                 <a href="tax-ledger.html">Tax Ledger</a>
                 <a href="arrest-ledger.html">Arrest Ledger</a>
                 <a href="death-ledger.html">Public Death Ledger</a>
+                <a href="faction-standing-chronicle.html">Register of Standing & Interfaction Chronicle</a>
             </div>
         </div>
     `;
