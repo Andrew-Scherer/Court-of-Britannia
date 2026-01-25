@@ -7,7 +7,7 @@
     // Define which pages belong to which dropdown for active state
     const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'coroner.html', 'executioner.html', 'warden.html'];
     const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'how-taxes.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
-    const cityStatePages = ['capital-recognition.html'];
+    const cityStatePages = ['city-residency.html', 'city-activation.html', 'capital-status.html', 'capital-recognition.html', 'fealty-sovereignty.html', 'intercity-treaties.html', 'fealty-ledger.html', 'intercity-tithes.html', 'secession-rebellion.html', 'protection-promises.html'];
     const philosophyPages = ['philosophy.html', 'new-player-experience.html'];
     const guildsFactionsPages = ['guilds.html', 'factions.html'];
     const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html'];
@@ -41,7 +41,16 @@
         <div class="nav-dropdown">
             <a ${isCityStateActive ? 'class="active"' : ''}>City-State Systems ▼</a>
             <div class="nav-dropdown-content">
+                <a href="city-residency.html">City Residency & Civic Belonging</a>
+                <a href="city-activation.html">City Activation & Political Dormancy</a>
+                <a href="capital-status.html">Capital Status & Spawn Gravity</a>
                 <a href="capital-recognition.html">Capital Recognition System</a>
+                <a href="fealty-sovereignty.html">Fealty & Sovereignty</a>
+                <a href="intercity-treaties.html">Inter-City Treaties</a>
+                <a href="fealty-ledger.html">Fealty Ledger</a>
+                <a href="intercity-tithes.html">Inter-City Tithes & Treasury Routing</a>
+                <a href="secession-rebellion.html">Secession, Neutrality, and Rebellion</a>
+                <a href="protection-promises.html">Protection Promises & Failure</a>
             </div>
         </div>
         <div class="nav-dropdown">
