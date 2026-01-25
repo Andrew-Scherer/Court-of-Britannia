@@ -4,7 +4,7 @@
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     // Define which pages belong to which dropdown for active state
-    const officialRolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
+    const officialRolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'diplomacy.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
     const politicalSystemsPages = ['succession.html', 'coronation.html', 'royal-tenure.html', 'seat-system.html'];
     const justiceSystemsPages = ['execution-mechanics.html', 'jail.html', 'bounty.html'];
     const cityServicesPages = ['salary-system.html', 'housing.html', 'property.html'];
@@ -72,6 +72,7 @@
                 <a href="master-treasury.html">Master of the Treasury</a>
                 <a href="guards.html">Guards</a>
                 <a href="military.html">Military</a>
+                <a href="diplomacy.html">Diplomacy</a>
                 <a href="warden.html">Warden of the Dungeons</a>
                 <a href="coroner.html">Coroner</a>
                 <a href="executioner.html">Executioner</a>
