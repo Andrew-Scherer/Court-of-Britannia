@@ -84,24 +84,30 @@
         <div class="nav-dropdown">
             <a ${isSystemsActive ? 'class="active"' : ''}>Britain's City Systems ▼</a>
             <div class="nav-dropdown-content">
-                <div class="nav-dropdown-section">
-                    <strong ${isPoliticalSystemsActive ? 'class="active"' : ''}>Political Systems</strong>
-                    <a href="succession.html">Succession & Crown Transfer</a>
-                    <a href="coronation.html">Coronation Ceremony</a>
-                    <a href="royal-tenure.html">Royal Tenure</a>
-                    <a href="seat-system.html">Seat System</a>
+                <div class="nav-dropdown-nested">
+                    <a ${isPoliticalSystemsActive ? 'class="active"' : ''}>Political Systems ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="succession.html">Succession & Crown Transfer</a>
+                        <a href="coronation.html">Coronation Ceremony</a>
+                        <a href="royal-tenure.html">Royal Tenure</a>
+                        <a href="seat-system.html">Seat System</a>
+                    </div>
                 </div>
-                <div class="nav-dropdown-section">
-                    <strong ${isJusticeSystemsActive ? 'class="active"' : ''}>Justice Systems</strong>
-                    <a href="execution-mechanics.html">Execution Mechanics</a>
-                    <a href="jail.html">Jail System</a>
-                    <a href="bounty.html">Bounty System</a>
+                <div class="nav-dropdown-nested">
+                    <a ${isJusticeSystemsActive ? 'class="active"' : ''}>Justice Systems ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="execution-mechanics.html">Execution Mechanics</a>
+                        <a href="jail.html">Jail System</a>
+                        <a href="bounty.html">Bounty System</a>
+                    </div>
                 </div>
-                <div class="nav-dropdown-section">
-                    <strong ${isCityServicesActive ? 'class="active"' : ''}>City Services</strong>
-                    <a href="salary-system.html">City Salary System</a>
-                    <a href="housing.html">Housing & Land</a>
-                    <a href="property.html">Property & Auctions</a>
+                <div class="nav-dropdown-nested">
+                    <a ${isCityServicesActive ? 'class="active"' : ''}>City Services ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="salary-system.html">City Salary System</a>
+                        <a href="housing.html">Housing & Land</a>
+                        <a href="property.html">Property & Auctions</a>
+                    </div>
                 </div>
             </div>
         </div>
