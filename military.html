@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Military - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚔️ Military</h1>
+        <p>Authority Through Force and Projection</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>What the Military Is</h2>
+        
+        <div class="quote">
+            Britain's Military is not law enforcement and not governance. It is the Crown's capacity to project violence beyond the city walls and to survive environments where law does not function.
+        </div>
+        
+        <p>Where Guards make authority visible, the Military makes authority possible.</p>
+        
+        <p>They exist to:</p>
+        <ul>
+            <li>Fight where arrest is meaningless</li>
+            <li>Hold territory through presence</li>
+            <li>Deter threats before they reach Britain</li>
+            <li>Remind everyone that the city is not defenseless</li>
+        </ul>
+        
+        <p>Like the Guards, the Military serves authority as it exists in practice, not theory.</p>
+        
+        <h2>Guards vs Military: Critical Distinction</h2>
+        
+        <div class="info-box">
+            <h3>City Guards</h3>
+            <ul>
+                <li>Law enforcement inside Britain</li>
+                <li>Answer to courts and magistrates</li>
+                <li>Duties: arrest, patrol, jail</li>
+                <li>Not expeditionary</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>Military / Expendables</h3>
+            <ul>
+                <li>External force projection</li>
+                <li>Used against outlaw factions, in protectorates, as occupation presence</li>
+                <li>Not bound by civilian law the same way</li>
+                <li>Lethal force is default, not exception</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <strong>Can one player be both?</strong> Yes — but not at the same time. Think in terms of posting, not identity. A player may be a Guard while stationed in Britain, then reassigned to Military duty externally. Switching roles is visible and political. This creates: "The Guard has been militarized," "Britain is escalating," "This isn't policing anymore." That's good tension.
+        </div>
+        
+        <h2>Why Play This?</h2>
+        
+        <p>If Guards are about:</p>
+        <ul>
+            <li>Order</li>
+            <li>Restraint</li>
+            <li>Legality</li>
+            <li>Public legitimacy</li>
+        </ul>
+        
+        <p>The Military is about:</p>
+        <ul>
+            <li>Survival</li>
+            <li>Force</li>
+            <li>Initiative</li>
+            <li>Political leverage</li>
+        </ul>
+        
+        <p>Military players get:</p>
+        <ul>
+            <li>External campaigns</li>
+            <li>Patrol authority outside the city</li>
+            <li>Command of armed groups</li>
+            <li>Strategic power</li>
+            <li>And the long-term temptation to stop obeying civilians</li>
+        </ul>
+        
+        <p><strong>This is the role for players who want power that isn't clean.</strong></p>
+        
+        <h2>Philosophy</h2>
+        
+        <div class="quote-simple">
+            Guards ask: "Is this lawful?"<br>
+            Military asks: "Will this hold?"
+        </div>
+        
+        <p>The Military assumes:</p>
+        <ul>
+            <li>Violence is expected</li>
+            <li>Enemies won't submit to arrest</li>
+            <li>Legitimacy comes after control</li>
+            <li>Hesitation kills</li>
+        </ul>
+        
+        <p>This difference is why Guards and Military cooperate—and why they mistrust each other.</p>
+        
+        <h2>Authority and Allegiance</h2>
+        
+        <p>Military authority flows through appointment, just like the Guards—but from a parallel chain, not the same one.</p>
+        
+        <p><strong>Sources of authority:</strong></p>
+        <ul>
+            <li><strong>The Crown</strong> — Ultimate legitimacy</li>
+            <li><strong>The High Commander</strong> — Operational control</li>
+            <li><strong>Field Commanders</strong> — Local authority</li>
+            <li><strong>Officers</strong> — Unit-level leadership</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>The Military does not answer to:</strong>
+            <ul>
+                <li>Magistrates</li>
+                <li>Courts</li>
+                <li>Wardens</li>
+                <li>City law</li>
+            </ul>
+            <p>That exemption is intentional and dangerous.</p>
+        </div>
+        
+        <h2>Hierarchy and Appointments</h2>
+        
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Max</th>
+                <th>Appointed By</th>
+                <th>Can Appoint</th>
+            </tr>
+            <tr>
+                <td><strong>⚔️ High Commander of Britain</strong></td>
+                <td>1</td>
+                <td>King</td>
+                <td>Field Commanders</td>
+            </tr>
+            <tr>
+                <td><strong>🛡️ Field Commander</strong></td>
+                <td>3</td>
+                <td>High Commander</td>
+                <td>Officers</td>
+            </tr>
+            <tr>
+                <td><strong>🗡️ Soldier</strong></td>
+                <td>Unlimited</td>
+                <td>Officer</td>
+                <td>None</td>
+            </tr>
+        </table>
+        
+        <h3>High Commander of Britain</h3>
+        
+        <p>The High Commander controls Britain's external violence.</p>
+        
+        <p>They:</p>
+        <ul>
+            <li>Decide where forces are deployed</li>
+            <li>Define rules of engagement</li>
+            <li>Command campaigns and protectorates</li>
+            <li>Control fortifications outside the city</li>
+            <li>Determine when military force replaces diplomacy</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>This is the second most dangerous office in Britain.</strong>
+            <p>A loyal High Commander protects the realm. An ambitious one doesn't need permission.</p>
+            <p>Historically, Kings fall not when armies lose—but when they stop obeying.</p>
+        </div>
+        
+        <h3>Field Commanders</h3>
+        
+        <p>Field Commanders control:</p>
+        <ul>
+            <li>Regions</li>
+            <li>Borders</li>
+            <li>Protectorates</li>
+            <li>Major external threats</li>
+        </ul>
+        
+        <p>They act with High Commander authority when distant from Britain and must make decisions without civilian oversight.</p>
+        
+        <p>Field Commanders build:</p>
+        <ul>
+            <li>Personal loyalty networks</li>
+            <li>Hardened veterans</li>
+            <li>Regional power bases</li>
+        </ul>
+        
+        <p><strong>They are the most common source of military coups.</strong></p>
+        
+        <h3>Soldiers</h3>
+        
+        <p>Soldiers are:</p>
+        <ul>
+            <li>Professional fighters</li>
+            <li>Trained for lethal combat</li>
+            <li>Accustomed to loss and brutality</li>
+            <li>Loyal to officers before ideals</li>
+        </ul>
+        
+        <p>They are not peacekeepers. They are not guards. They are force applied until resistance ends.</p>
+        
+        <h2>Core Duties</h2>
+        
+        <p>The Military is responsible for:</p>
+        <ul>
+            <li>External patrols beyond city walls</li>
+            <li>Escorting caravans and nobles through hostile lands</li>
+            <li>Holding protectorates and occupied territories</li>
+            <li>Responding to large-scale threats (raids, invasions, monsters)</li>
+            <li>Conducting punitive expeditions</li>
+            <li>Establishing forward camps and forts</li>
+            <li>Supporting Guards during internal emergencies (by request or decree)</li>
+        </ul>
+        
+        <h2>Use of Force</h2>
+        
+        <h3>Lethal Force (Standard)</h3>
+        
+        <p>Unlike Guards, lethal force is the default.</p>
+        
+        <p>The Military:</p>
+        <ul>
+            <li>Kills enemies</li>
+            <li>Breaks resistance</li>
+            <li>Does not attempt arrest unless ordered</li>
+            <li>Does not preserve enemies for trial</li>
+        </ul>
+        
+        <p><strong>Mercy is strategic, not procedural.</strong></p>
+        
+        <h2>Relationship With the Guards</h2>
+        
+        <div class="quote-simple">
+            Fireman vs Police
+        </div>
+        
+        <h3>Normal State: Cooperation</h3>
+        <ul>
+            <li>Guards maintain internal order</li>
+            <li>Military handles external threats</li>
+            <li>Guards request military aid during crises</li>
+            <li>Military defers to Guards inside Britain</li>
+        </ul>
+        
+        <h3>Tension State: Jurisdictional Conflict</h3>
+        <ul>
+            <li>Military claims threat justifies action inside city</li>
+            <li>Guards insist on law and restraint</li>
+            <li>Arrest vs execution disputes</li>
+            <li>Chain-of-command ambiguity</li>
+        </ul>
+        
+        <h3>Crisis State: Alignment or Schism</h3>
+        
+        <p>If:</p>
+        <ul>
+            <li><strong>Marshal and High Commander cooperate</strong> → Britain becomes authoritarian</li>
+            <li><strong>Marshal and High Commander oppose</strong> → Britain fractures</li>
+            <li><strong>Military bypasses Guards</strong> → Soft coup</li>
+            <li><strong>Guards block Military</strong> → Civil conflict risk</li>
+        </ul>
+        
+        <p><em>This is intentional.</em></p>
+        
+        <h2>Political Ambition & Risk (Critical)</h2>
+        
+        <p>Like the Guards, the Military is structurally capable of takeover.</p>
+        
+        <h3>Danger Signs</h3>
+        <ul>
+            <li>Soldiers loyal to commanders, not Crown</li>
+            <li>Military acting without Guard coordination</li>
+            <li>Forts controlling supply routes</li>
+            <li>Field Commanders ignoring recalls</li>
+            <li>Guards "requesting" military presence inside city</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>A High Commander aligned with a Marshal can:</strong>
+            <ul>
+                <li>Suspend courts</li>
+                <li>Control access</li>
+                <li>Neutralize rivals</li>
+                <li>Rule "temporarily" for stability</li>
+            </ul>
+            <p>History says temporary never ends.</p>
+        </div>
+        
+        <h2>Summary</h2>
+        
+        <ul>
+            <li>Britain's Military is a parallel power structure to the Guards, focused on external force and survival</li>
+            <li>Authority flows through a separate chain, creating cooperation and rivalry</li>
+            <li>Lethal force is standard; law is secondary</li>
+            <li>High-ranking military nobles can become powerful political actors</li>
+            <li>Alignment between Military and Guards creates authoritarian potential</li>
+            <li>Conflict between them signals regime instability</li>
+            <li>The Military exists to make protection, occupation, and escalation visible</li>
+            <li>Field Commanders are the most common source of military coups</li>
+            <li>A High Commander aligned with a Marshal represents existential threat to civilian rule</li>
+        </ul>
+        
+        <h2>Final Truth</h2>
+        
+        <div class="quote">
+            You didn't want "soldiers." You wanted a second sword, a second loyalty network, a second path to tyranny. You now have it.
+        </div>
+        
+        <h2>See Also</h2>
+        <ul>
+            <li><a href="guards.html" style="color: var(--accent);">Guards</a> — Internal law enforcement and parallel command structure</li>
+            <li><a href="permadeath-downed.html" style="color: var(--accent);">Permadeath & Downed States</a> — Mechanics of lethal versus subdual combat</li>
+            <li><a href="roles.html" style="color: var(--accent);">All Roles</a> — Complete listing of Britain's noble positions</li>
+            <li><a href="succession.html" style="color: var(--accent);">Succession</a> — Authority conflicts during regime transitions</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="roles.html" style="color: var(--gold);">Roles</a> | <a href="guards.html" style="color: var(--gold);">Guards</a></p>
+    </footer>
+</body>
+</html>
