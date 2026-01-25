@@ -4,7 +4,7 @@
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     // Define which pages belong to which dropdown for active state
-    const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'coroner.html', 'executioner.html', 'warden.html'];
+    const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html'];
     const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'how-taxes.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
     const guildsFactionsPages = ['guilds.html', 'factions.html', 'britain-factions.html', 'faction-interactions.html'];
@@ -52,6 +52,7 @@
                 <a href="warden.html">Warden of the Dungeons</a>
                 <a href="coroner.html">Coroner</a>
                 <a href="executioner.html">Executioner</a>
+                <a href="high-emissary.html">High Emissary</a>
             </div>
         </div>
         <div class="nav-dropdown">
