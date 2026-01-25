@@ -4,7 +4,7 @@
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     // Define which pages belong to which dropdown for active state
-    const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
+    const officialRolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
     const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
     const taxationPages = ['economic-philosophy.html', 'crown-taxation.html', 'guild-faction-economy.html', 'crown-liens.html', 'seizure-enforcement.html', 'tax-roles.html'];
@@ -12,7 +12,7 @@
     const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html', 'faction-standing-chronicle.html'];
     
     // Check if current page is in a dropdown
-    const isRolesActive = rolesPages.includes(currentPage);
+    const isOfficialRolesActive = officialRolesPages.includes(currentPage);
     const isSystemsActive = systemsPages.includes(currentPage);
     const isPhilosophyActive = philosophyPages.includes(currentPage);
     const isTaxationActive = taxationPages.includes(currentPage);
@@ -55,9 +55,9 @@
             </div>
         </div>
         <div class="nav-dropdown">
-            <a ${isRolesActive ? 'class="active"' : ''}>Roles ▼</a>
+            <a ${isOfficialRolesActive ? 'class="active"' : ''}>Official Roles ▼</a>
             <div class="nav-dropdown-content">
-                <a href="roles.html">All Roles</a>
+                <a href="roles.html">All Official Roles</a>
                 <a href="becoming-king.html">King</a>
                 <a href="heir.html">Heir Presumptive</a>
                 <a href="regent.html">Regent</a>
@@ -73,6 +73,7 @@
                 <a href="envoy.html">Envoy</a>
             </div>
         </div>
+        <a href="unofficial-roles.html" ${currentPage === 'unofficial-roles.html' ? 'class="active"' : ''}>Unofficial Roles</a>
         <div class="nav-dropdown">
             <a ${isSystemsActive ? 'class="active"' : ''}>Britain's City Systems ▼</a>
             <div class="nav-dropdown-content">
