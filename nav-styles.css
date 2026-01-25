@@ -71,3 +71,33 @@
     background: var(--accent);
     color: white;
 }
+
+/* Nested dropdown sections */
+.nav-dropdown-section {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-dropdown-section:last-child {
+    border-bottom: none;
+}
+
+.nav-dropdown-section strong {
+    color: var(--gold);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    display: block;
+    background: rgba(212, 175, 55, 0.1);
+    cursor: default;
+}
+
+.nav-dropdown-section strong.active {
+    background: rgba(212, 175, 55, 0.2);
+}
+
+.nav-dropdown-section a {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}

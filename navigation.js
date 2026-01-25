@@ -5,7 +5,10 @@
     
     // Define which pages belong to which dropdown for active state
     const officialRolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
-    const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
+    const politicalSystemsPages = ['succession.html', 'coronation.html', 'royal-tenure.html', 'seat-system.html'];
+    const justiceSystemsPages = ['execution-mechanics.html', 'jail.html', 'bounty.html'];
+    const cityServicesPages = ['salary-system.html', 'housing.html', 'property.html'];
+    const systemsPages = [...politicalSystemsPages, ...justiceSystemsPages, ...cityServicesPages];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
     const taxationPages = ['economic-philosophy.html', 'crown-taxation.html', 'guild-faction-economy.html', 'crown-liens.html', 'seizure-enforcement.html', 'tax-roles.html'];
     const guildsFactionsPages = ['guilds.html', 'factions.html', 'faction-guild-banking.html', 'faction-guild-upkeep.html', 'britain-factions.html', 'faction-interactions.html', 'player-controlled-vendors.html'];
@@ -14,6 +17,9 @@
     // Check if current page is in a dropdown
     const isOfficialRolesActive = officialRolesPages.includes(currentPage);
     const isSystemsActive = systemsPages.includes(currentPage);
+    const isPoliticalSystemsActive = politicalSystemsPages.includes(currentPage);
+    const isJusticeSystemsActive = justiceSystemsPages.includes(currentPage);
+    const isCityServicesActive = cityServicesPages.includes(currentPage);
     const isPhilosophyActive = philosophyPages.includes(currentPage);
     const isTaxationActive = taxationPages.includes(currentPage);
     const isGuildsFactionsActive = guildsFactionsPages.includes(currentPage);
@@ -74,20 +80,29 @@
             </div>
         </div>
         <a href="unofficial-roles.html" ${currentPage === 'unofficial-roles.html' ? 'class="active"' : ''}>Unofficial Roles</a>
+        <a href="permadeath-downed.html" ${currentPage === 'permadeath-downed.html' ? 'class="active"' : ''}>Permadeath</a>
         <div class="nav-dropdown">
             <a ${isSystemsActive ? 'class="active"' : ''}>Britain's City Systems ▼</a>
             <div class="nav-dropdown-content">
-                <a href="succession.html">Succession & Crown Transfer</a>
-                <a href="coronation.html">Coronation Ceremony</a>
-                <a href="permadeath-downed.html">Permadeath & Downed States</a>
-                <a href="execution-mechanics.html">Execution Mechanics</a>
-                <a href="jail.html">Jail System</a>
-                <a href="salary-system.html">City Salary System</a>
-                <a href="housing.html">Housing & Land</a>
-                <a href="royal-tenure.html">Royal Tenure</a>
-                <a href="property.html">Property & Auctions</a>
-                <a href="bounty.html">Bounty System</a>
-                <a href="seat-system.html">Seat System</a>
+                <div class="nav-dropdown-section">
+                    <strong ${isPoliticalSystemsActive ? 'class="active"' : ''}>Political Systems</strong>
+                    <a href="succession.html">Succession & Crown Transfer</a>
+                    <a href="coronation.html">Coronation Ceremony</a>
+                    <a href="royal-tenure.html">Royal Tenure</a>
+                    <a href="seat-system.html">Seat System</a>
+                </div>
+                <div class="nav-dropdown-section">
+                    <strong ${isJusticeSystemsActive ? 'class="active"' : ''}>Justice Systems</strong>
+                    <a href="execution-mechanics.html">Execution Mechanics</a>
+                    <a href="jail.html">Jail System</a>
+                    <a href="bounty.html">Bounty System</a>
+                </div>
+                <div class="nav-dropdown-section">
+                    <strong ${isCityServicesActive ? 'class="active"' : ''}>City Services</strong>
+                    <a href="salary-system.html">City Salary System</a>
+                    <a href="housing.html">Housing & Land</a>
+                    <a href="property.html">Property & Auctions</a>
+                </div>
             </div>
         </div>
         <div class="nav-dropdown">
