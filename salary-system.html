@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>City Salary System - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        .example { background: var(--bg-light); padding: 1rem; margin: 1rem 0; border-radius: 4px; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚖️ City Salary System</h1>
+        <p>Constitutional Documentation</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Canon Rule</h2>
+        
+        <div class="quote-simple">
+            Wages scale with the life of the city. Prosperity pays. Decline starves. Authority absorbs the blame.
+        </div>
+        
+        <h2>Overview</h2>
+        
+        <p>The City Salary System calculates and distributes wages to Guards, Nobles, and Office holders based on indexed percentage bands tied to city revenue. The system operates automatically without manual oversight, scales with economic activity, and remains functional when players are offline.</p>
+        
+        <p>Fiscal stress converts into political consequence, not mechanical failure.</p>
+        
+        <h2>Core Principles</h2>
+        
+        <h3>Indexed Pay, Not Fixed Wages</h3>
+        
+        <ul>
+            <li>Salaries are calculated as percentage bands tied to city revenue</li>
+            <li>No role has a static gold value</li>
+            <li>Inflation and deflation affect pay automatically without rule changes</li>
+            <li>Economic expansion increases wages without constitutional amendment</li>
+        </ul>
+        
+        <h3>Per-Seat Payroll</h3>
+        
+        <ul>
+            <li>Each filled role seat incurs its own cost</li>
+            <li>Pay is not pooled or diluted across holders of the same role</li>
+            <li>Increasing the number of guards or officials directly increases total payroll burden</li>
+            <li>Total payroll = number of filled seats × individual wage</li>
+        </ul>
+        
+        <h3>Daily Revenue Index</h3>
+        
+        <ul>
+            <li>Once per pay cycle (daily), the system records total city revenue</li>
+            <li>This value functions as a reference point only</li>
+            <li>No gold moves when the index is calculated</li>
+            <li>The index represents the previous 24-hour period's economic activity</li>
+        </ul>
+        
+        <h3>Expectation vs Payment Separation</h3>
+        
+        <ul>
+            <li>Expected pay is calculated independently of treasury balance</li>
+            <li>Payment is attempted only when the character logs in</li>
+            <li>Expectation exists even if no one is online</li>
+            <li>Shortfall occurs only when payment cannot match expectation</li>
+        </ul>
+        
+        <h3>Login Requirement</h3>
+        
+        <ul>
+            <li>Salary is paid only if the character logs in during the 24-hour period</li>
+            <li>This prevents absentee pay, AFK drain, and inactive role exploitation</li>
+            <li>No retroactive payment for missed login days</li>
+            <li>Expectation exists regardless of login, but payment requires presence</li>
+        </ul>
+        
+        <h2>Absolute Rule</h2>
+        
+        <div class="warning">
+            <strong>No salary system action may block login, play, or system progression.</strong> Salary failure creates records and consequences, not deadlocks.
+        </div>
+        
+        <h2>Payment Flow</h2>
+        
+        <h3>Step 1: Daily Revenue Index Calculation</h3>
+        
+        <p><strong>When:</strong> Once per 24-hour cycle at server reset</p>
+        
+        <p><strong>Process:</strong></p>
+        <ul>
+            <li>System aggregates city revenue from the previous 24 hours</li>
+            <li>Sources include: vendor taxes, NPC fees, market tariffs, property taxes</li>
+            <li>Total is recorded as the Daily Revenue Index</li>
+            <li>No gold moves during this calculation</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Example:</strong><br>
+            City generates 20,000 gold over 24 hours<br>
+            Daily Revenue Index = 20,000 gold
+        </div>
+        
+        <h3>Step 2: Expected Pay Calculation</h3>
+        
+        <p><strong>When:</strong> Immediately after Daily Revenue Index is recorded</p>
+        
+        <p><strong>Process:</strong></p>
+        <ul>
+            <li>Each role has a defined pay formula (percentage of Daily Revenue Index)</li>
+            <li>System calculates expected pay for each filled seat</li>
+            <li>Creates ledger entry: "On Day X, Role Y was owed Z gold"</li>
+            <li>No gold moves</li>
+            <li>No one is blocked</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Example Pay Bands:</strong><br>
+            City Guard = 0.5% of Daily Revenue Index<br>
+            Guard Captain = 1.5%<br>
+            Marshal = 3%<br><br>
+            
+            With Daily Revenue Index of 20,000:<br>
+            Guard expected pay = 100 gold<br>
+            Captain expected pay = 300 gold<br>
+            Marshal expected pay = 600 gold
+        </div>
+        
+        <h3>Step 3: Payment Attempt on Login</h3>
+        
+        <p><strong>When:</strong> Character logs in (once per 24-hour period)</p>
+        
+        <p><strong>Process:</strong></p>
+        <ul>
+            <li>System retrieves expected pay for that character</li>
+            <li>System checks current treasury balance</li>
+            <li>Payment is attempted from available funds</li>
+            <li>Ledger is updated with payment result</li>
+        </ul>
+        
+        <h3>Scenario A: Treasury Can Pay (Full Payment)</h3>
+        
+        <div class="example">
+            <strong>Conditions:</strong><br>
+            Treasury balance: 10,000 gold<br>
+            Guard expected pay: 100 gold<br><br>
+            
+            <strong>Result:</strong><br>
+            ✅ Guard receives 100 gold<br>
+            Treasury balance: 9,900 gold<br>
+            Ledger: "Paid in full"
+        </div>
+        
+        <h3>Scenario B: Treasury Cannot Pay (Partial Payment)</h3>
+        
+        <div class="example">
+            <strong>Conditions:</strong><br>
+            Treasury balance: 40 gold<br>
+            Guard expected pay: 100 gold<br><br>
+            
+            <strong>Result:</strong><br>
+            Guard receives 40 gold<br>
+            Treasury balance: 0 gold<br>
+            Ledger: "Partial payment: 40 / 100 gold"<br><br>
+            
+            <strong>System does not:</strong><br>
+            - Block login<br>
+            - Recalculate expectation<br>
+            - Create debt<br>
+            - Prevent role function
+        </div>
+        
+        <h3>Scenario C: Treasury Depleted (Zero Payment)</h3>
+        
+        <div class="example">
+            <strong>Conditions:</strong><br>
+            Treasury balance: 0 gold<br>
+            Guard expected pay: 100 gold<br><br>
+            
+            <strong>Result:</strong><br>
+            Guard receives 0 gold<br>
+            Treasury balance: 0 gold<br>
+            Ledger: "Payment failed: 0 / 100 gold"
+        </div>
+        
+        <h2>Shortfall Handling</h2>
+        
+        <p>When treasury balance cannot fulfill expected pay:</p>
+        
+        <ul>
+            <li>Unpaid amounts are logged as partial or failed payment</li>
+            <li>No recalculation occurs at payment time</li>
+            <li>Failure is visible in administrative ledgers</li>
+            <li>No debt accumulation system</li>
+            <li>Pattern of failure creates political consequence, not financial obligation</li>
+        </ul>
+        
+        <p><strong>Unpaid wages are framed as institutional failure, not player punishment.</strong></p>
+        
+        <h2>Per-Seat Cost Examples</h2>
+        
+        <table>
+            <tr>
+                <th>Daily Revenue Index</th>
+                <th>Number of Guards</th>
+                <th>Cost Per Guard (0.4%)</th>
+                <th>Total Payroll Cost</th>
+            </tr>
+            <tr>
+                <td>100,000 gold</td>
+                <td>5</td>
+                <td>400 gold</td>
+                <td>2,000 gold</td>
+            </tr>
+            <tr>
+                <td>100,000 gold</td>
+                <td>20</td>
+                <td>400 gold</td>
+                <td>8,000 gold</td>
+            </tr>
+            <tr>
+                <td>100,000 gold</td>
+                <td>50</td>
+                <td>400 gold</td>
+                <td>20,000 gold</td>
+            </tr>
+        </table>
+        
+        <p>Increasing guard numbers increases total treasury burden. No dilution occurs.</p>
+        
+        <h2>Roles & Responsibilities</h2>
+        
+        <table>
+            <tr>
+                <th>Entity</th>
+                <th>Responsibility</th>
+            </tr>
+            <tr>
+                <td><strong>Constitutional Document</strong></td>
+                <td>Defines indexed pay bands for each role</td>
+            </tr>
+            <tr>
+                <td><strong>Royal Finance Ledger</strong></td>
+                <td>Tracks revenue inflows and salary outflows automatically</td>
+            </tr>
+            <tr>
+                <td><strong>Finance Minister</strong></td>
+                <td>Adjusts tax rates; issues affordability warnings; no payment approval required</td>
+            </tr>
+            <tr>
+                <td><strong>Crown</strong></td>
+                <td>Bears legitimacy and political consequences of pay failure</td>
+            </tr>
+            <tr>
+                <td><strong>System</strong></td>
+                <td>Executes all calculations and payments automatically</td>
+            </tr>
+            <tr>
+                <td><strong>Players</strong></td>
+                <td>Never required to approve or process payroll</td>
+            </tr>
+        </table>
+        
+        <h2>System Benefits</h2>
+        
+        <ul>
+            <li><strong>Automatic inflation adjustment:</strong> Wages scale with economy without manual intervention</li>
+            <li><strong>Zero administrative burden:</strong> No daily button-pressing or approval workflows</li>
+            <li><strong>Explicit expansion cost:</strong> Adding guards/officials increases payroll visibly</li>
+            <li><strong>Offline operation:</strong> System functions when no administrators are present</li>
+            <li><strong>Transparent failure states:</strong> Payment shortfalls create records, not crashes</li>
+            <li><strong>Per-seat accountability:</strong> Each role's cost is individually visible</li>
+            <li><strong>Login-gated payment:</strong> Inactive characters do not drain treasury</li>
+        </ul>
+        
+        <h2>Pitfalls & System Resolutions</h2>
+        
+        <table>
+            <tr>
+                <th>Potential Issue</th>
+                <th>Mechanical Resolution</th>
+            </tr>
+            <tr>
+                <td>Guard expansion abuse</td>
+                <td>Per-seat cost makes expansion expensive; Finance Minister issues warnings; Crown bears political cost</td>
+            </tr>
+            <tr>
+                <td>Offline payroll blocking</td>
+                <td>Expectation calculated regardless of login; payment attempted only on login; no deadlock</td>
+            </tr>
+            <tr>
+                <td>Inflation destabilizing wages</td>
+                <td>Indexed percentages auto-scale with revenue; no constitutional changes needed</td>
+            </tr>
+            <tr>
+                <td>Treasury depletion halting play</td>
+                <td>Payment failure creates ledger entry, not login block; roles remain functional</td>
+            </tr>
+            <tr>
+                <td>AFK salary drain</td>
+                <td>Login requirement prevents payment to absent characters</td>
+            </tr>
+            <tr>
+                <td>Manual approval bottleneck</td>
+                <td>System processes payments automatically; no player approval required</td>
+            </tr>
+        </table>
+        
+        <h2>Decision Authority Summary</h2>
+        
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Authority</th>
+            </tr>
+            <tr>
+                <td>Who defines pay?</td>
+                <td>Constitution (indexed bands, not fixed numbers)</td>
+            </tr>
+            <tr>
+                <td>Who controls affordability?</td>
+                <td>Finance Minister (tax rates + warnings)</td>
+            </tr>
+            <tr>
+                <td>Who gets blamed when pay fails?</td>
+                <td>The Crown</td>
+            </tr>
+            <tr>
+                <td>Who presses buttons daily?</td>
+                <td>No one</td>
+            </tr>
+            <tr>
+                <td>Does inflation break the system?</td>
+                <td>No — it becomes content</td>
+            </tr>
+        </table>
+        
+        <h2>Explicit Exclusions</h2>
+        
+        <p>The salary system does <strong>not</strong>:</p>
+        
+        <ul>
+            <li>Require judges, trials, or magistrate approvals</li>
+            <li>Pause or suspend roles due to nonpayment</li>
+            <li>Retroactively change expectations after calculation</li>
+            <li>Redistribute pay between players</li>
+            <li>Create debt obligations that accrue over time</li>
+            <li>Block login, character creation, or system progression</li>
+            <li>Force manual processing by administrators</li>
+        </ul>
+        
+        <h2>Institutional Summary</h2>
+        
+        <p>The City Salary System converts fiscal stress into political consequence through:</p>
+        
+        <ul>
+            <li><strong>Automation over discretion:</strong> System executes payments without human approval</li>
+            <li><strong>Consequence over control:</strong> Pay failure creates visible records, not mechanical locks</li>
+            <li><strong>Visibility over enforcement:</strong> Ledgers expose patterns; Crown absorbs political cost</li>
+        </ul>
+        
+        <p>Expectation is calculated on schedule. Payment is attempted on login. Shortfall exists only when reality fails to meet expectation.</p>
+        
+        <div class="info-box">
+            <strong>Constitutional Principle:</strong> The system measures economic capacity through treasury function. When the treasury cannot pay wages, this failure becomes a public institutional fact visible in ledgers. Authority figures bear political consequences. No player is blocked from participation.
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="roles.html" style="color: var(--gold);">Roles & Offices</a></p>
+    </footer>
+</body>
+</html>

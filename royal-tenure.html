@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Tenure - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .canon { background: rgba(212, 175, 55, 0.1); border: 2px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; text-align: center; }
+        .canon p { font-weight: bold; color: var(--gold); font-size: 1.1rem; margin: 0; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🏰 Royal Tenure</h1>
+        <p>Access Without Ownership</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Core Definition</h2>
+        
+        <p>Royal Tenure is the system by which the Crown grants, revokes, and conditions access to Royal Property without transferring ownership.</p>
+        
+        <p>Royal Property is always owned by the Crown. Royal Tenure governs use, residence, proximity, and privilege—not title or sale. Tenure is political, conditional, and revocable.</p>
+        
+        <div class="canon">
+            <p>The Crown does not give land away. It allows others to stand upon it.</p>
+        </div>
+        
+        <h2>Design Principle: Static Ownership, Dynamic Access</h2>
+        
+        <p>Ownership of Royal Property never changes hands under Royal Tenure. The Crown may grant or revoke access rights at any time. This allows political pressure without permanent map changes.</p>
+        
+        <p>Royal Tenure does not involve:</p>
+        <ul>
+            <li>Property sales</li>
+            <li>Deeds</li>
+            <li>Inheritance</li>
+            <li>Maintenance calculations</li>
+            <li>Market valuation</li>
+        </ul>
+        
+        <h2>What Royal Tenure Can Grant</h2>
+        
+        <p>Royal Tenure grants co-ownership of private zones within Royal Property. This access is mechanical. It modifies doors, not people.</p>
+        
+        <p>Royal Tenure may confer the following privileges:</p>
+        
+        <ul>
+            <li>Residence within a Royal Property</li>
+            <li>Assigned chambers or quarters</li>
+            <li>Access to restricted wings or rooms (private zones)</li>
+            <li>Storage or vault access</li>
+            <li>Use of ceremonial or administrative spaces</li>
+            <li>Guard protection tied to location</li>
+            <li>Court proximity and visibility</li>
+        </ul>
+        
+        <p>These privileges may be partial. Different individuals may hold different private access levels within the same structure.</p>
+        
+        <div class="canon">
+            <p>Tenure modifies doors. It does not grant authority over others.</p>
+        </div>
+        
+        <p>Royal Tenure does not convert public spaces into private ones. Public zones remain accessible to all. Tenure only grants co-ownership of explicitly private zones—chambers, vaults, secure rooms. If a space is public, tenure grants proximity, not exclusion.</p>
+        
+        <h2>Access Zones Within Royal Property</h2>
+        
+        <p>Royal Property is divided into zones, not behaviors. There are only two zone types.</p>
+        
+        <h3>Public Zones (Default)</h3>
+        
+        <p>All areas of Royal Property are public by default. Any character may freely enter public zones. No guard intervention occurs for presence alone. Public zones exist to encourage observation, conversation, intrigue, and conflict.</p>
+        
+        <p>Examples of public zones:</p>
+        <ul>
+            <li>Great halls</li>
+            <li>Courtyards</li>
+            <li>Waiting chambers</li>
+            <li>Public offices</li>
+            <li>Common rooms</li>
+            <li>Barracks common areas</li>
+        </ul>
+        
+        <p>Presence alone is never a violation.</p>
+        
+        <h3>Private Zones (Explicit, Rare)</h3>
+        
+        <p>Private zones are areas where explicit access has been granted. Access to a private zone treats the character as a co-owner of that zone. Co-ownership grants full interaction rights with items, containers, and doors. Private access is mechanical, not behavioral. If a character lacks access, the space simply does not open.</p>
+        
+        <p>Examples of private zones:</p>
+        <ul>
+            <li>Personal chambers</li>
+            <li>Armories</li>
+            <li>Secure offices</li>
+            <li>Evidence rooms</li>
+            <li>Treasury vaults</li>
+            <li>Jail control rooms</li>
+        </ul>
+        
+        <h3>Trespassing Enforcement Does Not Exist</h3>
+        
+        <p>Guards do not challenge players for being present in public areas. Guards only act when a mechanical boundary is crossed—locked doors or restricted containers. There is no routine "you must leave" enforcement.</p>
+        
+        <div class="canon">
+            <p>Authority closes doors. It does not clear rooms.</p>
+        </div>
+        
+        <h3>Common Structures: How Access Works</h3>
+        
+        <p>The following examples illustrate how the zone-based access model applies to common Royal Properties.</p>
+        
+        <div class="info-box">
+            <h3>Palaces</h3>
+            <p><strong>Public areas remain open to all:</strong> Throne room, great hall, audience chambers, courtyards, public wings.</p>
+            <p><strong>Restricted areas require explicit tenure access:</strong> Royal bedchambers, private vaults, royal family quarters, secure council rooms.</p>
+            <p><strong>Guards enforce boundaries, not presence:</strong> Anyone may enter the throne room. Only those with tenure may open the door to the royal vault.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Guard Barracks</h3>
+            <p><strong>Public areas remain open to all:</strong> Common areas, training yards, mess halls, public entrances.</p>
+            <p><strong>Restricted areas require explicit tenure access:</strong> Armories, weapon storage, guard quarters, command offices.</p>
+            <p><strong>Guards enforce boundaries, not presence:</strong> Anyone may observe training in the yard. Only guards may open the armory door.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Jails</h3>
+            <p><strong>Public areas remain open to all:</strong> Waiting areas, public reception, visitor corridors.</p>
+            <p><strong>Restricted areas require explicit tenure access:</strong> Cell control rooms, evidence storage, execution chambers, secure offices.</p>
+            <p><strong>Guards enforce boundaries, not presence:</strong> Anyone may wait in the reception area. Only the Warden and authorized staff may open cell doors.</p>
+        </div>
+        
+        <h2>Tenure Is Conditional</h2>
+        
+        <p>Tenure is explicitly conditional. Access persists only while certain conditions are satisfied.</p>
+        
+        <p>Valid conditions may include:</p>
+        <ul>
+            <li>Holding a specific office</li>
+            <li>Maintaining favor of the Crown</li>
+            <li>Remaining loyal during conflict</li>
+            <li>Avoiding public disgrace or conviction</li>
+            <li>Supporting the current regime</li>
+        </ul>
+        
+        <p>When the condition fails, tenure ends automatically. No eviction vote or discretionary approval is required. Loss of tenure revokes access, not status as a citizen.</p>
+        
+        <div class="canon">
+            <p>Tenure persists only while its conditions remain true.</p>
+        </div>
+        
+        <h2>Role-Linked Royal Offices</h2>
+        
+        <p>Certain Royal Properties are linked to offices, not individuals. Access to these properties is automatically granted when an office is assumed. Access is automatically revoked when the office is vacated.</p>
+        
+        <div class="canon">
+            <p>Some doors open only to the office, not the person who holds it.</p>
+        </div>
+        
+        <h3>What Makes a Property Role-Linked</h3>
+        
+        <p>Role-linked properties are those that:</p>
+        
+        <ul>
+            <li>Exist to support the function of an office</li>
+            <li>Are inseparable from that office's authority</li>
+            <li>Cannot be retained as personal favor once the office ends</li>
+        </ul>
+        
+        <p>Examples of role-linked properties (illustrative, not exhaustive):</p>
+        
+        <ul>
+            <li><strong>Guard Barracks</strong> → Marshal of the Guard</li>
+            <li><strong>Judicial Chambers</strong> → Magistrate</li>
+            <li><strong>Treasury Offices</strong> → Master of the Treasury</li>
+            <li><strong>Jail Control Areas</strong> → Warden</li>
+            <li><strong>Throne Room / Royal Apartments</strong> → King or Regent</li>
+        </ul>
+        
+        <h3>Automatic Access Rules</h3>
+        
+        <p>When a player is appointed to a role, access is granted immediately. No separate tenure grant is required. No discretionary approval is involved.</p>
+        
+        <p>This access does not constitute a personal Royal Tenure grant. It cannot be extended beyond the office term.</p>
+        
+        <h3>Automatic Revocation Rules</h3>
+        
+        <p>When the office is vacated—by dismissal, resignation, death, or succession—access is revoked immediately. No eviction process is required. Continued presence after revocation constitutes unlawful occupation.</p>
+        
+        <p>Enforcement operates through existing guard and eviction systems.</p>
+        
+        <h3>Interaction With Personal Royal Tenure</h3>
+        
+        <p>A player may hold both role-linked access (automatic) and personal Royal Tenure (discretionary).</p>
+        
+        <p>Loss of office always revokes role-linked access. Personal Royal Tenure, if separately granted, may persist. This prevents confusion between favor and function.</p>
+        
+        <h3>Why Role-Linked Offices Exist</h3>
+        
+        <p>This system prevents:</p>
+        
+        <ul>
+            <li>Officials squatting in power spaces after removal</li>
+            <li>Royal Property being converted into personal estates</li>
+            <li>Access becoming inherited or persistent by default</li>
+            <li>Institutional authority becoming private property</li>
+        </ul>
+        
+        <h3>Authority Boundaries</h3>
+        
+        <p>Staff will pre-define which properties are role-linked. This is static and unchangeable. For example, the throne room in Britain will always be linked to the role of the King of Britain.</p>
+        
+        <p>Individual officeholders cannot redefine access rules. Guards enforce access but do not interpret office status.</p>
+        
+        <h3>Non-Goals</h3>
+        
+        <p>Role-Linked Office Rules do not:</p>
+        
+        <ul>
+            <li>Create new property ownership</li>
+            <li>Require maintenance systems</li>
+            <li>Introduce new roles</li>
+            <li>Override Royal Tenure grants</li>
+            <li>Block political play</li>
+        </ul>
+        
+        <div class="canon">
+            <p>Royal offices confer access only for as long as authority is held.</p>
+        </div>
+        
+        <h2>Granting and Revoking Tenure</h2>
+        
+        <p>Royal Tenure is granted by the King. If no King exists, the acting Regent may grant tenure. Revocation may occur at any time by the same authority.</p>
+        
+        <p>Revocation is logged. Revocation does not require cause to function. Legitimacy is judged socially and politically after the fact.</p>
+        
+        <h2>Tenure vs Eviction</h2>
+        
+        <p>Loss of Royal Tenure is not an eviction in the property system sense. It is much more dramatic and unforgiving.</p>
+        
+        <p>Access is revoked immediately. The individual immediately loses access to the property. If the office is held by a single individual, everything stored inside the secure container (every office has a secure container) is automatically moved to the evicted player's bank. If the office is shared by multiple people, they lose all access and no item transfer occurs.</p>
+        
+        <p>This prevents Royal Tenure from becoming a substitute for general property systems.</p>
+        
+        <h2>Tenure as Political Instrument</h2>
+        
+        <p>Royal Tenure allows the Crown to reward loyalty. It allows pressure without violence. It allows punishment without execution. It creates reversible consequences.</p>
+        
+        <p>Tenure decisions are visible. Tenure decisions are remembered. Tenure decisions create reputational and political fallout.</p>
+        
+        <h2>Interaction With Other Roles</h2>
+        
+        <div class="info-box">
+            <h3>Magistrate</h3>
+            <p>Does not grant tenure. May rule on legality of actions taken while under tenure.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Guards</h3>
+            <p>Enforce access restrictions. Do not decide tenure.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Warden</h3>
+            <p>May annotate custody records involving tenured individuals. May note loss or use of tenure as context.</p>
+        </div>
+        
+        <h2>Failure and Abuse Handling</h2>
+        
+        <p>The system never blocks play. Abuse of Royal Tenure is not prevented mechanically. Abuse is punished socially, legally, or violently.</p>
+        
+        <div class="canon">
+            <p>Royal Tenure always functions. Legitimacy determines whether it endures.</p>
+        </div>
+        
+        <h2>Explicit Non-Goals</h2>
+        
+        <p>Royal Tenure is not intended to:</p>
+        
+        <ul>
+            <li>Replace the housing market</li>
+            <li>Create economic simulation</li>
+            <li>Provide permanent rewards</li>
+            <li>Protect players from consequences</li>
+            <li>Require constant administration</li>
+        </ul>
+        
+        <h2>Closing Canon Summary</h2>
+        
+        <div class="canon">
+            <p>Static Ownership. Dynamic Access.<br>
+            RP-First Spaces. Mechanical Boundaries Over Behavioral Policing.<br><br>
+            Royal Tenure allows the Crown to distribute power without surrendering it.<br>
+            Access may be granted. Favor may be withdrawn.<br>
+            Authority closes doors. It does not clear rooms.<br>
+            The land itself remains unmoved.</p>
+        </div>
+        
+        <h2>Related Pages</h2>
+        
+        <ul>
+            <li><strong><a href="housing.html" style="color: var(--accent);">Housing & Land Authority</a></strong> — General property and role-based housing systems</li>
+            <li><strong><a href="steward.html" style="color: var(--accent);">Land Commissioner & Steward</a></strong> — Roles governing land administration</li>
+            <li><strong><a href="becoming-king.html" style="color: var(--accent);">Becoming King</a></strong> — The role with authority to grant tenure</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="housing.html" style="color: var(--gold);">← Housing & Land Authority</a> | <a href="index.html" style="color: var(--gold);">Home</a></p>
+    </footer>
+</body>
+</html>

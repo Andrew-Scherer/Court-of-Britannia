@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilds - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        .stage-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid var(--accent); }
+        .stage-box h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        .guild-example { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid var(--gold); }
+        .guild-example h4 { color: var(--gold); margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .guild-example .type { color: var(--accent); font-size: 0.9rem; font-weight: bold; margin-bottom: 0.5rem; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🏛️ Guilds</h1>
+        <p>Organizations, Religions, Political Bodies, and Collective Power</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>What Are Guilds?</h2>
+        
+        <p>A guild can also be considered an <strong>Organization</strong>, <strong>Group</strong>, <strong>Religion</strong>, <strong>Political Body</strong>, or any other group of members that rallies under the same cause and banner.</p>
+        
+        <p>Guilds allow players to not only turn themselves into a formidable group, but it also allows them to control a single guild house in a more permanent way.</p>
+        
+        <div class="quote">
+            A guild is where your legacy lives beyond your character.
+        </div>
+        
+        <h2>Guilds Give</h2>
+        
+        <ul>
+            <li><strong>Shared property</strong> — Hall, estate, buildings</li>
+            <li><strong>Shared storage</strong> — Chests, containers</li>
+            <li><strong>Banners/colors</strong> — Visual identity</li>
+            <li><strong>Legal recognition</strong> — Can petition court as a unit</li>
+            <li><strong>Membership and group action</strong> — Ability to act collectively</li>
+        </ul>
+        
+        <div class="quote-simple">
+            <strong>Guilds answer: "Who do you stand with?"</strong>
+        </div>
+        
+        <h2>Examples of Player Created Guilds</h2>
+        
+        <div class="guild-example">
+            <h4>⚒️ The Iron Brotherhood</h4>
+            <p class="type">Merchant Guild</p>
+            <p>A coalition of blacksmiths, miners, and craftsmen who control the flow of metals and weapons throughout Britain. Known for their strict quality standards and collective bargaining power, they've turned individual artisans into a political force that even the King must negotiate with.</p>
+        </div>
+        
+        <div class="guild-example">
+            <h4>🔥 The Order of the Eternal Flame</h4>
+            <p class="type">Religious Organization</p>
+            <p>Zealous devotees of the Virtue of Spirituality who believe Britain has strayed from the path of righteousness. They maintain a monastery where they train paladins, offer sanctuary to the faithful, and occasionally issue religious edicts challenging the Crown's moral authority.</p>
+        </div>
+        
+        <div class="guild-example">
+            <h4>⚔️ The Crimson Vanguard</h4>
+            <p class="type">Military Order</p>
+            <p>Elite warriors sworn to defend Britain's borders against external threats. They maintain their own training grounds, accept only the most skilled fighters, and serve as the realm's first response to invasion. Unlike the royal guard, they answer to their own Commander, making them a powerful — and potentially dangerous — independent military force.</p>
+        </div>
+        
+        <div class="guild-example">
+            <h4>📜 The Assembly of Free Voices</h4>
+            <p class="type">Political Movement</p>
+            <p>A coalition of commoners, merchants, and lesser nobles advocating for expanded rights and representation in royal decisions. They hold regular assemblies in their guild hall, draft petitions, and have become a thorn in the side of autocratic rulers — proving that political power doesn't require noble blood.</p>
+        </div>
+        
+        <div class="guild-example">
+            <h4>⚖️ The Loyalist Coalition</h4>
+            <p class="type">Royalist Political Body</p>
+            <p>Staunch supporters of the Crown's absolute authority who organize to counter reform movements and protect traditional power structures. They provide intelligence to the King, mobilize support during succession crises, and sometimes engage in political intimidation of dissidents.</p>
+        </div>
+        
+        <div class="guild-example">
+            <h4>🎭 The Troubadour's Circle</h4>
+            <p class="type">Artistic Guild</p>
+            <p>Bards, playwrights, and storytellers who control Britain's cultural narrative. What they sing in taverns becomes public opinion; what they mock in theatre becomes political liability. They wield reputation as a weapon, making them surprisingly influential despite their lack of military power.</p>
+        </div>
+        
+        <h2>Why Guilds Matter on a Permadeath Shard</h2>
+        
+        <p>In a world where characters can die permanently, guilds provide:</p>
+        
+        <ul>
+            <li><strong>A central gathering point</strong> — Guilds can't "mechanically" begin unless they control a property to place their guildstone within</li>
+            <li><strong>Continuity</strong> — The organization survives individual deaths</li>
+            <li><strong>Legacy</strong> — Your accomplishments outlive your character</li>
+            <li><strong>Collective power</strong> — Groups can accomplish what individuals cannot</li>
+            <li><strong>Memory</strong> — Stories and rivalries persist across generations of characters</li>
+        </ul>
+        
+        <div class="quote-simple">
+            <p>When your character dies, your guild remembers. Your enemies remember. Your stories persist.</p>
+        </div>
+        
+        <h2>Creating Player Guilds</h2>
+        
+        <p>Players can create their own guilds through a two-stage process:</p>
+        
+        <div class="stage-box">
+            <h4>Stage A: Unrecognized Guild (No Mechanics)</h4>
+            <p>Players can start a guild socially any time:</p>
+            <ul>
+                <li>"We are The Order of the Eternal Flame now."</li>
+                <li>They wear matching colors</li>
+                <li>They claim a tavern table</li>
+                <li>They write a charter and share it with their members</li>
+            </ul>
+            <p><strong>Mechanically, it's just roleplay, not quite set in stone yet.</strong></p>
+        </div>
+        
+        <div class="stage-box">
+            <h4>Stage B: Recognized Guild</h4>
+            <p>To become official, they must:</p>
+            <ul>
+                <li>Muster up enough gold to collectively purchase a property</li>
+                <li>Buy a guildstone and place it inside the property</li>
+                <li>A leader is announced (or not)</li>
+            </ul>
+            <p><strong>This is where mechanics engage.</strong></p>
+        </div>
+        
+        <h2>What Established Guilds Get</h2>
+        
+        <table>
+            <tr>
+                <th>Reward</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>Guild Identity</strong></td>
+                <td>Guild name tag / guild title line</td>
+            </tr>
+            <tr>
+                <td><strong>Legal Standing</strong></td>
+                <td>Can petition court as a guild (together people are stronger), demand trials/duels under guild banner</td>
+            </tr>
+            <tr>
+                <td><strong>Assets That Persist</strong></td>
+                <td>Guild Hall ownership survives member permadeath, leadership changes don't delete assets. Asset ownership flows down the leadership chain of command.</td>
+            </tr>
+            <tr>
+                <td><strong>Recruitment</strong></td>
+                <td>Can "recruit" new members however they wish</td>
+            </tr>
+        </table>
+        
+        <h2>Summary</h2>
+        
+        <div class="quote">
+            You don't need noble blood to change the realm.<br>
+            You need a cause, allies, and a place to gather.
+        </div>
+        
+        <p>Guilds transform individual players into enduring institutions. They provide the organizational structure that allows collective action, political influence, and lasting legacy in a world where any character can die at any moment.</p>
+        
+        <p>Whether you're founding a merchant empire, a religious order, a criminal syndicate, or a political movement, guilds are how you inscribe your mark on Britannia's history — not through the lifespan of a single character, but through the collective memory and continued action of the organization you build.</p>
+        
+        <div class="quote-simple">
+            <strong>The guild hall stands. The charter endures. The banner flies. Your character may die, but your guild remembers.</strong>
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a> | <a href="housing.html" style="color: var(--gold);">Property & Land</a></p>
+    </footer>
+</body>
+</html>

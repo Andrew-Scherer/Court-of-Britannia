@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Item Signatures - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .success { background: rgba(72, 187, 120, 0.1); border: 1px solid #48bb78; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .success strong { color: #48bb78; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🛠️ Item Signatures</h1>
+        <p>Crafting Identity and Accountability</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>The Core Rule</h2>
+        
+        <div class="quote-simple">
+            Only items of consequence remember their maker.<br>
+            Exceptional craft leaves a name behind.
+        </div>
+        
+        <p>We're implementing a selective item signature system that transforms crafting from anonymous production into visible, political, and consequential economic activity.</p>
+        
+        <h2>Items That Record Crafters</h2>
+        
+        <p><strong>Exceptional quality items automatically record the crafter's name.</strong></p>
+        
+        <p>Why exceptional items?</p>
+        
+        <ul>
+            <li>Exceptional is already a skill check</li>
+            <li>Exceptional implies pride of workmanship</li>
+            <li>Exceptional items circulate longer</li>
+            <li>Exceptional items create reputations</li>
+        </ul>
+        
+        <p>This mirrors history perfectly: masterwork pieces bore names; mass goods did not.</p>
+        
+        <h3>Example</h3>
+        
+        <div class="info-box">
+            <p style="margin: 0;"><em>Exceptional Steel Longsword</em><br>
+            Crafted by <strong>Edric of Britain</strong></p>
+        </div>
+        
+        <p>That's enough. No stats spam. No lore dump. Just attribution.</p>
+        
+        <h2>Why Not Stamp Everything?</h2>
+        
+        <p>Because over-stamping kills meaning.</p>
+        
+        <p>If <em>every</em> dagger has a name:</p>
+        
+        <ul>
+            <li>Players stop reading it</li>
+            <li>Reputation blurs</li>
+            <li>Noise replaces signal</li>
+        </ul>
+        
+        <p>You want players to <strong>recognize names</strong>, not ignore them.</p>
+        
+        <p>Scarcity creates memory.</p>
+        
+        <h2>Craft Identity as Risk</h2>
+        
+        <p>Signed items create <strong>exposure</strong>.</p>
+        
+        <p>If an execution blade is traced back to a smith:</p>
+        
+        <ul>
+            <li>That smith becomes politically implicated</li>
+            <li>Refusal to craft becomes meaningful</li>
+            <li>Black-market work becomes dangerous</li>
+        </ul>
+        
+        <div class="success">
+            <strong>Design Insight:</strong> Crafters should not be immune from consequence — just less obvious targets than frontline combatants.
+        </div>
+        
+        <p>This creates meaningful choices about what to craft, for whom, and whether to sign it.</p>
+        
+        <h2>Crafter Control: Opt-Out With Cost</h2>
+        
+        <p>Give crafters <strong>agency</strong> over signatures.</p>
+        
+        <h3>Suggested Defaults</h3>
+        
+        <ul>
+            <li><strong>Exceptional items</strong> → auto-signed</li>
+            <li><strong>Shop-sold items</strong> → shop mark added (see <a href="player-shops.html" style="color: var(--accent);">Player Shops</a>)</li>
+            <li><strong>Crafter may opt out</strong> of signature at crafting time</li>
+        </ul>
+        
+        <h3>Opt-Out Costs</h3>
+        
+        <p>Choosing anonymity has consequences:</p>
+        
+        <ul>
+            <li>Reduced resale value</li>
+            <li>Loss of "exceptional" quality tag</li>
+            <li>Reputation penalty if the unsigned work is discovered</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>Important:</strong> This creates choices, not chores. The cost must be meaningful enough that most crafters accept the signature.
+        </div>
+        
+        <h2>Commissioned Items</h2>
+        
+        <p>When a player commissions an item directly:</p>
+        
+        <ul>
+            <li>Both names appear (crafter and patron)</li>
+            <li>Or the buyer's name appears as patron</li>
+        </ul>
+        
+        <h3>Example</h3>
+        
+        <div class="info-box">
+            <p style="margin: 0;"><em>Exceptional Executioner's Axe</em><br>
+            Crafted by <strong>Harrow Blacksmith</strong><br>
+            Commissioned by <strong>The Crown of Britain</strong></p>
+        </div>
+        
+        <p>That object is now <strong>historical</strong>.</p>
+        
+        <p>If it shows up later in unexpected hands, investigators care. The story continues.</p>
+        
+        <h2>Why This Matters</h2>
+        
+        <p>Item signatures are not cosmetic flourish. They are <strong>memory</strong>.</p>
+        
+        <p>In a world where:</p>
+        
+        <ul>
+            <li>Characters die permanently</li>
+            <li>Political allegiances shift</li>
+            <li>Power changes hands</li>
+            <li>Records track everything</li>
+        </ul>
+        
+        <p>...the objects that persist become evidence of history.</p>
+        
+        <p>A blade forged by a known smith, commissioned by a fallen lord, carried through multiple owners, wielded in an assassination — that's not just gear.</p>
+        
+        <p>That's a story.</p>
+        
+        <div class="success">
+            <strong>Design Recognition:</strong> You're not adding UI fluff. You're adding memory.
+        </div>
+    </main>
+    
+    <footer>
+        <p><a href="why-play.html" style="color: var(--gold);">← Back to Why Play</a> | <a href="player-shops.html" style="color: var(--gold);">Player Shops →</a></p>
+    </footer>
+</body>
+</html>
