@@ -4,7 +4,7 @@
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     // Define which pages belong to which dropdown for active state
-    const officialRolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'diplomacy.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
+    const officialRolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'diplomacy.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
     const politicalSystemsPages = ['succession.html', 'coronation.html', 'royal-tenure.html', 'seat-system.html'];
     const justiceSystemsPages = ['execution-mechanics.html', 'jail.html', 'bounty.html'];
     const cityServicesPages = ['salary-system.html', 'housing.html', 'property.html'];
@@ -67,7 +67,6 @@
                 <a href="becoming-king.html">King</a>
                 <a href="heir.html">Heir Presumptive</a>
                 <a href="regent.html">Regent</a>
-                <a href="claimant.html">Claimants</a>
                 <a href="steward.html">Land Commissioner & Steward</a>
                 <a href="master-treasury.html">Master of the Treasury</a>
                 <a href="guards.html">Guards</a>
@@ -80,6 +79,7 @@
                 <a href="envoy.html">Envoy</a>
             </div>
         </div>
+        <a href="claimant.html" ${currentPage === 'claimant.html' ? 'class="active"' : ''}>Claimants</a>
         <a href="unofficial-roles.html" ${currentPage === 'unofficial-roles.html' ? 'class="active"' : ''}>Unofficial Roles</a>
         <a href="permadeath-downed.html" ${currentPage === 'permadeath-downed.html' ? 'class="active"' : ''}>Permadeath</a>
         <div class="nav-dropdown">
