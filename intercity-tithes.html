@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Inter-City Tithes & Treasury Routing - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .flow-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--accent); }
+        .flow-box h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>💰 Inter-City Tithes & Treasury Routing</h1>
+        <p>The Mechanics of Tribute Flow</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <div class="quote">
+            Gold flows where power commands.<br>
+            Every tribute payment is a city's autonomy, converted to coin.
+        </div>
+        
+        <h2>Core Principle</h2>
+        
+        <p>When a vassal city swears <a href="fealty-sovereignty.html" style="color: var(--accent);">fealty</a> to a liege, it agrees to pay <strong>tribute</strong> — a percentage of its tax revenue automatically transferred to the liege's treasury.</p>
+        
+        <p><strong>This is NOT:</strong></p>
+        <ul>
+            <li>❌ A manually paid gift</li>
+            <li>❌ Negotiable after signing</li>
+            <li>❌ Optional or voluntary once sworn</li>
+            <li>❌ Avoidable without breaking fealty</li>
+        </ul>
+        
+        <p><strong>This IS:</strong></p>
+        <ul>
+            <li>✅ Automatically siphoned from vassal treasury</li>
+            <li>✅ Calculated as % of collected tax revenue</li>
+            <li>✅ Logged publicly in <a href="fealty-ledger.html" style="color: var(--accent);">Fealty Ledger</a></li>
+            <li>✅ Continuous until fealty is broken</li>
+            <li>✅ The primary economic lever of inter-city power</li>
+        </ul>
+        
+        <div class="quote-simple">
+            <strong>Design Victory:</strong> Tribute creates real budget strain without requiring manual collection.
+        </div>
+        
+        <h2>How Tribute Calculation Works</h2>
+        
+        <h3>Step 1: Tax Revenue Collection</h3>
+        
+        <p>Vassal city collects tax revenue from its citizens through the standard <a href="how-taxes.html" style="color: var(--accent);">tax system</a>:</p>
+        <ul>
+            <li>Weekly property tax (~1-3% of property value)</li>
+            <li>Player shop vendor fees</li>
+            <li>Other city-specific revenue streams</li>
+        </ul>
+        
+        <p><strong>Example:</strong> Yew collects <strong>8,313 gold</strong> in tax revenue this week.</p>
+        
+        <h3>Step 2: Tribute Percentage Applied</h3>
+        
+        <p>The agreed tribute rate (from the fealty treaty) is applied to the <strong>gross tax revenue</strong>.</p>
+        
+        <div class="info-box">
+            <h3>Tribute Formula</h3>
+            <p><strong>Tribute Amount = (Gross Tax Revenue) × (Tribute %)</strong></p>
+            
+            <p><strong>Example:</strong></p>
+            <p>Yew's tax revenue: <strong>8,313 gold</strong></p>
+            <p>Tribute rate to Britain: <strong>15%</strong></p>
+            <p>Tribute owed: <strong>8,313 × 0.15 = 1,247 gold</strong></p>
+        </div>
+        
+        <h3>Step 3: Automatic Siphon</h3>
+        
+        <p>The tribute amount is <strong>automatically transferred</strong> from vassal's treasury to liege's treasury:</p>
+        <ul>
+            <li><strong>No manual payment required</strong></li>
+            <li><strong>No option to withhold (unless breaking fealty)</strong></li>
+            <li><strong>Happens immediately after tax collection</strong></li>
+            <li><strong>Logged in both cities' treasury ledgers</strong></li>
+        </ul>
+        
+        <h3>Step 4: Net Revenue for Vassal</h3>
+        
+        <p>What remains goes to the vassal's treasury:</p>
+        
+        <div class="info-box">
+            <h3>Net Revenue for Vassal</h3>
+            <p><strong>Yew's Net Revenue = 8,313 - 1,247 = 7,066 gold</strong></p>
+            
+            <p>This is what Yew's ruler has to work with for:</p>
+            <ul>
+                <li>Official salaries</li>
+                <li>Guard wages</li>
+                <li>Property purchases</li>
+                <li>City infrastructure</li>
+            </ul>
+        </div>
+        
+        <h2>Tribute Payment Timing</h2>
+        
+        <h3>Weekly Cycle</h3>
+        
+        <p>Tribute flows on the same schedule as the tax collection cycle:</p>
+        
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Event</th>
+                <th>Treasury Impact</th>
+            </tr>
+            <tr>
+                <td><strong>Sunday</strong></td>
+                <td>Tax collection runs</td>
+                <td>Vassal treasury receives gross tax revenue</td>
+            </tr>
+            <tr>
+                <td><strong>Sunday (moments later)</strong></td>
+                <td>Tribute calculated & transferred</td>
+                <td>Gold automatically moves from vassal to liege</td>
+            </tr>
+            <tr>
+                <td><strong>Sunday (after tribute)</strong></td>
+                <td>Net revenue remains</td>
+                <td>Vassal can spend what's left</td>
+            </tr>
+        </table>
+        
+        <p><strong>This happens every week, indefinitely, until fealty is broken.</strong></p>
+        
+        <h2>What Happens If Vassal Can't Pay</h2>
+        
+        <h3>Scenario: Insufficient Funds</h3>
+        
+        <p>What if the vassal's treasury doesn't have enough gold to cover tribute?</p>
+        
+        <div class="flow-box">
+            <h4>Option 1: Partial Payment (System Default)</h4>
+            <ul>
+                <li><strong>System transfers whatever gold exists</strong> in vassal treasury</li>
+                <li><strong>Shortfall is logged</strong> as "Partial Payment" in Fealty Ledger</li>
+                <li><strong>Debt does NOT accumulate</strong> (no running balance)</li>
+                <li><strong>Liege is notified</strong> of shortfall</li>
+            </ul>
+            
+            <p><strong>Example:</strong></p>
+            <p>Yew owes 1,247 gold but only has 500 gold in treasury.</p>
+            <p>System transfers 500 gold to Britain.</p>
+            <p>Ledger logs: "Tribute: 500 gold paid (Partial - 747 gold short)"</p>
+        </div>
+        
+        <div class="flow-box">
+            <h4>Option 2: Zero Payment (Empty Treasury)</h4>
+            <ul>
+                <li><strong>No gold transferred</strong> (treasury is empty)</li>
+                <li><strong>Logged as "Payment Failed - Insufficient Funds"</strong></li>
+                <li><strong>Liege receives notification</strong></li>
+                <li><strong>Political crisis potential</strong></li>
+            </ul>
+            
+            <p><strong>This is visible, embarrassing, and politically explosive.</strong></p>
+        </div>
+        
+        <h3>Consequences of Nonpayment</h3>
+        
+        <p>The system doesn't mechanically punish nonpayment. Instead, <strong>the liege responds politically</strong>:</p>
+        <ul>
+            <li><strong>Declare breach of fealty</strong> (public accusation)</li>
+            <li><strong>Withdraw protection guarantees</strong></li>
+            <li><strong>Demand explanation or compensation</strong></li>
+            <li><strong>Threaten military action</strong></li>
+            <li><strong>Support rival claimants to vassal's throne</strong></li>
+        </ul>
+        
+        <p>See: <a href="secession-rebellion.html" style="color: var(--accent);">Secession, Neutrality, and Rebellion</a></p>
+        
+        <h2>Multi-Vassal Treasury Flows</h2>
+        
+        <p>When a liege (usually the Capital) has multiple vassals, tribute flows from all of them:</p>
+        
+        <h3>Example: Britain with Three Vassals</h3>
+        
+        <div class="info-box">
+            <h3>Weekly Tribute Flow to Britain</h3>
+            <table>
+                <tr>
+                    <th>Vassal City</th>
+                    <th>Tax Revenue</th>
+                    <th>Tribute %</th>
+                    <th>Gold to Britain</th>
+                </tr>
+                <tr>
+                    <td><strong>Yew</strong></td>
+                    <td>8,313 gold</td>
+                    <td>15%</td>
+                    <td>1,247 gold</td>
+                </tr>
+                <tr>
+                    <td><strong>Minoc</strong></td>
+                    <td>6,200 gold</td>
+                    <td>10%</td>
+                    <td>620 gold</td>
+                </tr>
+                <tr>
+                    <td><strong>Trinsic</strong></td>
+                    <td>11,500 gold</td>
+                    <td>20%</td>
+                    <td>2,300 gold</td>
+                </tr>
+                <tr style="border-top: 2px solid var(--gold);">
+                    <td colspan="3"><strong>Total Tribute to Britain</strong></td>
+                    <td><strong>4,167 gold/week</strong></td>
+                </tr>
+            </table>
+            
+            <p><strong>Result:</strong> Britain receives ~17,000 gold per month from vassals alone, on top of its own tax revenue.</p>
+        </div>
+        
+        <h3>Why This Creates Power Asymmetry</h3>
+        
+        <p>A Capital with vassals becomes dramatically wealthier:</p>
+        <ul>
+            <li><strong>More gold for official salaries</strong> → Better governance</li>
+            <li><strong>More gold for property acquisitions</strong> → Economic dominance</li>
+            <li><strong>More gold for bribes/rewards</strong> → Political influence</li>
+            <li><strong>More gold for mercenaries</strong> → Military superiority</li>
+        </ul>
+        
+        <div class="quote-simple">
+            This is not a bug. Vassalage is supposed to enrich the liege at the vassal's expense.
+        </div>
+        
+        <h2>Treasury Routing (Nested Vassals)</h2>
+        
+        <h3>Can a Vassal Have Its Own Vassals?</h3>
+        
+        <p><strong>Technically yes, but rare.</strong></p>
+        
+        <p>If Yew (vassal of Britain) gets Minoc to swear fealty to Yew, the flow looks like:</p>
+        
+        <div class="flow-box">
+            <h4>Nested Tribute Example</h4>
+            <ol>
+                <li><strong>Minoc collects 6,200 gold</strong> in taxes</li>
+                <li><strong>Minoc pays 10% (620 gold) to Yew</strong> (its liege)</li>
+                <li><strong>Yew collects 8,313 gold + 620 gold from Minoc = 8,933 gold total</strong></li>
+                <li><strong>Yew pays 15% of its OWN revenue (8,313 × 0.15 = 1,247 gold) to Britain</strong></li>
+                <li><strong>Britain receives 1,247 gold from Yew</strong></li>
+            </ol>
+            
+            <p><strong>Key:</strong> Yew does NOT pay Britain a cut of Minoc's tribute. Only its own tax revenue.</p>
+        </div>
+        
+        <div class="warning">
+            <strong>Design Note:</strong> Nested vassalage creates complex political hierarchies.<br>
+            Most servers will discourage this to prevent bureaucratic overload.
+        </div>
+        
+        <h2>Tribute vs. Other Revenue</h2>
+        
+        <p>Tribute is calculated ONLY on tax revenue, not other city income:</p>
+        
+        <table>
+            <tr>
+                <th>Income Source</th>
+                <th>Subject to Tribute?</th>
+            </tr>
+            <tr>
+                <td>Property tax from residents</td>
+                <td>✅ Yes</td>
+            </tr>
+            <tr>
+                <td>Vendor shop fees</td>
+                <td>✅ Yes</td>
+            </tr>
+            <tr>
+                <td>Fines from courts/jails</td>
+                <td>⚠️ Server choice (define in treaty)</td>
+            </tr>
+            <tr>
+                <td>Donations from players</td>
+                <td>❌ No (not tax revenue)</td>
+            </tr>
+            <tr>
+                <td>Property sales to other players</td>
+                <td>❌ No (one-time transaction)</td>
+            </tr>
+            <tr>
+                <td>Loot from PvP/raids</td>
+                <td>❌ No (not systematic revenue)</td>
+            </tr>
+        </table>
+        
+        <p><strong>Transparency prevents disputes:</strong> Only revenue logged in Tax Ledger counts for tribute calculation.</p>
+        
+        <h2>Adjusting Tribute Rates</h2>
+        
+        <h3>Can Tribute % Change?</h3>
+        
+        <p><strong>Yes, but NOT unilaterally.</strong></p>
+        
+        <p>Tribute rates are part of the fealty treaty. To change them:</p>
+        <ol>
+            <li><strong>Liege proposes new rate</strong> (usually higher)</li>
+            <li><strong>Vassal can accept, negotiate, or refuse</strong></li>
+            <li><strong>If agreed, treaty is amended</strong> and logged</li>
+            <li><strong>New rate takes effect immediately</strong></li>
+        </ol>
+        
+        <p><strong>If vassal refuses:</strong></p>
+        <ul>
+            <li>Liege cannot force the change mechanically</li>
+            <li>Liege may threaten withdrawal of protection</li>
+            <li>Liege may declare breach and terminate fealty</li>
+            <li>Vassal may choose to break fealty preemptively</li>
+        </ul>
+        
+        <h3>Scenario: Tribute Increase Demand</h3>
+        
+        <div class="info-box">
+            <h3>Political Crisis Example</h3>
+            <p><strong>1485, May:</strong> Britain demands Yew increase tribute from 15% to 25%.</p>
+            
+            <p><strong>Yew's Options:</strong></p>
+            <ul>
+                <li><strong>Accept:</strong> Budget collapses, residents angry, ruler unpopular</li>
+                <li><strong>Negotiate:</strong> Offer 18% as compromise</li>
+                <li><strong>Refuse:</strong> Britain may withdraw protection, back rival claimant</li>
+                <li><strong>Break fealty:</strong> Formal secession, become independent (and vulnerable)</li>
+            </ul>
+            
+            <p><strong>This is political gameplay gold.</strong></p>
+        </div>
+        
+        <h2>When Tribute Stops</h2>
+        
+        <p>Tribute only flows while fealty is active. It stops when:</p>
+        
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Tribute Effect</th>
+            </tr>
+            <tr>
+                <td><strong>Vassal breaks fealty</strong></td>
+                <td>Stops immediately, no retroactive payment</td>
+            </tr>
+            <tr>
+                <td><strong>Liege breaks fealty</strong></td>
+                <td>Stops immediately</td>
+            </tr>
+            <tr>
+                <td><strong>Vassal deactivates (population drops below threshold)</strong></td>
+                <td>Suspends until reactivation</td>
+            </tr>
+            <tr>
+                <td><strong>Liege loses Capital status</strong></td>
+                <td>⚠️ Does NOT automatically stop (fealty can exist without Capital status)</td>
+            </tr>
+            <tr>
+                <td><strong>Treaty expires (if time-limited)</strong></td>
+                <td>Stops on expiration date</td>
+            </tr>
+        </table>
+        
+        <h2>Visibility & Logging</h2>
+        
+        <p>Every tribute payment is logged publicly in the <a href="fealty-ledger.html" style="color: var(--accent);">Fealty Ledger</a>:</p>
+        
+        <h3>What Gets Logged</h3>
+        
+        <ul>
+            <li><strong>Date/time of payment</strong></li>
+            <li><strong>Amount transferred</strong></li>
+            <li><strong>Percentage of vassal's tax revenue</strong></li>
+            <li><strong>Vassal's total tax revenue (for transparency)</strong></li>
+            <li><strong>Payment status:</strong> Full, Partial, or Failed</li>
+        </ul>
+        
+        <h3>Why This Matters</h3>
+        
+        <p>Public logging creates:</p>
+        <ul>
+            <li><strong>Accountability:</strong> Vassal can't hide tax revenue from liege</li>
+            <li><strong>Intelligence:</strong> Other cities can see who pays whom</li>
+            <li><strong>Pressure:</strong> Failed payments are embarrassing and visible</li>
+            <li><strong>Proof:</strong> Evidence for breach accusations</li>
+        </ul>
+        
+        <h2>Economic Impact on Vassals</h2>
+        
+        <h3>Budget Strain</h3>
+        
+        <p>Tribute creates immediate financial pressure on vassals:</p>
+        <ul>
+            <li><strong>Lower budget for official salaries</strong> → Harder to attract talent</li>
+            <li><strong>Less gold for property acquisition</strong> → Economic stagnation</li>
+            <li><strong>Reduced emergency funds</strong> → Vulnerable to crises</li>
+            <li><strong>Resentment among residents</strong> → "We're paying taxes to Britain!"</li>
+        </ul>
+        
+        <h3>Internal Political Friction</h3>
+        
+        <p>Tribute creates factional conflict within vassal cities:</p>
+        <ul>
+            <li><strong>Loyalists:</strong> "We need Britain's protection"</li>
+            <li><strong>Rebels:</strong> "We should break fealty and keep our gold"</li>
+            <li><strong>Merchants:</strong> "Can we negotiate better trade terms?"</li>
+            <li><strong>Ruler:</strong> Caught in the middle, trying to balance budget and politics</li>
+        </ul>
+        
+        <div class="quote-simple">
+            <strong>This internal conflict is not a bug. It's the point.</strong>
+        </div>
+        
+        <h2>Common Questions</h2>
+        
+        <h3>Q: Can I refuse to pay tribute without breaking fealty?</h3>
+        <p><strong>A:</strong> No. Tribute is automatic. If you want to stop paying, you must formally break fealty.</p>
+        
+        <h3>Q: What if the liege demands an unreasonable rate (50%+)?</h3>
+        <p><strong>A:</strong> You can refuse to sign the treaty. If already sworn, you can renegotiate or break fealty. Unsustainable rates pressure both sides to be realistic.</p>
+        
+        <h3>Q: Does tribute count as an expense I can deduct from my city budget?</h3>
+        <p><strong>A:</strong> No. Tribute is calculated on gross tax revenue before any expenses. It comes off the top.</p>
+        
+        <h3>Q: Can I hide tax revenue to avoid paying full tribute?</h3>
+        <p><strong>A:</strong> No. Tax revenue is automatically calculated and logged. There's no way to "hide" it.</p>
+        
+        <h3>Q: If I break fealty, do I owe back-tribute?</h3>
+        <p><strong>A:</strong> No. Tribute only flows while fealty is active. Past weeks that were paid stay paid. Future weeks after breaking are not owed.</p>
+        
+        <h3>Q: What if my city is attacked and I need emergency funds, but tribute drains my treasury?</h3>
+        <p><strong>A:</strong> This is the political tension. You can beg the liege for financial aid, negotiate tribute reduction, or break fealty and face the consequences.</p>
+        
+        <h2>Design Intent</h2>
+        
+        <p>Tribute mechanics create:</p>
+        <ul>
+            <li><strong>Real economic hierarchy</strong> — Lieges get richer, vassals get poorer</li>
+            <li><strong>Automatic pressure</strong> — No need for manual collection</li>
+            <li><strong>Internal conflict</strong> — Vassals debate whether submission is worth it</li>
+            <li><strong>Political crises</strong> — Shortfalls trigger confrontations</li>
+            <li><strong>Transparency</strong> — Everyone can see the money flow</li>
+        </ul>
+        
+        <div class="quote-simple">
+            <strong>You get feudal economics without needing a tax collector role.</strong>
+        </div>
+        
+        <h2>See Also</h2>
+        
+        <ul>
+            <li><a href="fealty-sovereignty.html" style="color: var(--accent);">Fealty & Sovereignty</a> — The political framework for tribute</li>
+            <li><a href="fealty-ledger.html" style="color: var(--accent);">Fealty Ledger</a> — Where tribute payments are logged</li>
+            <li><a href="how-taxes.html" style="color: var(--accent);">How Taxes Work</a> — Source of revenue for tribute</li>
+            <li><a href="treasury-ledger.html" style="color: var(--accent);">Treasury Ledger</a> — Financial tracking per city</li>
+            <li><a href="secession-rebellion.html" style="color: var(--accent);">Secession & Rebellion</a> — When vassals stop paying</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="fealty-ledger.html" style="color: var(--gold);">← Fealty Ledger</a> | <a href="secession-rebellion.html" style="color: var(--gold);">Secession & Rebellion →</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Inter-City Treaties - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .treaty-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--gold); }
+        .treaty-box h4 { color: var(--gold); margin-bottom: 0.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📜 Inter-City Treaties</h1>
+        <p>The Diplomatic Fabric of the Realm</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <div class="quote">
+            Treaties are not guarantees. They are statements of intent.<br>
+            The question is not whether they hold. It is what breaks them.
+        </div>
+        
+        <h2>Core Principle</h2>
+        
+        <p>Treaties are formal agreements between city-states that define their relationship, obligations, and expectations. They are <strong>political instruments, not mechanical laws</strong>.</p>
+        
+        <p><strong>Treaties are NOT:</strong></p>
+        <ul>
+            <li>❌ Magically enforced contracts</li>
+            <li>❌ Immunity from betrayal</li>
+            <li>❌ Permanent or irrevocable bonds</li>
+            <li>❌ Auto-triggered military alliances</li>
+        </ul>
+        
+        <p><strong>Treaties ARE:</strong></p>
+        <ul>
+            <li>✅ Publicly visible commitments</li>
+            <li>✅ Tools for coordination and alignment</li>
+            <li>✅ Frameworks for expectations</li>
+            <li>✅ Political ammunition when broken</li>
+            <li>✅ Narrative structure for realm politics</li>
+        </ul>
+        
+        <h2>Treaty vs. Fealty</h2>
+        
+        <p>Fealty is a specific type of treaty, but treaties encompass much more:</p>
+        
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Structure</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><strong>Fealty</strong></td>
+                <td>Asymmetric (liege/vassal)</td>
+                <td>Yew swears fealty to Britain, pays tribute</td>
+            </tr>
+            <tr>
+                <td><strong>Alliance</strong></td>
+                <td>Symmetric (mutual defense)</td>
+                <td>Yew & Minoc pledge mutual military support</td>
+            </tr>
+            <tr>
+                <td><strong>Neutrality Pact</strong></td>
+                <td>Symmetric (non-aggression)</td>
+                <td>Britain & Vesper agree not to attack each other</td>
+            </tr>
+            <tr>
+                <td><strong>Trade Agreement</strong></td>
+                <td>Symmetric (economic cooperation)</td>
+                <td>Trinsic & Moonglow reduce tariffs on merchants</td>
+            </tr>
+            <tr>
+                <td><strong>Recognition Treaty</strong></td>
+                <td>Asymmetric (legitimacy endorsement)</td>
+                <td>Britain recognizes Vesper's new ruler</td>
+            </tr>
+        </table>
+        
+        <p>See: <a href="fealty-sovereignty.html" style="color: var(--accent);">Fealty & Sovereignty</a> for the fealty-specific mechanics</p>
+        
+        <h2>Types of Treaties</h2>
+        
+        <h3>1. Military Alliance</h3>
+        
+        <div class="treaty-box">
+            <h4>Mutual Defense Pact</h4>
+            <p><strong>Commitment:</strong> Both cities agree to defend each other if attacked.</p>
+            
+            <p><strong>Terms May Include:</strong></p>
+            <ul>
+                <li>Response time expectations (e.g., "within 24 hours")</li>
+                <li>Definition of "attack" (siege, raid, assassination?)</li>
+                <li>Scope of support (full military, guards only, supplies only?)</li>
+                <li>Exclusions (e.g., "not applicable if you attack first")</li>
+            </ul>
+            
+            <p><strong>Not Mechanically Enforced:</strong></p>
+            <ul>
+                <li>No auto-deployment of guards</li>
+                <li>No forced combat participation</li>
+                <li>Ally can choose not to help</li>
+            </ul>
+            
+            <p><strong>But Politically Costly if Broken:</strong></p>
+            <ul>
+                <li>Public breach declaration</li>
+                <li>Loss of trust from other potential allies</li>
+                <li>Narrative weapon for the abandoned ally</li>
+                <li>Possible retaliation or sanctions</li>
+            </ul>
+        </div>
+        
+        <h3>2. Neutrality Pact (Non-Aggression)</h3>
+        
+        <div class="treaty-box">
+            <h4>Mutual Non-Aggression Treaty</h4>
+            <p><strong>Commitment:</strong> Both cities agree not to attack, raid, or support enemies of each other.</p>
+            
+            <p><strong>Terms May Include:</strong></p>
+            <ul>
+                <li>Definition of "aggression" (guards, bounties, harboring fugitives?)</li>
+                <li>Duration (1 year, indefinite, until revoked?)</li>
+                <li>Exceptions (e.g., "unless you attack our allies")</li>
+                <li>Buffer zones or neutral territory definitions</li>
+            </ul>
+            
+            <p><strong>Use Cases:</strong></p>
+            <ul>
+                <li>Two cities want to avoid conflict but not be allies</li>
+                <li>Temporary ceasefire during internal crises</li>
+                <li>Detente between rival powers</li>
+            </ul>
+            
+            <p><strong>Breaking neutrality is less severe than breaking alliance, but still politically visible.</strong></p>
+        </div>
+        
+        <h3>3. Trade Agreement</h3>
+        
+        <div class="treaty-box">
+            <h4>Economic Cooperation Treaty</h4>
+            <p><strong>Commitment:</strong> Both cities agree to economic terms that benefit merchants or treasuries.</p>
+            
+            <p><strong>Possible Terms:</strong></p>
+            <ul>
+                <li>Reduced tariffs or taxes on cross-city trade</li>
+                <li>Mutual recognition of vendor licenses</li>
+                <li>Shared market access or trade routes</li>
+                <li>Price controls or monopolies</li>
+                <li>Resource exchange agreements (food, ore, wood)</li>
+            </ul>
+            
+            <p><strong>Enforcement:</strong></p>
+            <ul>
+                <li>Primarily player-driven (merchants care about this)</li>
+                <li>Violation = economic retaliation (tariffs, blockades)</li>
+                <li>Can create internal factional conflict (merchants vs. isolationists)</li>
+            </ul>
+        </div>
+        
+        <h3>4. Recognition Treaty</h3>
+        
+        <div class="treaty-box">
+            <h4>Political Legitimacy Endorsement</h4>
+            <p><strong>Commitment:</strong> One city formally recognizes another's ruler, government, or territorial claim.</p>
+            
+            <p><strong>Use Cases:</strong></p>
+            <ul>
+                <li>New king needs international legitimacy</li>
+                <li>Contested succession resolved by external backing</li>
+                <li>City claims sovereignty over disputed territory</li>
+            </ul>
+            
+            <p><strong>Asymmetric but Valuable:</strong></p>
+            <ul>
+                <li>Recognized party gains prestige and stability</li>
+                <li>Recognizing party gains influence over recognized party</li>
+                <li>Can be revoked if ruler changes</li>
+            </ul>
+            
+            <p><strong>Related but distinct from Capital Recognition (ideological) — this is bilateral and specific.</strong></p>
+        </div>
+        
+        <h3>5. Extradition Treaty</h3>
+        
+        <div class="treaty-box">
+            <h4>Cross-Border Justice Agreement</h4>
+            <p><strong>Commitment:</strong> Cities agree to honor each other's arrest warrants and extradite fugitives.</p>
+            
+            <p><strong>Terms May Include:</strong></p>
+            <ul>
+                <li>Which crimes qualify (murder yes, unpaid taxes no?)</li>
+                <li>Evidence requirements before extradition</li>
+                <li>Asylum exceptions (political crimes, religious persecution)</li>
+                <li>Mutual guard cooperation in cross-border pursuits</li>
+            </ul>
+            
+            <p><strong>Political Minefield:</strong></p>
+            <ul>
+                <li>Harboring fugitives can strain relations</li>
+                <li>Refusing extradition can be justified or denounced</li>
+                <li>Creates refugee crises when cities refuse cooperation</li>
+            </ul>
+        </div>
+        
+        <h3>6. Tribute Treaty (Without Fealty)</h3>
+        
+        <div class="treaty-box">
+            <h4>Economic Submission Without Political Fealty</h4>
+            <p><strong>Commitment:</strong> One city pays another for protection or access, but without formal fealty relationship.</p>
+            
+            <p><strong>Use Cases:</strong></p>
+            <ul>
+                <li>Weak city pays stronger city for non-aggression</li>
+                <li>City pays toll for trade route access</li>
+                <li>Temporary payment to avoid invasion</li>
+            </ul>
+            
+            <p><strong>Distinct from Fealty:</strong></p>
+            <ul>
+                <li>No symbolic submission</li>
+                <li>No political endorsement</li>
+                <li>Purely transactional</li>
+            </ul>
+        </div>
+        
+        <h2>Treaty Negotiation Process</h2>
+        
+        <h3>Step 1: Proposal</h3>
+        
+        <p>One city initiates treaty negotiations:</p>
+        <ul>
+            <li><strong>Emissary delivers terms</strong> to target city's ruler</li>
+            <li><strong>Proposal includes:</strong> Treaty type, terms, duration, consequences</li>
+            <li><strong>Public or private:</strong> Some negotiations are secret until signed</li>
+        </ul>
+        
+        <h3>Step 2: Negotiation</h3>
+        
+        <p>Cities may counter-propose or adjust terms:</p>
+        <ul>
+            <li><strong>Direct negotiation:</strong> Rulers meet in person or via messenger</li>
+            <li><strong>Public debate:</strong> Some treaties are negotiated openly (risky)</li>
+            <li><strong>Mediation:</strong> Third-party city or neutral figure facilitates</li>
+        </ul>
+        
+        <div class="info-box">
+            <h3>Negotiation Window</h3>
+            <p>Proposals expire after <strong>7 days</strong> if no response.</p>
+            <p>Either party may walk away during negotiation with no penalty.</p>
+            <p>Once signed, breaking the treaty is politically costly.</p>
+        </div>
+        
+        <h3>Step 3: Signing</h3>
+        
+        <p>Both parties formally agree to the treaty:</p>
+        <ul>
+            <li><strong>Logged in Treaty Ledger</strong> (see <a href="fealty-ledger.html" style="color: var(--accent);">Fealty Ledger</a>)</li>
+            <li><strong>Public announcement</strong> fires across the realm</li>
+            <li><strong>Terms become visible</strong> to all players</li>
+            <li><strong>Treaty takes effect immediately</strong></li>
+        </ul>
+        
+        <h3>Step 4: Enforcement (Political, Not Mechanical)</h3>
+        
+        <p>Treaties are not auto-enforced. Compliance is a choice.</p>
+        
+        <div class="warning">
+            <strong>Critical:</strong> The system does not prevent treaty violations.<br>
+            It only makes them visible and politically consequential.
+        </div>
+        
+        <h2>Treaty Duration & Renewal</h2>
+        
+        <p>Treaties can be structured with different lifespans:</p>
+        
+        <table>
+            <tr>
+                <th>Duration Type</th>
+                <th>Description</th>
+                <th>Use Case</th>
+            </tr>
+            <tr>
+                <td><strong>Indefinite</strong></td>
+                <td>Lasts until revoked by either party</td>
+                <td>Long-term alliances, fealty relationships</td>
+            </tr>
+            <tr>
+                <td><strong>Fixed Term</strong></td>
+                <td>Expires after X months/years</td>
+                <td>Temporary non-aggression, trade trials</td>
+            </tr>
+            <tr>
+                <td><strong>Conditional</strong></td>
+                <td>Ends when condition met (e.g., "until war ends")</td>
+                <td>Wartime alliances, crisis cooperation</td>
+            </tr>
+            <tr>
+                <td><strong>Auto-Renewing</strong></td>
+                <td>Renews unless explicitly revoked</td>
+                <td>Standing agreements that should persist</td>
+            </tr>
+        </table>
+        
+        <h3>Renewal Negotiation</h3>
+        
+        <p>When a fixed-term treaty nears expiration:</p>
+        <ul>
+            <li><strong>30 days before expiration:</strong> Both parties notified</li>
+            <li><strong>Renegotiation window opens:</strong> Terms can be adjusted</li>
+            <li><strong>If no agreement:</strong> Treaty expires, cities revert to neutral status</li>
+            <li><strong>If renewed:</strong> New terms logged, announcement fires</li>
+        </ul>
+        
+        <h2>Multi-Party Treaties</h2>
+        
+        <p>Treaties can involve more than two cities.</p>
+        
+        <h3>Example: Three-Way Alliance</h3>
+        
+        <div class="info-box">
+            <h3>The Northern Pact</h3>
+            <p><strong>Signatories:</strong> Yew, Minoc, Vesper</p>
+            <p><strong>Terms:</strong></p>
+            <ul>
+                <li>Mutual defense against Britain</li>
+                <li>Shared trade routes & tariff reductions</li>
+                <li>No separate peace with Britain without unanimous consent</li>
+            </ul>
+            
+            <p><strong>Political Dynamics:</strong></p>
+            <ul>
+                <li>Stronger together than alone</li>
+                <li>Risk of one city defecting for better terms</li>
+                <li>Coordination challenges (who leads?)</li>
+            </ul>
+        </div>
+        
+        <h3>Coalition Fragility</h3>
+        
+        <p>Multi-party treaties are inherently unstable:</p>
+        <ul>
+            <li><strong>Defection incentives:</strong> One city breaks off for individual gain</li>
+            <li><strong>Free-rider problem:</strong> Some cities benefit without contributing</li>
+            <li><strong>Coordination costs:</strong> Harder to agree on action</li>
+            <li><strong>Blame dynamics:</strong> Who violated first?</li>
+        </ul>
+        
+        <p><strong>This creates emergent betrayal gameplay.</strong></p>
+        
+        <h2>Treaty Breach & Consequences</h2>
+        
+        <h3>What Counts as Breach?</h3>
+        
+        <p>Depends on treaty terms, but common violations include:</p>
+        <ul>
+            <li><strong>Military:</strong> Attacking treaty partner, aiding their enemies</li>
+            <li><strong>Economic:</strong> Violating trade terms, imposing sanctions</li>
+            <li><strong>Political:</strong> Backing rival claimants, harboring fugitives</li>
+            <li><strong>Territorial:</strong> Violating borders, occupying treaty zones</li>
+        </ul>
+        
+        <h3>Declaration of Breach</h3>
+        
+        <p>When one party believes the other has violated the treaty:</p>
+        <ol>
+            <li><strong>Public accusation:</strong> "Yew has violated our treaty by [specific act]"</li>
+            <li><strong>Evidence presented:</strong> Logs, witnesses, documentation</li>
+            <li><strong>Response demanded:</strong> Explanation, compensation, or acknowledgment</li>
+            <li><strong>If unresolved:</strong> Treaty declared void, relations hostile</li>
+        </ol>
+        
+        <div class="warning">
+            <strong>Breach declarations are political weapons.</strong><br>
+            Even false accusations damage reputations. Use carefully.
+        </div>
+        
+        <h3>Consequences of Breach</h3>
+        
+        <p>No automatic penalties, but political fallout:</p>
+        <ul>
+            <li><strong>Reputation damage:</strong> Future treaty partners hesitate</li>
+            <li><strong>Retaliation:</strong> Injured party may respond militarily or economically</li>
+            <li><strong>Coalition pressure:</strong> Allies of injured party may shun violator</li>
+            <li><strong>Narrative ammunition:</strong> "They cannot be trusted"</li>
+        </ul>
+        
+        <h2>Treaty Termination</h2>
+        
+        <h3>Formal Withdrawal</h3>
+        
+        <p>Either party may terminate a treaty formally:</p>
+        <ul>
+            <li><strong>Notice period:</strong> Typically 30 days advance warning</li>
+            <li><strong>Public announcement:</strong> Realm-wide notification</li>
+            <li><strong>Reasons stated (or not):</strong> Political choice</li>
+            <li><strong>Treaty ends cleanly:</strong> No automatic hostility</li>
+        </ul>
+        
+        <p><strong>Formal withdrawal is less damaging than breach, but still politically visible.</strong></p>
+        
+        <h3>Hostile Termination</h3>
+        
+        <p>One party ends the treaty abruptly with hostile intent:</p>
+        <ul>
+            <li><strong>No notice period</strong></li>
+            <li><strong>Often coupled with attack or sanctions</strong></li>
+            <li><strong>Treated as breach by other party</strong></li>
+            <li><strong>Creates instant hostility</strong></li>
+        </ul>
+        
+        <h3>Automatic Termination</h3>
+        
+        <p>Some events automatically void treaties:</p>
+        <ul>
+            <li><strong>City deactivates:</strong> Falls below population threshold</li>
+            <li><strong>Ruler death (if specified):</strong> Treaty tied to individual</li>
+            <li><strong>Conditional trigger met:</strong> (e.g., "until war ends" — war ends)</li>
+            <li><strong>Both parties agree:</strong> Mutual dissolution</li>
+        </ul>
+        
+        <h2>Treaties & Power Blocs</h2>
+        
+        <p>Over time, treaties create <strong>emergent power structures</strong>:</p>
+        
+        <h3>Scenario: Realm Fractures</h3>
+        
+        <div class="info-box">
+            <h3>The Capital Coalition</h3>
+            <p><strong>Britain (liege) + Yew + Trinsic (vassals)</strong></p>
+            <ul>
+                <li>Fealty agreements with tribute</li>
+                <li>Mutual defense pact</li>
+                <li>Extradition treaties</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>The Free Cities Alliance</h3>
+            <p><strong>Vesper + Minoc + Moonglow (equals)</strong></p>
+            <ul>
+                <li>Mutual defense pact</li>
+                <li>Shared trade agreements</li>
+                <li>Neutrality pact with Skara Brae</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>Neutral / Unaligned</h3>
+            <p><strong>Skara Brae (isolated by choice)</strong></p>
+            <ul>
+                <li>No treaties with anyone</li>
+                <li>Vulnerable but independent</li>
+            </ul>
+        </div>
+        
+        <p><strong>Result:</strong> Realm-level tensions between blocs. Proxy conflicts. Diplomatic crises.</p>
+        
+        <h2>Common Questions</h2>
+        
+        <h3>Q: Can I sign contradictory treaties?</h3>
+        <p><strong>A:</strong> Mechanically yes, but politically disastrous. Example: Alliance with Yew AND alliance with Yew's enemy Minoc. When war breaks out, you must choose — and one treaty breaks.</p>
+        
+        <h3>Q: Do treaties prevent me from attacking?</h3>
+        <p><strong>A:</strong> No. You can still attack a treaty partner. But it will be logged as breach, publicly visible, and politically costly.</p>
+        
+        <h3>Q: Can I negotiate in secret?</h3>
+        <p><strong>A:</strong> Negotiations can be private, but once signed, treaties are always public. Secret treaties violate the visibility principle.</p>
+        
+        <h3>Q: What if my ally refuses to help when I'm attacked?</h3>
+        <p><strong>A:</strong> You can declare breach and terminate the alliance. Other cities will see that your ally abandoned you. This damages their reputation.</p>
+        
+        <h3>Q: Can treaties involve NPCs or admin-controlled cities?</h3>
+        <p><strong>A:</strong> Only if admin chooses to roleplay an NPC city government. Treaties are designed for player-ruled cities.</p>
+        
+        <h3>Q: Do treaties expire when a ruler dies?</h3>
+        <p><strong>A:</strong> Depends on treaty terms. Can be tied to individual ("with King X") or to city ("with Britain, regardless of ruler").</p>
+        
+        <h2>Design Intent</h2>
+        
+        <p>Treaties create:</p>
+        <ul>
+            <li><strong>Coordinated diplomacy</strong> without script enforcement</li>
+            <li><strong>Public commitments</strong> that pressure behavior</li>
+            <li><strong>Emergent alliances</strong> that shift over time</li>
+            <li><strong>Betrayal incentives</strong> when terms become inconvenient</li>
+            <li><strong>Political history</strong> that accumulates reputation</li>
+        </ul>
+        
+        <div class="quote-simple">
+            <strong>You get international relations gameplay without a treaty enforcement engine.</strong>
+        </div>
+        
+        <h2>See Also</h2>
+        
+        <ul>
+            <li><a href="fealty-sovereignty.html" style="color: var(--accent);">Fealty & Sovereignty</a> — Fealty as a specific treaty type</li>
+            <li><a href="fealty-ledger.html" style="color: var(--accent);">Fealty Ledger</a> — Public record of all treaties</li>
+            <li><a href="secession-rebellion.html" style="color: var(--accent);">Secession, Neutrality, and Rebellion</a> — Breaking treaties violently</li>
+            <li><a href="protection-promises.html" style="color: var(--accent);">Protection Promises & Failure</a> — When allies fail to defend</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="fealty-sovereignty.html" style="color: var(--gold);">← Fealty & Sovereignty</a> | <a href="fealty-ledger.html" style="color: var(--gold);">Fealty Ledger →</a></p>
+    </footer>
+</body>
+</html>
