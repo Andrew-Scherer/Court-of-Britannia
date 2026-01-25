@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Capital Status & Spawn Gravity - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .nav { background: var(--bg-medium); padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid var(--border); }
+        .nav a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        .nav a:hover, .nav a.active { background: var(--accent); color: white; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--gold); background: var(--bg-medium); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>👑 Capital Status & Spawn Gravity</h1>
+        <p>Where New Life Begins</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <div class="quote">
+            The capital is where the realm lives.<br>
+            Authority does not die by decree. It dies when people leave.
+        </div>
+        
+        <h2>What Capital Status Means</h2>
+        
+        <p>Capital status is not ceremonial. It is not symbolic. It is the mechanical anchor point where new characters enter the world.</p>
+        
+        <p><strong>The Capital is:</strong></p>
+        <ul>
+            <li>The default spawn point for all new characters</li>
+            <li>The city whose ruler is treated as First Among Crowns</li>
+            <li>The center around which other cities orient for legitimacy and protection</li>
+            <li>The city that can receive fealty from other cities</li>
+        </ul>
+        
+        <p><strong>The Capital is NOT:</strong></p>
+        <ul>
+            <li>❌ A title granted by admin</li>
+            <li>❌ A flag on a building</li>
+            <li>❌ A permanent status</li>
+            <li>❌ Immune to collapse</li>
+        </ul>
+        
+        <h2>The Core Mechanic: Spawn Gravity</h2>
+        
+        <p>Capital status exists for one mechanical reason: <strong>to determine where new players spawn.</strong></p>
+        
+        <p>Everything else is political consequence.</p>
+        
+        <div class="info-box">
+            <h3>New Character Spawn Rule</h3>
+            <p><strong>When a player creates a new character, they spawn in the designated Capital city.</strong></p>
+            <p>Not Britain by default.<br>
+            Not their choice.<br>
+            The Capital.</p>
+        </div>
+        
+        <h3>Why This Matters</h3>
+        
+        <p>Spawn gravity creates natural population flow:</p>
+        <ul>
+            <li>New players enter at the center of political power</li>
+            <li>Cities compete to become the Capital to attract population</li>
+            <li>Losing Capital status means losing new player influx</li>
+            <li>Migration becomes visible and dramatic</li>
+        </ul>
+        
+        <p>This single mechanic turns population into power, and power into population.</p>
+        
+        <h2>How Capital Status Is Determined</h2>
+        
+        <p>Capital status is determined by <strong>resident count alone</strong>.</p>
+        
+        <h3>The Capital Eligibility Threshold</h3>
+        
+        <p>A city must have <strong>40+ residents</strong> to be eligible to become Capital.</p>
+        
+        <p><strong>Britain starts as Capital by default.</strong> It holds that status until another city crosses the threshold and claims it.</p>
+        
+        <div class="info-box">
+            <h3>Capital Transition Rules</h3>
+            <p><strong>Automatic Claim:</strong> When a city crosses 40 residents and no other Capital-eligible city exists, it may claim Capital status.</p>
+            <p><strong>Contested Claim:</strong> If multiple cities are Capital-eligible, the city with the highest resident count holds Capital status.</p>
+            <p><strong>Retention Buffer:</strong> Once a city becomes Capital, it retains that status until it drops below 35 residents (hysteresis prevents flapping).</p>
+        </div>
+        
+        <h2>Britain's Special Status</h2>
+        
+        <p>Britain is the default Capital, but not the permanent Capital.</p>
+        
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+            <tr>
+                <td>Can Britain lose Capital status?</td>
+                <td>✅ Yes, if another city crosses 40+ residents</td>
+            </tr>
+            <tr>
+                <td>Can Britain deactivate?</td>
+                <td>❌ No, Britain is always active systemically</td>
+            </tr>
+            <tr>
+                <td>What if Britain has zero residents?</td>
+                <td>It remains active but hollow; new players still spawn there by default if no other Capital exists</td>
+            </tr>
+            <tr>
+                <td>Can Britain be subordinate to another city?</td>
+                <td>✅ Yes, through fealty (see <a href="fealty-sovereignty.html" style="color: var(--accent);">Fealty System</a>)</td>
+            </tr>
+        </table>
+        
+        <p><strong>Britain is immortal as a system, but not as a power.</strong></p>
+        
+        <h2>Capital Transition Process</h2>
+        
+        <p>What happens when Capital status shifts?</p>
+        
+        <h3>Scenario: Yew Becomes Capital</h3>
+        
+        <ol>
+            <li><strong>Yew crosses 40 residents</strong> — Becomes Capital-eligible</li>
+            <li><strong>Threshold maintained for 3 days</strong> — Stability verification</li>
+            <li><strong>Realm-wide announcement fires:</strong>
+                <blockquote style="font-style: italic; margin: 1rem; padding-left: 1rem; border-left: 3px solid var(--gold);">
+                    "The City of Yew has risen to prominence and is now recognized as the Capital of Britannia. New travelers will arrive at Yew's gates."
+                </blockquote>
+            </li>
+            <li><strong>Spawn point shifts immediately</strong> — New characters spawn in Yew</li>
+            <li><strong>Britain loses Capital status</strong> — Becomes a normal city-state</li>
+            <li><strong>Fealty relationships re-anchor</strong> — Vassals now oriented toward Yew</li>
+            <li><strong>Political legitimacy shifts</strong> — Yew's ruler becomes First Among Crowns</li>
+        </ol>
+        
+        <div class="warning">
+            <strong>No coronation required. No vote. No admin toggle.</strong><br>
+            The world simply accepts reality: power has moved.
+        </div>
+        
+        <h3>What Moves With Capital Status</h3>
+        
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Behavior During Capital Shift</th>
+            </tr>
+            <tr>
+                <td>New player spawn</td>
+                <td>Shifts to new Capital immediately</td>
+            </tr>
+            <tr>
+                <td>Fealty orientation</td>
+                <td>Vassal cities recognize new Capital</td>
+            </tr>
+            <tr>
+                <td>Realm-wide legitimacy</td>
+                <td>New Capital's ruler treated as supreme</td>
+            </tr>
+            <tr>
+                <td>Recognition system</td>
+                <td>Re-anchors to new Capital</td>
+            </tr>
+            <tr>
+                <td>Tribute flows</td>
+                <td>Redirect to new Capital treasury</td>
+            </tr>
+            <tr>
+                <td>Local city systems</td>
+                <td>NO CHANGE (each city still self-governs)</td>
+            </tr>
+            <tr>
+                <td>Property ownership</td>
+                <td>NO CHANGE</td>
+            </tr>
+            <tr>
+                <td>Individual residency</td>
+                <td>NO CHANGE</td>
+            </tr>
+        </table>
+        
+        <p><strong>Critical: Capital status affects realm-level relationships, not local governance.</strong></p>
+        
+        <h2>What Capital Status Does NOT Affect</h2>
+        
+        <p>Becoming Capital does not grant:</p>
+        <ul>
+            <li>❌ More office slots than Active cities</li>
+            <li>❌ Higher salary caps</li>
+            <li>❌ Stronger guards</li>
+            <li>❌ Automatic wealth</li>
+            <li>❌ Immunity from attack</li>
+            <li>❌ Control over other cities' internal politics</li>
+        </ul>
+        
+        <p>Capital status is <strong>political recognition</strong>, not mechanical advantage.</p>
+        
+        <h2>Multiple Capitals (Edge Cases)</h2>
+        
+        <h3>What If Two Cities Both Have 40+ Residents?</h3>
+        
+        <p>The city with the <strong>higher resident count</strong> holds Capital status.</p>
+        
+        <p>If tied exactly:</p>
+        <ul>
+            <li>Current Capital retains status (inertia favors stability)</li>
+            <li>If no current Capital, Britain defaults</li>
+        </ul>
+        
+        <h3>Can There Be Two Competing Capitals?</h3>
+        
+        <p><strong>Mechanically: No.</strong> Only one city can be the spawn point.</p>
+        
+        <p><strong>Politically: Yes.</strong> A city might <em>claim</em> to be the "true Capital" even if it lacks mechanical status. This is rebellion/civil war territory.</p>
+        
+        <div class="info-box">
+            <h3>Political vs Mechanical Capital</h3>
+            <p><strong>Mechanical Capital
+
+:</strong> Where new players spawn. Determined by population.</p>
+            <p><strong>Political Capital:</strong> Where rulers claim legitimacy. Determined by narrative and conflict.</p>
+            <p>These can diverge, creating rich drama.</p>
+        </div>
+        
+        <h2>Losing Capital Status</h2>
+        
+        <p>A Capital can lose its status through population collapse.</p>
+        
+        <h3>How Britain Can Fall</h3>
+        
+        <ol>
+            <li>Residents leave due to oppression, taxes, or rival opportunities</li>
+            <li>Population drops below 40</li>
+            <li>Retains Capital status temporarily (35-resident buffer)</li>
+            <li>If population continues dropping below 35 residents</li>
+            <li>Another city with 40+ residents automatically becomes Capital</li>
+            <li>Spawn point shifts</li>
+            <li>Britain becomes a normal city-state</li>
+        </ol>
+        
+        <div class="warning">
+            <strong>This is not a bug. This is the endgame.</strong><br>
+            When a Capital loses its people, it loses the realm.
+        </div>
+        
+        <h2>Spawn Rules (Detailed)</h2>
+        
+        <h3>New Character Creation</h3>
+        
+        <p>When a player creates a new character:</p>
+        <ul>
+            <li>Character spawns in the current Capital city</li>
+            <li>Spawns at a designated "arrival point" (inn, gate, town square)</li>
+            <li>Is automatically declared a resident of that city</li>
+            <li>Subject to that city's laws and taxes immediately</li>
+        </ul>
+        
+        <h3>Death and Respawn</h3>
+        
+        <p><strong>This is a permadeath shard.</strong> Characters do not respawn after death.</p>
+        
+        <p>Capital status only affects initial character creation, not resurrection (which does not exist).</p>
+        
+        <h3>What If There Is No Capital Above Threshold?</h3>
+        
+        <p><strong>Britain is the failsafe.</strong></p>
+        
+        <p>If no city meets the Capital threshold (40+ residents):</p>
+        <ul>
+            <li>New players spawn in Britain by default</li>
+            <li>Britain retains Capital status until another city qualifies</li>
+            <li>This ensures new players always have a spawn point</li>
+        </ul>
+        
+        <h2>Migration Pressure from Spawn Gravity</h2>
+        
+        <p>Capital status creates self-reinforcing migration loops:</p>
+        
+        <h3>Positive Feedback Loop (Growth)</h3>
+        
+        <ol>
+            <li>City gains residents</li>
+            <li>Crosses 40-resident threshold</li>
+            <li>Becomes Capital</li>
+            <li>New players spawn there</li>
+            <li>Population increases further</li>
+            <li>City strengthens</li>
+        </ol>
+        
+        <h3>Negative Feedback Loop (Decline)</h3>
+        
+        <ol>
+            <li>Capital oppresses residents</li>
+            <li>Residents migrate to rival city</li>
+            <li>Population drops below threshold</li>
+            <li>Loses Capital status</li>
+            <li>New players stop arriving</li>
+            <li>City weakens further</li>
+        </ol>
+        
+        <p><strong>This makes governance matter.</strong> Rulers who fail to retain residents lose everything.</p>
+        
+        <h2>Common Questions</h2>
+        
+        <h3>Q: Can I choose where I spawn as a new character?</h3>
+        <p><strong>A:</strong> No. You spawn in the current Capital. You may migrate immediately after, but initial spawn is automatic.</p>
+        
+        <h3>Q: If Britain loses Capital status, what happens to existing residents?</h3>
+        <p><strong>A:</strong> Nothing. They remain residents of Britain. They can stay or migrate as they choose.</p>
+        
+        <h3>Q: Can a city claim Capital status through conquest?</h3>
+        <p><strong>A:</strong> Not mechanically. Capital status is determined by resident count. However, a city might politically claim to be "the true Capital" and enforce that through violence.</p>
+        
+        <h3>Q: What if the Capital is hostile to new players?</h3>
+        <p><strong>A:</strong> They spawn there anyway. This creates drama — new players must navigate a dangerous regime, seek refuge, or adapt. It's content, not a problem.</p>
+        
+        <h3>Q: Can there be rotating Capitals?</h3>
+        <p><strong>A:</strong> Only if population naturally shifts. There is no timer or rotation system — only population counts.</p>
+        
+        <h3>Q: Does the Capital pay higher upkeep costs?</h3>
+        <p><strong>A:</strong> No. There is no mechanical penalty or bonus for being Capital. The consequences are entirely political.</p>
+        
+        <h2>Design Intent</h2>
+        
+        <p>Capital status is the bridge between mechanical systems and political narrative.</p>
+        
+        <ul>
+            <li><strong>Spawn gravity</strong> ensures the Capital matters mechanically</li>
+            <li><strong>Population threshold</strong> ensures only stable cities can claim it</li>
+            <li><strong>Automatic transition</strong> removes admin from the equation</li>
+            <li><strong>No bonuses</strong> keeps it purely political, not mechanical</li>
+            <li><strong>Britain failsafe</strong> prevents new player lockout</li>
+        </ul>
+        
+        <div class="quote-simple">
+            <strong>Capital status is not a reward. It is a target.</strong>
+        </div>
+        
+        <h2>Historical Parallels</h2>
+        
+        <p>This mirrors real-world capital shifts:</p>
+        <ul>
+            <li><strong>Rome → Constantinople</strong> — Population and power migrated east</li>
+            <li><strong>Old Delhi → New Delhi</strong> — Centers of governance shift with demographics</li>
+            <li><strong>Multiple Chinese capitals</strong> — Dynasties moved power repeatedly</li>
+            <li><strong>St. Petersburg → Moscow</strong> — Capitals shifted with political tides</li>
+        </ul>
+        
+        <p>None of these were "voted on." They happened because people and power moved.</p>
+        
+        <p><strong>Your system models this perfectly.</strong></p>
+        
+        <h2>See Also</h2>
+        
+        <ul>
+            <li><a href="city-residency.html" style="color: var(--accent);">City Residency & Civic Belonging</a> — How population is counted</li>
+            <li><a href="city-activation.html" style="color: var(--accent);">City Activation & Political Dormancy</a> — Thresholds and city states</li>
+            <li><a href="capital-recognition.html" style="color: var(--accent);">Capital Recognition System</a> — Ideological layer of capital status</li>
+            <li><a href="fealty-sovereignty.html" style="color: var(--accent);">Fealty & Sovereignty</a> — What Capitals can demand from other cities</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="city-activation.html" style="color: var(--gold);">← City Activation</a> | <a href="fealty-sovereignty.html" style="color: var(--gold);">Fealty & Sovereignty →</a></p>
+    </footer>
+</body>
+</html>
