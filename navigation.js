@@ -6,7 +6,7 @@
     // Define which pages belong to which dropdown for active state
     const rolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'claimant.html', 'steward.html', 'master-treasury.html', 'guards.html', 'coroner.html', 'executioner.html', 'warden.html'];
     const systemsPages = ['succession.html', 'coronation.html', 'permadeath-downed.html', 'execution-mechanics.html', 'jail.html', 'how-taxes.html', 'salary-system.html', 'housing.html', 'royal-tenure.html', 'property.html', 'bounty.html', 'seat-system.html'];
-    const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
+    const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'britain-factions.html', 'new-player-experience.html'];
     const guildsFactionsPages = ['guilds.html', 'factions.html'];
     const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html'];
     
@@ -26,6 +26,7 @@
             <div class="nav-dropdown-content">
                 <a href="philosophy.html">Server Philosophy</a>
                 <a href="britain-sole-civic.html">Britain as the Sole Civic System</a>
+                <a href="britain-factions.html">Britain's Relationship with Factions</a>
                 <a href="new-player-experience.html">Re-Imagining the New Player Experience</a>
             </div>
         </div>
