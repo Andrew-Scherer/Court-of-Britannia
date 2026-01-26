@@ -4,18 +4,34 @@
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     
     // Define which pages belong to which dropdown for active state
-    const officialRolesPages = ['roles.html', 'becoming-king.html', 'heir.html', 'regent.html', 'steward.html', 'master-treasury.html', 'guards.html', 'military.html', 'diplomacy.html', 'coroner.html', 'executioner.html', 'warden.html', 'high-emissary.html', 'envoy.html'];
+    const royalRolesPages = ['becoming-king.html', 'regent.html', 'heir.html'];
+    const nobleRolesPages = ['master-treasury.html', 'high-emissary.html', 'steward.html', 'guards.html', 'military.html'];
+    const guardRolesPages = ['guards.html'];
+    const militaryRolesPages = ['military.html'];
+    const diplomacyRolesPages = ['high-emissary.html', 'envoy.html', 'diplomacy.html'];
+    const propertyRolesPages = ['steward.html'];
+    const lawJusticePages = ['warden.html', 'coroner.html', 'executioner.html'];
+    const wildCardRolesPages = ['wildcard-roles.html'];
+    const officialRolesPages = ['roles.html', ...royalRolesPages, ...nobleRolesPages, ...guardRolesPages, ...militaryRolesPages, ...diplomacyRolesPages, ...propertyRolesPages, ...lawJusticePages, ...wildCardRolesPages];
     const politicalSystemsPages = ['succession.html', 'coronation.html', 'royal-tenure.html', 'seat-system.html'];
     const justiceSystemsPages = ['execution-mechanics.html', 'jail.html', 'bounty.html'];
     const cityServicesPages = ['salary-system.html', 'housing.html', 'property.html'];
     const systemsPages = [...politicalSystemsPages, ...justiceSystemsPages, ...cityServicesPages];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
     const taxationPages = ['economic-philosophy.html', 'crown-taxation.html', 'guild-faction-economy.html', 'crown-liens.html', 'seizure-enforcement.html', 'tax-roles.html'];
-    const guildsFactionsPages = ['guilds.html', 'factions.html', 'faction-guild-banking.html', 'faction-guild-upkeep.html', 'britain-factions.html', 'faction-interactions.html', 'player-controlled-vendors.html'];
+    const guildsFactionsPages = ['guilds.html', 'emergent-factions.html', 'guild-banking.html', 'guild-upkeep.html', 'crown-recognition.html', 'guild-interactions.html', 'player-controlled-vendors.html', 'historic-property.html'];
     const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html', 'faction-standing-chronicle.html'];
     
     // Check if current page is in a dropdown
     const isOfficialRolesActive = officialRolesPages.includes(currentPage);
+    const isRoyalRolesActive = royalRolesPages.includes(currentPage);
+    const isNobleRolesActive = nobleRolesPages.includes(currentPage);
+    const isGuardRolesActive = guardRolesPages.includes(currentPage);
+    const isMilitaryRolesActive = militaryRolesPages.includes(currentPage);
+    const isDiplomacyRolesActive = diplomacyRolesPages.includes(currentPage);
+    const isPropertyRolesActive = propertyRolesPages.includes(currentPage);
+    const isLawJusticeActive = lawJusticePages.includes(currentPage);
+    const isWildCardRolesActive = wildCardRolesPages.includes(currentPage);
     const isSystemsActive = systemsPages.includes(currentPage);
     const isPoliticalSystemsActive = politicalSystemsPages.includes(currentPage);
     const isJusticeSystemsActive = justiceSystemsPages.includes(currentPage);
@@ -38,14 +54,15 @@
             </div>
         </div>
         <div class="nav-dropdown">
-            <a ${isGuildsFactionsActive ? 'class="active"' : ''}>Guilds and Factions ▼</a>
+            <a ${isGuildsFactionsActive ? 'class="active"' : ''}>Guilds ▼</a>
             <div class="nav-dropdown-content">
-                <a href="guilds.html">Guilds</a>
-                <a href="factions.html">Factions</a>
-                <a href="faction-guild-banking.html">Faction & Guild Banking</a>
-                <a href="faction-guild-upkeep.html">Faction & Guild Upkeep</a>
-                <a href="britain-factions.html">Britain's Relationship with Factions</a>
-                <a href="faction-interactions.html">Faction Interactions with Other Factions</a>
+                <a href="guilds.html">Guilds (Core System)</a>
+                <a href="emergent-factions.html">Emergent Factions</a>
+                <a href="historic-property.html">Historic Property</a>
+                <a href="guild-banking.html">Guild Banking</a>
+                <a href="guild-upkeep.html">Guild Upkeep</a>
+                <a href="crown-recognition.html">Crown Recognition</a>
+                <a href="guild-interactions.html">Guild Interactions</a>
                 <a href="player-controlled-vendors.html">Player Controlled Vendors</a>
             </div>
         </div>
@@ -64,19 +81,69 @@
             <a ${isOfficialRolesActive ? 'class="active"' : ''}>Official Roles ▼</a>
             <div class="nav-dropdown-content">
                 <a href="roles.html">All Official Roles</a>
-                <a href="becoming-king.html">King</a>
-                <a href="heir.html">Heir Presumptive</a>
-                <a href="regent.html">Regent</a>
-                <a href="steward.html">Land Commissioner & Steward</a>
-                <a href="master-treasury.html">Master of the Treasury</a>
-                <a href="guards.html">Guards</a>
-                <a href="military.html">Military</a>
-                <a href="diplomacy.html">Diplomacy</a>
-                <a href="warden.html">Warden of the Dungeons</a>
-                <a href="coroner.html">Coroner</a>
-                <a href="executioner.html">Executioner</a>
-                <a href="high-emissary.html">High Emissary</a>
-                <a href="envoy.html">Envoy</a>
+                <div class="nav-dropdown-nested">
+                    <a ${isRoyalRolesActive ? 'class="active"' : ''}>Royal Roles ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="becoming-king.html">King</a>
+                        <a href="regent.html">Regent</a>
+                        <a href="heir.html">Heir Presumptive</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown-nested">
+                    <a ${isNobleRolesActive ? 'class="active"' : ''}>Noble Roles ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="master-treasury.html">Master of the Treasury</a>
+                        <a href="high-emissary.html">High Emissary</a>
+                        <a href="steward.html">Land Commissioner</a>
+                        <a href="guards.html">Marshal of the Guard</a>
+                        <a href="military.html">High Commander of Britain</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown-nested">
+                    <a href="guards.html" ${isGuardRolesActive ? 'class="active"' : ''}>Civic Guard ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="marshal-guard.html">Marshal of the Guard</a>
+                        <a href="captain-guard.html">Captain of the Guard</a>
+                        <a href="city-guard.html">City Guard</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown-nested">
+                    <a href="military.html" ${isMilitaryRolesActive ? 'class="active"' : ''}>Royal Army ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="high-commander.html">Lord of the Royal Army</a>
+                        <a href="field-commander.html">Captain of the Crown</a>
+                        <a href="soldier.html">Knight of Britannia</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown-nested">
+                    <a href="diplomacy.html" ${isDiplomacyRolesActive ? 'class="active"' : ''}>Diplomacy Roles ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="high-emissary.html">Emissary of the Crown</a>
+                        <a href="envoy.html">Royal Envoy</a>
+                        <a href="diplomat.html">Crown Diplomat</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown-nested">
+                    <a ${isPropertyRolesActive ? 'class="active"' : ''}>Property Roles ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="steward.html">Land Commissioner</a>
+                        <a href="steward.html">Steward</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown-nested">
+                    <a ${isLawJusticeActive ? 'class="active"' : ''}>Law and Justice ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="warden.html">Warden of the Dungeon</a>
+                        <a href="coroner.html">Coroner of the Crown</a>
+                        <a href="executioner.html">Executioner of the Crown</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown-nested">
+                    <a ${isWildCardRolesActive ? 'class="active"' : ''}>Wildcard Roles ▶</a>
+                    <div class="nav-dropdown-nested-content">
+                        <a href="wildcard-roles.html">Wildcard Roles</a>
+                    </div>
+                </div>
             </div>
         </div>
         <a href="claimant.html" ${currentPage === 'claimant.html' ? 'class="active"' : ''}>Claimants</a>

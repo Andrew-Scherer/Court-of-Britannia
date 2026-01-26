@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guild Interactions - Kingdoms of Britannia</title>
+    <link rel="stylesheet" href="nav-styles.css">
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        h4 { color: var(--text); margin: 1rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .rule-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--gold); }
+        .rule-box h4 { color: var(--gold); margin-top: 0; }
+        .mode-box { background: var(--bg-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--accent); }
+        .mode-box h3 { color: var(--accent); margin-top: 0; }
+        .canon-box { background: rgba(212, 175, 55, 0.1); border: 2px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .canon-box h4 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        .highlight { color: var(--accent); font-weight: bold; }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>⚔️ Guild Interactions</h1>
+        <p>Simple Mechanics, No Adjudication — Guilds Define Their Own Relationships</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>The Core Principle</h2>
+        
+        <div class="canon-box">
+            <h4>Guilds are free to define their relationships with each other using simple mechanics; no system exists to resolve or sanitize the consequences of those choices.</h4>
+        </div>
+        
+        <h2>What Guilds Can Do</h2>
+        
+        <p>Guilds interact using <strong>direct, bilateral mechanics</strong>:</p>
+        
+        <div class="rule-box">
+            <h4>Available Guild Mechanics</h4>
+            <ul>
+                <li><strong>Declare war</strong> — Bilateral hostility state</li>
+                <li><strong>Declare alliance</strong> — Bilateral cooperation signal</li>
+                <li><strong>Maintain independent relationships</strong> — Each guild pair has its own status</li>
+                <li><strong>Change relationships instantly</strong> — No cooldowns, no permissions required</li>
+            </ul>
+            
+            <p><strong>Critically:</strong></p>
+            <ul>
+                <li>Guild A can ally with Guild B</li>
+                <li>Guild A can war with Guild C</li>
+                <li>Guild A can do both <em>simultaneously</em></li>
+                <li>Guilds can war <em>despite sharing a faction banner</em></li>
+                <li>Guilds can ally <em>without sharing a faction banner</em></li>
+            </ul>
+        </div>
+        
+        <p><strong>Faction membership does not override guild relationships.</strong></p>
+        
+        <p>Alignment ≠ behavior. Banner ≠ trust. War ≠ total opposition.</p>
+        
+        <h2>What Guilds Cannot Do</h2>
+        
+        <div class="warning">
+            <p><strong>You explicitly do NOT get:</strong></p>
+            <ul>
+                <li>❌ Binding treaties</li>
+                <li>❌ Enforced arbitration</li>
+                <li>❌ Guild courts</li>
+                <li>❌ Formalized diplomacy layers</li>
+                <li>❌ Multi-party recognition systems</li>
+                <li>❌ Fealty trees</li>
+            </ul>
+            
+            <p><strong>Why these are excluded:</strong> They would create a parallel civic system, undermining Britain as the sole source of law.</p>
+        </div>
+        
+        <h2>The Key Distinction</h2>
+        
+        <div class="canon-box">
+            <h4>This Is NOT "No Mechanics"</h4>
+            <p>It's: <strong>"No higher-order civic system."</strong></p>
+            
+            <p><strong>Allowed:</strong> Direct, bilateral declarations between guilds</p>
+            <p><strong>Disallowed:</strong> Meta-systems that sit above guilds and adjudicate outcomes</p>
+        </div>
+        
+        <p>Guilds are <strong>pre-civic</strong>. They existed before law. War and alliance are ancient.</p>
+        
+        <p>What's missing is not the ability to interact — it's the ability to appeal to authority <em>above Britain</em>.</p>
+        
+        <h2>How Guilds Interact (In Practice)</h2>
+        
+        <p><strong>Important:</strong> Factions do not act. <em>Guilds act.</em> Factions are context, not actors.</p>
+        
+        <div class="mode-box">
+            <h3>1️⃣ Territorial Conflict (The Primary Mode)</h3>
+            
+            <p>Guilds interact first and foremost through space.</p>
+            
+            <ul>
+                <li>Raids</li>
+                <li>Sieges</li>
+                <li>Ambushes</li>
+                <li>Occupation attempts</li>
+                <li>Harassment of vendors or supply lines</li>
+            </ul>
+            
+            <p>The mechanics involved are:</p>
+            <ul>
+                <li>Upkeep</li>
+                <li>Death</li>
+                <li>Loss of control</li>
+            </ul>
+            
+            <p><em>If a guild can't defend or afford its land, it loses it.</em></p>
+            
+            <p><strong>That's the interaction.</strong></p>
+        </div>
+        
+        <div class="mode-box">
+            <h3>2️⃣ Economic Pressure</h3>
+            
+            <p>Guild A can hurt Guild B by:</p>
+            
+            <ul>
+                <li>Undercutting vendors</li>
+                <li>Blocking trade routes</li>
+                <li>Forcing higher security costs</li>
+                <li>Targeting crafters or suppliers</li>
+                <li>Driving up upkeep indirectly through conflict</li>
+            </ul>
+            
+            <p>There is no "economic warfare button."<br>
+            There is only <span class="highlight">making existence more expensive</span>.</p>
+            
+            <p><strong>Gold is the battlefield.</strong></p>
+        </div>
+        
+        <div class="mode-box">
+            <h3>3️⃣ Alliances (Bilateral and Situational)</h3>
+            
+            <p>Guilds can:</p>
+            
+            <ul>
+                <li>Coordinate attacks</li>
+                <li>Share intelligence</li>
+                <li>Temporarily cooperate</li>
+                <li>Betray each other instantly</li>
+            </ul>
+            
+            <p><strong>Alliances exist outside the faction system:</strong></p>
+            <ul>
+                <li>Guild alliances are bilateral (A ↔ B)</li>
+                <li>Faction membership is collective ("We fly this banner")</li>
+                <li>Neither overrides the other</li>
+            </ul>
+            
+            <p><em>This keeps alliances fragile and real.</em></p>
+            
+            <p><strong>Critical insight:</strong> "The enemy of my enemy is my friend" can exist <em>within or across faction lines</em>.</p>
+        </div>
+        
+        <div class="mode-box">
+            <h3>4️⃣ Britain as the Interpreter</h3>
+            
+            <p><strong>This is the critical layer.</strong></p>
+            
+            <p>Guild conflict matters when Britain reacts.</p>
+            
+            <p><strong>Britain is:</strong></p>
+            <ul>
+                <li>An amplifier</li>
+                <li>A reframer</li>
+                <li>A memory</li>
+            </ul>
+            
+            <p><strong>Britain is NOT:</strong></p>
+            <ul>
+                <li>A permission gate</li>
+                <li>A mediator</li>
+                <li>A referee</li>
+            </ul>
+            
+            <h4>Examples:</h4>
+            <ul>
+                <li>Attacking a recognized guild risks outlawry</li>
+                <li>Harboring an outlawed guild risks sanctions</li>
+                <li>Repeated aggression may cause Britain to:
+                    <ul>
+                        <li>Withdraw recognition</li>
+                        <li>Refuse trade</li>
+                        <li>Justify bounties</li>
+                        <li>Endorse retaliation</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p><strong>Britain doesn't mediate.<br>
+            Britain interprets.</strong></p>
+            
+            <p>Guild A doesn't need permission to attack Guild B.<br>
+            But <span class="highlight">Britain decides what that attack means politically</span>.</p>
+        </div>
+        
+        <div class="mode-box">
+            <h3>5️⃣ Legitimacy Warfare (Soft Power)</h3>
+            
+            <p>Guilds fight over:</p>
+            
+            <ul>
+                <li>Being recognized by Britain</li>
+                <li>Staying recognized</li>
+                <li>Getting rivals outlawed</li>
+            </ul>
+            
+            <p>So guild interaction often looks like:</p>
+            
+            <p><em>"We don't need to destroy them — we just need Britain to stop recognizing them."</em></p>
+            
+            <p>This turns the following into guild weapons:</p>
+            <ul>
+                <li>Assassination</li>
+                <li>False-flag attacks</li>
+                <li>Evidence planting</li>
+                <li>Narrative control</li>
+            </ul>
+            
+            <p><strong>Again: no adjudication system required.<br>
+            Only visibility and interpretation.</strong></p>
+        </div>
+        
+        <div class="mode-box">
+            <h3>6️⃣ Outlaw vs Outlaw Dynamics</h3>
+            
+            <p>Outlawed guilds are the wild west.</p>
+            
+            <ul>
+                <li>No legal protection from Britain</li>
+                <li>No appeal process</li>
+                <li>Violence is expected</li>
+                <li>Reputation matters more than law</li>
+            </ul>
+            
+            <p>This creates:</p>
+            <ul>
+                <li>Pirate politics</li>
+                <li>Criminal syndicate rivalries</li>
+                <li>Monster guilds fighting over territory</li>
+            </ul>
+            <p><em>Britain doesn't care unless it spills inward.</em></p>
+        </div>
+        
+        <h2>The Relationship Between Guilds and Factions</h2>
+        
+        <div class="rule-box">
+            <h4>Remember the Hierarchy</h4>
+            <p><strong>Guilds act.<br>
+            Britain interprets.<br>
+            Factions contextualize.</strong></p>
+            
+            <p>Factions are <em>one alignment signal</em>, not the only one.</p>
+            
+            <p>A faction banner tells you:</p>
+            <ul>
+                <li>"These guilds claim shared identity"</li>
+            </ul>
+            
+            <p>It does NOT tell you:</p>
+            <ul>
+                <li>Whether they actually cooperate</li>
+                <li>Whether they're at war internally</li>
+                <li>Whether they have external alliances</li>
+            </ul>
+        </div>
+        
+        <h2>Why This Design Works</h2>
+        
+        <ul>
+            <li>✅ Alliances are real because they're fragile</li>
+            <li>✅ Betrayal is easy and meaningful</li>
+            <li>✅ Power comes from coordination, not UI</li>
+            <li>✅ Britain stays central without micromanaging</li>
+            <li>✅ Players create politics instead of navigating menus</li>
+            <li>✅ "The enemy of my enemy is my friend" emerges naturally</li>
+            <li>✅ Faction banners can mask internal wars or external alliances</li>
+        </ul>
+        
+        <p><strong>This is how UO should feel.</strong></p>
+        
+        <h2>The Clean Rule</h2>
+        
+        <div class="canon-box">
+            <h4>Lock This In</h4>
+            <p style="font-size: 1.2rem; color: var(--gold); text-align: center; margin: 1.5rem 0;">
+                <strong>Guilds define relationships directly.<br>
+                No system exists to resolve or sanitize the consequences.<br>
+                Britain interprets what those relationships mean politically.</strong>
+            </p>
+            
+            <p>Or even simpler:</p>
+            
+            <p style="font-size: 1.3rem; color: var(--gold); text-align: center; margin: 1.5rem 0;">
+                <strong>Guilds fight.<br>Britain remembers.</strong>
+            </p>
+        </div>
+        
+        <h2>Final Sanity Check</h2>
+        
+        <div class="rule-box">
+            <h4>Your World Now Has:</h4>
+            <ul>
+                <li><strong>One source of law:</strong> Britain</li>
+                <li><strong>Many sources of power:</strong> Guilds (territorial, economic, military)</li>
+                <li><strong>One universal currency of survival:</strong> Gold</li>
+                <li><strong>One universal currency of legitimacy:</strong> Recognition</li>
+                <li><strong>Simple relationship mechanics:</strong> War and alliance</li>
+                <li><strong>Zero adjudication layers:</strong> No treaties, courts, or binding arbitration</li>
+            </ul>
+        </div>
+        
+        <h2>Summary</h2>
+        
+        <p>Guilds interact with each other using simple, direct mechanics: war declarations, alliances, territorial conflict, economic pressure, and violence. These relationships exist independently of faction membership—guilds can ally across faction lines or war within them.</p>
+        
+        <p>What does NOT exist: treaties, courts, arbitration, or formalized diplomatic systems. No mechanism exists to resolve or sanitize the consequences of guild choices.</p>
+        
+        <p>Britain interprets guild actions politically—recognition, toleration, or outlawry—which reframes what those actions mean. Britain is an amplifier and memory, not a mediator or referee.</p>
+        
+        <p><strong>Guilds are free to define their relationships. No system exists to resolve the consequences. Britain decides what those relationships mean.</strong></p>
+        
+        <p style="font-size: 1.1rem; color: var(--gold); text-align: center; margin: 2rem 0;">
+            <strong>Guilds fight. Britain remembers.</strong>
+        </p>
+    </main>
+    
+    <footer>
+        <p><a href="emergent-factions.html" style="color: var(--gold);">← Emergent Factions</a> | <a href="crown-recognition.html" style="color: var(--gold);">Crown Recognition →</a></p>
+    </footer>
+</body>
+</html>
