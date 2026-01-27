@@ -2,6 +2,7 @@
 
 - [[Home]]
 - [[Why Play This?|Why-Play]]
+- **[[📝 Editing Rules|EDITING_RULES]]**
 
 **Philosophy**
 - [[Server Philosophy|Philosophy]]
