@@ -609,3 +609,5 @@ Can *you* think of unique professions that would fit within this world, thanks t
 - [[Factions|Emergent-Factions]] — Pre-placed sovereign entities
 - [[Faction & Guild Banking|Guild-Banking]] — Economic infrastructure for organizations
 - [[Guards]] — Britain's law enforcement
+
+
