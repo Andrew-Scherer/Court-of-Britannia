@@ -17,6 +17,7 @@
 - [[Crown Recognition]]
 - [[Guild Interactions]]
 - [[Player Controlled Vendors|Player-Controlled-Vendors]]
+- [[Settlement Taxation|Settlement-Taxation]]
 
 **Factions**
 - [[Emergent Factions]]
