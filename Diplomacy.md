@@ -19,7 +19,7 @@
 
 > *Britain's diplomatic corps exists to make state intent legible, contestable, and consequential without immediate resort to violence.*
 
-Where Guards enforce within Britain and the Military projects force beyond its walls, Diplomacy projects Britain's voice. The diplomatic hierarchy exists to carry official proclamations, witness responses, and create the documented record that turns political conflict into actionable consequence.
+Where Guards enforce within Britain, Diplomacy projects Britain's voice beyond its walls. The diplomatic hierarchy exists to carry official proclamations, witness responses, and create the documented record that turns political conflict into actionable consequence.
 
 Diplomacy is not negotiation. Diplomats do not broker deals or make promises. They transmit state intent as declared by the Crown.
 
@@ -40,7 +40,6 @@ Diplomats do not answer to:
 
 - Magistrates (they operate beyond courtroom law)
 - Guards (diplomacy precedes enforcement)
-- The Military (though coordination is expected)
 
 
 ## Hierarchy and Appointments
@@ -108,7 +107,7 @@ Diplomats conduct the daily work of Britain's external presence:
 - Clarify Britain's position when questioned
 - Create the initial contact points between Britain and factions
 
-Diplomats operate in spaces where Guards have no authority and Military presence would escalate. They are the visible face of Britain in faction territories, relying on diplomatic protection and Britain's reputation to stay safe.
+Diplomats operate in spaces where Guards have no authority. They are the visible face of Britain in faction territories, relying on diplomatic protection and Britain's reputation to stay safe.
 
 That protection is political, not mechanical — if Britain weakens or Envoys abuse their positions, diplomats become vulnerable.
 
@@ -179,7 +178,7 @@ Tax enforcement is not merely collection—it is a political intermediary functi
 - Delivers warnings and final notices before force is applied
 - Offers opportunities for negotiation before escalation
 - Records refusals and denials of authority (which inform future Crown action)
-- Creates the documented trail that justifies seizure or military intervention
+- Creates the documented trail that justifies seizure or further action
 
 A skilled diplomat resolves debt through dialogue. A weak diplomat escalates conflict unnecessarily. A corrupt diplomat becomes a political liability.
 
@@ -190,7 +189,7 @@ A skilled diplomat resolves debt through dialogue. A weak diplomat escalates con
 **See Also:** [[Crown Taxation System|Crown-Taxation]], [[Seizure & Enforcement|Seizure-Enforcement]], [[Tax-Related Roles|Tax-Roles]]
 
 
-## Guards vs Military vs Diplomacy: Critical Distinctions
+## Guards vs Diplomacy: Critical Distinctions
 
 
 > **Note**
@@ -203,15 +202,6 @@ A skilled diplomat resolves debt through dialogue. A weak diplomat escalates con
 
 
 > **Note**
-> **Military**
->
-> - External force projection
-> - Lethal combat
-> - Occupation and control
-> - Strategic violence
-
-
-> **Note**
 > **Diplomacy**
 >
 > - External relationship management
@@ -219,7 +209,7 @@ A skilled diplomat resolves debt through dialogue. A weak diplomat escalates con
 > - Non-violent presence
 > - Protection-based authority
 
-**Key Interaction:** Diplomacy creates the conditions where Guards and Military can act with justification—or makes their intervention unnecessary. When diplomacy delivers an ultimatum, enforcement waits. When diplomacy is attacked, war follows.
+**Key Interaction:** Diplomacy creates the conditions where Guards can act with justification—or makes their intervention unnecessary. When diplomacy delivers an ultimatum, enforcement waits. When diplomacy is attacked, consequences follow.
 
 
 ## Diplomatic Protection and Its Limits
@@ -303,19 +293,6 @@ Breaches of agreements between Britain and factions. Diplomats document the viol
 The King sets policy; diplomacy transmits it. The Emissary of the Crown advises on faction matters but does not create foreign policy independently. When the Crown and Emissary of the Crown disagree on faction strategy, diplomacy becomes paralyzed or acts without authorization.
 
 
-### Diplomacy and the Military
-
-Diplomats prefer words. The Military prefers force. Tension arises when:
-
-
-- Diplomats claim more time will resolve a crisis; Military sees delay as weakness
-- Military action undermines ongoing diplomatic efforts
-- Diplomats demand restraint; Military demands freedom of action
-- Each blames the other when strategies fail
-
-A Emissary of the Crown aligned with the Lord of the Royal Army presents a unified "carrot and stick" approach. A fractured relationship produces mixed signals that factions exploit.
-
-
 ### Diplomacy and Guards
 
 Diplomats request Guards show restraint when enforcing decrees against allied factions or escalate against hostile ones. Guards may comply or refuse based on their assessment of lawfulness and political loyalty.
@@ -332,12 +309,12 @@ Diplomats gather information through observation, conversation, and presence:
 - Economic capabilities and vulnerabilities
 - Popular sentiment toward Britain
 
-This intelligence informs Crown policy, military deployments, and guard readiness. A diplomat who suppresses or fabricates intelligence can engineer crises or blind Britain to threats.
+This intelligence informs Crown policy and guard readiness. A diplomat who suppresses or fabricates intelligence can engineer crises or blind Britain to threats.
 
 
 ## Succession Crises and Diplomatic Fracture
 
-When Britain's authority fragments, the diplomatic corps faces the same choice as Guards and Military: which claimant to recognize?
+When Britain's authority fragments, the diplomatic corps faces the same choice as Guards: which claimant to recognize?
 
 Diplomatic recognition is constitutive: the claimant recognized by Britain's diplomats in faction territories gains external legitimacy. If diplomats split their recognition between rival claimants, they prolong the succession crisis by preventing either from consolidating international support.
 
@@ -354,7 +331,7 @@ Diplomatic recognition is constitutive: the claimant recognized by Britain's dip
 
 ### Consequences of Diplomatic Defection
 
-Unlike military coups, diplomatic defection is subtle:
+Diplomatic defection is subtle:
 
 
 - Factions receive mixed signals about Britain's intentions
@@ -374,14 +351,6 @@ If Guards are about:
 - Force
 - Visibility
 - Restraint
-
-And Military is about:
-
-
-- Survival
-- Projection
-- Lethality
-- Strategic violence
 
 Diplomacy is about:
 
@@ -428,5 +397,4 @@ Diplomatic players get:
 - [[Britain's Relationship with Factions|Crown-Recognition]] — Recognition status system
 - [[Faction Interactions|Guild-Interactions]] — How factions engage with each other and Britain
 - [[Guards|Guards]] — Internal enforcement when diplomacy fails
-- [[Military|Military]] — External force when diplomacy fails
 - [[Succession|Succession]] — Authority conflicts during regime transitions

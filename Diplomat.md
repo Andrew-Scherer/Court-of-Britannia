@@ -22,7 +22,7 @@
 
 Diplomats conduct the daily work of Britain's external presence. They deliver messages and proclamations, observe and report on faction activities, attend faction events as Britain's representatives, and create the initial contact points between Britain and factions.
 
-Diplomats operate in spaces where Guards have no authority and Military presence would escalate. They are the visible face of Britain in faction territories, relying on diplomatic protection and Britain's reputation to stay safe.
+Diplomats operate in spaces where Guards have no authority. They are the visible face of Britain in faction territories, relying on diplomatic protection and Britain's reputation to stay safe.
 
 
 > They are not powerful. They are dangerous to touch.
@@ -108,7 +108,7 @@ Diplomats have no enforcement powers in faction spaces:
 - Cannot make arrests
 - Cannot use force
 - Cannot seize property
-- Cannot command Guards or Military outside Britain
+- Cannot command Guards outside Britain
 
 **Their authority is political, not mechanical.** Factions listen because Britain can retaliate if they don't—or they ignore diplomats when Britain cannot.
 
@@ -143,21 +143,13 @@ Diplomats report to Envoys who:
 The Emissary of the Crown sets overall diplomatic strategy. While Diplomats rarely interact directly with the Emissary of the Crown, their work implements the Emissary of the Crown's vision for Britain's external relationships.
 
 
-### Guards and Military
+### Guards
 
-Diplomats coordinate with Guards and Military when:
+Diplomats coordinate with Guards when:
 
 
 - **Tax enforcement escalates** — Guards provide backing for seizures
-- **Escort is needed** — Military protects diplomats traveling through hostile territories
-- **Intelligence is critical** — Diplomats warn of imminent attacks
-
-Tension arises when:
-
-
-- Diplomats claim more time will resolve a crisis; Military sees delay as weakness
-- Military action undermines ongoing diplomatic efforts
-- Diplomats demand restraint; Military demands freedom of action
+- **Intelligence is critical** — Diplomats warn of imminent threats
 
 
 ## Political Temptations and Risks
@@ -175,7 +167,7 @@ Diplomats assigned to specific factions over time may develop loyalty to those f
 
 
 > **❗ Note**
-> Unlike military coups, diplomatic defection operates through:
+> Diplomatic defection operates through:
 > - Selective reporting (suppressing unfavorable intelligence)
 > - Delayed deliveries (buying factions time to prepare)
 > - Sympathetic interpretation (presenting faction positions favorably)
@@ -197,7 +189,7 @@ Diplomats who suppress or fabricate intelligence can:
 
 ## Succession Crises
 
-When Britain's authority fragments, Diplomats face the same choice as Guards and Military: **Which claimant do we recognize?**
+When Britain's authority fragments, Diplomats face the same choice as Guards: **Which claimant do we recognize?**
 
 Diplomatic recognition in faction territories is constitutive—it creates external legitimacy:
 

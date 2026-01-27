@@ -119,7 +119,7 @@ In practice, factions will naturally develop:
 
 - Founding guilds with prestige
 - Charismatic leaders
-- Military coordinators
+- Combat coordinators
 - Diplomatic envoys
 - Loudmouths everyone ignores
 

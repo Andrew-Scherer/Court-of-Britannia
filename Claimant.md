@@ -16,7 +16,7 @@ A **Claimant** is any player who:
 - Believes they have a **legitimate claim** to the throne (merit, conquest, etc.)
 - Challenges the official Heir or other claimants for succession rights
 - Has **NO official endorsement** from the previous King
-- Must **prove their claim through action** — military force, political maneuvering, or assassination
+- Must **prove their claim through action** — force, political maneuvering, or assassination
 
 Claimants emerge especially during **succession crises** — when a King dies without an Heir, or when the Heir is weak, contested, or blocked from coronation.
 
@@ -68,9 +68,9 @@ Then rival Claimants may challenge their right to the throne.
 Some Claimants argue they **deserve** the throne based on:
 
 
-- Military prowess or conquest
 - Wealth, land ownership, or political influence
 - Service to the realm
+- Combat prowess or successful leadership
 
 
 ### 5. Power Vacuums
@@ -545,12 +545,12 @@ Claimants can gain support by:
 - **Public declarations:** Announce their claim in Discord or in-game, rallying supporters
 
 
-### 4. Military Uprising
+### 4. Armed Uprising
 
 If diplomatic paths fail, Claimants may:
 
 
-- Raise armies to challenge the Heir or Regent
+- Raise forces to challenge the Heir or Regent
 - Siege the coronation site to claim the Crown by force
 - Start a civil war to contest succession
 

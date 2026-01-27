@@ -62,18 +62,12 @@
 - [[Emissary of the Crown|High-Emissary]]
 - [[Land Commissioner & Deputy|Land-Commissioner-Deputy]]
 - [[Marshal of the Guard|Marshal-Guard]]
-- [[High Commander of Britain|High-Commander]]
 
 **Civic Guard**
 - [[Guards]]
 - [[Marshal of the Guard|Marshal-Guard]]
 - [[Captain of the Guard|Captain-Guard]]
 - [[City Guard]]
-
-**Royal Army**
-- [[Military]]
-- [[High Commander|High-Commander]]
-- [[Soldier]]
 
 **Diplomacy Roles**
 - [[Diplomacy]]

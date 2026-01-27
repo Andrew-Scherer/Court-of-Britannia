@@ -404,7 +404,7 @@ Every decision is scrutinized. The public asks:
 > Regent for Louis XV (a child). Held power for years but never attempted to crown himself — shows the restraint path.
 > **Medieval Islamic Atabegs**
 >
-> Military regents who often married into royal families or crowned themselves after securing military loyalty.
+> Regents who often married into royal families or crowned themselves after securing loyalty from armed forces.
 
 
 ## FAQ

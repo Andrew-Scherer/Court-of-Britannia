@@ -61,7 +61,6 @@ When order breaks down, the Marshal:
 
 - Deploys guards to control riots or violence
 - Secures critical locations (castle, treasury, jail)
-- Coordinates with Military if external threats approach the city
 - Implements emergency protocols
 - Reports situation assessments to the Crown
 
@@ -137,16 +136,6 @@ The Marshal can:
 - Cooperate to maintain legitimacy
 
 
-### The Lord of the Royal Army (Military)
-
-**Critical relationship:**
-
-
-- **If aligned** — Britain becomes authoritarian; combined internal + external force under unified command
-- **If opposed** — Britain fractures; guards vs military creates civil conflict risk
-- **If coordinated but independent** — Healthy balance of internal law enforcement and external defense
-
-
 ## Succession Crises and Guard Loyalty
 
 When the King dies or authority is contested, the Marshal faces an impossible choice: **Which claimant do the guards serve?**
@@ -185,7 +174,6 @@ When the King dies or authority is contested, the Marshal faces an impossible ch
 - ❌ Execute prisoners (only the Executioner may carry out capital punishment)
 - ❌ Pardon or release prisoners without Crown or Magistrate authority
 - ❌ Override Magistrate rulings without consequences
-- ❌ Deploy Military forces (that authority belongs to the Lord of the Royal Army)
 - ❌ Make law (the Marshal enforces; the Crown and Magistrate define)
 
 
@@ -213,7 +201,6 @@ The Marshal of the Guard is for players who want:
 - A competent Marshal enables effective rule; a disloyal one becomes the de facto ruler
 - During succession crises, the Marshal's choice often decides outcomes
 - Historical precedent: Those who command armed forces often replace those they serve
-- Alignment with the Lord of the Royal Army creates authoritarian potential; opposition creates civil conflict
 - This is the second most powerful office in Britain after the King
 
 
@@ -223,5 +210,4 @@ The Marshal of the Guard is for players who want:
 - [[Guards Overview|Guards]] — Full guard organization and philosophy
 - [[Captain of the Guard|Captain-Guard]] — Subordinate commanders
 - [[City Guard|City-Guard]] — Individual enforcers
-- [[Lord of the Royal Army of Britain|High-Commander]] — Military counterpart
 - [[Succession|Succession]] — Authority conflicts during transitions

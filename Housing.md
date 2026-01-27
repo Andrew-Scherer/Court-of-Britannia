@@ -327,7 +327,7 @@ Define access by role groups, not individuals:
 | Access Group | Zones Granted |
 |---|---|
 | RoyalFamily | Public, Administrative, Private (royal suite) |
-| RoyalGuard | Public, Military, Administrative (patrol only) |
+| RoyalGuard | Public, Guard zones, Administrative (patrol only) |
 | CastleStaff | Public, servant areas |
 | Council | Public, Administrative |
 | Envoy | Public, guest apartments (time-limited) |

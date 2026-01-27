@@ -52,18 +52,18 @@ Assassins exist because permadeath creates demand:
 
 ## Mercenaries (Organized)
 
-When faction-vs-Crown-vs-guild diplomacy breaks down, organized mercenaries step in to rebalance the scales. Unlike Hired Blades who work solo, mercenary companies operate as guilds or factions—offering military services to the highest bidder.
+When faction-vs-Crown-vs-guild diplomacy breaks down, organized mercenaries step in to rebalance the scales. Unlike Hired Blades who work solo, mercenary companies operate as guilds or factions—offering combat services to the highest bidder.
 
 ### What Mercenary Companies Provide
 
-- **Military force:** Provide troops for sieges, raids, or defensive contracts
-- **Training:** Teach combat skills to guild members or faction soldiers
-- **Strategic counsel:** Advise clients on military tactics and political maneuvering
+- **Organized force:** Provide troops for sieges, raids, or defensive contracts
+- **Training:** Teach combat skills to guild members or faction fighters
+- **Strategic counsel:** Advise clients on combat tactics and political maneuvering
 - **Neutrality (for a price):** Remain uncommitted until paid, allowing smaller factions to punch above their weight
 
 ### Why Mercenaries Matter
 
-In a world where [[Britain's Military|Military]] can refuse orders, where [[Guards]] may side with factions over the Crown, and where guilds rise and fall based on political maneuvering—mercenaries provide a predictable, purchasable solution. They fight for gold, not ideology.
+In a world where [[Guards]] may side with factions over the Crown, and where guilds rise and fall based on political maneuvering—mercenaries provide a predictable, purchasable solution. They fight for gold, not ideology.
 
 **Example Scenario:**
 - A small faction is under threat from a larger rival
@@ -609,4 +609,3 @@ Can *you* think of unique professions that would fit within this world, thanks t
 - [[Factions|Emergent-Factions]] — Pre-placed sovereign entities
 - [[Faction & Guild Banking|Guild-Banking]] — Economic infrastructure for organizations
 - [[Guards]] — Britain's law enforcement
-- [[Military]] — Britain's external force

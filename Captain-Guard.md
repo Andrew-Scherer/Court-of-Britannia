@@ -46,7 +46,7 @@ When the Marshal is absent, Captains collectively assume command authority. This
 - Issuing arrest orders
 - Deploying guards to emergencies
 - Making tactical decisions about use of force
-- Coordinating with other authorities (Crown, Magistrate, Military)
+- Coordinating with other authorities (Crown, Magistrate)
 - Representing the Guard in official proceedings
 
 

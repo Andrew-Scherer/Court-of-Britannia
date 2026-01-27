@@ -368,7 +368,7 @@ Define access by role groups, not individual names:
 | Access Group | Members | Access Granted |
 |---|---|---|
 | RoyalFamily | King, Queen, Heirs | Private royal zones, administrative |
-| RoyalGuard | Marshal, Guard Captain, Guards | Military zones, patrol routes |
+| RoyalGuard | Marshal, Guard Captain, Guards | Guard zones, patrol routes |
 | CastleStaff | Stewards, servants, cooks | Service areas, kitchens, storage |
 | Council | Chancellor, Magistrates, advisors | Council chamber, archives |
 | Envoy | Temporary diplomatic guests | Guest quarters (time-limited) |

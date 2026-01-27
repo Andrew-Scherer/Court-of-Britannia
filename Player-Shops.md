@@ -67,7 +67,7 @@ That shop becomes:
 
 | Shop Type | Primary Goods | Political Relevance |
 |---|---|---|
-| Armory | Weapons, armor, shields | High — supplies military forces |
+| Armory | Weapons, armor, shields | High — supplies guards and fighters |
 | Apothecary | Potions, reagents, poisons | Medium — healing and assassination |
 | Tailor | Clothing, robes, status wear | Medium — visible social markers |
 | Provisioner | Food, supplies, tools | Low — essential but less visible |
@@ -84,7 +84,7 @@ Shops can be obtained through:
 - **Purchase** — Buy an available shop location
 - **Inheritance** — Receive through [[succession|Succession]]
 - **Royal Grant** — Awarded by the [[King|Becoming-King]]
-- **Seizure** — Taken through legal or military action
+- **Seizure** — Taken through legal or forceful action
 
 
 ### Operating a Shop

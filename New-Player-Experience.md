@@ -61,9 +61,9 @@ New players represent:
 This creates incentive structures distinct from traditional MMO design. Factions compete for new players not because new players produce valuable items, but because new players sustain faction viability. The competition is for allegiance, not output.
 
 
-## Three Immediate Entry Structures
+## Two Immediate Entry Structures
 
-The recruitment pressure described above manifests through three specific structures that new players can join from day 1. These are not employment systems requiring skill prerequisites or economic capital. They are integration pathways that allow unlimited membership and teach core game systems through participation:
+The recruitment pressure described above manifests through two specific structures that new players can join from day 1. These are not employment systems requiring skill prerequisites or economic capital. They are integration pathways that allow unlimited membership and teach core game systems through participation:
 
 
 > **Note**
@@ -75,21 +75,13 @@ The recruitment pressure described above manifests through three specific struct
 
 
 > **Note**
-> **2. The Military**
->
-> **What you learn:** War mechanics, strategic protection, crown enforcement operations, military hierarchy, and coordinated action under command.
-> **Why unlimited roles:** Military strength depends on deployable numbers. A formation with 10 soldiers holds more territory than a formation with 5, regardless of individual combat skill. Presence during conflict creates political reality.
-> **Immediate value:** You increase faction strength. Your presence during military operations demonstrates power. Your allegiance affects strategic calculations. Your survival maintains force projection capacity.
-
-
-> **Note**
-> **3. Diplomacy**
+> **2. Diplomacy**
 >
 > **What you learn:** Inter-faction relationships, crown relations with guilds and factions, the pressure and taxation systems, the political geography of the realm (where important factions reside), and negotiation dynamics.
 > **Why unlimited roles:** Diplomatic presence requires representatives—envoys, observers, messengers. Every diplomatic interaction benefits from additional witnesses. Information gathering scales with participant count.
 > **Immediate value:** You provide eyes and ears. Your observations inform faction strategy. Your presence at diplomatic events creates record and witness. Your understanding of the political landscape becomes institutional knowledge.
 
-These three structures solve the traditional "newbie integration problem" without requiring formalized employment systems. New players possess immediate purpose: they sustain institutions that cannot function without living participants.
+These two structures solve the traditional "newbie integration problem" without requiring formalized employment systems. New players possess immediate purpose: they sustain institutions that cannot function without living participants.
 
 Critically, a player can hold 1 official role at a time (whether they're a Guard or a King), and they can also be a member of a guild or faction (whether they're a leader or a new recruit). This means they can participate in the systems of both the Crown and Guilds/Factions at the same time. This is not an exploit—it is structural flexibility that allows the same player to occupy multiple spheres of influence as their character advances. For detailed mechanics on role limitations, see the [[Official Roles|Roles]] page.
 
