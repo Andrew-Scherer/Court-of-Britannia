@@ -130,3 +130,4 @@
 - [[Decoration System|Decoration-System]]
 - [[Construction Limits & Upkeep|Construction-Limits-Upkeep]]
 - [[Building Permissions & Access|Building-Permissions-Access]]
+- [[Account Skill Boosts & Mastery|Account-Skill-Boosts-Mastery]]
