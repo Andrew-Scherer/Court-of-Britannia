@@ -128,3 +128,4 @@
 - [[Carpentry: Building Parts|Carpentry-Building-Parts]]
 - [[Contractors]]
 - [[Decoration System|Decoration-System]]
+- [[Construction Limits & Upkeep|Construction-Limits-Upkeep]]
