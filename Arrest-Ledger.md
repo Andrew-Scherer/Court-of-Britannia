@@ -211,6 +211,6 @@ If custody occurs, the record exists.
 
 
 - [[Jail System|Jail]] — Custody mechanics and timers
-- [[Warden of the Dungeons|Warden]] — Custody observation authority
+- [[Jail System|Jail]] — Custody procedures and guard specialization options
 - [[Guards|Guards]] — Arrest authority and procedures
 - [[Death Ledger|Death-Ledger]] — Permanent outcome records

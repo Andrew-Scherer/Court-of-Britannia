@@ -175,7 +175,7 @@ Jailed prisoners may be executed only after lawful sentencing. Only the Executio
 
 > **Note**
 > **See:** [[Execution Mechanics|Execution-Mechanics]] for full procedural details
-> **See:** [[The Executioner|Executioner]] for role authority
+> **See:** [[Guards]] have execution authority within Britain
 
 
 ## Records

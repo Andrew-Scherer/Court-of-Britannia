@@ -215,7 +215,7 @@ The ledger does not force these arguments to succeed. It provides the ammunition
 ## See Also
 
 
-- [[Coroner|Coroner]] — The role that examines corpses and adds forensic updates and addenda to ledger entries
+- [[Unofficial Roles|Unofficial-Roles]] — Players with forensic evaluation skills who examine corpses and provide death investigation
 - [[Guards|Guards]] — The authority whose custody deaths and use of force are recorded and scrutinized through the ledger
 - [[Magistrates & Courts|Roles]] — The adjudicators who rely on ledger entries as evidence in trials and legal proceedings
 - [[Permadeath & Downed States|Permadeath-Downed]] — The mechanics that create permanent character deaths requiring ledger documentation

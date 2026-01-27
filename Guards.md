@@ -276,6 +276,6 @@ Upon dismissal, guards surrender uniform and equipment. Former guards who abuse 
 
 
 - [[Permadeath & Downed States|Permadeath-Downed]] — Mechanics of subdual versus lethal force
-- [[Jail System|Jail]] — Prisoner custody, Warden authority, and detention procedures
+- [[Jail System|Jail]] — Prisoner custody, detention procedures, and guard specialization options
 - [[Magistrates / Courts|Roles]] — Legal authority that constrains and reviews guard action
 - [[Regent / Succession|Regent]] — Authority conflicts during minority rule and contested succession

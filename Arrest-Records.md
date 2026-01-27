@@ -197,5 +197,5 @@ Recording an unjust arrest does not prevent it from occurring. The ledger create
 
 - [[Guards|Guards]] — Authority, enforcement, and arrest procedures
 - [[Magistrates & Courts|Roles]] — Legal review and trial proceedings where arrest records serve as evidence
-- [[Jail System|Jail]] — Warden custody, prisoner management, and administrative records
+- [[Jail System|Jail]] — Custody procedures, prisoner management, and administrative records
 - [[Permadeath & Downed States|Permadeath-Downed]] — Subdual mechanics that enable arrest rather than execution

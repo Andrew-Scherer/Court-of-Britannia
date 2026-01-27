@@ -445,6 +445,107 @@ Courtiers get:
 >
 > Courtiers live and die by reputation. One exposed lie, one failed scheme, one betrayal too many—and you're exiled from court. No one will meet with you. No one will trust you. And no title or decree can restore that.
 
+## Warden
+
+*Self-Claim • Guards with Jail Access*
+
+You watch the prisoners. You keep the cells. You decide whether a jailed criminal sits in silence or faces constant psychological pressure. You are the atmosphere of captivity.
+
+The [[Jail|Jail]] operates mechanically without you—arrests happen, timers run, releases occur. But you make custody *feel* real. A prisoner sitting alone in a cell is just waiting. A prisoner being interrogated, mocked, or given false hope by a Warden is *experiencing consequences*.
+
+### What Wardens Do
+
+- **Create jail atmosphere:** Visit prisoners, ask questions, deliver messages from the outside world (or lie about them)
+- **Psychological pressure:** Make custody uncomfortable through conversation, implied threats, or strategic silence
+- **Observe and report:** Notice patterns—who gets arrested repeatedly, who visits prisoners, who gets released suspiciously fast
+- **Control access socially:** You can't mechanically block visits, but you can make visitors uncomfortable or extract information from them
+
+### Why This Role Exists
+
+Guards have jail access by default. Any guard can choose to focus on prisoners rather than patrols. Some guards enjoy the interrogation, the long conversations, the psychological game. Others find it tedious and leave it to those who specialize.
+
+You're not appointed. You're not required. You're just the guard who decided to make prisoners your focus. And prisoners remember you.
+
+### Natural Conflicts
+
+- **Prisoners and their allies:** You're the face of their captivity. When they're released, you may become a target.
+- **Other guards:** Some see you as wasting time on captured criminals instead of hunting new ones.
+- **The Crown:** If you let prisoners escape or provide them with information, you're a liability.
+
+### Player Fantasy
+
+**"You are the voice in the dark."**
+
+You get to explore the psychological side of captivity. You're not the one who arrested them. You're not the one who sentenced them. But you're the one they see every day. You're the one who decides whether their time in jail is quiet waiting or constant dread.
+
+## Coroner
+
+*Self-Claim • Forensic Investigation Specialist*
+
+You examine corpses. You determine cause of death. You piece together what happened from the evidence left behind. The better your [[forensic evaluation|Account-Skill-Boosts-Mastery]] skill, the more information you extract from the dead.
+
+There's no official Coroner appointment. Anyone can examine a body. But most people don't bother learning the skill. You did. And because of that, you see what others miss.
+
+### What Coroners Do
+
+- **Examine corpses:** Use forensic evaluation to determine method of death, weapon type, time since death, signs of struggle
+- **Investigate deaths:** Gather witness testimony, compare stories to physical evidence, identify inconsistencies
+- **Publish findings:** Write reports on deaths that matter—nobles, Crown officials, suspicious custody deaths
+- **Advise Magistrates:** Provide evidence for trials when murder charges are filed
+
+### Why This Role Exists
+
+Permadeath makes every death matter. When someone important dies, people want answers. Guards might not care. The Crown might not investigate. But you do—either because you're paid, because you're curious, or because you want to expose the truth.
+
+**Skill-based information:** A novice examines a corpse and learns "killed by blade." An expert learns "killed by a single precise strike to the heart, executed by someone with professional training, likely a guard or knight, death occurred 4-6 hours ago."
+
+The higher your forensic evaluation skill, the more the game reveals. Investigation quality scales with player investment.
+
+### Natural Conflicts
+
+- **Killers:** You're the person who can connect evidence to suspects. Assassins want you gone.
+- **The Crown:** If your investigations reveal inconvenient truths about guard misconduct or political murders, you become a problem.
+- **Rival investigators:** Other coroners may reach different conclusions, creating competing narratives.
+
+### Player Fantasy
+
+**"You give the dead a voice."**
+
+You get to solve mysteries. You get to expose lies. You get to stand in a trial and present evidence that names a killer. Or you get to stay silent and profit from what you know. The dead can't speak—but you can speak for them.
+
+## Executioner
+
+*Self-Claim • Guards with Execution Authority*
+
+You carry out executions. When someone is sentenced to death, you're the one who delivers the final blow. You're not appointed by the Crown. You're just the guard who volunteered to be the one who kills.
+
+[[Guards|Guards]] have legal authority to execute prisoners within Britain. This isn't a special role—it's something any guard can do. But most guards don't want to. They prefer patrols, arrests, investigations. So the ones who *do* volunteer become known as "the executioner."
+
+### What Executioners Do
+
+- **Perform executions:** When a death sentence is issued, you deliver the killing blow publicly
+- **Absorb blame:** Allies of the executed remember you. You become a target for revenge.
+- **Create atmosphere:** Public executions are theater. You decide whether they're solemn, brutal, or ceremonial.
+- **Embody finality:** You're the last person the condemned sees. You represent the Crown's final answer to defiance.
+
+### Why This Role Exists
+
+Execution needs a face. Someone has to do it. Someone has to be seen doing it. And that someone will be blamed, feared, and remembered. Most guards avoid this burden. You embrace it—whether for duty, for reputation, or because you don't mind the stigma.
+
+**Guards have the authority.** You don't need special permission. You don't need a formal title. You just need to be the guard standing there when the sentence is read. And you need to be willing to swing the blade.
+
+### Natural Conflicts
+
+- **Allies of the executed:** Every execution creates permanent enemies. They remember your name.
+- **Political fallout:** When regimes change, executioners are often the first to be purged or killed as symbolic justice.
+- **Other guards:** Some respect you for doing the hard work. Others see you as a butcher hiding behind legal authority.
+
+### Player Fantasy
+
+**"You are the end."**
+
+You get to embody consequence. You get to be the final moment in someone's story. You get to be feared, respected, or hated depending on who you execute and why. You are not subtle. You are not hidden. You are the face of irreversible punishment.
+
 ## Guild and Faction Specific Professions
 
 Beyond the professions listed above, guilds and factions will develop their own internal roles to manage their organizations. These roles are entirely player-defined and will vary based on each organization's structure and priorities.

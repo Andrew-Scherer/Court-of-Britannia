@@ -82,9 +82,6 @@
 - [[Diplomat]]
 
 **Law & Justice**
-- [[Warden]]
-- [[Coroner]]
-- [[Executioner]]
 - [[Magistrate]]
 
 **Britain's City Systems**

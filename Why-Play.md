@@ -255,9 +255,10 @@ They play to:
 They love roles like:
 
 - **[[Magistrate|Roles]]** — Interpreting law neutrally
-- **[[Warden]]** — Managing custody without bias
-- **[[Coroner]]** — Documenting death impartially
 - **[[Senior Guard Captain|Guards]]** — Training enforcement to follow procedure
+- **[[Guards]]** — Choosing to specialize as wardens, investigators, or executioners
+
+Or they embrace [[unofficial professions|Unofficial-Roles]] like coroners—using forensic skills to investigate deaths impartially.
 
 They don't want to be King, be famous, or win the game. They want: **"The system to survive."**
 
@@ -283,17 +284,17 @@ And when they do—**an important aspect is lost.**
 
 Without Institutional Loyalists, political systems degrade into cycles of raw violence because no one maintains continuity.
 
-**Without a [[Warden]]:**
+**Without guards who specialize as wardens:**
 
 - Prisoners disappear into custody with no oversight
 - Dungeons become execution chambers
 - Guards become judge and executioner
 - No one tracks who was jailed, why, or for how long
 
-**Without a [[Coroner]]:**
+**Without players who specialize in forensic investigation:**
 
 - Assassinations become invisible
-- Executions go unrecorded
+- Death investigations rely solely on witness testimony
 - Murders are disputed endlessly
 - Families never know what happened
 

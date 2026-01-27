@@ -47,14 +47,14 @@ The Magistrate serves at the King's pleasure but acts independently in judicial 
 ### The Marshal of the Guard
 The Magistrate reviews guard arrests and use of force. When the Marshal and Magistrate disagree, guards face political choices between law and force.
 
-### The Warden
-Peer relationship. The Warden manages custody; the Magistrate rules on legality and sentencing. Neither commands the other.
+### Guards (Custody Specialists)
+Guards who specialize in prisoner oversight provide custody management and observation. The Magistrate rules on legality and sentencing. Neither commands the other.
 
-### The Coroner
-The Coroner provides forensic evidence; the Magistrate adjudicates based on that evidence. Magistrates rely on Coroner findings but make independent legal judgments.
+### Forensic Investigators
+Players with forensic evaluation skills provide death investigation evidence; the Magistrate adjudicates based on that evidence. Magistrates rely on forensic findings but make independent legal judgments.
 
-### The Executioner
-The Magistrate sentences; the Executioner performs. The Executioner acts on Magistrate sentences but serves the Crown, not the Magistrate.
+### Guards (Execution Authority)
+The Magistrate sentences; guards carry out executions. Guards perform executions based on Magistrate sentences but serve the Crown, not the Magistrate.
 
 ## Limits and Constraints
 
@@ -90,11 +90,11 @@ The Magistrate is for players who want:
 
 ## See Also
 
-- [[Guards|Guards]] — Force subject to Magistrate legal review
+- [[Guards|Guards]] — Force subject to Magistrate legal review (includes custody, investigation, and execution authority)
 - [[Jail System|Jail]] — Custody and detention procedures
 - [[Execution Mechanics|Execution-Mechanics]] — Sentencing and death procedures
-- [[Coroner|Coroner]] — Forensic evidence and death investigation
-- [[Warden|Warden]] — Custody management and record-keeping
+- [[Death Ledger|Death-Ledger]] — Death investigation and forensic records
+- [[Unofficial Roles|Unofficial-Roles]] — Self-claimed professions like forensic investigators
 - [[Roles & Offices|Roles]] — Complete role overview
 
 ---
