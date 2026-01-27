@@ -129,3 +129,4 @@
 - [[Contractors]]
 - [[Decoration System|Decoration-System]]
 - [[Construction Limits & Upkeep|Construction-Limits-Upkeep]]
+- [[Building Permissions & Access|Building-Permissions-Access]]
