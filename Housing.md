@@ -50,7 +50,7 @@ These have multiple residents and persist through individual deaths.
 ## Land Authority System
 
 
-> *Land authority is executed by Stewards and the Land Commissioner. Both may deed property, place notices, and execute evictions. The King alone issues binding orders over Royal Property and appoints the Land Commissioner. Stewards may act without authorization, but all actions are public, logged, and punishable. Mechanical power always works; legitimacy determines survival.*
+> *Land authority is executed by Land Commissioner Deputies and the Land Commissioner. Both may deed property, place notices, and execute evictions. The King alone issues binding orders over Royal Property and appoints the Land Commissioner. Land Commissioner Deputies may act without authorization, but all actions are public, logged, and punishable. Mechanical power always works; legitimacy determines survival.*
 
 This is not just a housing system. **It's a political violence system where buildings are the weapon.**
 
@@ -95,7 +95,7 @@ This is not just a housing system. **It's a political violence system where buil
 
 *Expendable hands with real power. That makes the role dangerous and desirable.*
 
-**→ See Land Commissioner & Steward Roles** for role requirements and how to join.
+**→ See Land Commissioner & Land Commissioner Deputy Roles** for role requirements and how to join.
 
 
 ### The Legitimacy Rule

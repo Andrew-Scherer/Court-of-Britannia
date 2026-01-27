@@ -1,4 +1,4 @@
-# 🏛️ Land Commissioner & Steward Roles
+# 🏛️ Land Commissioner & Land Commissioner Deputy
 
 **Buildings as Political Weapons**
 
@@ -23,8 +23,8 @@
 - Deed properties to new owners
 - Act on Royal Orders from the King
 - Act without Royal Orders (at significant risk)
-- **Hire and fire individual Stewards**
-- **Suspend Stewards immediately for misconduct**
+- **Hire and fire individual Land Commissioner Deputies**
+- **Suspend Land Commissioner Deputies immediately for misconduct**
 - Manage Land Ledger and property records
 - Investigate land disputes and irregularities
 
@@ -36,14 +36,14 @@
 > **Authority Over:**
 > - Royal Property — Only with King's explicit order
 > - Non-Royal Property — Direct authority to manage without royal approval
-> - Personnel — Full hiring/firing authority over Stewards
+> - Personnel — Full hiring/firing authority over Land Commissioner Deputies
 > - Land Ledger — Maintain and review all land action logs
 
 
 > **❗ Note**
 > - Override the King's legitimacy on Royal Property
 > - Act on Royal Property without consequences if unauthorized
-> - Protect Stewards (or themselves) from fallout of unauthorized actions
+> - Protect Land Commissioner Deputies (or themselves) from fallout of unauthorized actions
 
 
 ### Appointment & Dismissal
@@ -70,12 +70,12 @@
 > - Dangerous enough to matter, visible enough to build reputation
 
 
-## ⚖️ Steward
+## ⚖️ Land Commissioner Deputy
 
 
 ### Powers & Responsibilities
 
-**What Stewards Can Do:**
+**What Land Commissioner Deputies Can Do:**
 
 
 - Execute evictions physically on properties
@@ -97,7 +97,7 @@
 
 
 > **❗ Note**
-> - Hire or fire other Stewards
+> - Hire or fire other Land Commissioner Deputies
 > - Protect themselves from consequences of unauthorized actions
 > - Override decisions of the Land Commissioner
 > **Can be suspended instantly by the Land Commissioner.**
@@ -130,12 +130,12 @@
 ## Requirements & How to Join
 
 
-### Becoming a Steward
+### Becoming a Land Commissioner Deputy
 
 
 1. **Petition the Land Commissioner** — Request an interview
 2. **Evaluation** — Commissioner assesses trustworthiness and competence
-3. **Appointment** — Commissioner grants Steward status (or denies)
+3. **Appointment** — Commissioner grants Land Commissioner Deputy status (or denies)
 4. **Immediate Powers** — Gain mechanical land powers as soon as appointed
 5. **All Actions Logged** — From moment of appointment, everything you do is recorded
 
@@ -145,7 +145,7 @@
 
 1. **King's Direct Appointment** — No petition process
 2. **Trust & Politics** — King chooses based on loyalty, competence, politics
-3. **Assumption of Authority** — Immediate control over Stewards and land actions
+3. **Assumption of Authority** — Immediate control over Land Commissioner Deputies and land actions
 
 
 ## The Legitimacy Rule
@@ -156,8 +156,8 @@
 
 | Scenario | Result |
 |---|---|
-| Steward acts with authorization | ✅ Safe — Protected by legitimacy |
-| Steward acts without authorization | ⚠️ Action works, but Steward faces consequences |
+| Land Commissioner Deputy acts with authorization | ✅ Safe — Protected by legitimacy |
+| Land Commissioner Deputy acts without authorization | ⚠️ Action works, but Deputy faces consequences |
 | Commissioner acts on Royal Property without King's order | 🔥 Action works, but Commissioner risks dismissal/prosecution |
 | Commissioner acts on Non-Royal Property | ✅ Full authority — No approval needed |
 
@@ -168,7 +168,7 @@
 ### What Protects You
 
 
-- **Acting with proper authorization** (King's order for Royal Property, Commissioner's direction for Stewards)
+- **Acting with proper authorization** (King's order for Royal Property, Commissioner's direction for Land Commissioner Deputies)
 - **Accurate record-keeping** in the Land Ledger
 - **Staying within your authority** (Non-Royal Property for routine actions)
 - **Political support** from the King or powerful figures
@@ -190,9 +190,9 @@
 
 
 1. **Full Action Logging** — Every deed, eviction, and notice is recorded with actor, timestamp, and reason
-2. **Instant Suspension** — Land Commissioner can suspend a Steward immediately, removing their powers
+2. **Instant Suspension** — Land Commissioner can suspend a Land Commissioner Deputy immediately, removing their powers
 3. **24-Hour Challenge Window** — King or Magistrate can cancel unauthorized actions within 24 hours
-4. **No Immunity Upon Dismissal** — Former Stewards/Commissioners can be prosecuted for past actions
+4. **No Immunity Upon Dismissal** — Former Land Commissioner Deputies and Commissioners can be prosecuted for past actions
 
 **→ For detailed mechanics, scenarios, and examples, see Housing & Land Authority System**
 
@@ -207,12 +207,12 @@ All Land Ledger entries are exported to Chronicle. Scandals around unauthorized 
 
 ### Exile
 
-Exiled individuals cannot receive property deeds. Stewards attempting to deed to exiles face prosecution. Commissioner can suspend Stewards who violate exile orders.
+Exiled individuals cannot receive property deeds. Land Commissioner Deputies attempting to deed to exiles face prosecution. Commissioner can suspend Deputies who violate exile orders.
 
 
 ### Permadeath
 
-When a property holder dies, automated grace period begins. Stewards deed to new claimants after grace period expires. For Royal Property, King orders new grant.
+When a property holder dies, automated grace period begins. Land Commissioner Deputies deed to new claimants after grace period expires. For Royal Property, King orders new grant.
 
 
 ## Quick Reference
@@ -221,9 +221,9 @@ When a property holder dies, automated grace period begins. Stewards deed to new
 | Question | Answer |
 |---|---|
 | Who appoints Land Commissioner? | The King |
-| Who appoints Stewards? | Land Commissioner |
-| Can Stewards act on Royal Property? | Only with King's order (or at extreme risk) |
-| Can Commissioner fire Stewards? | Yes, instantly |
-| Can King fire individual Stewards? | No — only Commissioner can |
+| Who appoints Land Commissioner Deputies? | Land Commissioner |
+| Can Land Commissioner Deputies act on Royal Property? | Only with King's order (or at extreme risk) |
+| Can Commissioner fire Land Commissioner Deputies? | Yes, instantly |
+| Can King fire individual Land Commissioner Deputies? | No — only Commissioner can |
 | Does dismissal protect from consequences? | No — former officials remain accountable |
 | Are all actions logged? | Yes — Land Ledger records everything |

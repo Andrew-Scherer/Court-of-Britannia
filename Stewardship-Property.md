@@ -53,14 +53,14 @@ Property ownership is **always personal**.
 > Guilds do not "own" land.They anchor themselves to land.
 
 
-## Stewardship
+## Guild Landholdership
 
 
-### What Is a Steward?
+### What Is a Guild Landholder?
 
-A **Property Steward** is the individual who binds a property to a guild.
+A **Guild Landholder** is the individual who binds a property to a guild.
 
-The steward:
+The Guild Landholder:
 
 
 - Is the legal anchor of the property
@@ -91,7 +91,7 @@ Once bound:
 - The steward burns their personal claim to give the guild a home
 
 
-### Guild Leader vs Property Steward
+### Guild Leader vs Guild Landholder
 
 These are **separate roles**.
 
@@ -105,7 +105,7 @@ These are **separate roles**.
 
 
 > **Note**
-> **Property Steward**
+> **Guild Landholder**
 >
 > - Anchors the land
 > - Bears legal and existential risk
@@ -137,16 +137,16 @@ Co-ownership allows:
 > **❗ Note**
 > Co-owners do not anchor land.  
 > 
->             Only the Steward does.
-> Co-ownership never replaces stewardship.
+>             Only the Guild Landholder does.
+> Co-ownership never replaces Guild Landholdership.
 
 
 > Access can be shared.Responsibility cannot.
 
 
-## Steward Death
+## Guild Landholder Death
 
-When a steward dies (permadeath):
+When a Guild Landholder dies (permadeath):
 
 
 - The property enters **Interregnum**
@@ -157,9 +157,9 @@ When a steward dies (permadeath):
 This creates a **succession window**.
 
 
-## Steward Departure (Defection or Resignation)
+## Guild Landholder Departure (Defection or Resignation)
 
-If a steward leaves the guild voluntarily:
+If a Guild Landholder leaves the guild voluntarily:
 
 
 - The guildstone remains active
@@ -182,12 +182,12 @@ They **cannot**:
 - Destroy the guild's claim
 
 
-> This is treated as a soft death of stewardship.
+> This is treated as a soft death of Guild Landholdership.
 
 
 ## Interregnum
 
-Interregnum is a temporary state where a property lacks a steward.
+Interregnum is a temporary state where a property lacks a Guild Landholder.
 
 
 ### During Interregnum
@@ -218,7 +218,7 @@ Interregnum is a temporary state where a property lacks a steward.
 
 ### Resolving Interregnum
 
-Any co-owner who is also a guild member may become steward if they:
+Any co-owner who is also a guild member may become Guild Landholder if they:
 
 
 - Are alive
@@ -229,8 +229,8 @@ Any co-owner who is also a guild member may become steward if they:
 > **Note**
 > **Co-Owner Priority Window**
 >
-> Co-owner guild members have first right of stewardship during the **initial Interregnum period (48-hour window)**.
-> After 48 hours, stewardship opens to any guild member meeting the requirements.
+> Co-owner guild members have first right of Guild Landholdership during the **initial Interregnum period (48-hour window)**.
+> After 48 hours, Guild Landholdership opens to any guild member meeting the requirements.
 
 Once bound:
 
@@ -262,7 +262,7 @@ If Interregnum is not resolved:
 > **❗ Note**
 > **Final Decay**
 >
-> After **7 days** without a Steward, the guildstone decays.
+> After **7 days** without a Guild Landholder, the guildstone decays.
 > - The property is relinquished
 > - The site returns to public auction
 
@@ -270,7 +270,7 @@ If Interregnum is not resolved:
 > This ensures land never stagnates indefinitely.
 
 
-## Why Stewardship Exists
+## Why Guild Landholdership Exists
 
 
 ### Design Reason
@@ -286,7 +286,7 @@ If land belonged directly to guilds:
 - Maps would ossify
 - Power would freeze
 
-Stewardship ensures:
+Guild Landholdership ensures:
 
 
 - Every property is mortal
@@ -302,7 +302,7 @@ Property systems are simpler, safer, and more predictable when:
 - Ownership always resolves to a character
 - Death, taxes, decay, and auctions follow one model
 
-The steward model avoids:
+The Guild Landholder model avoids:
 
 
 - Dual ownership logic

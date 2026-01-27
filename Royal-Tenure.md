@@ -276,5 +276,5 @@ Royal Tenure is not intended to:
 
 
 - **Housing & Land Authority** — General property and role-based housing systems
-- **Land Commissioner & Steward** — Roles governing land administration
+- **Land Commissioner & Land Commissioner Deputy** — Roles governing land administration
 - **Becoming King** — The role with authority to grant tenure

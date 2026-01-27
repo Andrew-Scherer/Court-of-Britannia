@@ -118,26 +118,26 @@ The Master of the Treasury operates at the intersection of fiscal management and
 
 ---
 
-## The Steward
+## The Property Assessor
 
-The Steward assesses property taxes on landowners, guilds, and factions. This role determines *how much is owed*, but does not collect or enforce.
+The Property Assessor assesses property taxes on landowners, guilds, and factions. This role determines *how much is owed*, but does not collect or enforce.
 
-### Powers of the Steward
+### Powers of the Property Assessor
 
 - **Assess property taxes** on land, buildings, and holdings
 - **Record assessments** in the public Tax Ledger
 - **Update assessments** when property changes hands or is improved
 - **Provide transparency** into how taxes are calculated
 
-### Limits of the Steward
+### Limits of the Property Assessor
 
 - ❌ Cannot collect taxes (collection is automatic for player trade; property taxes accrue as debt)
 - ❌ Cannot enforce payment or seize assets
 - ❌ Cannot issue decrees or serve notices
 
-The Steward's assessments create the **initial debt record**. From there, the Tax Envoy serves notice, the Crown issues decrees, and guards enforce—or refuse.
+The Property Assessor's assessments create the **initial debt record**. From there, the Diplomatic Corps serves notice, the Crown issues decrees, and guards enforce—or refuse.
 
-→ See: [[Steward Role Page|Steward]]
+→ See: [[Property Assessor Role Page|Property-Assessor]]
 
 ---
 
@@ -270,7 +270,7 @@ The following table summarizes the division of economic authority across roles. 
 |------|-----------------|--------|------------|
 | **Diplomatic Corps** | Enforcement agent | Serve notice, apply liens, initiate seizure, negotiate | Cannot act without decree. Cannot bypass guards. Cannot drain upkeep. |
 | **Master of Treasury** | Fiscal policy advisor | Propose rates, forecast, maintain ledgers | Cannot collect manually. Cannot override Crown. Cannot enforce. |
-| **Steward** | Tax assessor | Assess property taxes, update ledger | Cannot collect. Cannot enforce. Cannot issue decrees. |
+| **Property Assessor** | Tax assessor | Assess property taxes, update ledger | Cannot collect. Cannot enforce. Cannot issue decrees. |
 | **King / Regent** | Policy authority | Approve/reject proposals, issue decrees, define scope | Cannot collect manually. Cannot execute seizure personally. Absorbs political blame. |
 | **Guards** | Physical enforcement | Secure property, confiscate assets, use force if resisted | May refuse to enforce. May resign. Loyalty must be earned. |
 | **Magistrate** | Legal check | Review, delay, challenge, advocate, record | Cannot block enforcement mechanically. Cannot set policy. Influence is political. |
@@ -283,7 +283,7 @@ Economic enforcement requires multiple actors to cooperate. When coordination su
 
 ### Successful Enforcement Requires:
 
-1. **Steward:** Assesses tax and records debt
+1. **Property Assessor:** Assesses tax and records debt
 2. **Master of Treasury:** Proposes policy that Crown accepts
 3. **Crown:** Issues decree authorizing action
 4. **Diplomatic Corps:** Serves notice and coordinates enforcement
@@ -326,7 +326,7 @@ If **any link fails**, enforcement becomes contested:
 
 ### Scenario 3: Successful Seizure
 
-- Guild owes 50,000 gp in property taxes (Steward assessed, recorded)
+- Guild owes 50,000 gp in property taxes (Property Assessor assessed, recorded)
 - Diplomat serves notice (7-day deadline)
 - Guild ignores notice
 - Crown issues decree authorizing seizure
@@ -371,5 +371,5 @@ Tax administration intersects with multiple governance systems. For additional c
 - [[Tax Ledger]] — Public record of all tax-related activity
 - [[Master of the Treasury|Master-Treasury]] — Full role details
 - [[Diplomacy]] — Full role details (includes tax enforcement)
-- [[Steward]] — Full role details
+- [[Property Assessor|Property-Assessor]] — Full role details
 - [[Guards]] — Full role details
