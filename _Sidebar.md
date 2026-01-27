@@ -25,10 +25,11 @@
 - [[One Faction per Guild|One-Faction-Per-Guild]]
 - [[Faction Ledger]]
 
-**Taxation & Economy**
+**Taxes, Commerce, and Economy**
 - [[Economic Philosophy|Economic-Philosophy]]
 - [[Crown Taxation|Crown-Taxation]]
 - [[Guild & Faction Economy|Guild-Faction-Economy]]
+- [[Vendors & Commerce|Vendors-Commerce]]
 - [[Crown Liens]]
 - [[Seizure & Enforcement|Seizure-Enforcement]]
 - [[Tax Roles]]
