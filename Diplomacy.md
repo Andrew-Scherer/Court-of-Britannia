@@ -49,7 +49,7 @@ Diplomats do not answer to:
 | Rank | Maximum | Appointed By | Can Appoint |
 |---|---|---|---|
 | 🕊️ Emissary of the Crown | 1 | King | Envoys |
-| 📜 Envoy | 3 | Emissary of the Crown | Diplomats |
+| 📜 Envoy | 1 per 10 Diplomats | Emissary of the Crown | Diplomats |
 | 🗣️ Diplomat | Unlimited | Envoy | None |
 
 

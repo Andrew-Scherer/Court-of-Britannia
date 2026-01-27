@@ -45,7 +45,7 @@ These authorities do not always agree. When the King and Marshal issue contradic
 | Rank | Maximum | Appointed By | Can Appoint |
 |---|---|---|---|
 | 🛡️ Marshal of the Guard | 1 | King | Captains |
-| ⚔️ Captain of the Guard | 3 | Marshal | Guards |
+| ⚔️ Captain of the Guard | 1 per 10 City Guards | Marshal | Guards |
 | 🗡️ City Guard | Unlimited | Captain | None |
 
 

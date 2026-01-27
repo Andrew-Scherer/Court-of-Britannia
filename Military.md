@@ -129,7 +129,7 @@ Royal Army authority flows through appointment, just like the Guards—but from 
 | Rank | Max | Appointed By | Can Appoint |
 |---|---|---|---|
 | ⚔️ Lord of the Royal Army | 1 | King | Captains of the Crown |
-| 🛡️ Captain of the Crown | 3 | Lord of the Royal Army | Officers |
+| 🛡️ Captain of the Crown | 1 per 10 Knights of Britannia | Lord of the Royal Army | Officers |
 | 🗡️ Knight of Britannia | Unlimited | Officer | None |
 
 
