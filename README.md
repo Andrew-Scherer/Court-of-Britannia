@@ -104,14 +104,115 @@ All pages follow strict guidelines defined in `EDITING_RULES.md`:
 
 ## File Structure
 
+Documentation is organized into folders matching the sidebar navigation:
+
 ```
 Root Directory:
-├── Home.md (main landing page)
-├── _Sidebar.md (navigation structure)
-├── EDITING_RULES.md (documentation guidelines)
-├── 74+ content pages (.md format)
-├── convert_to_markdown.py (conversion script)
-└── Legacy HTML files (kept for reference)
+├── Home.md
+├── _Sidebar.md
+├── README.md
+├── EDITING_RULES.md
+├── Philosophy/
+│   ├── Philosophy.md
+│   ├── Britain-Sole-Civic.md
+│   ├── New-Player-Experience.md
+│   └── Why-Play.md
+├── Guilds/
+│   ├── Guilds.md
+│   ├── Guild-Banking.md
+│   ├── Guild-Upkeep.md
+│   ├── Crown-Recognition.md
+│   ├── Guild-Interactions.md
+│   ├── Player-Controlled-Vendors.md
+│   └── Settlement-Taxation.md
+├── Factions/
+│   ├── Emergent-Factions.md
+│   ├── Factions-Leaderless.md
+│   ├── One-Faction-Per-Guild.md
+│   └── Faction-Ledger.md
+├── Economy/
+│   ├── Economic-Philosophy.md
+│   ├── Crown-Taxation.md
+│   ├── Guild-Faction-Economy.md
+│   ├── Vendors-Commerce.md
+│   ├── Crown-Liens.md
+│   ├── Seizure-Enforcement.md
+│   └── Tax-Roles.md
+├── Housing-Property/
+│   ├── Housing-Philosophy.md
+│   ├── Historic-Property.md
+│   ├── Housing-Not-Storage.md
+│   ├── Sharing-Housing.md
+│   ├── No-Player-Housing.md
+│   ├── Property-Loss-Political.md
+│   ├── City-Vs-Historic-Property.md
+│   ├── Stewardship-Property.md
+│   └── Decoration.md
+├── Roles/
+│   ├── Official/
+│   │   ├── Roles.md
+│   │   └── Commoners.md
+│   ├── Royal/
+│   │   ├── Becoming-King.md
+│   │   ├── Regent.md
+│   │   ├── Heir.md
+│   │   └── Claimant.md
+│   ├── Noble/
+│   │   ├── Master-Treasury.md
+│   │   ├── High-Emissary.md
+│   │   ├── Land-Commissioner-Deputy.md
+│   │   ├── Marshal-Guard.md
+│   │   └── Property-Assessor.md
+│   ├── Guard/
+│   │   ├── Guards.md
+│   │   ├── Captain-Guard.md
+│   │   └── City-Guard.md
+│   ├── Diplomacy/
+│   │   ├── Diplomacy.md
+│   │   ├── Envoy.md
+│   │   └── Diplomat.md
+│   ├── Unofficial/
+│   │   └── Unofficial-Roles.md
+│   └── Wildcard/
+│       └── Wildcard-Roles.md
+├── Justice/
+│   ├── Magistrate.md
+│   ├── Execution-Mechanics.md
+│   ├── Jail.md
+│   └── Bounty.md
+├── Political-Systems/
+│   ├── Succession.md
+│   ├── Coronation.md
+│   ├── Royal-Tenure.md
+│   └── Seat-System.md
+├── City-Services/
+│   ├── Salary-System.md
+│   ├── Housing.md
+│   └── Property.md
+├── Ledgers/
+│   ├── Appointments-Ledger.md
+│   ├── Land-Ledger.md
+│   ├── Treasury-Ledger.md
+│   ├── Registry-Estates.md
+│   ├── Tax-Ledger.md
+│   ├── Jail-Ledger.md
+│   ├── Arrest-Records.md
+│   ├── Death-Ledger.md
+│   ├── Faction-Standing-Chronicle.md
+│   ├── Item-Signatures.md
+│   └── Player-Shops.md
+├── Combat-Death/
+│   ├── Permadeath-Downed.md
+│   └── Guilds-Factions-At-War.md
+└── Building-Crafting/
+    ├── Sacking-Britain.md
+    ├── Carpentry-Building-Parts.md
+    ├── Contractors.md
+    ├── Decoration-System.md
+    ├── Construction-Limits-Upkeep.md
+    ├── Building-Permissions-Access.md
+    ├── Account-Skill-Boosts-Mastery.md
+    └── Structural-Styling.md
 ```
 
 ## Conversion Notes
