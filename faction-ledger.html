@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>Faction Ledger - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .warning { background: rgba(233, 69, 96, 0.1); border: 1px solid var(--accent); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+        .warning strong { color: var(--accent); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>📜 Faction Ledger</h1>
+        <p>Distributed Identity. No Central Authority.</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <h2>Core Principle</h2>
+        
+        <div class="quote">
+            Factions do not have a central physical anchor.<br>
+            They exist through distributed presence.
+        </div>
+        
+        <p>Each member guild may place a <strong>Faction Ledger</strong> within its own property, near its guildstone.</p>
+        
+        <p>The ledger:</p>
+        <ul>
+            <li>Publicly signals faction alignment</li>
+            <li>Provides shared identity and coordination interfaces</li>
+            <li>Exists only as long as the guild controls the property</li>
+        </ul>
+        
+        <h2>What a Faction Ledger Is</h2>
+        
+        <p>A Faction Ledger is:</p>
+        <ul>
+            <li>A <strong>physical object</strong></li>
+            <li>Placed by a guild inside its own property</li>
+            <li>Always <strong>subordinate to the guildstone</strong></li>
+            <li>A window into a shared faction identity</li>
+        </ul>
+        
+        <div class="info-box">
+            <h3>What It Is NOT</h3>
+            <ul>
+                <li>An anchor</li>
+                <li>A source of authority</li>
+                <li>A property claim</li>
+                <li>A sovereign object</li>
+            </ul>
+        </div>
+        
+        <div class="quote-simple">
+            Think of it as:<br>
+            "This guild publicly records that it flies this banner."
+        </div>
+        
+        <h2>Placing a Faction Ledger</h2>
+        
+        <p>Every guildhouse can place a <strong>Faction Ledger</strong> in the guild house.</p>
+        
+        <div class="info-box">
+            <h3>Ledger Placement</h3>
+            <ul>
+                <li>Placed by the guild leader or authorized members</li>
+                <li>Located near the guildstone</li>
+                <li>Acts as the faction interface for that guild</li>
+            </ul>
+        </div>
+        
+        <h2>Joining an Existing Faction</h2>
+        
+        <p>From the Faction Ledger, a guild leader can:</p>
+        
+        <ol>
+            <li>View the current list of factions</li>
+            <li>Apply to join an existing faction</li>
+            <li>Once accepted, the guild officially joins the faction</li>
+        </ol>
+        
+        <div class="info-box">
+            <h3>Unlocked Ledger Tabs</h3>
+            <p>Once a faction is joined, the Faction Ledger unlocks additional tabs:</p>
+            <ul>
+                <li><strong>Member Guilds</strong> — View all guilds that are members of the faction</li>
+                <li><strong>Messaging</strong> — Faction-wide messaging and announcements</li>
+                <li><strong>Intelligence</strong> — Shared reconnaissance and enemy sightings</li>
+                <li><strong>Faction Charter</strong> — Ideology, goals, and propaganda</li>
+                <li><strong>History</strong> — Guild joins/leaves logged publicly</li>
+            </ul>
+        </div>
+        
+        <h2>Creating a New Faction</h2>
+        
+        <p>A guild also has the option of <strong>creating their own Faction</strong> using the Faction Ledger.</p>
+        
+        <div class="info-box">
+            <h3>Faction Creation Process</h3>
+            <p>The guild leader can:</p>
+            <ul>
+                <li>Give the faction a name</li>
+                <li>Set faction settings (charter, ideology, etc.)</li>
+                <li>Declare the faction active</li>
+            </ul>
+            
+            <p>Once created:</p>
+            <ul>
+                <li>The faction appears on the global faction list</li>
+                <li>Other guilds can apply to join</li>
+                <li>The founding guild's ledger becomes the first instance of this faction</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <strong>Important:</strong>
+            <p>Creating a faction does <strong>not</strong> grant the founding guild any mechanical authority over other guilds who join.</p>
+            <p>Leadership remains emergent and social, not mechanical.</p>
+        </div>
+        
+        <h2>Leaving a Faction</h2>
+        
+        <p>To leave a faction:</p>
+        <ul>
+            <li>Access the Faction Ledger</li>
+            <li>Select "Leave Faction"</li>
+            <li>Instant, no cooldown, no penalty</li>
+        </ul>
+        
+        <p>Alternatively:</p>
+        <ul>
+            <li>Remove or destroy the ledger</li>
+            <li>This also severs the faction connection</li>
+        </ul>
+        
+        <p>This is exactly in line with the emergent faction philosophy.</p>
+        
+        <h2>What Happens When a Guild Loses Property</h2>
+        
+        <p>If a guild loses its land:</p>
+        
+        <ul>
+            <li>The guild loses its land</li>
+            <li>Its ledger disappears with the property</li>
+            <li>The faction loses that guild's presence</li>
+            <li>Other guild ledgers remain untouched</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>No special rules required.</strong>
+            <p>The ledger is subordinate to the guild's property claim.<br>
+            Lose the property → ledger is gone.</p>
+        </div>
+        
+        <div class="quote-simple">
+            New owners never inherit faction ledgers.<br>
+            Zero paradox.
+        </div>
+        
+        <h2>Why Distributed Ledgers Work</h2>
+        
+        <h3>No More "Rival Faction Stone on Conquered Land"</h3>
+        
+        <p>Because:</p>
+        <ul>
+            <li>The ledger only exists where the guild exists</li>
+            <li>Lose the property → ledger is gone</li>
+            <li>New owner never inherits it</li>
+            <li>Zero paradox</li>
+        </ul>
+        
+        <h3>Factions No Longer Need a "Host"</h3>
+        
+        <p>There is no single object whose loss causes confusion.</p>
+        
+        <p>If one guild falls:</p>
+        <ul>
+            <li>Its ledger disappears</li>
+            <li>The faction continues elsewhere</li>
+            <li>Nothing needs to "transfer"</li>
+        </ul>
+        
+        <div class="quote-simple">
+            You cannot kill a faction.<br>
+            You dismantle what stands beneath it.
+        </div>
+        
+        <h3>Factions Stay Non-Sovereign by Construction</h3>
+        
+        <p>There is:</p>
+        <ul>
+            <li>No central object</li>
+            <li>No land binding</li>
+            <li>No legal anchor</li>
+        </ul>
+        
+        <p>All accountability still flows to guilds.</p>
+        
+        <h2>Potential Ledger Functions</h2>
+        
+        <p>Faction Ledgers can provide <strong>informational</strong> coordination:</p>
+        
+        <div class="info-box">
+            <h3>Faction Announcements</h3>
+            <p>Messages propagate to all ledgers.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Shared Intelligence</h3>
+            <p>Last known enemy sightings, reconnaissance reports.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Faction Charters</h3>
+            <p>Ideology, goals, propaganda.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Soft Coordination</h3>
+            <p>"Call to arms" notices (no mechanics, just information).</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Faction History</h3>
+            <p>Guild joins / leaves logged publicly.</p>
+        </div>
+        
+        <div class="warning">
+            <strong>All informational.</strong>
+            <ul>
+                <li>No buffs</li>
+                <li>No protection</li>
+                <li>No authority</li>
+            </ul>
+            <p>Exactly the right level.</p>
+        </div>
+        
+        <h2>Design Elegance</h2>
+        
+        <p>This design aligns three critical elements:</p>
+        
+        <ul>
+            <li><strong>Design elegance</strong> — Simple, intuitive, no edge cases</li>
+            <li><strong>Code simplicity</strong> — Reuses guild property logic</li>
+            <li><strong>Lore coherence</strong> — Physical and local, not abstract</li>
+        </ul>
+        
+        <div class="quote">
+            Factions persist only through the continued participation of guilds.<br>
+            There is no single object to seize, destroy, or inherit.
+        </div>
+        
+        <h2>Final Philosophy</h2>
+        
+        <div class="quote-simple">
+            No central stone.<br>
+            No host required.<br>
+            No sovereignty bleed.<br><br>
+            
+            Just guilds flying banners.
+        </div>
+        
+        <h2>See Also</h2>
+        <ul>
+            <li><a href="emergent-factions.html" style="color: var(--accent);">Emergent Factions</a> — Faction system overview</li>
+            <li><a href="guilds.html" style="color: var(--accent);">Guilds</a> — Guild sovereignty</li>
+            <li><a href="guild-interactions.html" style="color: var(--accent);">Guild Interactions</a> — Inter-guild dynamics</li>
+            <li><a href="stewardship-property.html" style="color: var(--accent);">Stewardship & Property</a> — Property ownership</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="emergent-factions.html" style="color: var(--gold);">← Back to Emergent Factions</a> | <a href="index.html" style="color: var(--gold);">Home</a></p>
+    </footer>
+</body>
+</html>

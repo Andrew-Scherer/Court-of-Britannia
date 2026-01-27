@@ -19,8 +19,10 @@
     const systemsPages = [...politicalSystemsPages, ...justiceSystemsPages, ...cityServicesPages];
     const philosophyPages = ['philosophy.html', 'britain-sole-civic.html', 'new-player-experience.html'];
     const taxationPages = ['economic-philosophy.html', 'crown-taxation.html', 'guild-faction-economy.html', 'crown-liens.html', 'seizure-enforcement.html', 'tax-roles.html'];
-    const guildsFactionsPages = ['guilds.html', 'emergent-factions.html', 'guild-banking.html', 'guild-upkeep.html', 'crown-recognition.html', 'guild-interactions.html', 'player-controlled-vendors.html', 'historic-property.html'];
-    const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html', 'faction-standing-chronicle.html'];
+    const guildsFactionsPages = ['guilds.html', 'emergent-factions.html', 'guild-banking.html', 'guild-upkeep.html', 'crown-recognition.html', 'guild-interactions.html', 'player-controlled-vendors.html'];
+    const factionsPages = ['emergent-factions.html', 'factions-leaderless.html', 'faction-ledger.html', 'one-faction-per-guild.html'];
+    const housingPages = ['housing-philosophy.html', 'historic-property.html', 'housing-not-storage.html', 'sharing-housing.html', 'no-player-housing.html', 'property-loss-political.html', 'city-vs-historic-property.html', 'stewardship-property.html', 'decoration.html'];
+    const specialPages = ['appointments-ledger.html', 'land-ledger.html', 'treasury-ledger.html', 'registry-estates.html', 'tax-ledger.html', 'arrest-ledger.html', 'death-ledger.html', 'faction-standing-chronicle.html', 'faction-ledger.html'];
     
     // Check if current page is in a dropdown
     const isOfficialRolesActive = officialRolesPages.includes(currentPage);
@@ -39,6 +41,8 @@
     const isPhilosophyActive = philosophyPages.includes(currentPage);
     const isTaxationActive = taxationPages.includes(currentPage);
     const isGuildsFactionsActive = guildsFactionsPages.includes(currentPage);
+    const isFactionsActive = factionsPages.includes(currentPage);
+    const isHousingActive = housingPages.includes(currentPage);
     const isSpecialActive = specialPages.includes(currentPage);
     
     // Build navigation HTML
@@ -67,6 +71,15 @@
             </div>
         </div>
         <div class="nav-dropdown">
+            <a ${isFactionsActive ? 'class="active"' : ''}>Factions ▼</a>
+            <div class="nav-dropdown-content">
+                <a href="emergent-factions.html">Emergent Factions</a>
+                <a href="factions-leaderless.html">Factions Are Leaderless by Default</a>
+                <a href="one-faction-per-guild.html">One Faction per Guild</a>
+                <a href="faction-ledger.html">Faction Ledger</a>
+            </div>
+        </div>
+        <div class="nav-dropdown">
             <a ${isTaxationActive ? 'class="active"' : ''}>Taxation & Economy ▼</a>
             <div class="nav-dropdown-content">
                 <a href="economic-philosophy.html">Economic Philosophy</a>
@@ -75,6 +88,20 @@
                 <a href="crown-liens.html">Crown Liens</a>
                 <a href="seizure-enforcement.html">Seizure, Enforcement & Insolvency</a>
                 <a href="tax-roles.html">Tax-Related Roles & Administration</a>
+            </div>
+        </div>
+        <div class="nav-dropdown">
+            <a ${isHousingActive ? 'class="active"' : ''}>How Housing Works ▼</a>
+            <div class="nav-dropdown-content">
+                <a href="housing-philosophy.html">Housing Philosophy</a>
+                <a href="historic-property.html">Historic Property</a>
+                <a href="housing-not-storage.html">Housing Is Not Storage</a>
+                <a href="sharing-housing.html">Sharing Housing</a>
+                <a href="no-player-housing.html">No Player-Placed Housing</a>
+                <a href="property-loss-political.html">Property Loss Is Political</a>
+                <a href="city-vs-historic-property.html">City vs Historic Property</a>
+                <a href="stewardship-property.html">Stewardship & Property</a>
+                <a href="decoration.html">Decoration System</a>
             </div>
         </div>
         <div class="nav-dropdown">
@@ -190,6 +217,7 @@
                 <a href="arrest-ledger.html">Arrest Ledger</a>
                 <a href="death-ledger.html">Public Death Ledger</a>
                 <a href="faction-standing-chronicle.html">Register of Standing & Interfaction Chronicle</a>
+                <a href="faction-ledger.html">Faction Ledger</a>
             </div>
         </div>
     `;

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-styles.css">
+    <title>How Housing Works - Kingdoms of Britannia</title>
+    <style>
+        :root { --bg-dark: #1a1a2e; --bg-medium: #16213e; --bg-light: #0f3460; --accent: #e94560; --text: #eaeaea; --text-muted: #a0a0a0; --gold: #d4af37; --border: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-dark); color: var(--text); line-height: 1.6; }
+        .header { background: linear-gradient(135deg, var(--bg-medium) 0%, var(--bg-light) 100%); padding: 2rem; text-align: center; border-bottom: 3px solid var(--gold); }
+        .header h1 { font-size: 2.5rem; color: var(--gold); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0.5rem; }
+        .header p { color: var(--text-muted); font-style: italic; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        h2 { color: var(--gold); margin: 2rem 0 1rem 0; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        h3 { color: var(--accent); margin: 1.5rem 0 0.5rem 0; }
+        p { margin-bottom: 1rem; }
+        .quote { background: var(--bg-light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; font-style: italic; text-align: center; border: 1px solid var(--border); }
+        .quote::before { content: '"'; font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+        .quote-simple { background: var(--bg-light); padding: 1rem; border-left: 4px solid var(--gold); margin: 1rem 0; font-style: italic; }
+        ul { margin: 1rem 0 1rem 2rem; }
+        li { margin-bottom: 0.5rem; }
+        .info-box { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+        .info-box h3 { color: var(--gold); margin-top: 0; }
+        .nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .nav-card { background: var(--bg-medium); border: 1px solid var(--gold); padding: 1.5rem; border-radius: 8px; }
+        .nav-card h3 { color: var(--gold); margin-top: 0; margin-bottom: 0.5rem; }
+        .nav-card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .nav-card a { color: var(--accent); text-decoration: none; font-weight: bold; }
+        .nav-card a:hover { color: var(--gold); }
+        footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🏠 How Housing Works</h1>
+        <p>Where You Stand in the World, Not What You Hide Behind Walls</p>
+    </header>
+    
+    <nav class="nav">
+        <!-- Navigation loaded from navigation.js -->
+    </nav>
+    <script src="navigation.js"></script>
+    
+    <main class="container">
+        <div class="quote">
+            Housing is about where you stand in the world, not what you hide behind walls.
+        </div>
+        
+        <h2>The Core Philosophy</h2>
+        
+        <p>Housing on this shard works <strong>fundamentally differently</strong> from traditional Ultima Online.</p>
+        
+        <p>This is not "standard UO with tweaks."</p>
+        
+        <p>This is a <strong>new mental model</strong>.</p>
+        
+        <div class="info-box">
+            <h3>What Housing Is</h3>
+            <ul>
+                <li>A <strong>social hub</strong></li>
+                <li>A <strong>political statement</strong></li>
+                <li>A <strong>place in the world</strong></li>
+                <li>A means of <strong>expression and identity</strong></li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>What Housing Is NOT</h3>
+            <ul>
+                <li>A vault for hoarding items</li>
+                <li>A permanent storage solution</li>
+                <li>A mechanism for insulating progress</li>
+                <li>A way to safely accumulate power</li>
+            </ul>
+        </div>
+        
+        <h2>The Mental Model Shift Is Intentional</h2>
+        
+        <p>Players will be upset — then adapt — then prefer this.</p>
+        
+        <div class="quote-simple">
+            <strong>Initial reaction:</strong><br>
+            "Where do I store my stuff?"<br>
+            "What's the point of housing?"
+        </div>
+        
+        <div class="quote-simple">
+            <strong>Later realization:</strong><br>
+            Less anxiety<br>
+            More cooperation<br>
+            Cleaner losses<br>
+            Stronger politics
+        </div>
+        
+        <p>This shard is not old Ultima with tweaks.<br>
+        <strong>It is a new Ultima mental model.</strong></p>
+        
+        <h2>Core Concepts</h2>
+        
+        <div class="nav-grid">
+            <div class="nav-card">
+                <h3>Housing Is Not Storage</h3>
+                <p>Houses are not vaults. They are places to live. Storage is handled through the banking system, not buildings.</p>
+                <a href="housing-not-storage.html">Learn More →</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>Sharing Housing</h3>
+                <p>Players can live together without fragmenting into shell guilds. Storage is personal, housing is social.</p>
+                <a href="sharing-housing.html">Learn More →</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>No Player-Placed Housing</h3>
+                <p>Players do not build new structures. They occupy existing ones. Geography is finite and meaningful.</p>
+                <a href="no-player-housing.html">Learn More →</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>Property Loss Is Political</h3>
+                <p>Losing property hurts socially and strategically, but doesn't erase progress. Personal items stay safe.</p>
+                <a href="property-loss-political.html">Learn More →</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>City vs Historic Property</h3>
+                <p>Cities offer safety and law. Historic properties offer influence through risk. Natural gradients, not artificial tiers.</p>
+                <a href="city-vs-historic-property.html">Learn More →</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>Stewardship & Property</h3>
+                <p>One property per character. Land belongs to people, not institutions. Power ends where life ends.</p>
+                <a href="stewardship-property.html">Learn More →</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>Historic Property System</h3>
+                <p>Permanent world fixtures that guilds temporarily occupy. Auction-based, guild-level claims, and institutional persistence.</p>
+                <a href="historic-property.html">Learn More →</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>Decoration System</h3>
+                <p>Free, unrestricted access to decorative items. Expression is not progression. Everyone gets the alphabet.</p>
+                <a href="decoration.html">Learn More →</a>
+            </div>
+        </div>
+        
+        <h2>The One Sentence</h2>
+        
+        <div class="quote">
+            Housing is about where you stand in the world, not what you hide behind walls.
+        </div>
+        
+        <p>Everything else flows from that.</p>
+        
+        <h2>Why This Works</h2>
+        
+        <p>Traditional housing systems create:</p>
+        <ul>
+            <li>Hoarding anxiety</li>
+            <li>Shell guild fragmentation</li>
+            <li>Storage micromanagement</li>
+            <li>Quit-inducing losses</li>
+            <li>Housing-as-entrenchment gameplay</li>
+        </ul>
+        
+        <p>This system creates:</p>
+        <ul>
+            <li>Social cohesion</li>
+            <li>Political stakes</li>
+            <li>Meaningful choice</li>
+            <li>Fair losses</li>
+            <li>Housing-as-expression gameplay</li>
+        </ul>
+        
+        <div class="quote-simple">
+            You've made a rare thing here:<br>
+            A housing system that actually supports politics instead of undermining it.
+        </div>
+        
+        <h2>See Also</h2>
+        <ul>
+            <li><a href="guilds.html" style="color: var(--accent);">Guilds</a> — Core guild mechanics</li>
+            <li><a href="emergent-factions.html" style="color: var(--accent);">Emergent Factions</a> — Guild alliances</li>
+            <li><a href="guild-upkeep.html" style="color: var(--accent);">Guild Upkeep</a> — Economic pressure</li>
+            <li><a href="crown-recognition.html" style="color: var(--accent);">Crown Recognition</a> — Legitimacy and standing</a></li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p><a href="index.html" style="color: var(--gold);">← Back to Home</a></p>
+    </footer>
+</body>
+</html>
