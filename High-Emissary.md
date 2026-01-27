@@ -1,4 +1,4 @@
-# 📯 High Emissary
+# 📯 Emissary of the Crown
 
 **Britain's Voice to Factions — Not Powerful, Dangerous to Touch**
 
@@ -10,10 +10,10 @@
 
 | Field | Details |
 |---|---|
-| Position | High Emissary of Britain |
+| Position | Emissary of the Crown |
 | Number of Positions | 1 |
 | Appointed By | The King |
-| Subordinates | Envoys (3, appointed by High Emissary) |
+| Subordinates | Envoys (3, appointed by Emissary of the Crown) |
 | Reports To | The King |
 | Function | Britain → Factions communication and witnessing |
 
@@ -84,7 +84,7 @@ This means:
 
 - Deliver official Britain proclamations
 - Witness and record faction responses
-- Appoint and dismiss Envoys (High Emissary only)
+- Appoint and dismiss Envoys (Emissary of the Crown only)
 - Report directly to the King
 - Legal protection under Britain's law
 
@@ -115,7 +115,7 @@ For enforcement clarity, emissaries may carry:
 ## Appointment & Dismissal
 
 
-### High Emissary
+### Emissary of the Crown
 
 
 - **Appointed by:** The King
@@ -126,9 +126,9 @@ For enforcement clarity, emissaries may carry:
 ### Envoys
 
 
-- **Appointed by:** The High Emissary
-- **Dismissed by:** The High Emissary or the King
-- **Term:** At the High Emissary's pleasure
+- **Appointed by:** The Emissary of the Crown
+- **Dismissed by:** The Emissary of the Crown or the King
+- **Term:** At the Emissary of the Crown's pleasure
 - **Number:** 3 maximum
 
 
@@ -140,7 +140,7 @@ For enforcement clarity, emissaries may carry:
 
 ### Scenario 1: Recognition Delivery
 
-The High Emissary travels to a faction base to deliver Britain's recognition of their authority. The faction leader publicly accepts, and the emissary witnesses the oath of fealty. This is recorded in the Interfaction Chronicle and the Register of Standing is updated.
+The Emissary of the Crown travels to a faction base to deliver Britain's recognition of their authority. The faction leader publicly accepts, and the emissary witnesses the oath of fealty. This is recorded in the Interfaction Chronicle and the Register of Standing is updated.
 
 
 ### Scenario 2: Ultimatum Delivery
@@ -155,7 +155,7 @@ A faction member attacks an Envoy en route to deliver a warning. The Envoy survi
 
 ## Summary
 
-The High Emissary and their Envoys are Britain's official voice to factions. They carry Britain's position, not decisions. They deliver recognition, demands, warnings, and ultimatums. They witness fealty oaths, withdrawals, and public refusals.
+The Emissary of the Crown and their Envoys are Britain's official voice to factions. They carry Britain's position, not decisions. They deliver recognition, demands, warnings, and ultimatums. They witness fealty oaths, withdrawals, and public refusals.
 
 Harming an emissary is never "just PvP" — it is a political act that Britain must respond to. Emissaries are not powerful people, but they are dangerous to touch.
 

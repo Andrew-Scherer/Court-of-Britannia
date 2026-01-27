@@ -62,7 +62,7 @@ This prevents treating "Disgraced Noble" like a job, while ensuring "Marshal" ha
 > **Problem: Role Hoarding**
 >
 > **Symptom:** One player accumulates multiple critical roles
-> **Solution:** Hard limit: 1 major role per player (King, Marshal, Magistrate are mutually exclusive). Players can hold 1 major + auxiliary roles (guard, scribe). Enforced in AssignSeat() logic.
+> **Solution:** Hard limit: 1 major role per player (King, Marshal, Magistrate, Land Commissioner are mutually exclusive). Players can hold 1 major + auxiliary roles (guard, scribe). Enforced in AssignSeat() logic.
 
 
 > **❗ Note**
@@ -88,30 +88,7 @@ This prevents treating "Disgraced Noble" like a job, while ensuring "Marshal" ha
 
 ## ❓ Frequently Asked Questions
 
-
-### Q: Can I hold multiple roles at once?
-
-**A:** Yes, but with restrictions. You can hold 1 major role (King, Marshal, Magistrate, Land Commissioner) + multiple auxiliary roles (Guard, Herald). You cannot be King and Marshal simultaneously. Bloodline seats count separately.
-
-
-### Q: What happens if the King dies and there's no Regent?
-
-**A:** Britain enters Interregnum. The Marshal or senior Magistrate may declare a temporary regency, or a coronation is called immediately. NPC systems keep the city functioning, but legitimacy fractures. This is a crisis, not a game-over.
-
-
-### Q: Can I refuse an appointment?
-
-**A:** Yes. The appointment gump requires your consent ("Accept" or "Decline"). Declining a royal appointment has social consequences but is mechanically allowed. Refusal is logged.
-
-
-### Q: How do I get appointed to a role?
-
-**A:** Position yourself politically. Build relationships with the King or Regent. Demonstrate competence. Survive long enough to be trusted. There is no application system — appointments are political acts, not job postings.
-
-
-### Q: Can the King be impeached or removed?
-
-**A:** Not mechanically, but socially yes. The King can be pressured to abdicate, assassinated, or overthrown in a coup. Magistrates can declare a regime illegitimate (no mechanical effect, but huge social impact). Removal is always violent or voluntary.
+**→ See [[Roles & Offices|Roles]] for the complete FAQ section about roles, appointments, and succession**
 
 
 ## 📋 Summary

@@ -33,8 +33,8 @@ This wiki contains complete game design documentation for Kingdoms of Britannia,
 
 ### Britain's Forces
 - [[Guards]] - [[Marshal of the Guard|Marshal-Guard]], [[Captain of the Guard|Captain-Guard]], [[City Guard|City-Guard]]
-- [[Military]] - [[High Commander|High-Commander]], [[Field Commander|Field-Commander]], [[Soldier]]
-- [[Warden]], [[Coroner]], [[Executioner]]
+- [[Military]] - [[High Commander|High-Commander]], [[Soldier]]
+- [[Warden]], [[Coroner]], [[Executioner]], [[Magistrate]]
 
 ### Game Systems
 - [[Jail System|Jail]] (timer-based custody)
@@ -63,7 +63,7 @@ This wiki contains complete game design documentation for Kingdoms of Britannia,
 - [[Faction Standing Chronicle|Faction-Standing-Chronicle]]
 
 ### Diplomacy & Economics
-- [[Diplomacy]] - [[High Emissary|High-Emissary]], [[Envoy]], [[Diplomat]]
+- [[Diplomacy]] - [[Emissary of the Crown|High-Emissary]], [[Envoy]], [[Diplomat]]
 - [[Crown Liens|Crown-Liens]] & [[Seizure Enforcement|Seizure-Enforcement]]
 - [[Player Controlled Vendors|Player-Controlled-Vendors]]
 - [[Economic Philosophy|Economic-Philosophy]]

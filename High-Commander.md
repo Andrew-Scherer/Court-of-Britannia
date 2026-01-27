@@ -13,7 +13,7 @@
 | Position | Lord of the Royal Army |
 | Number of Positions | 1 |
 | Appointed By | The King |
-| Can Appoint | Captains of the Crown (3 maximum) |
+| Can Appoint | Captains of the Crown (1 per 10 Knights, scales with army size) |
 | Reports To | The King |
 | Function | Command external military operations; project force beyond Britain's walls; protect the realm |
 
@@ -170,7 +170,7 @@ When the King dies or authority is contested, the Lord of the Royal Army faces t
 
 ### Captains of the Crown as Wild Cards
 
-Unlike the single Marshal, the Lord of the Royal Army appoints three Captains of the Crown. During crises:
+Unlike the single Marshal, the Lord of the Royal Army appoints multiple Captains of the Crown (scaling 1:10 with army size). During crises:
 
 
 - Captains of the Crown may choose different claimants

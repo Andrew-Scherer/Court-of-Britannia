@@ -14,7 +14,7 @@
 | Number of Positions | Unlimited |
 | Appointed By | Envoy |
 | Can Appoint | None |
-| Reports To | Envoys and High Emissary |
+| Reports To | Envoys and Emissary of the Crown |
 | Function | Deliver proclamations, witness responses, observe factions, enforce tax notices |
 
 
@@ -94,7 +94,7 @@ All Diplomats operate under diplomatic protection—a political norm that makes 
 - The diplomat is caught spying or inciting rebellion
 - During total war, when norms collapse
 
-**Attacking a Diplomat creates the same consequence as attacking the High Emissary or Envoy: casus belli.** Britain does not distinguish between ranks when diplomatic protection is violated—all three carry Britain's authority equally in the field.
+**Attacking a Diplomat creates the same consequence as attacking the Emissary of the Crown or Envoy: casus belli.** Britain does not distinguish between ranks when diplomatic protection is violated—all three carry Britain's authority equally in the field.
 
 
 ## Operating in Faction Territories
@@ -138,9 +138,9 @@ Diplomats report to Envoys who:
 - Appoint and dismiss Diplomats
 
 
-### High Emissary
+### Emissary of the Crown
 
-The High Emissary sets overall diplomatic strategy. While Diplomats rarely interact directly with the High Emissary, their work implements the High Emissary's vision for Britain's external relationships.
+The Emissary of the Crown sets overall diplomatic strategy. While Diplomats rarely interact directly with the Emissary of the Crown, their work implements the Emissary of the Crown's vision for Britain's external relationships.
 
 
 ### Guards and Military
@@ -216,7 +216,7 @@ Diplomats are for players who want:
 - **Intelligence networks** — Learn faction secrets and plans
 - **Political leverage** — Influence conflicts before they begin
 - **Diplomatic protection** — Make violence against you politically expensive
-- **Entry to the diplomatic corps** — Path to becoming Envoy or High Emissary
+- **Entry to the diplomatic corps** — Path to becoming Envoy or Emissary of the Crown
 - **Temptation** — The slow realization you could serve factions over the Crown
 
 **This is the entry-level diplomatic role with significant autonomy and political impact.**
@@ -233,7 +233,7 @@ Diplomats are for players who want:
 - Risk developing faction loyalties that conflict with Britain's interests
 - Intelligence manipulation can engineer crises or blind Britain to threats
 - During succession crises, diplomatic recognition creates external legitimacy
-- Entry point to diplomatic hierarchy with path to Envoy or High Emissary
+- Entry point to diplomatic hierarchy with path to Envoy or Emissary of the Crown
 
 
 ## See Also

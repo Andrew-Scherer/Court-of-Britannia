@@ -59,7 +59,7 @@
 
 **Noble Roles**
 - [[Master of the Treasury|Master-Treasury]]
-- [[High Emissary]]
+- [[Emissary of the Crown|High-Emissary]]
 - [[Land Commissioner|Steward]]
 - [[Marshal of the Guard|Marshal-Guard]]
 - [[High Commander of Britain|High-Commander]]
@@ -73,12 +73,11 @@
 **Royal Army**
 - [[Military]]
 - [[High Commander|High-Commander]]
-- [[Field Commander]]
 - [[Soldier]]
 
 **Diplomacy Roles**
 - [[Diplomacy]]
-- [[High Emissary]]
+- [[Emissary of the Crown|High-Emissary]]
 - [[Envoy]]
 - [[Diplomat]]
 
@@ -86,6 +85,7 @@
 - [[Warden]]
 - [[Coroner]]
 - [[Executioner]]
+- [[Magistrate]]
 
 **Britain's City Systems**
 
@@ -125,6 +125,7 @@
 - [[Guilds & Factions at War|Guilds-Factions-At-War]]
 
 **Unorganized**
+- [[Sacking Britain|Sacking-Britain]]
 - [[Carpentry: Building Parts|Carpentry-Building-Parts]]
 - [[Contractors]]
 - [[Decoration System|Decoration-System]]

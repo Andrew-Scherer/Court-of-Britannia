@@ -50,7 +50,7 @@ Diplomats do not answer to:
 |---|---|---|---|
 | 🕊️ Emissary of the Crown | 1 | King | Envoys |
 | 📜 Envoy | 1 per 10 Diplomats | Emissary of the Crown | Diplomats |
-| 🗣️ Diplomat | Unlimited | Envoy | None |
+| 🗣️ Diplomat | Un
 
 
 ### Emissary of the Crown
@@ -424,6 +424,7 @@ Diplomatic players get:
 
 - [[Emissary of the Crown|High-Emissary]] — Detailed role description
 - [[Envoy|Envoy]] — Detailed role description
+- [[Diplomat|Diplomat]] — Detailed role description
 - [[Britain's Relationship with Factions|Crown-Recognition]] — Recognition status system
 - [[Faction Interactions|Guild-Interactions]] — How factions engage with each other and Britain
 - [[Guards|Guards]] — Internal enforcement when diplomacy fails

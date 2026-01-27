@@ -12,9 +12,9 @@
 |---|---|
 | Position | Envoy of Britain |
 | Number of Positions | 3 maximum |
-| Appointed By | The High Emissary |
-| Reports To | The High Emissary |
-| Superior | High Emissary (appointed by King) |
+| Appointed By | The Emissary of the Crown |
+| Reports To | The Emissary of the Crown |
+| Superior | Emissary of the Crown (appointed by King) |
 | Function | Field delivery and witnessing on behalf of Britain |
 
 
@@ -44,7 +44,7 @@
 ### They Report:
 
 
-- Faction responses to the High Emissary
+- Faction responses to the Emissary of the Crown
 - Witnessed events for the Interfaction Chronicle
 - Incidents, threats, or attacks on their person
 - Requests for escalation or clarification
@@ -52,7 +52,7 @@
 
 ## Why This Role Matters
 
-Envoys don't have less authority than the High Emissary in the field — they *are* Britain's authority when delivering proclamations. The difference is organizational: Envoys report to the High Emissary, who coordinates and escalates.
+Envoys don't have less authority than the Emissary of the Crown in the field — they *are* Britain's authority when delivering proclamations. The difference is organizational: Envoys report to the Emissary of the Crown, who coordinates and escalates.
 
 
 ## Critical Canon Rule
@@ -72,7 +72,7 @@ This means:
 - Interfering with Envoy business is a crime against Britain
 - PKs have a choice: violence → consequences
 
-**Envoys share the same protections as the High Emissary.** Harming either is equally serious politically. Britain does not distinguish between attacking a high-ranking or low-ranking representative — both are attacks on Britain itself.
+**Envoys share the same protections as the Emissary of the Crown.** Harming either is equally serious politically. Britain does not distinguish between attacking a high-ranking or low-ranking representative — both are attacks on Britain itself.
 
 
 ## What Envoys Are NOT
@@ -92,10 +92,10 @@ This means:
 ### Powers
 
 
-- Deliver official Britain proclamations (as directed by High Emissary)
+- Deliver official Britain proclamations (as directed by Emissary of the Crown)
 - Witness and record faction responses
-- Report directly to the High Emissary
-- Legal protection under Britain's law (equal to High Emissary)
+- Report directly to the Emissary of the Crown
+- Legal protection under Britain's law (equal to Emissary of the Crown)
 - Authority to demand audiences with faction leaders
 
 
@@ -107,7 +107,7 @@ This means:
 - Cannot recognize or outlaw factions (only deliver such proclamations)
 - Cannot enforce (that's the Guards' role)
 - Cannot retreat from witnessing (refusal to witness is dereliction)
-- Cannot appoint other Envoys (only the High Emissary can)
+- Cannot appoint other Envoys (only the Emissary of the Crown can)
 
 
 ## Optional Visual Markers
@@ -120,7 +120,7 @@ For enforcement clarity, Envoys may carry:
 - Color sash (visible identification)
 - Scroll case (for official documents)
 
-*Not mandatory, but it helps prevent "I didn't know." Visual markers should distinguish Envoys from High Emissary (different color sash, smaller seal, etc.) while still showing Britain's authority.*
+*Not mandatory, but it helps prevent "I didn't know." Visual markers should distinguish Envoys from Emissary of the Crown (different color sash, smaller seal, etc.) while still showing Britain's authority.*
 
 
 ## Appointment & Dismissal
@@ -129,21 +129,21 @@ For enforcement clarity, Envoys may carry:
 ### Appointment
 
 
-- **Appointed by:** The High Emissary
+- **Appointed by:** The Emissary of the Crown
 - **Number:** 3 maximum
-- **Term:** At the High Emissary's pleasure
+- **Term:** At the Emissary of the Crown's pleasure
 - **Requirements:** Trust, communication skill, willingness to travel
 
 
 ### Dismissal
 
 
-- **Dismissed by:** The High Emissary or the King
+- **Dismissed by:** The Emissary of the Crown or the King
 - **Reasons:** Failure to deliver, unauthorized negotiation, corruption, dereliction
 - **Effect:** Loss of all emissary protections and authority
 
 
-## Relationship with High Emissary
+## Relationship with Emissary of the Crown
 
 
 ## How This Creates Gameplay
@@ -154,7 +154,7 @@ For enforcement clarity, Envoys may carry:
 
 ### Scenario 1: Routine Tribute Demand
 
-An Envoy travels to a faction base to deliver a tribute demand. The faction leader pays immediately. The Envoy witnesses the payment, records it, and reports success to the High Emissary. Simple, clean, documented.
+An Envoy travels to a faction base to deliver a tribute demand. The faction leader pays immediately. The Envoy witnesses the payment, records it, and reports success to the Emissary of the Crown. Simple, clean, documented.
 
 
 ### Scenario 2: Hostile Reception
@@ -164,20 +164,20 @@ An Envoy delivers a warning to a faction. The faction leader refuses to meet. Th
 
 ### Scenario 3: Envoy Attacked
 
-A faction member attacks an Envoy en route to deliver an ultimatum. The Envoy survives and reports to the High Emissary. The High Emissary escalates to the King. Britain declares the attack an act of war and withdraws all recognition. The Envoy's wound becomes casus belli.
+A faction member attacks an Envoy en route to deliver an ultimatum. The Envoy survives and reports to the Emissary of the Crown. The Emissary of the Crown escalates to the King. Britain declares the attack an act of war and withdraws all recognition. The Envoy's wound becomes casus belli.
 
 
 ### Scenario 4: Coordinated Deliveries
 
-The High Emissary directs all 3 Envoys to deliver simultaneous ultimatums to three different factions. This demonstrates Britain's reach and forces coordinated responses. The High Emissary remains in Britain to brief the King on results as they arrive.
+The Emissary of the Crown directs all 3 Envoys to deliver simultaneous ultimatums to three different factions. This demonstrates Britain's reach and forces coordinated responses. The Emissary of the Crown remains in Britain to brief the King on results as they arrive.
 
 
 ## Summary
 
-Envoys are Britain's field representatives, appointed by the High Emissary to deliver proclamations, witness faction responses, and report back. They carry the same authority as the High Emissary when delivering Britain's position, but report to the High Emissary organizationally.
+Envoys are Britain's field representatives, appointed by the Emissary of the Crown to deliver proclamations, witness faction responses, and report back. They carry the same authority as the Emissary of the Crown when delivering Britain's position, but report to the Emissary of the Crown organizationally.
 
 Harming an Envoy is never "just PvP" — it is a political act that Britain must respond to. Envoys are not powerful people, but they are dangerous to touch.
 
 This role creates distributed presence, escalation flexibility, and witness redundancy without requiring new mechanics. Envoys are the eyes, ears, and voice of Britain in faction territories.
 
-**→ See High Emissary for the complete emissary system and organizational structure**
+**→ See Emissary of the Crown for the complete emissary system and organizational structure**

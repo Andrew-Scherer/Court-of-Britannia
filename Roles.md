@@ -117,7 +117,7 @@ Players influence NPC systems via decrees, pressure, scandal, protest, and legit
 > **Problem: Role Hoarding**
 >
 > **Symptom:** One player accumulates multiple critical roles
-> **Solution:** Hard limit: 1 major *court* role per player (King, Marshal, Magistrate are mutually exclusive). Players can hold 1 major court role + auxiliary roles (guard, scribe) + guild/faction leadership. Guild/Faction leadership is NOT a court office and doesn't count against this limit. Enforced in AssignSeat() logic.
+> **Solution:** Hard limit: 1 major *court* role per player (King, Marshal, Magistrate, Land Commissioner are mutually exclusive). Players can hold 1 major court role + auxiliary roles (guard, scribe) + guild/faction leadership. Guild/Faction leadership is NOT a court office and doesn't count against this limit. Enforced in AssignSeat() logic.
 
 
 > **❗ Note**
@@ -146,7 +146,7 @@ Players influence NPC systems via decrees, pressure, scandal, protest, and legit
 
 ### Q: Can I hold multiple roles at once?
 
-**A:** Yes, but with restrictions. You can hold 1 official Court role (King, Marshal, Magistrate, Guard). You cannot be King and Marshal simultaneously. You can hold both a role in the Court AND a separate role in your faction/guild.
+**A:** Yes, but with restrictions. You can hold 1 major Court role (King, Marshal, Magistrate, Land Commissioner). You cannot be King and Marshal simultaneously. You can hold both a role in the Court AND a separate role in your faction/guild.
 
 
 ### Q: What happens if the King dies and there's no Regent?
