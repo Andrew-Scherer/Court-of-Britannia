@@ -56,7 +56,7 @@ This wiki contains complete game design documentation for Kingdoms of Britannia,
 - [[Appointments Ledger|Appointments-Ledger]]
 - [[Land Ledger|Land-Ledger]]
 - [[Registry of Estates|Registry-Estates]]
-- [[Arrest Ledger|Arrest-Ledger]]
+- [[Jail Ledger|Jail-Ledger]]
 - [[Death Ledger|Death-Ledger]]
 - [[Treasury Ledger|Treasury-Ledger]]
 - [[Tax Ledger|Tax-Ledger]]

@@ -155,7 +155,7 @@ With a functioning [[justice system|Jail]], players may need advocates to argue 
 
 - **Argue cases:** Present evidence, question witnesses, and advocate for clients during trials
 - **Negotiate plea deals:** Work with guards, magistrates, or the Crown to reduce sentences
-- **Contest unjust arrests:** Challenge the legal basis of [[arrests|Arrest-Ledger]] or [[executions|Execution-Mechanics]]
+- **Contest unjust arrests:** Challenge the legal basis of [[arrests|Arrest-Records]] or [[executions|Execution-Mechanics]]
 - **Represent factions:** Defend faction members accused of crimes against the Crown
 
 **Why This Role Matters:** Not everyone charged with a crime is guilty. Not every execution is just. Prosecutors provide a social (and sometimes political) counterweight to Crown authority. A skilled prosecutor can save lives, expose corruption, or delay politically motivated trials long enough for allies to intervene.

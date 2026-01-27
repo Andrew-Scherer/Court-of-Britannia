@@ -1,4 +1,4 @@
-# 📜 Arrest Ledger
+# 🔒 Jail Ledger
 
 **Public Record of Custody and Force**
 
@@ -7,7 +7,7 @@
 
 ## Core Principle
 
-The Arrest Ledger is a public accounting of force, not a judgment of guilt.
+The Jail Ledger is a public accounting of custody, not a judgment of guilt.
 
 Arrest is an act of authority, not proof of wrongdoing. Therefore, every arrest must be visible by default.
 
@@ -21,7 +21,7 @@ The ledger exists to ensure:
 
 ## Automatic Entry Creation
 
-When a player is booked into jail, an Arrest Ledger entry is created automatically.
+When a player is booked into jail, a Jail Ledger entry is created automatically.
 
 
 - No approval is required
@@ -33,7 +33,7 @@ This ensures the world continues functioning even when no officials are present.
 
 ## Physical Location & Access
 
-The Arrest Ledger is physically located at the front of the jail.
+The Jail Ledger is physically located at the front of the jail.
 
 Access rules:
 
@@ -64,9 +64,9 @@ Each entry includes the following immutable fields:
 The ledger does not determine guilt or innocence.
 
 
-## What the Arrest Ledger Does NOT Contain
+## What the Jail Ledger Does NOT Contain
 
-The Arrest Ledger does not include:
+The Jail Ledger does not include:
 
 
 - Verdicts
@@ -96,22 +96,9 @@ Guards may append:
 Guards cannot edit or remove system data.
 
 
-### Warden Annotations
-
-Wardens may append:
-
-
-- Custody visibility flags
-- Irregular custody notices
-- Pattern observations
-- Condition-of-custody remarks
-
-Wardens do not alter custody duration or outcome.
-
-
 ### Prisoner Statements
 
-Prisoners may append statements only to their own arrest record.
+Prisoners may append statements only to their own custody record.
 
 Examples:
 
@@ -125,14 +112,14 @@ Prisoners cannot edit system or third-party entries.
 
 ## Auto-Release Visibility
 
-When custody ends due to timer expiration without human intervention, the Arrest Ledger records: "Released due to unresolved custody."
+When custody ends due to timer expiration without human intervention, the Jail Ledger records: "Released due to unresolved custody."
 
 This indicates institutional failure, not mercy.
 
 Auto-release does not erase:
 
 
-- Arrest history
+- Custody history
 - Eligibility for later action
 - Political consequence
 
@@ -142,16 +129,25 @@ Auto-release does not erase:
 
 ### Jail System
 
-The Arrest Ledger records entry into custody. Custody mechanics are defined in jail.html.
+The Jail Ledger records entry into custody. Custody mechanics are defined in the Jail system.
 
 
 > **Note**
 > **See:** [[Jail System|Jail]] for custody mechanics, timers, and auto-release rules
 
 
+### Arrest Records
+
+Jail Ledger = custody status (who's in jail, for how long)
+
+Arrest Records = arrest history (who was arrested, by whom, for what)
+
+Both serve different purposes but reference each other.
+
+
 ### Death Ledger
 
-Arrest Ledger = reversible force
+Jail Ledger = reversible custody
 
 Death Ledger = irreversible outcome
 
@@ -166,7 +162,7 @@ Both are:
 
 ### Magistrates & Crown
 
-Magistrates and the Crown are not required to review every arrest.
+Magistrates and the Crown are not required to review every custody entry.
 
 They engage only when:
 
@@ -180,10 +176,10 @@ This avoids administrative bottlenecks.
 
 ## Institutional Function
 
-The Arrest Ledger ensures:
+The Jail Ledger ensures:
 
 
-- Force leaves a record
+- Custody leaves a record
 - Silence is visible
 - Patterns accumulate over time
 - Power remains legible
@@ -193,7 +189,7 @@ No role controls outcomes by managing the ledger. All outcomes occur independent
 
 ## Closing Constraints
 
-The Arrest Ledger:
+The Jail Ledger:
 
 
 - Cannot be disabled
@@ -204,7 +200,7 @@ The Arrest Ledger:
 If custody occurs, the record exists.
 
 
-> *The Arrest Ledger does not determine guilt.It records the use of force.What the realm does with that knowledge is political.*
+> *The Jail Ledger does not determine guilt.It records custody status.What the realm does with that knowledge is political.*
 
 
 ## See Also

@@ -316,7 +316,7 @@ Most political RP servers claim to value these players, but structurally they ma
 **This shard gives Institutional Loyalists:**
 
 - **Mechanical Authority** — Their decisions are enforced systemically, not through admin favor
-- **Persistent Records** — [[Arrest Ledgers|Arrest-Ledger]], [[Death Ledgers|Death-Ledger]], and [[Land Ledgers|Land-Ledger]] don't vanish when they log off
+- **Persistent Records** — [[Jail Ledger|Jail-Ledger]], [[Death Ledgers|Death-Ledger]], and [[Land Ledgers|Land-Ledger]] don't vanish when they log off
 - **Auto-Resolution** — The system doesn't wait for them to be online to function, preventing burnout and gatekeeping accusations
 - **Impartial Visibility** — Their work creates public accountability, not private arbitration
 - **Long-Term Consequences** — Their documentation shapes succession, trials, property disputes, and historical interpretation permanently
@@ -723,7 +723,7 @@ Jail gives victims immediate, non-lethal recourse—but it's only the beginning 
 A griefer arrested for assault enters custody. Once there, they face:
 
 - **Immediate consequences** — Lose time, can't grief while imprisoned
-- **Public exposure** — Record in the [[Arrest Ledger]]
+- **Public exposure** — Record in the [[Jail Ledger|Jail-Ledger]]
 - **Further punishment** — Execution, exile, or extended sentencing
 
 Custody is just capture. What happens next depends on victims, [[Magistrates|Roles]], and political will.

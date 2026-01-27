@@ -149,7 +149,7 @@ The Tax Ledger interacts with, but does not replace:
 | Treasury Ledger | Tracks balance and expenditure |
 | Salary Ledger | Tracks wage expectations and payments (seeSalary System) |
 | Bounty Ledger | Tracks reward funding and payouts |
-| Arrest Ledger&Death Ledger | Show consequences of fiscal stress indirectly |
+| Jail Ledger & Death Ledger | Show consequences of fiscal stress indirectly |
 
 No single ledger tells the whole story.  
 
