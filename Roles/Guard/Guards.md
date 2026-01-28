@@ -150,7 +150,7 @@ Guards possess significant power but are constrained by role boundaries, legal a
 ### What Guards Cannot Do
 
 
-- **Execute prisoners** — Only the Executioner role may carry out capital punishment after sentencing
+- **Execute prisoners (City Guards only)** — Only Captain of the Guard and higher ranks have execution authority
 - **Pardon or release prisoners** — Only the King or Magistrate holds this authority
 - **Override Magistrate rulings** — If the Magistrate declares an arrest unlawful, guards must comply or face legal consequences
 - **Act during sanctuary** — Healers may declare sanctuary; guards cannot arrest or use force in sanctified spaces without violating established limits

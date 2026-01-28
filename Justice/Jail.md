@@ -21,7 +21,7 @@ When a character is jailed, they are assigned a Custody Class with a default tim
 |---|---|---|
 | Minor | Theft, disorder, trespass | 10–15 minutes |
 | Serious | Assault, repeat offenses, obstruction | 1–3 hours |
-| Capital | Murder, treason, regicide attempt | 12–24 hours |
+| Capital | Murder, treason, regicide attempt, political detainees | 1 hour or less |
 
 No human action is required. No trial is required. No judgment is required. Timers always tick, even if no one is online.
 
@@ -59,7 +59,9 @@ All releases are logged and public. This is error correction, not mercy.
 
 ## Auto-Release for Capital Custody
 
-When capital custody expires without intervention, the prisoner is released automatically.
+When capital custody expires without intervention, the prisoner is released automatically—**released on bond**.
+
+This applies to all capital custody, including political detainees. Maximum hold is 1 hour or less.
 
 This is not mercy. This represents institutional failure.
 
@@ -93,10 +95,9 @@ Human roles do not keep the system running. They only change outcomes.
 
 | Role | Authority |
 |---|---|
-| Magistrate | Escalate custody to executionDowngrade chargesDeclare arrest unlawfulOrder release |
+| Magistrate | Escalate custody to executionDowngrade chargesDeclare arrest unlawfulOrder releaseCommute sentences |
 | King | PardonCommuteExileAccelerate execution |
 | Guards | Correct their own mistakes (short window)Re-arrest on new causeTransfer custody |
-| Warden | Modify conditions onlySeparate prisonersRecommend outcomesNever block release or visitation |
 
 
 ## What Happens If No One Is Online
@@ -159,23 +160,13 @@ None of these do anything mechanically. But all of them trigger attention, chang
 Players stay logged in when negotiation is live.
 
 
-### Ransom & Exchange Visibility
-
-The Warden can mark a prisoner as "Negotiable."
-
-This signals that deals are possible. Others know they can approach.
-
-Effect: People show up to talk.
 
 
 ## Execution from Custody
 
-Jailed prisoners may be executed only after lawful sentencing. Only the Executioner may perform executions. Guards may not execute prisoners in custody.
+Jailed prisoners may be executed only after lawful sentencing. Only Captain of the Guard and higher ranks have execution authority. City Guards may not execute prisoners in custody.
 
-
-> **Note**
-> **See:** [[Execution Mechanics|Execution-Mechanics]] for full procedural details
-> **See:** [[Guards]] have execution authority within Britain
+Execution is not hard-coded or mechanically enforced. Players handle executions themselves through roleplay.
 
 
 ## Records
@@ -197,4 +188,3 @@ Custody is automatic. Custody is temporary. Custody resolves through timers. Hum
 - [[Guards|Guards]] — Arrest authority and procedures
 - [[Death & Downed States|Permadeath-Downed]] — Subdue and capture mechanics
 - [[Magistrates & Courts|Roles]] — Legal process and sentencing
-- [[Execution Mechanics|Execution-Mechanics]] — Death from custody

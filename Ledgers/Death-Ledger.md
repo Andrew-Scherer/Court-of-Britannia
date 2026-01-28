@@ -15,8 +15,8 @@ The ledger operates in three layers:
 
 
 - **Automatic baseline record** — Generated when death occurs, containing no interpretation
-- **Forensic update** — Added when a Coroner examines a corpse, providing method and authority indicators
-- **Coroner addendum** — Optionally authored by Coroners, containing investigation findings, testimony, and judgment
+- **Forensic update** — Added when someone with Forensic Evaluation examines a corpse, providing detailed death information based on skill level
+- **Investigator addendum** — Optionally authored by investigators, containing investigation findings, testimony, and judgment
 
 Each layer adds depth without erasing what came before. The baseline entry persists whether or not examination or investigation ever occurs. This ensures the ledger functions as institutional memory rather than political filter.
 
@@ -62,41 +62,57 @@ Ledger entries progress through states that reflect information depth rather tha
 | State | Meaning | What Changed |
 |---|---|---|
 | Unexamined | A death occurred; no further information exists | Baseline entry created automatically on death |
-| Examined | A Coroner has performed forensic evaluation | Forensic indicators added (method, timing, authority signals) |
-| Annotated | Additional commentary has been added | Coroner addendum published (investigation findings, witness testimony, judgment) |
+| Examined | Someone with Forensic Evaluation has examined the body | Forensic indicators added based on examiner's skill level |
+| Annotated | Additional commentary has been added | Investigator addendum published (investigation findings, witness testimony, judgment) |
 
 These states do not expire or reset. Once a death is examined, it remains examined. Once annotated, it remains annotated. This ensures the ledger accumulates information over time rather than reflecting only the current moment.
 
 
 ### State Transitions Are Non-Linear
 
-A death may be annotated without being examined if a Coroner adds commentary based on witness testimony without performing forensic evaluation. A death may remain unexamined indefinitely if no Coroner chooses to investigate. States reflect what information exists, not what procedurally should exist.
+A death may be annotated without being examined if an investigator adds commentary based on witness testimony without performing forensic evaluation. A death may remain unexamined indefinitely if no one with Forensic Evaluation chooses to investigate. States reflect what information exists, not what procedurally should exist.
 
 
-## Coroner Interaction and Forensic Updates
+## Forensic Evaluation and Death Investigation
 
-When a Coroner examines a corpse, the ledger entry transitions from Unexamined to Examined and receives a forensic update. This update is generated automatically based on what the corpse reveals. It is factual, non-narrative, and non-accusatory.
+Anyone with the Forensic Evaluation skill can examine a corpse. When they do, the ledger entry transitions from Unexamined to Examined and receives a forensic update. This update is generated automatically based on what the examiner's skill level reveals.
 
-Forensic updates include:
+**Forensic Evaluation is skill-based.** The information revealed depends on the examiner's skill level:
 
+### Skill Level Information Revealed
 
-- **Method indicators** — Weapon type, trauma pattern, poison presence, arcane residue
-- **Timing estimates** — How long the body has been dead when examined
-- **Authority signals** — Signs of formal execution, restraint marks, custody handling
-- **Tampering indicators** — Post-mortem looting, body moved after death, attempts to conceal cause
-- **Capability hints** — Evidence of trained blade work, arcane expertise, medical knowledge
+**Novice (Low Skill):**
+- **Method of death** — Basic weapon type or cause (blade, blunt weapon, magic, poison)
 
-These indicators describe what the corpse reveals without identifying who was responsible. A forensic update might note "blunt trauma consistent with cudgel strike, restraint marks on wrists, death occurred approximately two hours before examination" without naming the guard, confirming arrest, or assigning blame.
+**Intermediate (Medium Skill):**
+- **Method of death** — Detailed weapon type and trauma pattern
+- **Time of death** — When the killing occurred
 
+**Advanced (High Skill):**
+- **Method of death** — Precise weapon type, trauma pattern, and capability indicators
+- **Time of death** — Precise timing estimate
+- **Killer identity** — Who killed them (if detectable)
 
-### Forensic Updates Are Not Stories
+**Expert (Maximum Skill):**
+- **Method of death** — Complete forensic analysis including weapon, technique, training level
+- **Time of death** — Exact timing
+- **Killer identity** — Who killed them
+- **Killer location** — General direction of where the murderer currently is (tracking information)
 
-Forensic updates do not construct narratives. They do not say "the victim was killed during arrest" or "this was an execution." They provide raw indicators that others may interpret. A body with restraint marks and blunt trauma might indicate custody death, or it might indicate the deceased was restrained earlier and killed later under different circumstances. The forensic update documents physical evidence; interpretation is left to Coroners, Magistrates, and political observers.
+The ledger automatically records both the forensic findings and the name of the person who discovered this information. This creates accountability for investigations and documents who examined which deaths.
+
+### Why This Matters in a Permadeath Shard
+
+In a world where death is permanent, accurate death investigation becomes critical. The Forensic Evaluation skill system ensures:
+- Skilled investigators provide valuable information about murders
+- Players can pursue killers using tracking information from expert examination
+- The quality of investigation depends on player skill investment, not arbitrary role assignment
+- Multiple people can investigate the same death, potentially revealing different levels of detail
 
 
 ## Addenda and Commentary
 
-Coroners may choose to add authored addenda to ledger entries. These addenda are optional, discretionary, and reflective of the Coroner's judgment, bias, and priorities. They represent the Coroner's interpretation of evidence rather than the evidence itself.
+Anyone who investigates a death may choose to add authored addenda to ledger entries. These addenda are optional, discretionary, and reflective of the investigator's judgment, bias, and priorities. They represent the investigator's interpretation of evidence rather than the evidence itself.
 
 An addendum may include:
 
@@ -108,21 +124,21 @@ An addendum may include:
 - Personal judgment on whether the death was lawful, justified, or suspicious
 - Recommendations for further investigation or charges
 
-When a Coroner publishes an addendum, the ledger entry transitions to Annotated. The addendum appears alongside the baseline entry and forensic update without overwriting them. This layered structure preserves the distinction between fact (death occurred), observation (corpse showed these indicators), and judgment (this death was suspicious).
+When an investigator publishes an addendum, the ledger entry transitions to Annotated. The addendum appears alongside the baseline entry and forensic update without overwriting them. This layered structure preserves the distinction between fact (death occurred), observation (corpse showed these indicators), and judgment (this death was suspicious).
 
 
 ### Multiple Addenda
 
-Multiple Coroners may publish separate addenda for the same death. These addenda may agree, contradict, or focus on different aspects of the death. The ledger preserves all addenda as a record of how authorities interpreted the same evidence differently.
+Multiple investigators may publish separate addenda for the same death. These addenda may agree, contradict, or focus on different aspects of the death. The ledger preserves all addenda as a record of how different people interpreted the same evidence differently.
 
 A death with three addenda — one declaring it a lawful execution, one calling it murder, one noting insufficient evidence to determine — becomes historical evidence that authorities disagreed. The ledger does not resolve this disagreement. It documents that disagreement existed.
 
 
 ### Addenda as Political Acts
 
-Publishing an addendum is a political act. A Coroner who writes detailed addenda for every custody death creates pressure on the Guard to justify its actions. A Coroner who ignores deaths in certain districts signals that those deaths do not matter to the regime. A Coroner who focuses exclusively on deaths involving particular houses reveals bias that undermines their credibility.
+Publishing an addendum is a political act. An investigator who writes detailed addenda for every custody death creates pressure on the Guard to justify its actions. An investigator who ignores deaths in certain districts signals that those deaths do not matter (or that they lack the skill to investigate them). An investigator who focuses exclusively on deaths involving particular houses reveals bias that undermines their credibility.
 
-The ledger does not judge whether these choices are appropriate. It records them. Over time, patterns in what a Coroner investigates reveal as much as the investigations themselves.
+The ledger does not judge whether these choices are appropriate. It records them. Over time, patterns in what investigators examine reveal as much as the investigations themselves.
 
 
 ## Access and Visibility
@@ -200,9 +216,10 @@ The ledger does not force these arguments to succeed. It provides the ammunition
 
 - The Public Death Ledger automatically records every character death with name, time, location, and status regardless of circumstance or witness
 - Baseline entries are created on death without requiring permission, authorization, or role action; no authority can prevent a death from being recorded
-- Ledger entry states progress from Unexamined to Examined (when Coroner performs forensic evaluation) to Annotated (when addenda are published)
-- Forensic updates add method indicators, timing, authority signals, and tampering evidence without constructing narratives or assigning blame
-- Coroner addenda are optional, discretionary, and reflective of the Coroner's judgment; multiple Coroners may publish conflicting addenda for the same death
+- Ledger entry states progress from Unexamined to Examined (when someone with Forensic Evaluation examines the body) to Annotated (when addenda are published)
+- **Forensic Evaluation is skill-based:** Information revealed scales from basic (method) at low skill to complete (method, time, killer identity, killer location) at expert skill
+- The ledger records both forensic findings and the name of the investigator who discovered the information
+- Investigator addenda are optional, discretionary, and reflective of the investigator's judgment; multiple investigators may publish conflicting addenda for the same death
 - The ledger is publicly accessible; entries cannot be erased or modified, only supplemented over time
 - The ledger is not an investigative system, permission gate, or declaration of guilt; it records what is known, not who is responsible
 - Patterns in ledger entries expose regime priorities and values through aggregate data rather than individual deaths

@@ -27,6 +27,19 @@ When a character dies, they are gone forever. No respawns. No alts holding power
 
 But death is not only personal erasure. It tests succession, loyalty, economic upkeep, and institutional resilience. A guild that survives its founder's death proves legitimacy. A faction that collapses when its leader dies was never an organization — it was a personality cult. Death reveals what was real.
 
+#### Permadeath Creates Interdependence
+
+In most games, death is an inconvenience. Here, it's permanent—and that permanence transforms solo play into **necessary collaboration**.
+
+- **Assassins matter** because when they kill a king, he's gone
+- **Guards matter** because they're the only thing standing between the weak and erasure
+- **Bounty hunters matter** because bringing a murderer to justice actually makes the realm safer
+- **Murderers matter** because they're taking real lives, creating real grievances, demanding real justice
+
+You can't farm solo for loot and ignore the world. You can't avoid politics and stay safe. You **must** organize, ally, and defend together—or you won't survive.
+
+> **The goal isn't just to create great stories. It's to create them together, because the alternative is dying alone.**
+
 **→ See [[Permadeath System|Permadeath-Downed]] for complete mechanics, item handling, and technical implementation**
 
 ### 2. Power Is Political
@@ -45,7 +58,11 @@ Power can now be collective as well as individual. Organizations amplify claims 
 
 Legitimacy answers the question: "Why should anyone accept your rule even when they don't like you?"
 
-In this shard, legitimacy is contested through competing theories embodied by bloodlines. There is no single "right answer" — only claims that survive and claims that fail.
+In this shard, legitimacy is **determined not by mechanics, but by who recognizes the outcome.** Kings die, regents seize temporary authority, heirs claim official succession, and claimants challenge from outside the system. There is no single "right answer" — only claims that survive and claims that fail.
+
+This is medieval court drama: bloody, contested, and full of story. Power is won through political maneuvering, violence, and securing support. Legitimacy can be inherited, seized, granted, or simply recognized when no one dares to challenge it.
+
+> **The real goal:** Give players the opportunity to be part of a great story, even if they don't live to see the end of it.
 
 ---
 
