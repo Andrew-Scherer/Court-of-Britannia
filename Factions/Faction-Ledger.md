@@ -246,4 +246,4 @@ This design aligns three critical elements:
 - [[Emergent Factions|Emergent-Factions]] — Faction system overview
 - [[Guilds|Guilds]] — Guild sovereignty
 - [[Guild Interactions|Guild-Interactions]] — Inter-guild dynamics
-- [[Stewardship & Property|Stewardship-Property]] — Property ownership
+- [[Property & Auctions|Property]] — Property ownership

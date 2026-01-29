@@ -210,7 +210,7 @@ And critically:
 - You can redecorate a new property instantly
 - Loss is symbolic, not economic
 
-See [[Decoration System|Decoration]] for details.
+See [[Decoration System|Decoration-System]] for details.
 
 
 ## The Balance
@@ -233,6 +233,6 @@ This system achieves that balance:
 
 
 - [[How Housing Works|Housing-Philosophy]] — Core housing philosophy
-- [[Housing Is Not Storage|Housing-Not-Storage]] — Why this system works
-- [[Historic Property|Historic-Property]] — What happens when guilds collapse
-- [[Decoration System|Decoration]] — Free expression without economic loss
+- [[Storage Rules|Storage-Rules]] — Why this system works
+
+- [[Decoration System|Decoration-System]] — Free expression without economic loss

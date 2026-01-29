@@ -84,7 +84,7 @@ Becoming King requires:
 ### King
 - **Current sovereign** - Holds active Crown authority
 - **Powers:** Appoints roles, declares war/peace, grants titles, summons court
-- **Limits:** Cannot bypass Magistrate/Executioner, cannot ignore court, dies permanently
+- **Limits:** Cannot bypass Executioner (procedural check), cannot ignore court, dies permanently
 - **Death:** Triggers succession, Regent assumes control
 
 ### Regent
@@ -156,9 +156,9 @@ What the King can actually do:
 - Summon Regal Court
 
 **Shared Authority (Requires Role Collaboration):**
-- Execution (must go through Magistrate → Executioner)
+- Execution (King orders → Executioner carries out)
 - Declaration of War (requires court/guild support for legitimacy)
-- Taxation changes (requires Master of Treasury implementation)
+- Taxation changes (Player Trade, Property Transfer)
 - Property seizure (requires legal justification or political leverage)
 
 **Contested Powers (High Political Risk):**
@@ -238,16 +238,14 @@ USER: "Should the King be able to instantly pardon prisoners?"
 YOU:
 ⚠️ LEGITIMACY CONCERN
 
-This bypasses the Magistrate/Executioner role structure and removes checks on royal authority.
+This removes checks on royal authority and eliminates the procedural friction of the Executioner role.
 
 ALTERNATIVE:
-King can PETITION for pardon (public request) but Magistrate must approve (legal review). This:
-✅ Maintains role relevance (Magistrate as check)
-✅ Creates political drama (public petition = exposure)
-✅ Preserves legitimacy (not arbitrary justice)
-❌ Removes instant gratification (King can't unilaterally free anyone)
-
-Refinement: If Magistrate refuses, King can dismiss them—but this is politically costly and logged publicly.
+Individual pardons are REMOVED to prevent arbitrary royal favoritism. Only **Coronation Amnesty** (once per reign) can clear Red Status. This:
+✅ Makes Red Status a heavy burden
+✅ Forces the King to value the Coronation event
+✅ Prevents corruption and "protected" criminals
+❌ Removes ability to save friends from consequences
 ```
 
 ### Pattern 2: Succession Edge Case
@@ -292,7 +290,7 @@ Seats can only be removed through:
 1. Death (permadeath)
 2. Formal challenge (political contest)
 3. Extended absence (inactivity consequence)
-4. Treason conviction (Magistrate ruling)
+4. Conviction via Death Ledger (Mechanical Murder)
 
 IMPACT:
 ✅ Schemers can influence through Seats (can't be arbitrarily removed)

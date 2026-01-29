@@ -1,94 +1,57 @@
-# 🏠 How Housing Works
+# 🏠 Housing Philosophy
 
-**Where You Stand in the World, Not What You Hide Behind Walls**
+**"Where You Stand in the World, Not What You Hide Behind Walls"**
 
 ---
 
+## The Core Concept
 
-> *Housing is about where you stand in the world, not what you hide behind walls.*
+Housing on *Kingdoms of Britannia* is fundamentally different from traditional Ultima Online. It is designed to foster **politics, community, and conflict**, rather than isolation and hoarding.
 
+> **The Golden Rule:**
+> **Housing is for Roleplay. Banks are for Storage.**
 
-## The Core Philosophy
+## 1. Housing Is Not Storage
 
-Housing on this shard works **fundamentally differently** from traditional Ultima Online.
+In standard UO, houses are vaults. This creates "hoarding anxiety"—the fear that if you lose your house, you lose your progress. This leads to defensive play, shell guilds, and risk aversion.
 
-This is not "standard UO with tweaks."
+**On this shard:**
+*   **You cannot secure containers in houses.**
+*   **You access your GUILD BANK from guild-owned property.**
+*   **Your loot safety depends on the Guild's survival.**
 
-This is a **new mental model**.
+### The Result
+Since there is no loot to steal *at the house location*, **you don't need to trust your roommates.** You can share a house with rivals, strangers, or guildmates. However, you share a **political fate**—if the guild you are part of disbands, you all lose access to the guild bank.
 
+## 2. Encouraging Shared Housing
 
-> **Note**
-> **What Housing Is**
->
-> - A **social hub**
-> - A **political statement**
-> - A **place in the world**
-> - A means of **expression and identity**
+Because storage is guild-based (Guild Bank) and not house-based (Secure Chests), we eliminate the need for "Shell Guilds" (1-man guilds created just to own a dedicated storage house).
 
+*   **Co-Habitation is Safe**: 10 players can live in one Fort. Each guild member uses the shared guild bank.
+*   **One Property Per Guild**: Guilds are encouraged to fight for **one major property** (e.g., The Orc Fort, The Lighthouse).
+*   **Guild Economy**: Guild members share access to the guild bank through guild-owned property.
 
-> **Note**
-> **What Housing Is NOT**
->
-> - A vault for hoarding items
-> - A permanent storage solution
-> - A mechanism for insulating progress
-> - A way to safely accumulate power
+*   **Loss is Playable**: Since your items are in the bank, being evicted is a dramatic roleplay event (scandal, disgrace), not a "quit moment" (loss of all assets).
 
+## 4. The Dual Property Model
 
-## The Mental Model Shift Is Intentional
+Property in Britannia is split by **Zone of Authority**:
 
-Players will be upset — then adapt — then prefer this.
+- **Civic Property (Britain)**: Under the [Land Commissioner]. Tenure is a privilege granted by the Crown. Subject to eviction for harboring and residency laws.
+- **Territorial Property (Wilderness)**: Under Guild control. Maintenance is an economic condition ([Upkeep]). Subject to political outlawry, but not mechanical eviction.
 
+→ See **[[Property Types|Property-Types]]** for the full breakdown.
 
-> Initial reaction:"Where do I store my stuff?""What's the point of housing?"
+## Summary Comparison
 
+| Feature | Standard UO | Kingdoms of Britannia |
+| :--- | :--- | :--- |
+| **Storage** | Secure Chests in House | Guild Bank (Accessed via Guild Property) |
+| **Theft Risk** | High (if friended) | Political (Guild Collapse = Loss) |
+| **Roommates** | Dangerous (Trust required) | Safe (No direct asset access) |
+| **Eviction** | Impossible (Permanent ownership) | Political (72h Notice, Role loss) |
+| **Purpose** | Hoarding Assets | Social High Ground |
 
-> Later realization:Less anxietyMore cooperationCleaner lossesStronger politics
-
-This shard is not old Ultima with tweaks.  
-
-**It is a new Ultima mental model.**
-
-
-## Core Concepts
-
-
-## The One Sentence
-
-
-> *Housing is about where you stand in the world, not what you hide behind walls.*
-
-Everything else flows from that.
-
-
-## Why This Works
-
-Traditional housing systems create:
-
-
-- Hoarding anxiety
-- Shell guild fragmentation
-- Storage micromanagement
-- Quit-inducing losses
-- Housing-as-entrenchment gameplay
-
-This system creates:
-
-
-- Social cohesion
-- Political stakes
-- Meaningful choice
-- Fair losses
-- Housing-as-expression gameplay
-
-
-> You've made a rare thing here:A housing system that actually supports politics instead of undermining it.
-
-
-## See Also
-
-
-- [[Guilds|Guilds]] — Core guild mechanics
-- [[Emergent Factions|Emergent-Factions]] — Guild alliances
-- [[Guild Upkeep|Guild-Upkeep]] — Economic pressure
-- [[Crown Recognition|Crown-Recognition]] — Legitimacy and standing
+## Related Systems
+*   [[Housing System Mechanics|../City-Services/Housing]] - The commands, tax, and eviction technical details.
+*   [[Guilds|../Civic-Systems/Guilds]] - How guilds interact with territory.

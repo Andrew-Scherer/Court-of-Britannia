@@ -13,7 +13,7 @@ The King is not "the strongest player" — they are the one whose decisions cann
 ### Hard Powers
 
 
-- **Appoint / remove high offices** — Regent, Marshal, Magistrate, and other key positions
+- **Appoint / remove high offices** — Regent, Marshal, and other key positions
 - **Declare heirs** — Name legal successors to the throne
 - **Grant / revoke land** — Control over specific royal properties through Land Commissioners and Stewards
 - **Issue decrees** — Create binding commands and laws for the city. Enforcement through Guards.
@@ -50,7 +50,7 @@ The Crown is never truly secure. Power attracts ambition, and those closest to t
 - **Heirs** — Designated successors with official claims, may grow impatient or be manipulated
 - **Claimants** — Contenders with merit, force, or political backing who seek to seize the throne
 - **Marshal** — Controls the guards, may value order through force over political stability
-- **Magistrate** — Interprets law and precedent, may use legal authority to challenge crown actions
+
 - **High-ranking nobles** — Ambitious courtiers who undermine quietly, building support for their own plays
 
 **The question is never "if" the Crown will be challenged, but "when" and "by whom."**

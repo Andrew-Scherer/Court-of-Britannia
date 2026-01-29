@@ -44,7 +44,6 @@ This shard is exceptionally good for Socializers because it eliminates the bigge
 - Records persist
 - Absence doesn't freeze the world
 
-A Socializer isn't *pretending* to be a Magistrate. They **are** one.
 
 This solves core RP problems:
 
@@ -103,7 +102,7 @@ Most MMOs reward Achievers with gear, levels, and DPS meters. This shard rewards
 
 Achievement here is **positional**, not numerical.
 
-Becoming King, Marshal, Magistrate, Land Commissioner, or Warden isn't just prestige—it's leverage.
+Becoming King, Marshal, Land Commissioner, or Warden isn't just prestige—it's leverage.
 
 And because removal is real:
 
@@ -201,7 +200,6 @@ A popular Lord threatens the Schemer's patron. Execution would create a martyr. 
 - Arranges the Lord's arrest on legitimate but minor charges
 - Ensures the arrest is highly visible
 - Lets the Lord sit in jail long enough to damage their reputation
-- Works with a Magistrate to secure early release
 - Spreads word of the release as evidence the Crown is weak
 
 The Lord is now:
@@ -254,7 +252,6 @@ They play to:
 
 They love roles like:
 
-- **[[Magistrate|Roles]]** — Interpreting law neutrally
 - **[[Senior Guard Captain|Guards]]** — Training enforcement to follow procedure
 - **[[Guards]]** — Choosing to specialize as wardens, investigators, or executioners
 
@@ -298,7 +295,6 @@ Without Institutional Loyalists, political systems degrade into cycles of raw vi
 - Murders are disputed endlessly
 - Families never know what happened
 
-**Without a [[Magistrate|Roles]]:**
 
 - Law becomes "what the King wants today"
 - Arrests are arbitrary
@@ -618,7 +614,6 @@ In most games, death is mechanical. Here, it's political.
 **This shard gives Tragic Players:**
 
 - **Recorded Context** — Death is logged with cause, location, and participants (if the [[Coroner]] does their job well)
-- **Public Trials** — Executions involve real players ([[Executioners|Executioner]]) and justice ([[Magistrates|Roles]])
 - **Property Consequences** — Death redistributes [[land|Property]], wealth, and power
 - **Succession Drama** — [[Roles]] are lost, [[succession]] creates new plots (especially if they were [[King|Becoming-King]])
 - **Historical Record** — Their story is preserved
@@ -726,7 +721,6 @@ A griefer arrested for assault enters custody. Once there, they face:
 - **Public exposure** — Record in the [[Jail Ledger|Jail-Ledger]]
 - **Further punishment** — Execution, exile, or extended sentencing
 
-Custody is just capture. What happens next depends on victims, [[Magistrates|Roles]], and political will.
 
 Critically: **No admin intervention required.**
 
@@ -786,7 +780,6 @@ Here's what happens when a griefer enters this world:
 **Stage 3: Punishment or Execution**
 
 - Victims decide on consequences: jail time, exile, or execution
-- [[Magistrates|Roles]] may extend sentences or order harsher punishment
 - If sentenced to death, the [[Executioner]] carries it out
 - Permadeath occurs—they lose everything
 

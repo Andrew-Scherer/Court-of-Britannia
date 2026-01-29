@@ -166,7 +166,7 @@ Check interactions with existing systems:
 #### Roles to Consider
 - King, Regent, Heir, Claimant (succession)
 - Guards (Marshal, Captain, City Guard, specialist paths)
-- Magistrate, Executioner
+- Executioner
 - Diplomacy roles (High Emissary, Envoy, Diplomat)
 - Economic roles (Master of Treasury, Tax Collector, Property Assessor)
 - Unofficial roles (can anyone improvise this?)
@@ -303,7 +303,7 @@ Conflicts with:
    - Enables: Parasitical Griefers (unchecked power)
 
 Alternative:
-King can ORDER executions (political power) but Executioner carries them out (procedural check). Magistrate can review legality (legitimacy check). This maintains pressure while preserving institutional structure.
+King can ORDER executions (political power) but Executioner carries them out (procedural check). This maintains pressure while preserving institutional structure.
 ```
 
 ## Knowledge Base

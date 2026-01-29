@@ -1,5 +1,13 @@
 # 👑 Crown Taxation & Revenue
 
+**Status:** Ship-Ready (v1.0)  
+**Last Edited:** 2026-01-28  
+**Scope:** Crown tax types (Player Trade, NPC Fees, Property Transfer), tax authority, proposal system, treasury flow, variable rates  
+**Integrated With:** [Private Housing](../City-Services/Private-Housing.md), [Guild Property Connection](../Housing-Property/Guild-Landholder-System.md), [Master of Treasury](../Roles/Master-Treasury.md), [City Salary System](../Economy/Salary-System.md)  
+**Explicitly Excludes:** Guild/faction taxes (see Guild-Faction-Economy), enforcement mechanics, lien operations
+
+---
+
 **How the Crown Generates Income**
 
 ---
@@ -71,6 +79,18 @@ This tax applies to **NPC goods, services, and fees** — purchases from system 
 - Affects all citizens equally, regardless of trade activity
 
 This tax mechanism functions as the treasury's emergency reserve. It extracts revenue from unavoidable transactions without disrupting player-driven markets.
+
+- **The "Half-Sink" Rule**: Unlike Trade Tax (100% Revenue), Property Tax is a major deflationary engine. The Crown only keeps half.
+
+### D. Dual Property Cost Bases
+The Crown tracks two distinct valuation bases to ensure fiscal accuracy between Britain and the Wilderness:
+
+| Basis | Target | Revenue Flow |
+| :--- | :--- | :--- |
+| **Civic Tax Basis** | Britain Properties | 100% to **Britain Treasury** (Role Salaries) |
+| **Upkeep Basis** | Wilderness Properties | 100% to **VOID (Gold Sink)** (Logistical Friction) |
+
+- **Valuation**: Britain properties are valued by proximity to authority; Wilderness properties are valued by scale and distance from supply chains.
 
 ---
 

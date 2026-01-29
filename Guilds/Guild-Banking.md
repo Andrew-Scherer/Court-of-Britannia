@@ -150,39 +150,11 @@ These logs provide accountability, prevent embezzlement, and offer political amm
 
 ## Crown Liens Interaction
 
-A **Crown Lien** is a legal restriction placed on a faction stone by royal decree. It intercepts surplus revenue but **cannot interfere with upkeep payments**.
+A **Crown Lien** restricts Treasury operations without forcing eviction.
 
+> **Doctrine:** Liens apply to the **Treasury** (surplus), never the **Upkeep Ledger** (survival).
 
-### What a Lien Can Do
-
-
-- ✅ Intercept gold deposited into the **Treasury**
-- ✅ Intercept vendor proceeds before they reach the Treasury
-- ✅ Intercept donations or income flowing into the Treasury
-- ✅ Freeze discretionary spending (if configured by decree)
-
-
-### What a Lien Cannot Do
-
-
-- ❌ Touch the **Upkeep Ledger**
-- ❌ Prevent upkeep payments
-- ❌ Block players from adding gold directly to the Upkeep Ledger
-- ❌ Force upkeep failure
-
-
-### Why This Distinction Matters
-
-If a lien could block upkeep, it would be **backdoor eviction by decree**—a mechanical deletion disguised as political pressure. Instead, liens create a **siege economy**:
-
-
-- The faction can **survive** (upkeep still payable)
-- The faction cannot **grow** (all surplus income seized)
-- The faction must **choose**: pay the Crown, negotiate, or fight
-
-
-> **❗ Note**
-> **Doctrine:** Crown liens restrict surplus revenue but do not prevent payment of mandatory upkeep. Failure of upkeep under lien is treated as sovereign collapse, not eviction.
+For full mechanics on payment priority and interception, see: [[Crown Liens & Economic Pressure|../Economy/Crown-Liens.md]].
 
 
 ## Common Scenarios

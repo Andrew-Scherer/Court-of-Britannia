@@ -8,119 +8,69 @@
 - [[Server Philosophy|Philosophy]]
 - [[Britain as Sole Civic System|Britain-Sole-Civic]]
 - [[New Player Experience|New-Player-Experience]]
+- [[Admin Hands-Off Policy|Admin-Hands-Off-Policy]]
+- [[Institutional Mortality]]
+- [[War of Influence (Strategy)|War-of-Influence]]
 
-**Guilds**
-- [[Guilds (Core System)|Guilds]]
-- [[Emergent Factions]]
-- [[Guild Banking]]
+**Organizations & Power**
+- [[Guilds & Organizations|Guilds]]
+- [[Faction Alliances|Emergent-Factions]]
 - [[Guild Upkeep]]
 - [[Crown Recognition]]
-- [[Guild Interactions]]
-- [[Player Controlled Vendors|Player-Controlled-Vendors]]
-- [[Settlement Taxation|Settlement-Taxation]]
 
-**Factions**
-- [[Emergent Factions]]
-- [[Factions Are Leaderless|Factions-Leaderless]]
-- [[One Faction per Guild|One-Faction-Per-Guild]]
-- [[Faction Ledger]]
-
-**Taxes, Commerce, and Economy**
-- [[Economic Philosophy|Economic-Philosophy]]
+**Markets & Economy**
+- [[Market & Economic Systems|Market-Systems]]
 - [[Crown Taxation|Crown-Taxation]]
-- [[Guild & Faction Economy|Guild-Faction-Economy]]
-- [[Vendors & Commerce|Vendors-Commerce]]
+- [[Guild Economy|Guild-Economy]]
 - [[Crown Liens]]
 - [[Seizure & Enforcement|Seizure-Enforcement]]
-- [[Tax Roles]]
 
 **Housing & Property**
 - [[Housing Philosophy|Housing-Philosophy]]
-- [[Historic Property]]
-- [[Housing Is Not Storage|Housing-Not-Storage]]
-- [[Sharing Housing]]
-- [[No Player-Placed Housing|No-Player-Housing]]
-- [[Property Loss Is Political|Property-Loss-Political]]
-- [[City vs Historic Property|City-Vs-Historic-Property]]
-- [[Stewardship & Property|Stewardship-Property]]
-- [[Decoration]]
+- [[Property Types (Civic vs Territorial)|Property-Types]]
+- [[Housing Auctions (Mechanics)|Housing-Auctions]]
+- [[Guild Property Connection|Guild-Landholder-System]]
+- [[Property Loss & Political Consequence|Property-Loss-Political]]
+- [[Storage Rules|Storage-Rules]]
+- [[Royal Tenure]]
+
+**Laws & Justice**
+- [[Justice System Core|Justice-System]]
+- [[Royal Clemency]]
+- [[Jail & Labor|Jail]]
+
+**The Civic Guard**
+- [[Civic Guard System|Civic-Guard-System]]
+- [[Marshal of the Guard|Civic-Guard-System]]
 
 **Official Roles**
 - [[All Official Roles|Roles]]
-- [[Commoners]]
-- [[Unofficial Roles]]
-- [[Wildcard Roles]]
-
-**Royal Roles**
 - [[King (Becoming King)|Becoming-King]]
 - [[Regent]]
 - [[Heir Presumptive|Heir]]
 - [[Claimants|Claimant]]
-
-**Noble Roles**
 - [[Master of the Treasury|Master-Treasury]]
+- [[Land Commissioner|Land-Commissioner]]
 - [[Emissary of the Crown|High-Emissary]]
-- [[Land Commissioner & Deputy|Land-Commissioner-Deputy]]
-- [[Marshal of the Guard|Marshal-Guard]]
-
-**Civic Guard**
-- [[Guards]]
-- [[Marshal of the Guard|Marshal-Guard]]
-- [[Captain of the Guard|Captain-Guard]]
-- [[City Guard]]
-
-**Diplomacy Roles**
 - [[Diplomacy]]
-- [[Emissary of the Crown|High-Emissary]]
-- [[Envoy]]
-- [[Diplomat]]
 
-**Law & Justice**
-- [[Magistrate]]
-
-**Britain's City Systems**
-
-**Political Systems**
-- [[Succession]]
-- [[Coronation]]
-- [[Royal Tenure]]
-- [[Seat System]]
-
-**Justice Systems**
-- [[Execution Mechanics]]
-- [[Jail]]
-- [[Bounty]]
+**Institutional Ledgers**
+- [[Public Registries]]
+- [[Fiscal Ledgers]]
+- [[Justice Records]]
 
 **City Services**
 - [[Salary System]]
-- [[Housing]]
-- [[Property]]
-
-**Special Items & Ledgers**
-- [[Noble Appointments Ledger|Appointments-Ledger]]
-- [[Royal Land Ledger|Land-Ledger]]
-- [[Royal Treasury Ledger|Treasury-Ledger]]
-- [[Registry of Estates|Registry-Estates]]
-- [[Tax Ledger]]
-- [[Jail Ledger|Jail-Ledger]]
-- [[Arrest Records|Arrest-Records]]
-- [[Public Death Ledger|Death-Ledger]]
-- [[Faction Standing Chronicle|Faction-Standing-Chronicle]]
-- [[Faction Ledger]]
-- [[Item Signatures]]
-- [[Player Shops]]
+- [[Inn Storage|Inn-Storage]]
+- [[Fast Travel|Fast-Travel]]
 
 **Combat & Death**
 - [[Permadeath & Downed State|Permadeath-Downed]]
 - [[Execution Mechanics]]
 - [[Guilds & Factions at War|Guilds-Factions-At-War]]
 
-**Unorganized**
-- [[Sacking Britain|Sacking-Britain]]
-- [[Carpentry: Building Parts|Carpentry-Building-Parts]]
-- [[Contractors]]
-- [[Decoration System|Decoration-System]]
-- [[Construction Limits & Upkeep|Construction-Limits-Upkeep]]
-- [[Building Permissions & Access|Building-Permissions-Access]]
+**Secondary Systems**
 - [[Account Skill Boosts & Mastery|Account-Skill-Boosts-Mastery]]
 - [[Structural Styling|Structural-Styling]]
+- [[Contractors]]
+- [[Building Permissions & Access|Building-Permissions-Access]]

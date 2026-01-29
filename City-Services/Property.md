@@ -51,37 +51,12 @@ The critical design question: **Should players and units be allowed to hold more
 > **❗ Note**
 
 
-## How Auctions Work (Keep Them Simple)
+## 🗳️ Housing Auctions
+The auction system is the mechanical engine of social mobility. Every property is won through merit and gold, starting at a 1gp base.
 
-You do **not** want a deep economy sim. Auctions must be straightforward or they'll consume admin time and create endless disputes.
+→ **See [[Housing Auctions|../Housing-Property/Housing-Auctions]] for full mechanics and grading logic.**
 
-
-### Auction Announcement Example
-
-
-> **Note**
-> **AUCTION NOTICE**
-> Property: **East Market Shop #3**  
-> 
->             Duration: **48 hours** (ends Saturday 8pm)  
-> 
->             Starting Bid: **500 gold**  
-> 
->             Current High Bid: **—**  
-> 
->             Bidder Restrictions: **Max 2 properties per individual**
-> *Contact Land Steward to submit bids. All bids are public and logged.*
-
-
-### Why Public Bids Matter
-
-All bids are announced publicly (or at minimum, visible to other bidders). This creates:
-
-
-- Pressure to outbid
-- Social consequence (everyone knows who wants what)
-- Legitimacy (no secret deals)
-- RP fuel (rivalries emerge naturally)
+---
 
 
 ## Eviction + Auctions = Political Engine
@@ -370,7 +345,7 @@ Define access by role groups, not individual names:
 | RoyalFamily | King, Queen, Heirs | Private royal zones, administrative |
 | RoyalGuard | Marshal, Guard Captain, Guards | Guard zones, patrol routes |
 | CastleStaff | Stewards, servants, cooks | Service areas, kitchens, storage |
-| Council | Chancellor, Magistrates, advisors | Council chamber, archives |
+| Council | Chancellor, advisors | Council chamber, archives |
 | Envoy | Temporary diplomatic guests | Guest quarters (time-limited) |
 
 **When staff hired/fired:**

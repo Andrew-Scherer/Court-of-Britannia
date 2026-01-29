@@ -205,7 +205,7 @@ Increasing guard numbers increases total treasury burden. No dilution occurs.
 The salary system does **not**:
 
 
-- Require judges, trials, or magistrate approvals
+- Require judges or trials
 - Pause or suspend roles due to nonpayment
 - Retroactively change expectations after calculation
 - Redistribute pay between players

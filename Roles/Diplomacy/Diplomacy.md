@@ -38,7 +38,7 @@ Diplomats answer to:
 Diplomats do not answer to:
 
 
-- Magistrates (they operate beyond courtroom law)
+- Nobles (they operate beyond local courtrooms)
 - Guards (diplomacy precedes enforcement)
 
 

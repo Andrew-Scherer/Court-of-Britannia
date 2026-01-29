@@ -168,7 +168,7 @@ A King may appoint a Regent to:
 
 ### Regency Appointments and Court Reshaping
 
-A Regent may appoint and dismiss nobles and officers of the realm, including those who hold considerable power — the Marshal of the Guard, the Magistrate, the Land Commissioner, captains, advisors, and titled nobility itself.
+A Regent may appoint and dismiss nobles and officers of the realm, including those who hold considerable power — the Marshal of the Guard, the the Land Commissioner, captains, advisors, and titled nobility itself.
 
 These actions are lawful. A Regent exercises the full executive authority of the Crown during interregnum. The commands are obeyed. The records are entered into the Appointments Ledger. The dismissed depart their posts. The appointed assume their offices.
 
@@ -412,7 +412,7 @@ Every decision is scrutinized. The public asks:
 
 ### Q: Can a Regent be removed before the coronation?
 
-**A:** Yes, through assassination, imprisonment, or if they voluntarily step down. The Marshal or Magistrate could also arrest them if charges are brought. But mechanically, only death auto-vacates the seat.
+**A:** Yes, through assassination, imprisonment, or if they voluntarily step down. The Marshal or could also arrest them if charges are brought. But mechanically, only death auto-vacates the seat.
 
 
 ### Q: What happens if the Regent dies during the coronation window?

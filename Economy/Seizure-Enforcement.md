@@ -1,5 +1,13 @@
 # ⚔️ Seizure, Enforcement & Insolvency
 
+**Status:** Ship-Ready (v1.0)
+**Last Edited:** 2026-01-28
+**Scope:** Defines the mechanism for financial asset confiscation (Treasury Drainage) by the Crown to induce indirect eviction through upkeep failure.
+**Integrated With:** [Crown Liens](Crown-Liens.md), [Tax Roles](Tax-Roles.md), [Guards](../Political-Systems/Guards.md), [Guilds](../Guilds/Guilds.md)
+**Explicitly Excludes:** Direct seizure of real estate (The Crown does not evict; it bankrupts), Guard AI acting without player initiation.
+
+---
+
 **When Economic Pressure Becomes Force**
 
 ---
@@ -68,65 +76,61 @@ Seizure is not a single event. It is a phased escalation that gives all parties 
 The Tax Envoy, backed by guards, arrives at the enforcement window. Possible outcomes:
 
 
-## Offline Protection
+## Offline Protection vs. Scheduled Seizure
 
-Seizure actions may never be carried out while all authorized representatives of the target faction or guild are offline. This rule exists to prevent offline robbery disguised as law enforcement.
+To prevent "offline raiding" by admins, strict rules govern when seizure can occur.
 
+### A. Surprise Seizure (Requires Online Presence)
+If the Tax Envoy arrives unannounced:
+*   **Rule:** At least one Officer must be online.
+*   **If Offline:** Seizure is forbidden.
 
-### What Happens If No Representative Is Online
+### B. Scheduled Seizure (Mandatory Attendance)
+If the Crown posts a **Public Writ of Enforcement** at least **24 hours in advance**:
+*   **Rule:** The event occurs at the scheduled time regardless of attendance.
+*   **If Offline:** The Tax Envoy proceeds with the seizure unchallenged.
+*   **Writ of Abandonment:** If the guild is offline for 3 consecutive scheduled windows, the Crown may declare the property abandoned and seize/auction the structure itself (an exception to the "No Property Seizure" rule, as it is no longer owned).
 
-If the enforcement window arrives but no authorized representative is present:
-
-
-- Seizure is postponed
-- Notices may be posted publicly at the property
-- Vendors may be locked by decree
-- Guards may secure the area
-- A new enforcement window must be scheduled
-
-This prevents factions from being deleted while players are offline, asleep, or unavailable.
-
-
-## What May and May Not Be Seized
+> **Design Note:** This prevents weaponized logouts. You can hide from a surprise inspection, but you cannot hide from a court date.
 
 
-| Seizable Assets (in priority order) | Protected Assets (never seizable) |
+## What May Be Seized (Financial Scope Only)
+
+**Direct property seizure is illegal.** The Crown does not take keys; it takes gold. The goal of seizure is to **drain the Treasury**, forcing the guild to fail its own Upkeep payments (Indirect Eviction).
+
+| Seizable Assets | Protected Assets |
 |---|---|
-| Gold from guild or faction TreasuryVendor proceeds held in escrowStored trade goods within the propertyProperty title (last resort, requires new decree) | Upkeep Ledger fundsPlayer personal banksPersonal inventories of offline playersArbitrary containers unrelated to the target entity |
+| ✅ **Treasury Gold** (The primary target) | ❌ **Real Estate/Property Title** (Never seized directly) |
+| ✅ **Vendor Proceeds** (Escrowed taxes/funds) | ❌ **Upkeep Ledger** (Cannot be drained by force) |
+| ✅ **Stored Trade Goods** (If Treasury is empty) | ❌ **Player Banks/Inventories** |
 
-This keeps seizure institutional (targeting organizations) rather than personal (targeting individuals).
+> **The Strategy:** By draining the Treasury, the guild loses its ability to reload the Upkeep Ledger. Once the ledger runs dry, the property goes delinquent and collapses naturally. "The Crown didn't evict you; you failed to pay rent."
 
+## Justice System Integration
 
-## The Role of Guards
+Seizure is a lawful act. Resisting it is a crime. The **Justice System** handles the consequences of resistance automatically based on player actions.
 
-Guards are **permitted, not required**, to enforce economic decrees. This is fundamental to the legitimacy model.
+### 1. The Enforcers (Blue)
+*   **The Tax Envoy & Guards:** Legally sanctioned agents.
+*   **Status:** **Blue (Innocent)**.
+*   **Protection:** Attacking them is a criminal act.
 
+### 2. The Resistance (Criminal/Treason)
+If a guild chooses to defend their gold, they face escalating legal statuses:
 
-### Guards May Choose
+| Action | Status Result | Consequence |
+|---|---|---|
+| **Interfering / Blocking** | **Gray (Criminal)** | Guards may attack non-lethally or arrest. |
+| **Attacking an Enforcer** | **Gray (Criminal)** | Free for anyone to attack. Guards engage to kill. |
+| **Killing an Enforcer** | **Red (Treason)** | **Instant Murder Count.** Permanent record. "Treason" flag applied. |
 
+### 3. Guard Behavior (The "Blue Shield")
+Guards are **NOT** programmed to attack guild members by default.
+*   **Passive:** Guards stand watch as the Envoy works (removes gold).
+*   **Reactive:** Guards **ONLY** attack if a guild member turns **Gray** (by attacking the Envoy) or **Red** (by being a known murderer).
+*   **Refusal:** Guards may strictly refuse to engage "Blue" targets. If the King orders them to attack innocent (Blue) protesters, the Guards may refuse (Roleplay choice), or if they obey, they become **Criminals** themselves (Abuse of Power).
 
-- Refuse to execute seizures
-- Captains may stall or countermand
-- The Marshal may intervene
-- The Magistrate may challenge legal basis
-
-
-> **❗ Note**
-> **Critical Rule:** If guards decline to enforce, seizure fails materially—but this is not a system failure. It is legitimacy being tested.
-
-
-### Why Guard Choice Matters
-
-If guards decline:
-
-
-- Seizure fails
-- Crown looks weak
-- Debt remains
-- History is written
-- Rivals gain confidence
-
-This is not a failure—this is the system working correctly. Authority must be demonstrated, not assumed.
+> **Result:** A "Blue" guild can stand in their hall and protest peacefully. The Envoy will take their gold, but no blood is shed. Bloodshed only happens if the guild draws weapons.
 
 
 ## Insolvency

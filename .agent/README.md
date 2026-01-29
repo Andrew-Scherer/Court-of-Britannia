@@ -135,8 +135,7 @@ Conflicts with:
 
 Alternative:
 King can ORDER executions (political power) but Executioner 
-carries them out (procedural check). Magistrate can review 
-legality (legitimacy check). This maintains pressure while 
+carries them out (procedural check). This maintains pressure while 
 preserving institutional structure.
 ```
 

@@ -151,7 +151,6 @@ Examples of role-linked properties (illustrative, not exhaustive):
 
 
 - **Guard Barracks** → Marshal of the Guard
-- **Judicial Chambers** → Magistrate
 - **Treasury Offices** → Master of the Treasury
 - **Jail Control Areas** → Warden
 - **Throne Room / Royal Apartments** → King or Regent
@@ -235,7 +234,6 @@ Tenure decisions are visible. Tenure decisions are remembered. Tenure decisions 
 
 
 > **Note**
-> **Magistrate**
 >
 > Does not grant tenure. May rule on legality of actions taken while under tenure.
 

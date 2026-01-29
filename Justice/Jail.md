@@ -1,190 +1,65 @@
-# 🔒 Jail System
+# 🔒 Jail System (Correction)
 
-**Custody, Timers, and Political Resolution**
+**For Citizens Who Make Mistakes. Not For Killers.**
 
 ---
 
+> *Jail isn't a dungeon. It's a workplace. You owe a debt to society, and you will pay it in sweat.*
 
-## Jail as Custody, Not Sentencing
+## Core Philosophy: Time is Currency
+Jail is the backstop for criminals who cannot pay their debts.
+*   **The Goal**: Resolution of Grey Status.
+*   **The Method**: **Asset Recovery** or **Incarceration**.
+*   **The Result**: The player returns to society with a clean slate.
 
-Jail is temporary custody. Custody begins automatically upon lawful arrest. Custody does not require a sentence. Custody resolves automatically via timers.
+---
 
-Custody is not punishment. Custody is not resolution. Custody creates time for political or legal intervention.
+## 1. The Jail Sentence (Debt Replacement)
+When a Grey Criminal is caught, the system attempts **Asset Recovery** (paying the fine from their bank).
+*   **If Bank >= Fine**: The fine is paid. **No Jail**.
+*   **If Bank < Fine**: The unpaid portion is converted to **Jail Time**.
 
+### The Mechanic
+*   **Conversion Rate**: 1 Minute per X Gold of unpaid fine.
+*   **No AFK Check**: The punishment is the removed access to the world, not the labor.
+*   **No Bail**: You are here because you *could not* pay bail (the fine). You cannot pay your way out now.
 
-## Baseline Custody Classes
+---
 
-When a character is jailed, they are assigned a Custody Class with a default timer.
+## 2. Why "Time" Works
+*   **No Farming**: Breaking the law on an alt with 0 gold results in maximum jail time. It is not "free griefing".
+*   **No Debt**: When you leave, you are free. You do not owe the Crown anything.
+*   **Economic Reality**: If you are rich, you lose gold. If you are poor, you lose time. Crime always costs *something*.
 
+---
 
-| Custody Class | Example Crimes | Baseline Hold |
-|---|---|---|
-| Minor | Theft, disorder, trespass | 10–15 minutes |
-| Serious | Assault, repeat offenses, obstruction | 1–3 hours |
-| Capital | Murder, treason, regicide attempt, political detainees | 1 hour or less |
+## 3. Contraband & The Jail Economy
 
-No human action is required. No trial is required. No judgment is required. Timers always tick, even if no one is online.
+Because players are physically active in jail, a micro-economy emerges.
 
+*   **Smuggling:** Visitors can pass small items (lockpicks, food, shivs) through the bars.
+*   **The Black Market:** Prisoners trade labor tokens or contraband.
+*   **Escape:** It is *possible* to break out (Lockpicking + Stealth), but the penalty for capture is severe (Sentence Doubled + Outlaw Flag).
 
-## Absolute Rule: Custody Always Ends
+---
 
+## 4. The Jail Environment
 
-> **❗ Note**
+Jails are not instanced. They are physical locations in the world.
+*   **Public View:** Citizens can walk by the "Labor Yard" and jeer at the prisoners.
+*   **Shame:** The humiliation of being seen "working the rocks" is part of the punishment.
 
-There are no exceptions. Prisoners are never permanently trapped. The system does not stall play.
+---
 
+## Summary
 
-## Guard Release Authority (Limited)
+| Crime Type | Punishment | Method | Outcome |
+| :--- | :--- | :--- | :--- |
+| **Minor** (Theft) | **Jail** | Labor Units | Reform (Blue) |
+| **Major** (Murder) | **Execution** | Death | Exclusion (Red) |
 
-Guards have limited authority to release prisoners.
-
-
-### Guards MAY:
-
-
-- Release prisoners they personally arrested
-- Only within a short window (15–30 minutes)
-- Only before trial or escalation
-
-
-### Guards MAY NOT:
-
-
-- Release prisoners after trial
-- Release prisoners under sentence
-- Release political detainees without higher authority
-
-All releases are logged and public. This is error correction, not mercy.
-
-
-## Auto-Release for Capital Custody
-
-When capital custody expires without intervention, the prisoner is released automatically—**released on bond**.
-
-This applies to all capital custody, including political detainees. Maximum hold is 1 hour or less.
-
-This is not mercy. This represents institutional failure.
-
-
-### Consequence A: Execution Eligibility Persists
-
-
-- Death sentence may still be issued later
-- Arrest warrants remain valid (see [[Bounty System|Bounty]])
-- Capture and execution can occur later
-
-
-### Consequence B: Property & Role Fallout
-
-
-- Crown may evict from royal property
-- Offices may be vacated or challenged
-
-
-### Consequence C: Public Mark
-
-Arrest record updates: "Released due to unresolved custody."
-
-Legitimacy damage becomes visible.
-
-
-## Where Human Authority Enters
-
-Human roles do not keep the system running. They only change outcomes.
-
-
-| Role | Authority |
-|---|---|
-| Magistrate | Escalate custody to executionDowngrade chargesDeclare arrest unlawfulOrder releaseCommute sentences |
-| King | PardonCommuteExileAccelerate execution |
-| Guards | Correct their own mistakes (short window)Re-arrest on new causeTransfer custody |
-
-
-## What Happens If No One Is Online
-
-Prisoners remain jailed. Timers continue. Custody resolves. Consequences fire. Records update.
-
-When players return, they respond to what happened. They do not decide whether it was allowed to happen.
-
-
-## Jail Is Not a Court Simulator
-
-
-- 80% of arrests auto-resolve
-- 15% become political leverage
-- 5% become major cases
-
-Magistrates only engage with contested arrests, high-profile prisoners, and power struggles.
-
-No routine trials. No mandatory reviews. No administrative backlog.
-
-
-## Entry into Custody
-
-Custody begins when a prisoner is formally delivered to the jail following lawful arrest.
-
-The Jail System does not define how arrests occur or how individuals are subdued prior to delivery.
-
-
-> **Note**
-> **See:** [[Guards|Guards]] for arrest authority and procedures
-> **See:** [[Death & Downed States|Permadeath-Downed]] for subdue and capture mechanics
-
-
-## Conditions of Custody
-
-Prisoners are confined to cells. Group or individual holding cells. Prisoners are not allowed to kill each other in jail. Prisoners cannot leave custody on their own authority.
-
-Logging out does not remove imprisonment. When a prisoner logs back in, they remain in custody until the timer expires or authority intervenes.
-
-
-## Prisoner Agency While Confined
-
-Agency does not require freedom.
-
-While jailed, a prisoner can:
-
-
-- Declare cooperation
-- Refuse all comment
-- Demand trial
-- Petition a specific authority
-- Publicly accuse someone
-- Offer ransom or exchange
-
-None of these do anything mechanically. But all of them trigger attention, change narratives, and create pressure.
-
-
-## Jail as a Place Where Deals Happen
-
-Players stay logged in when negotiation is live.
-
-
-
-
-## Execution from Custody
-
-Jailed prisoners may be executed only after lawful sentencing. Only Captain of the Guard and higher ranks have execution authority. City Guards may not execute prisoners in custody.
-
-Execution is not hard-coded or mechanically enforced. Players handle executions themselves through roleplay.
-
-
-## Records
-
-All imprisonments are recorded. Records include who ordered custody, charges stated, duration, and outcome. Records are accessible to Magistrates and the Crown.
-
-
-## System Summary
-
-Custody is automatic. Custody is temporary. Custody resolves through timers. Human authority changes outcomes but does not keep the system running. No player can be permanently trapped due to absence.
-
-
-> *Custody always ends.Justice only ends if someone finishes it.*
-
+---
 
 ## See Also
-
-
-- [[Guards|Guards]] — Arrest authority and procedures
-- [[Death & Downed States|Permadeath-Downed]] — Subdue and capture mechanics
-- [[Magistrates & Courts|Roles]] — Legal process and sentencing
+*   [[Bounty System|Bounty-System]] — How Capital Crimes are handled.
+*   [[Justice System|Justice-System]] — Complete two-tier criminal system.

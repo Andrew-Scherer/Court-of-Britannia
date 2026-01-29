@@ -260,7 +260,7 @@ The moment the King dies and a Regent exists, a **coronation window** begins (ty
 
 
 - No one has delegated King authority
-- Marshal or Magistrate may declare emergency Regent through court process
+- Marshal may declare emergency Regent through court process
 - Coronation must happen immediately (no delay option)
 - Maximum chaos and opportunity for coups
 - Heir is most vulnerable

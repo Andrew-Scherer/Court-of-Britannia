@@ -89,8 +89,8 @@ When a King dies and both the Heir and Regent are absent, weak, or killed, the r
 > **This means:**
 > - A **King can ALSO lead a guild** that is aligned with a faction
 > - A **Marshal can ALSO lead a military guild** that flies a faction banner
-> - A **Magistrate can ALSO head a guild** that is part of a religious faction
-> - A **Claimant can ALSO hold** Marshal, Magistrate, or other court offices while leading a guild aligned with a faction
+> - A **can ALSO head a guild** that is part of a religious faction
+> - A **Claimant can ALSO hold** Marshal, or other court offices while leading a guild aligned with a faction
 > **The only restriction:** You cannot hold multiple *major court offices* simultaneously (e.g., King + Marshal). But Guild leadership and Faction alignment do NOT count as court offices — they're separate power structures entirely.
 
 
@@ -195,7 +195,7 @@ This creates **layered power structures** where removing someone from one positi
 > **Note**
 > **🤝 Yes. Obviously.**
 >
-> **Nepotism and corruption are inevitable consequences of role-stacking.** A King who also leads a merchant guild will appoint guild members to court positions. A Marshal who commands a military order will staff the guards with their faction brothers. A Magistrate who heads a religious order will favor the faithful in legal rulings.
+> **Nepotism and corruption are inevitable consequences of role-stacking.** A King who also leads a merchant guild will appoint guild members to court positions. A Marshal who commands a military order will staff the guards with their faction brothers. A who heads a religious order will favor the faithful in legal rulings.
 > **This is not a bug. This is human nature.**
 
 
@@ -428,7 +428,7 @@ Claimants usually (though not exclusively) build their base of power **outside o
 
 This is why claimant strategy is deeply relevant to the [[Guild System|Guilds]] and [[Faction System|Emergent-Factions]]. Claimants build their power base through guilds (the sovereign organizational structure), and their guild may also align with a faction (a voluntary identity layer on top of guilds). Eventually they attempt to take (or fail to take) the throne.
 
-**But here's the twist:** They don't always stay outside. A successful Claimant might **first secure a court position** (Marshal, Magistrate, Regent) while **simultaneously leading a guild that is aligned with a faction**. This gives them both internal legitimacy and external power — the perfect combination for a successful coup.
+**But here's the twist:** They don't always stay outside. A successful Claimant might **first secure a court position** (Marshal, Regent) while **simultaneously leading a guild that is aligned with a faction**. This gives them both internal legitimacy and external power — the perfect combination for a successful coup.
 
 
 ### Why Outside Bases Were Common

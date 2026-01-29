@@ -17,7 +17,7 @@ To ship goods out of the [Britain Trade Docks](../Economy/Banking-System.md#brit
 *   **Crafted By:** Carpenters
 *   **Ingredients:** Boards (Wood), Iron Ingots (Nails/Reinforcement)
 *   **Function:**
-    *   Acts as a valid container for [Logistics Contracts](../Economy/Logistics-Contracts.md).
+    *   Acts as a valid container for hauling contracts.
     *   **Required** for any export contract originating from Britain.
     *   **Consumed** (or permanently attached) when the contract is sealed at the docks.
     *   Cannot be used as a backpack replacement (too heavy/bulky for foot travel when loaded).
@@ -41,4 +41,3 @@ To ship goods out of the [Britain Trade Docks](../Economy/Banking-System.md#brit
 ## See Also
 
 *   [[Banking System & Trade Docks|../Economy/Banking-System.md]]
-*   [[Logistics Contracts|../Economy/Logistics-Contracts.md]]

@@ -1,63 +1,119 @@
-# ⚖️ Guild Landholder System
+# 🏛️ Guild Property Connection
 
-**One Property. One Person. Living Land.**
+**Status:** Ship-Ready (v1.0)  
+**Last Edited:** 2026-01-28  
+**Scope:** Guild property mechanics, Guildstone placement, property forfeiture, assassination dynamics, One Guild One Property rule  
+**Integrated With:** [Private Housing](../City-Services/Private-Housing.md), [Guilds](../Guilds/Guilds.md), [Guild Upkeep](../Guilds/Guild-Upkeep.md), [Crown Taxation](../Economy/Crown-Taxation.md)  
+**Explicitly Excludes:** Private property mechanics (see Private Housing), guild internal governance, rank systems, faction dynamics
+
+---
+
+**When Organizations Control Land**
 
 ---
 
 ## Core Principle
 
-Every property is anchored to a **single living character**. Guilds exist through people, not abstractions. This ensures permadeath always matters and land never becomes immortal.
+All property in Britannia can be bought and sold freely—**except when a Guild is connected to it**.
 
-## The One Property Rule
+When a Guild Leader places their Guildstone on a property they own, that property becomes **Guild-locked**: they cannot transfer or sell it while the Guild remains active.
 
-**Every character may own exactly one property.** This applies to all property types: city homes, historic sites, keeps, forts, guild halls. No exceptions.
+---
 
-## Guild Landholdership
+## 1. Establishing a Guild Seat
 
-A **Guild Landholder** is the individual who binds property to a guild by placing a guildstone on it.
+### Acquiring Property
+A Guild Leader can acquire property through:
+1. **Private Purchase** (buying from another player, subject to Transfer Tax)
+2. **Public Auction** (bidding on unclaimed/abandoned properties, starting at 1gp)
 
-The Guild Landholder:
-- Is the legal anchor of the property
-- Bears the risk of death, defection, or disappearance
-- May also be the guild leader, but not necessarily
+### Placing the Guildstone
+Once the Guild Leader owns the property:
+1. **Guild Leader places Guildstone** on the property
+2. **Property becomes Guild Seat** (Guild-locked)
 
-**Guild Leader vs Guild Landholder:** These are separate roles. Leadership can rotate safely while land ownership provides institutional continuity. They may be the same person but don't have to be.
+### The Lock
+Once the Guildstone is placed:
+- **Guild Leader retains legal ownership** (Title Holder)
+- **Guild Leader CANNOT sell or transfer** the property
+- **Property functions as the Guild's Seat** (permanent base)
+- **Property remains Guild-locked** until the Guild disbands
 
-## Co-Ownership
+> *Once you plant your guild's banner, the land beneath it becomes immovable.*
 
-Properties may have co-owners or residents who share access and permissions. **Co-owners do not anchor land—only the Guild Landholder does.**
+---
 
-## Guild Landholder Death or Departure
+## 2. Death & Succession
 
-When a Guild Landholder dies (permadeath) or leaves the guild:
-- The property enters **Interregnum**
-- The guildstone remains active
-- Guild activity continues but major actions are restricted
+### When the Guild Leader (Landholder) Dies
+If the Guild Leader suffers **Permadeath**:
 
-## Interregnum Resolution
+1. **Guild appoints a new Leader** from among its members
+2. **New Leader becomes Landholder** (inherits the Title)
+3. **Property remains Guild-locked**
+4. **No auction, no public claim window**
 
-**Priority Window (48 hours):** Co-owner guild members have first right to become Guild Landholder.
+### The Assassination Risk
+Because the Guild controls succession, the Guild Leader is **extremely vulnerable** to internal conspiracy:
 
-**After 48 hours:** Any guild member who owns no other property may bind themselves as Guild Landholder at the guildstone.
+- The Guild may assassinate their Leader and appoint a more loyal replacement
+- The Leader's only protection is **trust** and **value to the Guild**
+- External assassination offers **no benefit** to attackers (Guild still chooses replacement)
 
-**Failure to resolve:**
-- After 24 hours: Bank access suspended, upkeep penalties doubled
-- After 48 hours: Upkeep penalties tripled, decorations decay
-- After 7 days: Guildstone decays, property returns to public auction
+> *A Guild Leader with a Guildstone planted is a hostage to that Guild's loyalty.*
 
-## Why This System Exists
+---
 
-**Guilds do not die. People do.** If land belonged directly to guilds, death would lose meaning and maps would ossify. Guild Landholdership ensures every property is mortal and every institution rests on flesh.
+## 3. Disconnection & Forfeiture
 
-By separating guild leadership from land ownership:
-- Leadership can change without risking land
-- Land can change without collapsing leadership
-- Risk is localized, not totalized
+### When the Guildstone is Removed
+If the Guild Leader removes the Guildstone or disbands the Guild:
 
-> Land should outlive leaders—but not people.
+1. **Property is immediately forfeited** (goes to public auction)
+2. **Property is treated as abandoned** (auction starts at 1gp)
+3. **Guild Leader CANNOT reclaim or sell** the property
+4. **Property returns to circulation** for other players/guilds
+
+### The Cost of Guild Seats
+This creates an elegant economic model:
+- **Guild creation is free** (no charter fee)
+- **The property IS the cost** (must acquire land first)
+- **Cannot resell for profit** (forfeited on disbanding)
+- **Barrier to entry is property value** (serious commitment required)
+
+### The Mutual Lock (While Active)
+- The Guild Leader **can disband the Guild** (but forfeits the property)
+- The Guild **cannot seize ownership** from the Leader (they hold the Title)
+- If the Leader dies, the Guild selects the successor (who inherits the Title)
+
+> *Plant your banner knowing you cannot profit from the land beneath it.*
+
+---
+
+## 4. One Guild, One Property
+
+To encourage conflict and spread power:
+- A Guild may hold **only ONE property**
+- A Guild Leader may only plant **ONE Guildstone**
+
+If a Guild attempts to acquire a second property, they must remove their stone from the first property first.
+
+---
+
+## 5. Summary
+
+| Event | Result |
+| :--- | :--- |
+| **Place Guildstone** | Property becomes Guild-locked; Leader cannot sell |
+| **Leader Death** | Guild appoints new Leader; new Leader inherits Title |
+| **Guild Disbands** | Property forfeited; goes to public auction (treated as abandoned) |
+| **Remove Guildstone** | Property forfeited; Leader cannot reclaim or resell |
+| **External Assassination** | Guild still chooses replacement (no benefit to attacker) |
+| **Internal Conspiracy** | Guild can "secure" property by replacing disloyal Leader |
+
+---
 
 ## See Also
-
-- [[Property System|Property-System]] — How properties work
-- [[Permadeath|Permadeath-Downed]] — Death mechanics
-- [[Sharing Housing|Sharing-Housing]] — Co-ownership mechanics
+- [[Private Housing|../City-Services/Private-Housing]] — Transfer mechanics and taxation
+- [[Guilds|../Guilds/Guilds]] — Organization rules
+- [[Guild Upkeep|../Guilds/Guild-Upkeep]] — How Guilds fund their Seat

@@ -38,7 +38,7 @@ There are two categories of seats:
 
 | Offices (Exclusive Power-Bearing) | Statuses (Non-Exclusive Identity Tags) |
 |---|---|
-| King, Marshal, Chancellor, Magistrate, etc. | Disgraced Noble, Exiled Knight, Widower, Refugee, etc. |
+| King, Marshal, Chancellor, etc. | Disgraced Noble, Exiled Knight, Widower, Refugee, etc. |
 | Usually one per player max | Multiple allowed per player |
 | Appointment/election required | Self-claim or story-triggered |
 | Grants access + authority | Mostly social, minor permissions |
@@ -62,7 +62,7 @@ This prevents treating "Disgraced Noble" like a job, while ensuring "Marshal" ha
 > **Problem: Role Hoarding**
 >
 > **Symptom:** One player accumulates multiple critical roles
-> **Solution:** Hard limit: 1 major role per player (King, Marshal, Magistrate, Land Commissioner are mutually exclusive). Players can hold 1 major + auxiliary roles (guard, scribe). Enforced in AssignSeat() logic.
+> **Solution:** Hard limit: 1 major role per player (King, Marshal, Land Commissioner are mutually exclusive). Players can hold 1 major + auxiliary roles (guard, scribe). Enforced in AssignSeat() logic.
 
 
 > **❗ Note**

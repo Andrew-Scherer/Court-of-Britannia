@@ -186,15 +186,6 @@ This prevents favoritism, micromanagement, and finance-simulator burnout.
 > The Treasury proposes. The Crown disposes — or is judged for silence.
 
 
-### Magistrate
-
-
-- No chain of command
-- Magistrates may respond to fiscal collapse politically
-- The Treasury does not interpret law
-- They intersect only through consequence
-
-
 ### Guards & Marshal
 
 

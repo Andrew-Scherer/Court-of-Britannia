@@ -33,7 +33,6 @@ This wiki contains complete game design documentation for Kingdoms of Britannia,
 
 ### Britain's Forces
 - [[Guards]] - [[Marshal of the Guard|Marshal-Guard]], [[Captain of the Guard|Captain-Guard]], [[City Guard|City-Guard]]
-- [[Magistrate]]
 
 ### Game Systems
 - [[Jail System|Jail]] (timer-based custody)
@@ -123,8 +122,7 @@ Root Directory:
 │   ├── Guild-Upkeep.md
 │   ├── Crown-Recognition.md
 │   ├── Guild-Interactions.md
-│   ├── Player-Controlled-Vendors.md
-│   └── Settlement-Taxation.md
+│   └── Player-Controlled-Vendors.md
 ├── Factions/
 │   ├── Emergent-Factions.md
 │   ├── Factions-Leaderless.md
@@ -133,21 +131,18 @@ Root Directory:
 ├── Economy/
 │   ├── Economic-Philosophy.md
 │   ├── Crown-Taxation.md
-│   ├── Guild-Faction-Economy.md
-│   ├── Vendors-Commerce.md
+│   ├── Guild-Economy.md
+│   ├── Clearinghouse-Operations.md
+│   ├── Logistics-Contracts.md
+│   ├── Market-Economy.md
+│   ├── Item-Durability.md
 │   ├── Crown-Liens.md
 │   ├── Seizure-Enforcement.md
 │   └── Tax-Roles.md
 ├── Housing-Property/
 │   ├── Housing-Philosophy.md
-│   ├── Historic-Property.md
-│   ├── Housing-Not-Storage.md
-│   ├── Sharing-Housing.md
-│   ├── No-Player-Housing.md
 │   ├── Property-Loss-Political.md
-│   ├── City-Vs-Historic-Property.md
-│   ├── Stewardship-Property.md
-│   └── Decoration.md
+│   └── Guild-Landholder-System.md
 ├── Roles/
 │   ├── Official/
 │   │   ├── Roles.md
@@ -176,7 +171,6 @@ Root Directory:
 │   └── Wildcard/
 │       └── Wildcard-Roles.md
 ├── Justice/
-│   ├── Magistrate.md
 │   ├── Execution-Mechanics.md
 │   ├── Jail.md
 │   └── Bounty.md
@@ -201,7 +195,7 @@ Root Directory:
 │   ├── Faction-Standing-Chronicle.md
 │   ├── Item-Signatures.md
 │   └── Player-Shops.md
-├── Combat-Death/
+├── Combat/
 │   ├── Permadeath-Downed.md
 │   └── Guilds-Factions-At-War.md
 └── Building-Crafting/

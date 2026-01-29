@@ -1,52 +1,163 @@
-Crafting Skill & Progression Overhaul
-Absolutely. Below is a ship-ready design document for the Crafting Skill & Progression Overhaul, written to plug directly into the two prior documents: Market Economy System Item Lifecycle / Repair / Scrapping System This document solves oversupply at the root, preserves mastery fantasy, and cleanly separates learning from production.
-Crafting Skill & Progression Overhaul
-Practice, Mastery, and Intentional Production
-Status: Ship-Ready (v1.0) Scope: Crafting skills, skill gain, practice systems, production rules Explicitly Integrated With: Market Economy System Item Lifecycle / Repair / Scrapping System Explicitly Excluded: Market UI, durability math, scrapping math (handled elsewhere)
-1. Design Goals
-This crafting system must: Eliminate crafting-driven oversupply Decouple skill gain from item creation Preserve the fantasy of becoming a master artisan Ensure only intentional production creates market goods Scale from low population to high population servers Prevent macro/bot abuse Keep crafting economically meaningful at all stages Core Principle: Learning consumes value. Production creates value.
-2. Core Structural Change
-Crafting is split into two distinct modes: Mode Purpose
+# Crafting Skill & Progression Overhaul
 
-Produces Items? Practice Crafting
-Skill gain & mastery No Production Crafting Market & player goods  Yes Players explicitly choose which mode they are in.
-3. Practice Crafting (Skill Progression)
-3.1 Purpose Practice crafting exists only to raise skill. It represents: Training Experimentation Failed attempts Technique refinement Practice never produces finished items.
-3.2 Player Experience A blacksmith approaches a forge and sees: Practice: Weaponsmithing Practice: Armorsmithing Practice: Tool Forging The player selects a practice recipe. They see: Materials required (partial) Time required Skill gain range No item output After completion: Skill increases Materials are consumed Scrap or slag may be generated (non-market items)
+**Status:** Ship-Ready (v1.0)
+**Last Edited:** 2026-01-28
+**Scope:** Crafting skills, skill gain, practice systems, production rules, repair loops
+**Integrated With:** [Market Economy](../Economy/Market-Economy.md), [Item Durability](../Economy/Item-Durability.md)
+**Explicitly Excludes:** Market UI, durability math, scrapping math (handled elsewhere)
 
-3.3 Practice Costs Practice consumes: Raw materials (reduced amount vs production) Fuel or reagents (if applicable) Time Optional gold fee (station use) These costs scale with: Skill level Item complexity Practice repetition
-3.4 Skill Gain Behavior Skill gain is based on difficulty vs current skill Repeating the same practice yields diminishing returns Players must rotate techniques to advance efficiently This prevents: AFK macroing Single-recipe grinding Infinite loops
-4. Production Crafting (Item Creation)
-4.1 Purpose Production crafting is how real items enter the world. It is: Intentional Costly Risk-bearing
-4.2 Production Requirements To produce an item, the player must: Meet minimum skill threshold Use full materials Select Production mode Use appropriate station Accept failure risk Production always results in:
+**Practice, Maintenance, and Intentional Production**
 
-A finished item or A failed attempt with partial loss
-4.3 Production Outcomes Production results vary by skill: Skill Level Outcome Bare minimum Low quality, low durability Competent Standard item Expert High quality Master Masterwork / special properties This makes high-skill crafters: Rare Valuable Economically powerful
-5. Item Quality Tiers (High Level)
-Crafted items may have: Quality rating Material efficiency modifiers Repair resilience modifiers Cosmetic distinctions Quality is never guaranteed. Skill influences: Chance of higher tiers Reduced failure rates Access to advanced recipes
-6. Skill Progression Curve
-6.1 Early Game Fast progression
+---
 
-Cheap practice Broad experimentation 6.2 Mid Game Slower gains Specialized practice paths Meaningful material costs 6.3 Late Game Very slow gains Narrow mastery focus Expensive practice Prestige outcomes This preserves long-term goals without infinite junk.
-7. Anti-Oversupply Guarantees
-This system structurally prevents oversupply because: Practice produces no items Production is slower and deliberate Failed production destroys materials High-end crafting is scarce Junk never floods global markets Oversupply is no longer possible by accident.
-8. Integration With Markets
-8.1 Britain Market Only production items eligible Practice outputs never eligible High-quality items dominate exports 8.2 Settlement Boards Local crafters supply intentionally Specialization emerges naturally 8.3 Player Vendors Used and low-tier production items circulate New players access affordable gear
-9. Integration With Scrapping & Repair
-Practice outputs may generate scrap-only byproducts
+## 1. Design Goals
 
-Failed production yields partial scrap Master crafters recover slightly more on failure Practice cannot be exploited for materials Skill progression always consumes value net-negative.
-10. Anti-Bot & Anti-Macro Design
-This system resists automation because: Practice recipes rotate Diminishing returns exist Production has failure risk Inputs vary by context Optimal paths require decision-making Bots cannot efficiently progress.
-11. Optional Advanced Systems (Post-Launch)
-Safe to add later: Technique unlock trees Crafting research Guild specialization bonuses Signature maker marks Regional crafting bonuses None are required for v1.
-12. Player Progression Summary
-Player Type Interaction New player
-Practice heavily Casual crafter Limited production Dedicated artisan Specialized mastery Master crafter Rare, high-value output
+This crafting system must:
+- Eliminate crafting-driven oversupply
+- Decouple skill gain from item creation
+- Preserve the fantasy of becoming a master artisan
+- **Make Repairing a core social loop**
+- Ensure only intentional production creates market goods
+- Prevent macro/bot abuse through active repair incentives
 
-No stage invalidates another.
-13. Final Design Thesis
-You do not get better by flooding the world with junk. You get better by learning. You earn your place by producing when it matters. This crafting overhaul: Fixes UO's core failure Supports your market architecture Scales indefinitely Preserves fantasy Makes mastery meaningful
-If you want next, we can: Numerically define skill gain formulas Map exact practice vs production costs Design crafting UI flows Integrate crafting with guild settlements Stress-test population extremes But as written: This is a complete, ship-ready crafting skill system that cleanly solves oversupply at the root.
+**Core Principle:** Learning consumes value. Production creates value. Maintenance creates connection.
 
-
+---
+
+## 2. Core Structural Change
+
+Crafting is split into three distinct modes:
+
+| Mode | Purpose | Produces Items? | Skill Gain? |
+|---|---|---|---|
+| **Practice Crafting** | Initial learning & training | ❌ No | ✅ Moderate |
+| **Maintenance (Repair)** | Service & Mastery | ❌ No | ✅ **High** |
+| **Production Crafting** | Market & player goods | ✅ Yes | ❌ Minimal |
+
+Players explicitly choose which mode they are in.
+
+---
+
+## 3. Practice Crafting (Basic Training)
+
+### 3.1 Purpose
+Practice crafting exists to raise skill from Novice to Journeyman. It represents training, experimentation, and failed attempts.
+
+### 3.2 Mechanics
+- **Inputs:** Reduced raw materials + Fuel.
+- **Output:** Slag/Scrap (Non-market items).
+- **Skill Gain:** Standard rate based on difficulty.
+- **Role:** The "Macro" sink. It burns resources to gain skill without flooding the world with trash daggers.
+
+---
+
+## 4. Maintenance Crafting (The Social Loop)
+
+### 4.1 Purpose
+Repairing items for other players is the **primary method** for High-Level skill gain and social relevance.
+
+### 4.2 Mechanics
+- **Inputs:** Scrap Materials (from Scrapping) + Small Gold Fee.
+- **Output:** Restored item durability (Player Repair is more efficient than NPC).
+- **Skill Gain:** **Highest Rate.** Repairing a high-tier item teaches more than hammering a practice ingot.
+
+### 4.3 The Grandmaster's Loop ("Master's Insight")
+To prevent GM crafters from becoming bored AFK producers, the system incentivizes active repair work.
+
+1.  **Action:** GM Smith repairs a warrior's damaged platemail.
+2.  **Reward:** GM gains **"Master's Insight"** buff.
+3.  **Effect:** Next **Production** attempt has a significantly higher chance to be **Exceptional** or **Masterwork**.
+4.  **Result:** The best items on the server are made by smiths who run active repair shops.
+
+> *You cannot master the steel if you do not understand how it breaks.*
+
+---
+
+## 5. Production Crafting (Item Creation)
+
+### 5.1 Purpose
+Production is how real items enter the world. It is intentional, costly, and risk-bearing.
+
+### 5.2 Mechanics
+- **Inputs:** Full Raw Materials + **Tools**.
+- **Output:** Finished Item (or Fail).
+- **Risk:** Failure destroys materials.
+- **Skill:** Influences Quality Tier (Normal, Exceptional, Masterwork).
+
+---
+
+## 6. Tools & Consumption
+
+Tools are the fuel of the economy. They are consumable and tiered.
+
+### 6.1 Tool Durability
+- Every craft attempt (Success/Fail) consumes tool durability.
+- When durability hits 0, the tool breaks.
+
+### 6.2 Tool Quality (Tinkers Matter)
+The quality of the **Tool** affects the quality of the **Product**.
+
+| Tool Source | Durability | Exceptional Bonus? |
+|---|---|---|
+| **NPC Bought** | Low | None |
+| **Player Crafted (Tinker)** | High | **Yes** |
+| **GM Tinker Tool** | Very High | **Major Bonus** |
+
+**Eco-System:** Smashers need Smiths. Smiths need Tinkers. Tinkers need Miners.
+
+---
+
+## 7. Skill Progression Curve
+
+### 7.1 Early Game (0-50)
+- **Method:** Practice Crafting.
+- **Cost:** Low.
+- **Goal:** Unlock basic recipes.
+
+### 7.2 Mid Game (50-90)
+- **Method:** Mix of Practice and **Maintenance**.
+- **Incentive:** Repairing pays better skill gains than burning ingots.
+- **Social:** Apprentices hang out at banks/forges looking for repair work.
+
+### 7.3 Late Game (90-100)
+- **Method:** **Maintenance Heavy.**
+- **Incentive:** "Master's Insight" buff required for top-tier production.
+- **Status:** The town smith is a known figure, not a vending machine.
+
+---
+
+## 8. Anti-Oversupply Guarantees
+
+This system structurally prevents oversupply because:
+1.  **Practice** produces no items.
+2.  **Maintenance** consumes scrap (value destruction) to fix existing items.
+3.  **Production** is deliberate and consumes tools.
+4.  **Junk** never floods global markets.
+
+Oversupply is no longer possible by accident.
+
+---
+
+## 9. Final Design Thesis
+
+**You do not get better by flooding the world with junk.**  
+**You get better by fixing what is broken.**  
+**You earn your place by producing when it matters.**
+
+This crafting overhaul:
+- Fixes UO's core failure (Macro spam = Trash flood)
+- Creates a mandatory social role for crafters (Repair)
+- Makes Tinkers essential (Tools)
+- Rewards active play over AFK macroing
+- Supports your market architecture
+- Scales indefinitely
+- Preserves fantasy
+- Makes mastery meaningful
+
+---
+
+## See Also
+
+- [[Market Economy|../Economy/Market-Economy]] — How crafted items enter markets
+- [[Item Durability|Item-Durability]] — Durability and repair mechanics
+- [[Maker Mark & Provenance|Maker-Mark-Provenance]] — Crafter signatures and item history

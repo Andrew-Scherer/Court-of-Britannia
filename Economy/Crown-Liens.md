@@ -1,5 +1,13 @@
 # ⚖️ Crown Liens & Economic Pressure
 
+**Status:** Ship-Ready (v1.0)
+**Last Edited:** 2026-01-28
+**Scope:** Defines the mechanism for intercepting guild/faction revenue to enforce Crown debt without deleting the entity.
+**Integrated With:** [Crown Taxation](Crown-Taxation.md), [Guild Banking](../Guilds/Guild-Banking.md), [Seizure Enforcement](Seizure-Enforcement.md), [Tax Roles](Tax-Roles.md)
+**Explicitly Excludes:** Seizure of assets (handled in Seizure Enforcement), Eviction loops (protected by Upkeep Ledger).
+
+---
+
 **Economic Siege Without Deletion**
 
 ---
@@ -35,6 +43,8 @@ A Crown lien may only be placed when:
 5. Lien status becomes visible to all players who inspect the stone
 
 The lien remains in effect until Crown debt is fully paid or the decree is rescinded.
+
+> **Note:** Royal Decrees authorizing liens **persist through the death of a Monarch.** A change in leadership does not erase debts owed to the Crown as an institution.
 
 
 ## What a Crown Lien Does

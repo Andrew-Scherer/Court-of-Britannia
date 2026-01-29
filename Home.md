@@ -33,25 +33,20 @@ The knockout system, execution mechanics, and why death is a choice—not an acc
 
 → [[Read More|Permadeath-Downed]]
 
-### 🏰 Housing & Land
-Role-held property, the Land Custodian system, and how buildings become political consequences.
+### 🏰 Housing & Land Authority
+Role-held property, the Land Commissioner system, and how buildings become political consequences.
 
-→ [[Read More|Housing]]
+→ [[Read More|Housing-Philosophy]]
 
 ### 👑 Becoming King
 How kings are made, the six paths to the throne, succession crises, and why the coronation ceremony is the only mechanical gate.
 
 → [[Read More|Becoming-King]]
 
-### 📋 Land Steward
-The neutral executor of land policy: sealing, transferring, and evicting without choosing winners.
+### 🏛️ Economy & Markets
+The unified trade spine, logistics hauling, and how commerce creates political entanglement.
 
-→ [[Read More|Steward]]
-
-### 🏛️ Property & Auctions
-Land as scarce political resource. Assignment methods, ownership limits, and how auctions create non-violent competition.
-
-→ [[Read More|Property]]
+→ [[Read More|Market-Systems]]
 
 ---
 

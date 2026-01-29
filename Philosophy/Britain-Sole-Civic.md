@@ -240,6 +240,26 @@ Players do.
 
 ---
 
+## Organizational Consequence
+
+Britain does not prosecute guilds for individual crimes by default.
+
+However, **a personal crime can become a guild crime** if the institution **protects, hides, or harbors** the offender.
+
+When that happens, Britain can treat the guild itself as the liable party and respond politically.
+
+> See **[[Justice-System#Harboring & Revocation]]** for the formal harboring process and timelines.
+
+### Enforcement Is Discretionary
+
+Britain possesses civic powers, but **their use is political, not automatic**.
+
+A King can refuse enforcement, protect allies, or appoint criminals to office.
+
+The system does not block corruption — it **exposes** it.
+
+---
+
 ## Outlawry Instead of Rebellion
 
 Britain does not "fight rebels."

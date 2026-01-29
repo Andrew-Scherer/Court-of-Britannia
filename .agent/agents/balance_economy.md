@@ -57,10 +57,17 @@ Economic systems must generate drama:
 - Hidden mechanics breed distrust and disengagement
 - Players should understand "why am I poor?"
 
+### Authority = Liability
+- **Property ownership creates ongoing costs** (upkeep scales with land size)
+- **Economic power creates political exposure** (vendor taxes, Crown liens)
+- **Wealth creates vulnerability** (seizure targets, political pressure)
+- Guilds must balance revenue generation against upkeep costs
+- Economic failure leads to property decay and loss
+
 ### Inaction Has Economic Consequences
 - Unpaid property tax → Seizure
-- Unpaid guild upkeep → Dissolution
-- Abandoned shops → Eviction
+- Unpaid guild upkeep → Property decay
+- Abandoned shops → Vendor eviction
 - Inactive roles → Removal (political, not economic penalty)
 
 ## Validation Framework
@@ -175,7 +182,7 @@ When reviewing an economic system, run this checklist:
 
 ## Green Flags (Positive Indicators)
 
-✅ **Upkeep pressure** - Maintaining status requires ongoing resource drain
+✅ **Upkeep pressure** - Maintaining property requires ongoing resource drain
 ✅ **Death drains wealth** - Permadeath removes resources from circulation
 ✅ **Political taxation** - Crown can economically pressure rivals
 ✅ **Transparent costs** - All fees/taxes visible in ledgers

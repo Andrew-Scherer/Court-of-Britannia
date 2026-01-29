@@ -1,26 +1,82 @@
-# Decoration System & Theme Contribution
+# 🎨 Decoration System
 
-## Purpose
-
-The Decoration System exists to allow settlements to express identity, culture, and atmosphere **freely and immediately**, without introducing economic friction, hoarding pressure, or mechanical abuse.
-
-Decoration is cosmetic, communal, and impermanent.  
-Structure is earned. Expression is free.
+**Free Basics • Premium Themes • Supporting the Realm**
 
 ---
 
-## Core Principles
+## The Core Principle
 
-> **Decoration is expressive, not economic.  
-> Themes are owned by accounts and applied by settlements.  
-> Decorators use the settlement's themes, not their own.**
+> Decoration is not progression. It is language. We give everyone the **Basic Alphabet** for free; specialized **Thematic Dialects** are unlocked to support the realm.
+
+---
+
+## Purpose
+
+The Decoration System exists to allow settlements to express identity, culture, and atmosphere **immediately**, without introducing hoarding pressure or mechanical abuse.
+
+Decoration is cosmetic, communal, and impermanent.  
+Structure is earned. Expression is facilitated.
+
+---
+
+## How Decoration Works
+
+### 1. Free "Basic" Access
+Every player has immediate, **free access to a robust "Universal Set"** of decorative items. This ensures no building ever feels sterile and every player can participate in the world's visual culture from day one.
+
+The Universal Set includes basics like:
+- Standard candles and torches
+- Basic seating (stools, benches)
+- Common rugs
+- Tool clutter
+- Environmental basics (spider webs, blood stains)
+
+### 2. Premium Theme Unlocks (Supporting the Server)
+Broadening your settlement's visual language is the primary way players support the server's operating costs. **Advanced Decoration Themes** (e.g., Orcish Warband, Noble Estate, Pirate Haven) are account-level unlocks.
+
+- **Non-Mechanical:** Themes never provide combat or economic advantages.
+- **Communal Value:** When a player unlocks a theme, they can "contribute" it to their settlement, allowing the entire guild to use those aesthetics.
+- **Sustainability:** This provides a fair way to fund development without selling power.
+
+---
+
+## Why This Design Matters
+
+### 1. It Decouples Power from Aesthetics
+While themes are paid, they are strictly cosmetic. A player with a "Bone Throne" has no mechanical advantage over a player with a "Wooden Chair." Status is visual and supported, but power remains earned through play (territory, reputation, presence).
+
+### 2. It Funds the World Without "Pay-to-Win"
+By focusing monetization on high-quality, optional aesthetics:
+- The game avoids "selling daggers" or "selling gold."
+- Players can support the server while maintaining a level playing field in combat and politics.
+- The visual variety of the world increases over time as more themes are released.
+
+### 3. It Encourages Shared Investment
+Theme contribution allows a single supporter to benefit their entire community. This turns a "purchase" into a "gift of identity" for the settlement.
+
+---
+
+## The Sacred Line
+
+> [!CAUTION]
+> **If It Affects Power, It's Not Decoration**
+>
+> This line must be sacred. Decorations (whether free or premium) are strictly visual. They never grant storage, defense, or mechanical utility.
+
+---
+
+## Core System Principles
+
+> **Decoration is expressive, not economic.**  
+> **Basic items are free; advanced themes are unlocked.**  
+> **Themes are pooled by settlements from account-level unlocks.**
 
 The system prioritizes:
+* Visual identity
+* Shared community investment
+* Spam prevention
+* Ease of reset and change
 
-* visual identity
-* shared investment
-* spam prevention
-* ease of reset and change
 
 ---
 
@@ -135,16 +191,21 @@ All other decorations (rugs, banners, plants, lights, props) are non-blocking.
 
 ### Theme Unlocks
 
-* Decoration themes are **account-level unlocks**
-* Any character created on the account inherits access to unlocked themes
-* Themes are cosmetic only and grant no mechanical advantages
+Themes are the visual "dialects" used to customize settlements. They are split into a free core set and paid premium sets.
+
+*   **Universal Set (Free):** A permanent, account-wide unlock for all players. Contains common items (basic candles, rags, wooden stools, etc.) to ensure baseline creativity for everyone.
+*   **Premium Themes (Paid):** Specialized aesthetic packs (e.g., Orc, Pirate, Noble) available as account-level unlocks to support server costs.
+*   **Account-Level:** Once unlocked, any character on the account inherits access.
+*   **Cosmetic Only:** Themes grant no mechanical advantages, combat stats, or functional utility.
 
 Examples:
 
-* Orc
-* Pirate
-* Noble
-* Cultural / regional sets
+* Universal (Standard/Free)
+* Orc Warband (Premium)
+* Pirate Seafaring (Premium)
+* Noble Estate (Premium)
+* Dark Cult (Premium)
+* Cultural / Regional sets
 
 ---
 
@@ -321,6 +382,27 @@ These actions are administrative tools, not routine gameplay.
 
 ---
 
+## Decorations Are Temporary
+
+When a property is lost:
+
+- All decorations vanish
+- The space reverts to default
+- Expression is cleared
+
+This is intentional.
+
+Because decorations are **free**:
+
+- Losing them stings emotionally
+- But doesn't bankrupt you economically
+- You can redecorate a new space instantly
+- Recovery is fast
+
+> Decorations mark current occupation, not permanent investment.
+
+---
+
 ## What Happens on Property Reset
 
 If a property:
@@ -367,8 +449,8 @@ This system ensures:
 
 ## Summary
 
-> **Decorations are free.  
-> Themes are pooled.  
+> **Basics are free.  
+> Themes are pooled from unlocks.  
 > Identity is communal.  
 > Cleanup is easy.**
 

@@ -41,20 +41,21 @@ Upkeep is paid automatically from the **Upkeep Ledger**, not the Treasury.
 Players add gold to the Upkeep Ledger as prepaid credit. Each day, the system deducts the upkeep cost from the ledger balance. If the ledger has sufficient credit, upkeep is paid. If not, upkeep fails.
 
 
-### Upkeep Rate
+### Base Property Upkeep
 
-Upkeep is calculated as a percentage of the **assessed value** of controlled property, charged daily.
+Base upkeep is calculated as a percentage of the **assessed value** of controlled property, charged daily.
 
 **Rate range:** 0.05% to 0.25% of assessed property value per day
 
 
 - The exact rate is set by server staff and may vary by property type or location
 - Assessed value is based on housing tiles controlled and average market prices
-- Upkeep scales with size: larger properties cost more to maintain
+- Base upkeep scales with size: larger properties cost more to maintain
 
 
 > **Note**
 > **Example:** A faction controls property assessed at 500,000 gold. If the upkeep rate is 0.1% daily, the faction pays 500 gold per day. At this rate, 14 days of upkeep credit costs 7,000 gold.
+
 
 
 ### Assessed Value
@@ -101,25 +102,13 @@ This timeline gives guilds time to respond without enabling indefinite zombie st
 
 ## Crown Liens & Upkeep
 
-A **Crown Lien** is a political tool that intercepts guild Treasury income. However, Crown liens **cannot block upkeep payments**.
+Crown Liens are designed to create **economic siege** without forcing immediate eviction.
 
+> **Rule:** Liens intercept **Treasury** income but cannot touch the **Upkeep Ledger**.
 
-> **❗ Note**
-> **Doctrine:** Crown liens restrict surplus revenue but do not prevent payment of mandatory upkeep. Failure of upkeep under lien is treated as sovereign collapse, not eviction.
+This ensures that a guild can always pay for its survival (Upkeep) even if it cannot grow or profit. 
 
-
-### Why Upkeep Is Protected
-
-If a lien could block upkeep, it would enable **backdoor eviction by decree**—a mechanical deletion disguised as political pressure. This violates the core principle that authority must be demonstrated, not assumed.
-
-Instead:
-
-
-- Players may add gold directly to the Upkeep Ledger, bypassing the Treasury
-- Liens intercept Treasury income but cannot touch the Upkeep Ledger
-- If a faction under lien cannot pay upkeep, it is **sovereign collapse** (failure to sustain existence), not Crown eviction
-
-This keeps upkeep neutral and liens political.
+See [[Crown Liens & Economic Pressure|../Economy/Crown-Liens.md]] for the full mechanics of interception.
 
 
 ## Operational Tools
