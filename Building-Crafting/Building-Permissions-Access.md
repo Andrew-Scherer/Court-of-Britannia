@@ -1,239 +1,109 @@
+**Status:** Ship-Ready (v1.0)  
+**Last Edited:** 2026-01-29  
+**Scope:** Permissions, RoleSeat ownership, Plaque interface, and Guild operational roles.  
+**Integrated With:** [Guilds](../Guilds/Guilds.md), [Property Specs](../Housing-Property/Property-Technical-Succession.md), [Political Loss](../Housing-Property/Property-Loss-Political.md)  
+**Explicitly Excludes:** Secure storage, individual door locks, personal keys.
+
+---
+
 # Building Permissions & Access Control
 
-## Purpose
+## Core Philosophy: Public & Political
 
-Building permissions exist to ensure that guild-controlled property can be **used, modified, and lived in** without relying on a single character.
+> **Housing is about where you stand in the world, not what you hide behind walls.**
 
-Authority is distributed through the guild, not concentrated in the property owner.
+The housing system in Kingdoms of Britannia is designed to be **institutional, not personal**. Properties are assets of influence, utilized by guilds and factions to project power.
 
-This system is designed to be:
+### The "No Storage" Rule
+**Housing is not for storage.**
+*   There are no secure chests.
+*   There are no locked down containers that only *you* can open.
+*   Valuables belong in the **Bank**.
+*   Housing is for: Crafting, vendors, meetings, sleeping, and roleplay.
 
-* resilient to player absence and permadeath
-* easy to understand
-* difficult to abuse
-* consistent with classic Ultima Online housing expectations
-
----
-
-## Core Principle
-
-> **Stewards bind land.  
-> Guilds operate land.**
-
-Once a property is bound to a guild, all day-to-day use, access, and construction decisions are handled internally by the guild.
+Because there is no loot to steal, **access can be shared freely**. You do not need to fear a roommate "stealing your stuff" because your stuff shouldn't be there.
 
 ---
 
-## Steward Authority (Defined Elsewhere)
+## Institutional Authority (The Seat)
 
-The steward:
+Property is not owned by a character; it is owned by a **Role** (the "Seat").
 
-* legally owns the property
-* consumes one property ownership slot
-* binds the property to a guild
+> **The Seat binds the land.**
+> **The Guild operates the land.**
 
-After binding:
-
-* the steward does **not** manage access
-* the steward does **not** assign builders or decorators
-* the steward does **not** control doors
-* the steward does **not** govern daily use
-
-All operational control flows through the guild.
+When a player holds the **Steward** (or equivalent) title, they are filling the **RoleSeat**.
+*   If the player deletes their character, the **Seat** remains.
+*   The next player to take the Seat immediately inherits control of the property.
+*   Ownership is continuous and resilient to individual player churn.
 
 ---
 
-## Guild Operational Authority
+## The Interface: The Plaque
 
-The guild controls all operational aspects of a bound property, including:
+All permissions and access controls are managed physically at the **House Plaque**.
 
-* who may enter the property
-* who may build structures
-* who may decorate space
-* how doors behave
-* who may live or work there
+The Plaque is the control center for the property's **Region**.
+*   **Double-Click**: Open the Property Management Menu.
+*   **Manage Access**: Set Public/Private/Guild status.
+*   **Manage Roles**: Assign Governors, Builders, and Decorators.
+*   **Pay Tax**: Manually deposit upkeep funds.
 
-These controls are managed using **guild-assigned roles**.
-
----
-
-## Property Governor (Guild Role)
-
-A **Property Governor** is a guild-level role assigned to manage a specific property.
-
-Property Governors are:
-
-* appointed and removed by guild leadership
-* scoped to a specific property
-* fully replaceable
-* not tied to the steward
-* not consuming property ownership slots
-
-Property Governors exist to prevent operational lockup if any single player becomes inactive.
+Permissions set at the Plaque apply to the **entire region** defined by the property's plot.
 
 ---
 
-### Property Governor Permissions
+## Operational Roles
 
-A Property Governor may:
+Day-to-day management is delegated to Guild Roles. These are assigned via the Plaque.
 
-* assign and remove Builders
-* assign and remove Decorators
-* configure property access rules
-* manage who may live, work, or operate on the property
-* oversee construction and space usage
+### 1. Property Governor
+The administrator of the specific property.
+*   **Can**: Assign other roles, change public/private access, pay taxes.
+*   **Cannot**: Sell the property, unbind it from the guild (only the Seat Holder can do this).
 
-A Property Governor may **not**:
+### 2. Builder
+Authorized to **shape space**.
+*   **Can**: Place construction parts (walls, floors) within the region.
+*   **Cannot**: Change access rules, ban players.
+*   **Note**: Builders consume *Guild* resources or their own resources to build.
 
-* unbind the property from the guild
-* transfer ownership
-* override steward-level rules
-* bypass guild leadership authority
+### 3. Decorator
+Authorized to **cosmetic expression**.
+*   **Can**: Place and move non-structural items (furniture, lighting).
+*   **Cannot**: Build/Remove walls, change access.
 
-They administer.  
-They do not own.
-
----
-
-## Builder Role
-
-Builders are authorized to **shape space** on guild-controlled land.
-
-Builders may:
-
-* create spaces through construction (as long as they have enough parts to do so)
-
-Builders may **not**:
-
-* change access rules
-* assign other builders
-* remove permissions
-* override guild decisions
-
-Builders build.  
-They do not govern.
+### 4. Merchant
+Authorized to **commerce infrastructure**.
+*   **Can**: Place and assign Vendor stalls.
+*   **Cannot**: Access the inventory or gold of vendors they do not personally own.
 
 ---
 
-## Decorator Role
+## Access Control: Region-Based
 
-Decorators are authorized to control **cosmetic expression**.
+Access is strictly **Region-Based**.
+*   There are **no keys**.
+*   There are **no door codes**.
+*   There are **no individual door locks**.
 
-Decorators may:
+If you have access to the **Property**, you have access to **every door** on that property.
+*   You cannot lock a single room for yourself.
+*   You cannot lock a chest for yourself.
 
-* place decorative, non-structural items
-* arrange interiors and exteriors visually
-* customize appearance of buildings without affecting function
-
-Decorators may **not**:
-
-* build or remove structures
-* affect doors or access
-* interfere with construction
-
-Decoration and construction are intentionally separate permissions.
-
----
-
-## Merchant Role
-
-Merchants are authorized to **manage commerce infrastructure** on guild-controlled land.
-
-Merchants may:
-
-* assign vendors to players (including non-guild contractors)
-* reassign vendors when needed
-* oversee settlement commerce
-
-Merchants may **not**:
-
-* set prices on vendors
-* access vendor inventory
-* withdraw gold from vendors
-* control individual vendor sales
-
-Merchants administer infrastructure, not profits.
+### Access Levels
+1.  **Public**: Anyone may enter (Taverns, Shops).
+2.  **Guild**: Only guild members may enter.
+3.  **Role/Rank**: Only specific ranks (e.g., Officers) may enter.
+4.  **List**: Specific friends/allies from other guilds.
 
 ---
 
-## Door Access & Inheritance
+## The Ultimate Access Control: Eviction
 
-Doors do **not** have individual access lists.
+The state maintains the right to seize property.
+*   **72-Hour Notice**: If the King or City Council orders an eviction, a 72-hour timer begins on the Plaque.
+*   **Resolution**: If the issue is not resolved (diplomatically or financially), the property is seized.
+*   **Effect**: The Seat is stripped, and the property reverts to the state or opens for auction.
 
-All doors:
-
-* automatically inherit access rules from the property
-* enforce the same access for every door on that property
-* update instantly when property access rules change
-
-There are:
-
-* no per-door permissions
-* no door ownership
-* no door micromanagement
-
-Doors enforce authority; they do not define it.
-
----
-
-## Property Access Rules
-
-Property access rules are defined at the property level and may include:
-
-* guild members
-* specific guild ranks
-* named individuals
-* allied guilds
-* public or restricted access
-
-These rules apply uniformly to:
-
-* all doors
-* all interior spaces
-* all constructed structures
-
----
-
-## Failure States & Reset
-
-If a property:
-
-* changes ownership
-* is abandoned by the guild
-* loses its guild binding
-* collapses under existing property rules
-
-Then:
-
-* all constructed structures are immediately destroyed
-* all permissions are cleared
-* the land reverts to its original static world state
-
-No construction survives loss of control.
-
----
-
-## Design Intent
-
-This system ensures that:
-
-* no single player can hold a guild hostage
-* guilds remain functional through death and absence
-* carpentry is powerful but safe
-* decoration is expressive but non-destructive
-* access control is simple and familiar
-* housing remains shared, not hoarded
-
----
-
-## Summary
-
-> **Stewards bind land.  
-> Guilds govern land.  
-> Governors administer land.  
-> Builders shape land.  
-> Decorators express land.  
-> Merchants enable commerce.**
-
-Authority flows downward.  
-No single role can collapse the system.
+This mechanic ensures that no one sits on land indefinitely without maintaining their political standing.

@@ -1,145 +1,31 @@
+**Status:** Ship-Ready (v1.0)  
+**Last Edited:** 2026-01-29  
+**Scope:** Defines the soft-cap construction limit system and how complexity scales property upkeep.  
+**Integrated With:** [Property Specs](../Housing-Property/Property-Technical-Succession.md), [Decoration System](Decoration-System.md)  
+**Explicitly Excludes:** Guild upkeep, hard-cap limits.
+
+---
+
 # Construction Limits & Upkeep Scaling
 
-## Purpose
-
-Construction limits exist to prevent structural spam while preserving player freedom, creativity, and emergent settlement design.
-
-Instead of hard caps, construction is regulated through **economic pressure**.  
-Building is always allowed — but increased complexity increases upkeep.
-
----
-
-## Core Principle
-
-> **Land supports construction for free up to a point.  
-> Beyond that, complexity increases upkeep.**
-
-There are no artificial limits on what players may build.  
-The world naturally limits excess through cost.
-
----
+**Core Principle:** Land supports construction for free up to a point. Beyond that, complexity increases upkeep. There are no hard caps—only economic pressure.
 
 ## Construction Density
+Each property has a **base construction allowance** of **3 constructed objects per world tile**.
+- **Within Allowance:** No additional upkeep.
+- **Exceeding Allowance:** Upkeep scales progressively for every 100 objects over the limit. This applies to the entire property.
 
-Each property includes a **base construction allowance** tied to the number of world tiles it controls.
+**Example:**
+- A 100-tile property allows 300 objects for free.
+- At 400 objects (+100), upkeep increases modestly.
+- At 1,000 objects (+700), upkeep reflects high density.
 
-### Base Allowance
+## What Counts?
+**Included in Density (Functional Structures):**
+Floors, walls, roofs, doors, stairs, structural dividers.
 
-* Each world tile supports **up to three (3) constructed objects**
-* Construction within this allowance does **not** increase upkeep
-* This allowance is shared across the entire property
-
-Examples:
-
-* 10-tile property → 30 constructed objects
-* 100-tile property → 300 constructed objects
-* 500-tile property → 1,500 constructed objects
-
-This allows functional buildings, walls, and interior spaces without penalty.
-
----
-
-## Upkeep Scaling Beyond the Base Allowance
-
-Once construction exceeds the base allowance, **property upkeep increases progressively**.
-
-### Scaling Behavior
-
-* Base construction allowance incurs **no additional upkeep**
-* For every additional block of **100 constructed objects beyond the allowance**, upkeep increases
-* The increase applies to the **entire property**, not individual structures
-
-Upkeep scales smoothly and continuously.  
-There is no sudden cutoff or maximum.
-
----
-
-## Concrete Example
-
-### Property
-
-* Size: 100 tiles
-* Base construction allowance: 300 constructed objects
-
----
-
-### Construction Levels
-
-**Up to 300 constructed objects**
-
-* No additional upkeep
-* Property remains at base upkeep
-
-**400 constructed objects**
-
-* 100 over allowance
-* Upkeep increases modestly
-
-**600 constructed objects**
-
-* 300 over allowance
-* Upkeep increases further
-
-**1,000 constructed objects**
-
-* 700 over allowance
-* Upkeep reflects the high construction density
-
-At every stage:
-
-* Construction remains allowed
-* The only constraint is economic sustainability
-
----
-
-## What Counts Toward Construction Density
-
-The following **count toward construction density**:
-
-* floors
-* walls
-* roofs
-* doors
-* stairs
-* structural dividers
-
-These are considered **functional structures** that shape space.
-
----
-
-## What Does NOT Count Toward Construction Density
-
-The following **do not count** toward construction density and **do not affect upkeep**:
-
-* cosmetic decorations
-* lights
-* banners
-* rugs
-* purely visual props
-
-Decoration is always free.  
-Expression is never taxed.
-
----
-
-## Why This System Works
-
-* Prevents wall, maze, and spam abuse naturally
-* Avoids arbitrary or immersion-breaking hard limits
-* Scales cleanly with property size
-* Encourages intentional, meaningful construction
-* Keeps decoration accessible to all players
-* Aligns settlement growth with economic responsibility
-
-Large, complex settlements are possible — but must be supported.
-
----
+**Excluded from Density (Free Decoration):**
+Cosmetic decorations, lights, banners, rugs, visual props.
 
 ## Summary
-
-> **Build freely.  
-> Pay for complexity.  
-> Decoration is always free.**
-
-Construction density is regulated by upkeep, not permission.  
-The world remains expressive, readable, and alive.
+> **Build freely. Pay for complexity. Decoration is always free.**

@@ -202,79 +202,9 @@ A king is not decided in one moment. They pass through three distinct phases:
 
 ## The Coronation Ceremony
 
+The coronation rules now live in the single-source system page:
 
-> The Only Mechanical Gate:There is no king until a coronation succeeds.
-
-Support should be RP'd. The outcome of the coronation ceremony determines who the king is. If multiple claimants arrive at the coronation ceremony expecting to be crowned king, there will be conflict.
-
-
-### The Rules (Simple and Brutal)
-
-
-- The ceremony happens at a specific location (Britain Castle throne room)
-- A Coronation NPC or object exists (Crown, throne, relic, banner)
-- Only one person can complete the coronation action
-- The action takes time (channeling / ritual / speech)
-- The action is interruptible
-- The action is public
-
-**That's it.** No votes. No tallies. No UI polls.
-
-
-### What Happens If Multiple Claimants Show Up?
-
-
-> **Note**
-> **Case A: Only One Claimant Arrives**
->
-> - Ceremony completes
-> - King role is assigned
-> - Guards, court, and mechanics lock in
-> Clean, quiet, believable.
-
-
-> **Note**
-> **Case B: Multiple Claimants Arrive**
->
-> **Now it becomes Ultima Online at its best:**
-> - Arguments
-> - Declarations
-> - Guards choosing sides
-> - Assassinations
-> - Open battle
-> - Chaos, but contained to a moment
-> **Eventually:**
-> - One claimant is dead, flees, is arrested, or loses guard support
-> - The surviving claimant completes the coronation
-> - Mechanics engage
-> - The crown becomes real
-> **This is perfect RP.**
-
-
-### Why Guards Decide the Outcome (And Why That's OK)
-
-Guards don't auto-side with the heir. Guards side with whoever they've already been obeying. Which means:
-
-
-- All the RP before the coronation mattered
-- The ceremony just reveals the result
-
-This mirrors history perfectly. **Violence is political, not random.**
-
-
-### What If the Coronation Fails?
-
-Even better. If:
-
-
-- The heir dies
-- The hall turns into a massacre
-- Guards split
-- The ceremony can't complete
-
-**Then:** Britain enters Interregnum. No king. Power fragments. Chaos escalates.
-
-**That's not a failure state. That's content.**
+**→ [Interregnum](../../Political-Systems/Interregnum.md)**
 
 
 ## Common Pretexts for Challenging an Heir

@@ -1,7 +1,8 @@
-**Status:** Ship-Ready (v1.0)
-**Last Edited:** 2026-01-28
-**Scope:** The King's power to pardon Red players at economic cost with political consequences.
-**Integrated With:** [Bounty System](Bounty-System.md), [Mortuary Rolls](../Ledgers/Mortuary-Rolls.md), [Treasury Ledger](../Ledgers/Treasury-Ledger.md)
+**Status:** Ship-Ready (v1.0)  
+**Last Edited:** 2026-01-29  
+**Scope:** The King's power to pardon Red players at economic cost with political consequences.  
+**Integrated With:** [Bounty System](Bounty-System.md), [Justice Records](../Ledgers/Justice-Records.md), [Fiscal Ledgers](../Ledgers/Fiscal-Ledgers.md)  
+**Explicitly Excludes:** Mechanical locks, role objections, time limits.
 
 ---
 

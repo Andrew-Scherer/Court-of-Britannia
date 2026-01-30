@@ -53,6 +53,6 @@ The public record of all character deaths.
 ---
 
 ## 🔗 Related Systems
-- [[Property Types & Grading|../Housing-Property/Property-Types]] — How grades are calculated.
+- [[Housing Auctions|../Housing-Property/Housing-Auctions]] — How grades are calculated.
 - [[Justice System|../Justice/Justice-System]] — The rules of death and status.
 - [[Succession|../Political-Systems/Succession]] — How roles and property move.

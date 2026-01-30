@@ -20,6 +20,19 @@ Organizations do not "go dormant." They decay.
 
 ---
 
+## 💸 State Seizure (Insolvency)
+Tax debts are not abstract numbers; they are **liens against existence**.
+
+- **The Burden**: The Crown can collect a tax debt directly from the Guildstone.
+- **The Cascade**: If the stone cannot pay, the debt prevents **Upkeep** payments.
+- **The Collapse**: Missed upkeep triggers automatic **Guild Destruction**.
+- **The Auction**: Once the guild is detached, the property immediately goes to **Public Auction** (Starting Bid: 1gp).
+
+
+This is **State Seizure**. A guild that cannot pay the Crown loses the right to exist.
+
+---
+
 ## 🏛️ Legacy Through Absence
 The goal of an organization is to survive its founders.
 - A guild that persists across 3-4 leader deaths has achieved **Institutional Legitimacy**.

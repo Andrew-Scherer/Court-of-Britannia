@@ -3,7 +3,7 @@
 **Status:** Ship-Ready (v1.0)  
 **Last Edited:** 2026-01-28  
 **Scope:** Crown tax types (Player Trade, NPC Fees, Property Transfer), tax authority, proposal system, treasury flow, variable rates  
-**Integrated With:** [Private Housing](../City-Services/Private-Housing.md), [Guild Property Connection](../Housing-Property/Guild-Landholder-System.md), [Master of Treasury](../Roles/Master-Treasury.md), [City Salary System](../Economy/Salary-System.md)  
+**Integrated With:** [Private Housing](../Housing-Property/Private-Housing.md), [Guild Property Connection](../Housing-Property/Guild-Landholder-System.md), [Master of Treasury](../Roles/Master-Treasury.md), [City Salary System](../Economy/Salary-System.md)  
 **Explicitly Excludes:** Guild/faction taxes (see Guild-Faction-Economy), enforcement mechanics, lien operations
 
 ---
@@ -27,9 +27,11 @@ The Crown may assess taxes only on entities that fall within its jurisdiction. T
 - **Neutral Factions:** Entities that have made no compact with the Crown are not taxable.
 - **Rebel Factions:** Groups in open defiance of the Crown are not taxable—they are targets for seizure, not taxation.
 
-> **The Distinction:**
->
-> Taxation requires acknowledgment of authority. Seizure does not. The Crown may still seize from non-taxable entities under decree, but this is an act of force, not fiscal policy.
+### The Debt Lock-In Rule (Renunciation)
+A guild or player may **Renounce** their allegiance at any time to stop accruing new taxes.
+*   **The Freeze:** At the moment of renouncement, the current debt is **Locked In**.
+*   **The Liability:** The Crown retains the right to **Seize Assets** for this specific debt forever.
+*   **No Clean Slate:** You cannot accrue 100,000g in tax debt and then "quit" to avoid paying. The debt follows you into the Wilderness.
 
 ---
 

@@ -79,5 +79,5 @@ A Guild does not just "own land." It **manages a market**.
 > If a guild cannot cover upkeep through trade and taxation, the property decays or falls to auction. See [Guild Upkeep](../Guilds/Guild-Upkeep.md).
 
 ## See Also
-*   [Player Vendors](../Guilds/Player-Controlled-Vendors.md) - Market stalls and mechanics.
+*   [Player Vendors](../Guilds/Player-Vendors.md) - Market stalls and mechanics.
 *   [Guild Upkeep](../Guilds/Guild-Upkeep.md) - Property maintenance costs.

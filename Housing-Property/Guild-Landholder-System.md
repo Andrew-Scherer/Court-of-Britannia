@@ -3,7 +3,7 @@
 **Status:** Ship-Ready (v1.0)  
 **Last Edited:** 2026-01-28  
 **Scope:** Guild property mechanics, Guildstone placement, property forfeiture, assassination dynamics, One Guild One Property rule  
-**Integrated With:** [Private Housing](../City-Services/Private-Housing.md), [Guilds](../Guilds/Guilds.md), [Guild Upkeep](../Guilds/Guild-Upkeep.md), [Crown Taxation](../Economy/Crown-Taxation.md)  
+**Integrated With:** [Private Housing](Private-Housing.md), [Guilds](../Guilds/Guilds.md), [Guild Upkeep](../Guilds/Guild-Upkeep.md), [Crown Taxation](../Economy/Crown-Taxation.md)  
 **Explicitly Excludes:** Private property mechanics (see Private Housing), guild internal governance, rank systems, faction dynamics
 
 ---
@@ -114,6 +114,6 @@ If a Guild attempts to acquire a second property, they must remove their stone f
 ---
 
 ## See Also
-- [[Private Housing|../City-Services/Private-Housing]] — Transfer mechanics and taxation
+- [[Private Housing|Private-Housing]] — Transfer mechanics and taxation
 - [[Guilds|../Guilds/Guilds]] — Organization rules
 - [[Guild Upkeep|../Guilds/Guild-Upkeep]] — How Guilds fund their Seat

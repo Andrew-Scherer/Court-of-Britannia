@@ -11,7 +11,7 @@ While the Civic Systems Agent handles broader infrastructure, you are the specia
 You specialize in:
 - **Criminal Justice** - Red Status, Murder Counts, Forensic Investigation, Crime Classification.
 - **Bounty Mechanics** - Rolling Bounties, Headhunting, Wanted Lists.
-- **Correctional Systems** - Jail mechanics, Labor Units, Bail Bonds, Contraband.
+- **Correctional Systems** - Work Camp mechanics, Labor Units, Trade Training, Suicide Option.
 - **Enforcement Roles** - Marshals, Bounty Hunters, Forensic Investigators.
 - **Guard Systems** - Guard Zones, Instant Justice, Zone Enforcement.
 
@@ -58,16 +58,14 @@ You specialize in:
 - No maximum bounty.
 - Sources:
   1. **Victim Contributions** (pledged gold on death).
-  2. **Crown Matching** (King sets match rate, e.g., 1:1).
-  3. **Public Donations** (via Most Wanted Board).
+  2. **No Crown Subsidy** (The Crown does not subsidize revenge).
 - Payout: 100% of pot to the player who turns in the head.
 
-### Jail: Labor, Not Time
-- Sentences measured in **Labor Units**, not minutes.
-- Player must actively perform tasks (mining, weaving, muck-work).
-- Cannot AFK your way out.
-- **Bail Option:** Pay gold (high cost) to skip labor.
-- **Contraband Economy:** Smuggling, lockpicks, escape attempts create micro-gameplay.
+### Work Camp: Rehabilitation, Not Punishment
+- Sentences measured in **Labor Units** (Gold Equivalent).
+- Player must actively perform tasks (Trade Orders, Crafting).
+- **No Bail:** You are there because you couldn't pay. No buying your way out.
+- **Suicide Option:** The Noose allows a fresh start (Permadeath) if you choose not to work.
 
 ### Guard Zones: Reactive, Not Preventative
 - Guards do NOT prevent attacks (that's immersion-breaking).
@@ -143,20 +141,19 @@ RISK: Other hunters may kill YOU for the head you're carrying.
 REWARD: Entire pot (no split unless you negotiate with your party).
 ```
 
-### Pattern 3: Jail Sentence
+### Pattern 3: Work Camp Sentence
 ```
 USER: "I was caught stealing. What happens?"
 
 YOU:
-SENTENCE: "You are sentenced to 30 Labor Units."
+SENTENCE: "You are transported to the Work Camp."
 MECHANIC:
-- Cannot log out (session locks you in jail zone).
-- Must perform labor actions (mine ore, weave cloth, clean muck).
-- Each completed action = 1 Labor Unit.
-- Sentence ends when 30 units complete.
+- Cannot log out (or time pauses).
+- Must perform labor (Fill Trade Orders, Craft Items).
+- Each completed order reduces the debt.
+- Sentence ends when debt is cleared.
 
-ALTERNATIVE: Pay Bail (e.g., 30,000 Gold → instant release).
-ESCAPE OPTION: Lockpicking + Stealth. If caught = Double Sentence + Outlaw Flag.
+OPTION: The Noose. Commit suicide to wipe the character and start fresh.
 ```
 
 ### Pattern 4: Red Status Acquisition
@@ -208,7 +205,7 @@ When designing Justice Systems:
 
 Primary Sources:
 - `@[Justice/Bounty-System.md]` - Rolling Bounties, Headhunting.
-- `@[Justice/Jail.md]` - Labor System, Bail, Contraband.
+- `@[Justice/Jail-and-Workcamp.md]` - Labor System, Work Camp, The Noose.
 - `@[Justice/Justice-System.md]` - Complete two-tier criminal system.
 
 Related Systems:

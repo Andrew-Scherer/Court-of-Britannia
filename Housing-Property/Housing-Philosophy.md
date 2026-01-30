@@ -40,7 +40,25 @@ Property in Britannia is split by **Zone of Authority**:
 - **Civic Property (Britain)**: Under the [Land Commissioner]. Tenure is a privilege granted by the Crown. Subject to eviction for harboring and residency laws.
 - **Territorial Property (Wilderness)**: Under Guild control. Maintenance is an economic condition ([Upkeep]). Subject to political outlawry, but not mechanical eviction.
 
-→ See **[[Property Types|Property-Types]]** for the full breakdown.
+→ See **[[Housing Auctions|Housing-Auctions]]** for Grading and Valuation.
+
+## 4. Property Allegiance (Opt-In Civilization)
+Owners decide the political standing of their property. 
+
+*   **Private Homes:** The sole **Title Holder** decides.
+*   **Guild Properties:** The **Guild Leader** decides.
+
+### The Choice
+1.  **Crown Allegiance (Vassal):**
+    *   **Cost:** Crown Tax (Revenue for City).
+    *   **Benefit:** Guard Protection (in cities) & Justice Laws.
+2.  **Non-Aligned (Wilderness):**
+    *   **Cost:** Void Upkeep (Gold Sink).
+    *   **Benefit:** Freedom from Crown Debts/Seizure.
+    *   **Risk:** No protection. Trespassers are not criminals.
+
+> **Why check allegiance?**
+> A Guild Castle in the woods might declare for the Crown to gain legal protection, or it might declare Independence to stop paying taxes to a King they hate.
 
 ## Summary Comparison
 
@@ -52,6 +70,24 @@ Property in Britannia is split by **Zone of Authority**:
 | **Eviction** | Impossible (Permanent ownership) | Political (72h Notice, Role loss) |
 | **Purpose** | Hoarding Assets | Social High Ground |
 
+## 6. The Psychology of Loss (Political vs. Punitive)
+
+> **Core Philosophy:** Losing property should hurt socially and strategically, *not erase progress*.
+
+### Why This Design Matters
+Traditional housing systems often tie storage to the house. If you lose the house, you lose your loot. This causes "Rage-Quit" moments.
+
+On this shard, **Property Loss is Political, not Punitive.**
+
+#### When you lose a property (Eviction/Conquest):
+*   **You Lose:** The location, the social hub, the political foothold, the banner on the map.
+*   **You Keep:** All items in your Bank/Guild Bank, all character skills, all equipped gear.
+
+This ensures that defeat is a **motivation** ("We must retake the fort!"), not a career-ending disaster.
+
+> "They took our fort" is a story arc.
+> "They wiped my bank" is a reason to uninstall.
+
 ## Related Systems
-*   [[Housing System Mechanics|../City-Services/Housing]] - The commands, tax, and eviction technical details.
+*   [[Housing System Mechanics|Property]] - The commands, tax, and eviction technical details.
 *   [[Guilds|../Civic-Systems/Guilds]] - How guilds interact with territory.

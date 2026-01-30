@@ -16,7 +16,6 @@
 - [[Guilds & Organizations|Guilds]]
 - [[Faction Alliances|Emergent-Factions]]
 - [[Guild Upkeep]]
-- [[Crown Recognition]]
 
 **Markets & Economy**
 - [[Market & Economic Systems|Market-Systems]]
@@ -27,11 +26,11 @@
 
 **Housing & Property**
 - [[Housing Philosophy|Housing-Philosophy]]
-- [[Property Types (Civic vs Territorial)|Property-Types]]
+- [[Housing Auctions (Grading System)|Housing-Property/Housing-Auctions]]
 - [[Housing Auctions (Mechanics)|Housing-Auctions]]
 - [[Guild Property Connection|Guild-Landholder-System]]
 - [[Property Loss & Political Consequence|Property-Loss-Political]]
-- [[Storage Rules|Storage-Rules]]
+- [[Storage Rules|../Storage-Mechanics/Storage-Rules]]
 - [[Royal Tenure]]
 
 **Laws & Justice**
@@ -53,6 +52,7 @@
 - [[Land Commissioner|Land-Commissioner]]
 - [[Emissary of the Crown|High-Emissary]]
 - [[Diplomacy]]
+- [[Crown Recognition]]
 
 **Institutional Ledgers**
 - [[Public Registries]]
@@ -61,7 +61,6 @@
 
 **City Services**
 - [[Salary System]]
-- [[Inn Storage|Inn-Storage]]
 - [[Fast Travel|Fast-Travel]]
 
 **Combat & Death**

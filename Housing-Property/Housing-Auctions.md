@@ -1,3 +1,11 @@
+**Status:** Ship-Ready (v1.0)  
+**Last Edited:** 2026-01-29  
+**Scope:** Auction mechanics for property acquisition, including bidding lifecycle, property grading system, and economic impacts  
+**Integrated With:** [Land Commissioner](../Roles/Noble/Land-Commissioner.md), [Guild Upkeep](../Guilds/Guild-Upkeep.md), [Fiscal Ledgers](../Ledgers/Fiscal-Ledgers.md)  
+**Explicitly Excludes:** Private property sale mechanics, detailed property tax calculation formulas, eviction procedures (covered in separate documents)
+
+---
+
 # 🗳️ Housing Auctions
 **The Merit-Based Path to Authority**
 
@@ -48,7 +56,14 @@ The final bid of an auction is the data point that defines the property's **Grad
 
 ## 💰 Economic Impact
 - **Currency Sink**: 100% of the winning bid is **destroyed (Gold Sink)**. Auctions are the shard's most aggressive deflationary engine.
-- **Tax/Upkeep Basis**: The Grade assigned at auction determines the ongoing [Property Tax] (Britain) or [Guild Upkeep] (Wilderness) multiplier for the property's lifetime.
+- **Tax/Upkeep Basis**: The Grade assigned at auction determines the ongoing [Property Tax] (Britain) or [Guild Upkeep] (Wilderness) multiplier.
+
+### Cost Formula
+The system uses a single **Global Rolling 30-Day Average** of all auction sales to determine the baseline value of a tile.
+
+**Monthly Cost = (Global Average) × (Tile Count) × (Grade Multiplier)**
+
+> **Why?** A Grade 10 Fortress in the Wilderness is just as valuable as a Grade 10 Manor in Britain. The market determines the price, and the price determines the Grade.
 
 ---
 
@@ -59,6 +74,6 @@ The final bid of an auction is the data point that defines the property's **Grad
 ---
 
 ## 🔗 Related Documents
-- [[Property Types & Grading|Property-Types]] — Categorization and cost math.
+- [[Housing Philosophy|Housing-Philosophy]] — Core concepts.
 - [[Land Commissioner|../Roles/Land-Commissioner]] — The role responsible for manual auction triggers.
 - [[Property Ledger|../Ledgers/Property-Ledger]] — The public record of all bids.

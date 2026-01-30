@@ -120,7 +120,6 @@ Root Directory:
 │   ├── Guilds.md
 │   ├── Guild-Banking.md
 │   ├── Guild-Upkeep.md
-│   ├── Crown-Recognition.md
 │   ├── Guild-Interactions.md
 │   └── Player-Controlled-Vendors.md
 ├── Factions/
@@ -176,9 +175,10 @@ Root Directory:
 │   └── Bounty.md
 ├── Political-Systems/
 │   ├── Succession.md
-│   ├── Coronation.md
+│   ├── Interregnum.md
 │   ├── Royal-Tenure.md
-│   └── Seat-System.md
+│   ├── Seat-System.md
+│   └── Crown-Recognition.md
 ├── City-Services/
 │   ├── Salary-System.md
 │   ├── Housing.md
@@ -199,7 +199,6 @@ Root Directory:
 │   ├── Permadeath-Downed.md
 │   └── Guilds-Factions-At-War.md
 └── Building-Crafting/
-    ├── Sacking-Britain.md
     ├── Carpentry-Building-Parts.md
     ├── Contractors.md
     ├── Decoration-System.md

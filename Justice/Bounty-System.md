@@ -10,21 +10,22 @@ Bounties are not printed from thin air; they are extracted from the victim's ban
 
 ---
 
-## ⚰️ Bounty Generation (The Source)
+## ⚰️ Bounty Generation (Voluntary Contribution)
 
-When a murder is recorded in the [Mortuary Rolls], a "Potential Bounty" is calculated based on the **Victim's Legitimacy Tier**. This gold is technically "lost" by the victim upon death, but inherently tied to the crime.
+When a **Crown-Aligned Vassal** is murdered, they are presented with a final choice before their ghost is released.
 
-### Legitimacy Tiers & Conversion Rates
+### The Death Choice (60 Seconds)
+The victim has **60 seconds** to decide how much of their own wealth they wish to pledge towards vengeance.
+*   **Slider:** 0% to 50% of Global Wealth (Bank + Gold on Person).
+*   **0% (Forgiveness/Apathy):** No gold is taken. No bounty is created. The murder remains a statistic only.
+*   **50% (Maximum Vengeance):** Huge sum extracted from the victim's estate to fund the hunter pot.
 
-| Victim Status | % of Victim's Bank Converted to Bounty |
-| :--- | :--- |
-| **King / Monarch** | **50%** |
-| **Noble / Peer** | **40%** |
-| **Citizen (Standard)** | **25%** |
+> [!IMPORTANT]
+> **Vassals Only**
+> This option is **only** available to Crown-Aligned players. If a Non-Aligned player is killed, the death is "Warfare," not "Murder." No choice is offered. No bounty is possible.
 
-> **Example**:
-> *   A Merchant (Citizen) with **1,000g** in the bank is murdered.
-> *   **250g** (25%) is assessed as the "Potential Bounty Pool" for this crime.
+### The Source
+The gold is **extracted immediately** from the victim's Bank Box. If the victim cannot afford the pledge (e.g., they pledge 50% but have 0g), the bounty fails to generate. Bounty gold comes from the victim, not the Crown.
 
 ---
 
@@ -56,7 +57,11 @@ Once activated, the bounty is irrevocably divided:
 
 ## ⚔️ Distribution (The Payout)
 
-When a Bounty Hunter kills a Red player and turns in the Head:
+> [!IMPORTANT]
+> **License to Kill**
+> Only **Crown-Aligned Vassals** are eligible to claim Bounties or Forensic Rewards. Non-Aligned players are considered "Unlicensed." They may kill Red players for sport or safety, but the Crown will **not** pay them.
+
+When a **Licensed** Bounty Hunter kills a Red player and turns in the Head:
 
 1.  **The Hunter**: Receives **100% of the Available Hunter Pot** (The 70% portions of all murders committed by that Red).
 2.  **The Investigators**: The Treasury automatically releases the **Locked 30% portions** to the bank accounts of every Investigator who contributed a solve to that criminal's record.

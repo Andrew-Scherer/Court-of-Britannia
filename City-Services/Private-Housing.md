@@ -3,7 +3,7 @@
 **Status:** Ship-Ready (v1.0)  
 **Last Edited:** 2026-01-28  
 **Scope:** Property ownership, title transfer mechanics, transfer tax, co-ownership risks, death/probate/inheritance  
-**Integrated With:** [Guild Property Connection](../Housing-Property/Guild-Landholder-System.md), [Storage Rules](../Housing-Property/Storage-Rules.md), [Housing Philosophy](../Housing-Property/Housing-Philosophy.md), [Property System](../City-Services/Property.md)  
+**Integrated With:** [Guild Property Connection](../Housing-Property/Guild-Landholder-System.md), [Storage Rules](../Storage-Mechanics/Storage-Rules.md), [Housing Philosophy](../Housing-Property/Housing-Philosophy.md), [Property Technical Specs](../Housing-Property/Property-Technical-Succession.md)  
 **Explicitly Excludes:** Guild-specific property rules (see Guild Property Connection), construction mechanics, decoration limits
 
 ---
@@ -72,9 +72,10 @@ Players often try to bypass the Transfer Tax by selling "Co-Owner" slots instead
 
 ### Britain Property Warning
 **Britain properties have private storage attached to the house.**
-*   **If the Title Holder abandons or dies without inheritance:** Co-Owners lose **ALL items stored in the private storage**.
-*   **There is no bank protection** for Britain house storage—it is tied to the property itself.
-*   **This makes Britain Co-Ownership extremely risky.** You are trusting the Title Holder with everything you store.
+*   **If the Title Holder abandons or dies without inheritance:** Co-Owners lose access to **ALL items stored in the private storage**.
+*   **Gold is Safe:** Gold is stored in the Global Crown Ledger and is not tied to the house.
+*   **Items are at Risk:** Items are **Local** to the property. If the property is lost, access to items is lost.
+*   **This makes Co-Ownership risky for item storage.** You are trusting the Title Holder with your physical goods.
 
 > *Buying Co-Ownership is not buying a house. It is renting a room from a landlord who might vanish tomorrow—and in Britain, they take your belongings with them.*
 
@@ -102,7 +103,7 @@ If 48 hours pass and no Co-Owner pays the tax:
 2.  **Title Revocation:** The Title is stripped from the deceased character.
 3.  **Auction:** The Title is listed on the **Public Auction House** (Starting Bid: Assessed Value).
 
-> *Note: Since items are stored in the Global Bank, players do not lose their loot. They lose the specific location, the decoration, and the prestige of the address.*
+> *Note: Gold is safe in the Global Ledger. Items are Local and are lost/evicted with the property.*
 
 ---
 

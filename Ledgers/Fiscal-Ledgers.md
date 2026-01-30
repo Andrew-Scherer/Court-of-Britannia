@@ -11,7 +11,7 @@ The **Tax Ledger** is the administrative record of the realm's fiscal policy. It
     - **Player Trade**: Sales tax on vendors/shops.
     - **Property Transfer**: One-time tax on real estate sales.
     - **Civic Residency Tax**: Recurring tax on Britain-based property.
-    - **Storage Fees**: Daily fees for long-term dock/inn storage.
+    - **Storage Fees**: Daily fees for long-term dock storage.
     - **Fealty Tributes**: Fixed intervals of gold from recognized guilds.
 - **Current Rate**: The active percentage or flat fee effective for all transactions.
 - **Proposed Rate**: A pending change submitted by the Master of the Treasury.
@@ -32,7 +32,7 @@ The **Treasury Ledger** tracks the physical health of the Britain Treasury. It d
     - **Transfer Inflow**: 50% of Property Transfer Taxes.
     - **Residency Inflow**: 100% of Britain Civic recurring property taxes.
 - **Logistics Inflow**: The "Crown Share" (25%) of successful export refunds.
-- **Storage Inflow**: Accumulated fees from overdue dock and inn storage.
+- **Storage Inflow**: Accumulated fees from overdue dock storage.
 - **Tribute Inflow**: Direct transfers from Guild Treasuries via fealty compacts.
 
 ### The "Void" Record (Sinks):

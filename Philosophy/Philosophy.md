@@ -66,6 +66,18 @@ This is medieval court drama: bloody, contested, and full of story. Power is won
 
 ---
 
+### 4. Civilization Is A Choice
+**The most radical philosophy on this shard is that Civilization is Opt-In.**
+You are not born a citizen. You are born in the Wilderness. To be civilized—to use the bank, to be protected by guards, to have murder count as a crime—you must **sign the contract**.
+
+*   **The Cost:** Taxes and obedience.
+*   **The Benefit:** Order and access.
+*   **The Alternative:** Absolute freedom in the dark.
+
+This makes "Law" a value proposition, not a default state. If the King taxes too much, people will choose the Wilderness.
+
+---
+
 ## What Players Actually Do
 
 Players don't log in to grind, wait for quests, or look for content. They log in to:

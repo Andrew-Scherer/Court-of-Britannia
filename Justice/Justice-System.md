@@ -22,13 +22,18 @@ Kingdoms of Britannia follows a "Hardcore" philosophy: **One murder equals Red s
     - **Insolvency**: If `Bank Gold < Fine`, the unpaid debt is converted to **Jail Time**.
     - **Result**: Immediate release (if rich) or Labor Sentence (if poor). No lingering debt.
 
+> **Jurisdiction Note:** These acts are only "Crimes" if committed against a **Crown Citizen/Vassal** or on **Crown Property**. In the Wilderness against Non-Aligned entities, these are simply acts of aggression.
+
 ### 2. Red Crimes (Capital/Execution)
 **Crime**: **Murder** (causing character permadeath).
+- **The Golden Rule of Law**: "A Crime is defined by the Victim."
+    - **Victim is Crown Vassal:** **MURDER**. The Crown records the crime. Killer gains a Murder Count.
+    - **Victim is Non-Aligned:** **WARFARE**. The Crown does not care. No Murder Count. No Bounty.
 - **Status**: **Red Flag (Permanent)**.
 - **Consequence**: Kill on Sight by Guards and players globally. Denied all city services.
 - **Resolution**: **Execution (Permadeath)** or Coronation Amnesty.
 
-> **War Exception**: Murder committed during a **mutually declared guild war** is treated as wartime combat, not a criminal act. One-sided war declarations do **not** provide legal cover.
+> **War Exception**: Murder committed during a **mutually declared guild war** is treated as wartime combat, not a criminal act. One-sided war declarations do **not** provide legal cover (unless the victim is Non-Aligned, in which case cover is not needed).
 
 ---
 
@@ -40,7 +45,10 @@ Kingdoms of Britannia follows a "Hardcore" philosophy: **One murder equals Red s
     - **31-60**: Weapon & Time ("War hammer, approx 2 hours ago").
     - **61-90**: Killer Identity ("Killed by [Name]").
     - **91-100**: Tracking Data ("Killer is heading North").
-- **24-Hour Window**: Corpses remain for 24 hours. Investigators must retrieve a **Forensic Signature** before decay.
+- **Variable Decay (The Forensic Window)**:
+    - **Crown-Aligned Corpse**: Persists for **24 Hours**. (Forensics possible).
+    - **Non-Aligned Corpse**: Fast Decay (**15 Minutes**). (No forensics needed as no bounty applies).
+    - *Why?* Only Crown deaths require investigation for Bounties. Wilderness deaths are just meat.
 - **The Economy of Truth**: Investigators receive **25% of the bounty pot** when the criminal they identified is eventually caught and executed.
 
 ---
@@ -50,7 +58,8 @@ Bounty hunting is a for-profit profession. The Crown creates a market for the he
 
 ### 1. The Accumulation (The Pot)
 Bounties are **Victim-Funded**. The Crown does not subsidize revenge.
-- **Victim Liens**: Gold is extracted from the victim's bank at death based on [Legitimacy Tiers](../Justice/Bounty-System.md).
+
+- **Victim Liens**: Gold is extracted from the victim's bank at death based on Legitimacy Tiers.
 - **Forensic Requirement**: Bounties are only **Activated** if a Forensic Investigator solves the crime. Unsolved crimes generate 0gp.
 
 ### 2. Collection
@@ -124,7 +133,7 @@ When harboring is proven and the window expires, Britain treats the guild itself
 ---
 
 ## 🔗 Integrated Systems
-- [[Jail & Labor|Jail]] — Sentences for Grey criminals.
+- [[Jail & Work Camp|Justice/Jail-and-Workcamp]] — Sentences for Grey criminals.
 - [[Royal Clemency|Royal-Clemency]] — The King's power to pardon at huge economic cost.
 - [[Civic Guard|Civic-Guard-System]] — The enforcers of the law.
 - [[Britain-Sole-Civic]] — The limits of civic authority.

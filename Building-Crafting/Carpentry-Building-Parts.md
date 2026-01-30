@@ -1,3 +1,11 @@
+**Status:** Ship-Ready (v1.0)
+**Last Edited:** 2026-01-29
+**Scope:** Carpentry crafting of building parts, consumption mechanics, and irreversibility rules.
+**Integrated With:** [Building Permissions & Access](Building-Permissions-Access.md), [Construction Limits & Upkeep](Construction-Limits-Upkeep.md)
+**Explicitly Excludes:** Ownership, storage mechanisms, permanence, decorative styling.
+
+---
+
 # Carpentry: Building Parts
 
 ## Purpose

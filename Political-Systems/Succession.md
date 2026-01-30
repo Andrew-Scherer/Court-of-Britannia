@@ -284,6 +284,7 @@ The moment the King dies and a Regent exists, a **coronation window** begins (ty
 
 
 - **The Coronation Ceremony** — Detailed mechanics of how kings are crowned
+- **Interregnum** — Five-phase allegiance, warfare, and legality suspension
 - **Heir Presumptive** — Complete Heir role mechanics
 - **The Regent** — Complete Regent role mechanics
 - **Claimants** — Competing claims and how they work

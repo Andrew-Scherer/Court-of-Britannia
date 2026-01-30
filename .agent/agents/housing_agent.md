@@ -54,6 +54,7 @@ When designing or reviewing Housing content:
 - ❌ Is the eviction instant / magical? (Bad - no interactions).
 - ❌ Is the eviction impossible? (Bad - stagnation).
 
+
 ## Technical Implementation Guide
 
 ### The Sign System
