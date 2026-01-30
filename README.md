@@ -137,7 +137,8 @@ Root Directory:
 │   ├── Item-Durability.md
 │   ├── Crown-Liens.md
 │   ├── Seizure-Enforcement.md
-│   └── Tax-Roles.md
+│   ├── Tax-Roles.md
+│   └── Salary-System.md
 ├── Housing-Property/
 │   ├── Housing-Philosophy.md
 │   ├── Property-Loss-Political.md
@@ -179,10 +180,7 @@ Root Directory:
 │   ├── Royal-Tenure.md
 │   ├── Seat-System.md
 │   └── Crown-Recognition.md
-├── City-Services/
-│   ├── Salary-System.md
-│   ├── Housing.md
-│   └── Property.md
+
 ├── Ledgers/
 │   ├── Appointments-Ledger.md
 │   ├── Land-Ledger.md

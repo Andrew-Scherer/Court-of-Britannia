@@ -142,6 +142,17 @@ When Phase 5 ends (after the 15 minute timer expires), The Coronation officially
 - Sitting on the throne for **15 seconds without damage** crowns the King.
 - Any hostile action **resets the timer**.
 
+### Castle Is a Sacred Space Rules
+
+The coronation must resolve through people, not geometry or cheese. During the final Coronation phase, the Throne Room enters a special Resolution State. Abilities that create non-interactive obstruction, artificial mobility, or indirect interference are suppressed.
+
+- No horses or pets of any kind are allowed in the throne room or castle.
+- Players are not allowed to mark runes inside the castle.
+- Players are not allowed to fast travel outside of the castle.
+- Force field spells such as wall of stone and other spells that may block interrupting the coronation are disallowed.
+
+If a tactic prevents interaction rather than winning interaction, it does not belong in the coronation. 
+
 ### Allegiance During the Throne Room Window
 
 - Allegiances may **switch immediately** inside the throne room.

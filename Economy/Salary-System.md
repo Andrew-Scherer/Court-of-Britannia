@@ -1,7 +1,7 @@
 **Status:** Ship-Ready (v1.0)
 **Last Edited:** 2026-01-29
 **Scope:** Automated salary calculation and distribution for city roles based on revenue indexing.
-**Integrated With:** [Fiscal Ledgers](../Ledgers/Fiscal-Ledgers.md), [Crown Taxation](../Economy/Crown-Taxation.md), [Civic Guard System](../Roles/Guard/Civic-Guard-System.md)
+**Integrated With:** [Fiscal Ledgers](../Ledgers/Fiscal-Ledgers.md), [Crown Taxation](Crown-Taxation.md), [Civic Guard System](../Roles/Guard/Civic-Guard-System.md)
 **Explicitly Excludes:** Debt accumulation, retroactive payments, login blocking, judicial involvement.
 
 ---
