@@ -3,7 +3,7 @@
 **Status:** Ship-Ready (v1.0)  
 **Last Edited:** 2026-01-28  
 **Scope:** Guild property mechanics, Guildstone placement, property forfeiture, assassination dynamics, One Guild One Property rule  
-**Integrated With:** [Private Housing](Private-Housing.md), [Guilds](../Guilds/Guilds.md), [Guild Upkeep](../Guilds/Guild-Upkeep.md), [Crown Taxation](../Economy/Crown-Taxation.md)  
+**Integrated With:** [Private Housing](Private-Housing.md), [Guilds](../Guilds/Guilds.md), [Guild Upkeep](../Guilds/Guild-Upkeep.md), [Crown Taxation](../Economy/Crown-Taxation.md)
 **Explicitly Excludes:** Private property mechanics (see Private Housing), guild internal governance, rank systems, faction dynamics
 
 ---

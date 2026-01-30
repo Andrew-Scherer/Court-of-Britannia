@@ -38,7 +38,7 @@ Incoming gold follows a strict hierarchy:
 ### To Satisfy a Lien
 *   **Pay it off:** Members donate to the Treasury (auto-intercepted) until debt matches zero.
 *   **Royal Pardon:** King/Regent issues a decree forgiving the debt.
-*   **Collapse:** If the guild fails to pay upkeep and dissolves, the lien ends.
+*   **Collapse:** If the guild fails to pay upkeep and dissolves, the lien ends. The property attached to the guild is then placed on auction for 1gp, in which anyone can purchase it.
 
 ### Strategic Choices
 *   **Compliance:** Pay the debt to restore full operations.

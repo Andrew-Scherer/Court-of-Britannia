@@ -61,7 +61,6 @@
 
 **City Services**
 - [[Salary System]]
-- [[Fast Travel|Fast-Travel]]
 
 **Combat & Death**
 - [[Permadeath & Downed State|Permadeath-Downed]]

@@ -17,7 +17,7 @@ For the mechanical rules of Storage, Gold, and Items, please see the **[Storage 
 ---
 
 ## 2. Britain Bank (Financial Clearinghouse)
-The Britain Bank serves as the purely financial hub of the realm.
+The Britain Bank serves as the purely financial hub of the realm. For buy/sell orders and commodity exchange, it operates in tandem with the Trade Docks as detailed in **[Financial Clearinghouse](Financial-Clearinghouse.md)**.
 
 > [!IMPORTANT]
 > **Vassals Only**
